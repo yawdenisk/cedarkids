@@ -1,0 +1,845 @@
+* {
+  margin: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.error {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: red;
+  color: white;
+  padding: 20px 20px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.3s ease-in-out, fadeOut 0.5s ease-in-out 4.5s;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+.error .close-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+.error .progress-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.5);
+  animation: progress 5s linear forwards;
+}
+@keyframes progress {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
+}
+
+.container {
+  margin: 0 60px;
+}
+
+.uploadProductPopUpForm {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.uploadProductPopUpForm form {
+  position: relative;
+  border: 2px solid rgb(121, 227, 121);
+  padding: 20px;
+  background: white;
+}
+.uploadProductPopUpForm form .error {
+  background-color: red;
+  font-size: 17px;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+}
+.uploadProductPopUpForm form span {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  color: rgb(248, 0, 0);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.uploadProductPopUpForm form span:hover {
+  color: rgb(121, 227, 121);
+  transform: rotate(90deg);
+}
+.uploadProductPopUpForm form p {
+  text-align: center;
+  font-size: 25px;
+}
+.uploadProductPopUpForm form input {
+  display: block;
+  width: 350px;
+  height: 25px;
+  border-radius: 10px;
+  margin: 20px 0;
+  border: 2px solid black;
+}
+.uploadProductPopUpForm form button {
+  display: block;
+  margin: 0 auto;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 5px 60px;
+  border-radius: 10px;
+  background: none;
+  border: 2px solid rgb(121, 227, 121);
+}
+.uploadProductPopUpForm form button:hover {
+  background: rgb(191, 245, 191);
+}
+
+.popUpForm {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.popUpForm form {
+  position: relative;
+  border: 2px solid rgb(121, 227, 121);
+  padding: 20px;
+  background: white;
+}
+.popUpForm form .error {
+  background-color: red;
+  font-size: 17px;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+}
+.popUpForm form span {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  color: rgb(248, 0, 0);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.popUpForm form span:hover {
+  color: rgb(121, 227, 121);
+  transform: rotate(90deg);
+}
+.popUpForm form p {
+  text-align: center;
+  font-size: 25px;
+}
+.popUpForm form input {
+  display: block;
+  width: 350px;
+  height: 25px;
+  border-radius: 10px;
+  margin: 20px 0;
+  border: 2px solid black;
+}
+.popUpForm form button {
+  display: block;
+  margin: 0 auto;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 5px 60px;
+  border-radius: 10px;
+  background: none;
+  border: 2px solid rgb(121, 227, 121);
+}
+.popUpForm form button:hover {
+  background: rgb(191, 245, 191);
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header-media {
+  display: flex;
+}
+header .header-media a {
+  padding: 10px 15px;
+}
+header .header-media a img {
+  width: 25px;
+}
+header .header-navbar {
+  display: flex;
+}
+header .header-navbar a {
+  padding: 10px 15px;
+  position: relative;
+}
+header .header-navbar a img {
+  width: 25px;
+}
+header .header-navbar a span {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+nav a {
+  padding: 20px 40px;
+  text-decoration: none;
+  color: black;
+}
+nav a:hover {
+  border-bottom: 1px solid black;
+}
+
+.products {
+  margin: 0;
+}
+.products .filter {
+  text-align: right;
+  padding: 10px 0;
+}
+.products .filter button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+.products ul {
+  padding: 0;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.products ul li {
+  list-style-type: none;
+}
+.products ul li p {
+  text-align: center;
+}
+.products ul li img {
+  height: 400px;
+  width: 400px;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.loading {
+  top: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  opacity: 0.7;
+  width: 100%;
+  height: 100%;
+}
+.loading img {
+  width: 40px;
+}
+
+.productDetails {
+  margin: 50px 0;
+  display: block;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.productDetails .view {
+  width: 600px;
+  height: 600px;
+  position: relative;
+}
+.productDetails .view img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.productDetails .view button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 7%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  transition: 0.3s ease;
+}
+.productDetails .view button:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+.productDetails .view button:first-child {
+  left: 0;
+}
+.productDetails .view button:last-child {
+  right: 0;
+}
+
+.information {
+  position: relative;
+  width: 50%;
+}
+.information button {
+  font-size: 15px;
+  cursor: pointer;
+  padding: 10px 100px;
+  border-radius: 10px;
+  background: rgb(121, 227, 121);
+  border: 2px solid rgb(121, 227, 121);
+}
+.information button:hover {
+  background: rgb(191, 245, 191);
+}
+.information p:first-child {
+  font-size: 25px;
+}
+.information p {
+  margin: 25px 0;
+  font-size: 17px;
+}
+.information .description {
+  margin: 25px 0;
+}
+.information .description ul {
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.information .description ul li {
+  font-size: 17px;
+  padding: 10px 20px;
+  list-style-type: none;
+  cursor: pointer;
+}
+.information .description p {
+  height: 150px;
+  font-size: 17px;
+}
+.information .thumbnail-gallery {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  bottom: 0;
+}
+.information .thumbnail-gallery .thumb-prev,
+.information .thumbnail-gallery .thumb-next {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  opacity: 0.7;
+}
+.information .thumbnail-gallery .thumb-prev:hover,
+.information .thumbnail-gallery .thumb-next:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+.information .thumbnail-gallery .thumb-prev:disabled,
+.information .thumbnail-gallery .thumb-next:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+.information .thumbnail-gallery .thumbs-container {
+  width: 600px;
+  overflow: hidden;
+}
+.information .thumbnail-gallery .thumbs-container .thumbs-wrapper {
+  display: flex;
+  gap: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+.information .thumbnail-gallery .thumbs-container .thumbs-wrapper img {
+  width: 150px;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border 0.3s;
+}
+.information .thumbnail-gallery .thumbs-container .thumbs-wrapper img.active-thumbnail {
+  border: 2px solid rgb(121, 227, 121);
+}
+
+.panel {
+  display: flex;
+  margin-top: 10px;
+}
+.panel .menu {
+  width: 40%;
+  text-align: end;
+}
+.panel .menu ul {
+  border-right: 1px solid black;
+  list-style-type: none;
+}
+.panel .menu ul li {
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+.panel .view {
+  width: 60%;
+  text-align: start;
+  margin: 10px 50px;
+}
+.panel .view p {
+  margin: 5px;
+  font-size: 20px;
+}
+.panel .view .userInfo p {
+  font-size: 17px;
+}
+.panel .view .userInfo span {
+  display: block;
+  width: 50%;
+  margin: 10px 5px;
+  border-bottom: 1px solid black;
+}
+.panel .view .userInfo button {
+  margin: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 3px 30px;
+  border-radius: 10px;
+  background: none;
+  border: 2px solid rgb(121, 227, 121);
+}
+.panel .view .userInfo button:hover {
+  background-color: rgb(191, 245, 191);
+}
+.panel .view .deliveryDetails li {
+  width: 50%;
+  margin: 5px;
+  border: 1px solid rgb(121, 227, 121);
+  margin-top: 15px;
+}
+.panel .view .deliveryDetails li p {
+  font-size: 15px;
+}
+.panel .view ul {
+  padding: 0;
+}
+.panel .view ul li {
+  list-style-type: none;
+}
+.panel .view ul li ul {
+  width: 50%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid rgb(121, 227, 121);
+}
+.panel .view ul li ul p {
+  font-size: 17px;
+}
+.panel .view ul li ul nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+.panel .view ul li ul nav p:first-child {
+  margin: 0;
+  padding: 5px 10px;
+  background: rgb(248, 0, 0);
+  border-radius: 10px;
+}
+.panel .view ul li ul nav a {
+  border: 2px solid rgb(121, 227, 121);
+  font-size: 17px;
+  background: rgb(121, 227, 121);
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+.panel .view ul li ul nav a:hover {
+  background: rgb(191, 245, 191);
+}
+.panel .view ul li ul li {
+  margin-bottom: 5px;
+  display: flex;
+  padding: 5px 0;
+  align-items: center;
+  border-bottom: 1px solid gray;
+  justify-content: space-between;
+}
+.panel .view ul li ul li img {
+  width: 50px;
+  height: 50px;
+}
+.panel .view ul li ul li h4 {
+  font-weight: 300;
+}
+.panel .view ul li ul li:last-child {
+  border: 0;
+}
+
+.formLogin {
+  font-size: 30px;
+  margin-top: 40px;
+  text-align: center;
+}
+.formLogin input {
+  width: 300px;
+  height: 30px;
+  font-size: 20px;
+  background-color: white;
+  border-radius: 10px;
+  display: block;
+  margin: 20px auto;
+  border: 1px solid green;
+  padding: 10px;
+}
+.formLogin button {
+  margin: 20px;
+  height: 40px;
+  width: 320px;
+  border-radius: 10px;
+  border: 1px solid green;
+  font-size: 20px;
+  cursor: pointer;
+  background: rgb(121, 227, 121);
+}
+.formLogin h6 {
+  font-size: 15px;
+}
+.formLogin a {
+  color: rgb(13, 125, 13);
+}
+
+.registration {
+  text-align: center;
+  font-size: 30px;
+}
+.registration p {
+  padding-bottom: 20px;
+}
+.registration .error {
+  width: 20%;
+  color: black;
+  background-color: rgb(244, 179, 179);
+  margin: 0 auto;
+  border: 1px solid red;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 15px;
+}
+.registration .error p {
+  padding: 0;
+}
+.registration form {
+  font-size: 30px;
+  text-align: center;
+}
+.registration form input {
+  width: 300px;
+  height: 20px;
+  font-size: 20px;
+  background-color: white;
+  border-radius: 10px;
+  display: block;
+  margin: 20px auto;
+  border: 1px solid green;
+  padding: 10px;
+}
+.registration form button {
+  height: 40px;
+  width: 320px;
+  border-radius: 10px;
+  border: 1px solid green;
+  font-size: 20px;
+  cursor: pointer;
+  background: rgb(121, 227, 121);
+}
+.registration form h6 {
+  padding: 20px;
+  font-size: 15px;
+}
+.registration form a {
+  color: rgb(13, 125, 13);
+}
+
+.cart {
+  margin: 50px 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.cart ul {
+  padding: 0;
+  width: 60%;
+}
+.cart ul form ul {
+  width: 100%;
+}
+.cart ul form ul button {
+  margin: 10px 0;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 3px 30px;
+  border-radius: 10px;
+  background: none;
+  border: 2px solid rgb(121, 227, 121);
+}
+.cart ul form ul button:hover {
+  background-color: rgb(191, 245, 191);
+}
+.cart ul form ul li {
+  display: block;
+  cursor: pointer;
+  width: 50%;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.cart ul form ul li p {
+  font-size: 17px;
+  padding: 0;
+  border: none;
+}
+.cart ul form p {
+  padding: 10px;
+  font-size: 20px;
+  border-bottom: 1px solid black;
+}
+.cart ul form input {
+  margin: 10px;
+  padding: 0 10px;
+  display: block;
+  width: 50%;
+  height: 25px;
+  border: 1px solid rgb(121, 227, 121);
+  border-radius: 50px;
+}
+.cart ul li {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid rgb(121, 227, 121);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart ul li img {
+  height: 100px;
+  width: 100px;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.cart ul li p {
+  font-size: 17px;
+}
+.cart ul li .counters {
+  display: flex;
+  align-items: center;
+}
+.cart ul li button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: white;
+}
+.cart ul li button img {
+  width: 20px;
+  height: 20px;
+}
+.cart .shipment {
+  margin: 10px;
+  border: 1px solid rgb(121, 227, 121);
+  width: 35%;
+  height: 250px;
+}
+.cart .shipment p:first-child {
+  font-size: 30px;
+  text-align: center;
+  margin: 20px 0;
+}
+.cart .shipment p {
+  margin: 15px 50px;
+  font-size: 18px;
+}
+.cart .shipment a {
+  display: block;
+  margin: 15px auto;
+  width: 70%;
+  border: 2px solid rgb(121, 227, 121);
+  background: rgb(121, 227, 121);
+  text-align: center;
+  padding: 5px 10px;
+  color: black;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.cart .shipment a:hover {
+  background: rgb(191, 245, 191);
+}
+.cart .shipment a:last-child {
+  background: none;
+  border: 2px solid rgb(121, 227, 121);
+}
+
+.updateProduct .viewport {
+  display: flex;
+  width: 100%;
+}
+.updateProduct .viewport img {
+  width: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.updateProduct .viewport form {
+  width: 50%;
+}
+.updateProduct .viewport form input {
+  display: block;
+  width: 300px;
+  margin: 5px 0;
+}
+.updateProduct .viewport form textarea {
+  width: 300px;
+  height: 80px;
+  display: block;
+}
+.updateProduct .gallery {
+  margin-top: 10px;
+}
+.updateProduct .gallery input {
+  display: block;
+  margin: 5px 0;
+}
+.updateProduct .gallery ul {
+  justify-content: flex-start;
+}
+.adminPanel {
+  margin: 10px 0;
+}
+.adminPanel .menu {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.adminPanel .menu button {
+  cursor: pointer;
+  background: none;
+  border: 0;
+  font-size: 15px;
+}
+.adminPanel .view {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 10px;
+}
+.adminPanel .view .products button {
+  display: block;
+  margin: 20px auto;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 3px 30px;
+  border-radius: 10px;
+  background: none;
+  border: 2px solid rgb(121, 227, 121);
+}
+.adminPanel .view .products button:hover {
+  background-color: rgb(191, 245, 191);
+}
+.adminPanel .view .products ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin: 0 200px;
+}
+.adminPanel .view .products ul li {
+  word-wrap: break-word;
+  list-style-type: none;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid rgb(121, 227, 121);
+  width: 150px;
+}
+.adminPanel .view .products ul li button {
+  margin: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  width: 100%;
+  height: 20px;
+  vertical-align: middle;
+}
+.adminPanel .view .products ul li button img {
+  height: 15px;
+  width: 15px;
+}
+.adminPanel .view .products ul li button:hover {
+  background: none;
+}
+.adminPanel .view .products ul li img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 150px;
+}
+
+.cartEmpty {
+  padding: 100px;
+}
+.cartEmpty p {
+  text-align: center;
+  font-size: 30px;
+}
+.cartEmpty img {
+  margin: 0 auto;
+  display: block;
+}/*# sourceMappingURL=index.css.map */

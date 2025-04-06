@@ -1,0 +1,18 @@
+backend/woodlit/src/main/java/org/yawdenisk/woodlit/Configuration/S3Configuration.java
+backend/woodlit/src/main/resources/application.properties
+backend/woodlit/src/main/java/org/yawdenisk/woodlit/Services/KeycloakService.java
+backend/woodlit/target
+backend/woodlit/.idea
+.idea/
+*.war
+*.jar
+*.class
+*.ear
+*.iml
+*.ipr
+*.log
+*.bak
+*.swp
+frontend/woodlit/node_modules
+frontend/woodlit/.idea
+ssl ssh
