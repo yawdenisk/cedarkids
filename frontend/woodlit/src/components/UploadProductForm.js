@@ -24,14 +24,14 @@ export default function UploadProductForm({setShowUploadProductForm}) {
         formData.append("lastPrice", lastPrice);
         formData.append("description", description);
         formData.append("features", features);
-        formData.append("image", image); // Отправка главного изображения
+        formData.append("image", image); 
         
         galleryImages.forEach((file, index) => {
-            formData.append(`gallery`, file); // Отправка галереи
+            formData.append(`gallery`, file); 
         });
     
         try {
-            await axios.post('https://cedarkids.work.gd/api/product/upload', formData, {
+            await axios.post('http://localhost:8081/product/upload', formData, {
                 headers: { 'Content-Type': 'multipart/form-data' }
             });
             window.location.reload();

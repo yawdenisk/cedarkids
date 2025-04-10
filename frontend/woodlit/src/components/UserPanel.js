@@ -22,7 +22,7 @@ export default function UserPanel() {
 
     async function fetchUserDetails() {
         try {
-            const response = await axios.get('https://cedarkids.work.gd/api/user/getUserDetails', {
+            const response = await axios.get('http://localhost:8081/user/getUserDetails', {
                 headers: {
                     'Authorization': `Bearer ${localStorage.getItem("access_tocken")}`
                 }
@@ -39,7 +39,7 @@ export default function UserPanel() {
 
     async function logout() {
         try {
-            await axios.post('https://cedarkids.work.gd/api/user/logout', {}, {
+            await axios.post('http://localhost:8081/user/logout', {}, {
                 headers: {
                     'Authorization': `Bearer ${localStorage.getItem("access_tocken")}`
                 }

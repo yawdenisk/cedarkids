@@ -21,7 +21,7 @@ export default function Cart({cart, setCart}) {
 
     async function fetchUserDetails() {
         try {
-            const response = await axios.get('https://cedarkids.work.gd/api/user/getUserDetails', {
+            const response = await axios.get('http://localhost:8081/user/getUserDetails', {
                 headers: {
                     'Authorization': `Bearer ${localStorage.getItem("access_tocken")}`
                 }

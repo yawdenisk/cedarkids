@@ -15,7 +15,7 @@ import org.yawdenisk.woodlit.Services.UserService;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("/api/deliveryDetails")
+@RequestMapping("/deliveryDetails")
 public class DeliveryDetailsController {
     @Autowired
     private DeliveryDetailsService deliveryDetailsService;

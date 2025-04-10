@@ -12,7 +12,7 @@ export default function AdminPanel() {
     const [showUploadProductForm, setShowUploadProductForm] = useState(false);
     const [error, setError] = useState(false);
     useEffect(() => {
-        axios.get('https://cedarkids.work.gd/api/product/getAll')
+        axios.get('http://localhost:8081/product/getAll')
             .then(responce => {
                 setProducts(responce.data);
             })

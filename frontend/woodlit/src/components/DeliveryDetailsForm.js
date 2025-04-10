@@ -21,7 +21,7 @@ export default function DeliveryDetailsForm({setShowDeliveryDetailsForm}) {
         e.preventDefault();
         setError(null);
         try {
-            await axios.post('https://cedarkids.work.gd/api/deliveryDetails/create', {
+            await axios.post('http://localhost:8081/deliveryDetails/create', {
                 city,
                 country,
                 address,

@@ -12,7 +12,7 @@ import org.yawdenisk.woodlit.Services.UserService;
 
 
 @RestController
-@RequestMapping("/api/user")
+@RequestMapping("/user")
 public class UserController {
     @Autowired
     private KeycloakService keycloakService;

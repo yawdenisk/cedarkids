@@ -14,7 +14,7 @@ import software.amazon.awssdk.services.s3.S3Client;
 import java.util.*;
 
 @RestController
-@RequestMapping("/api/product")
+@RequestMapping("/product")
 public class ProductController {
     @Autowired
     private ProductService productService;

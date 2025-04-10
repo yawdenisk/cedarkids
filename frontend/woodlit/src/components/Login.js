@@ -12,7 +12,7 @@ export default function Login() {
     async function handleSubmit(event) {
         event.preventDefault();
         try {
-            const responce = await axios.post("https://cedarkids.work.gd/api/user/login", {
+            const responce = await axios.post("http://localhost:8081/user/login", {
                 email,
                 password,
             })

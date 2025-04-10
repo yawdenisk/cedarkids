@@ -12,7 +12,7 @@ export default function ProductDetails({cart, setCart}) {
     const [thumbsStartIndex, setThumbsStartIndex] = useState(0);
 
     useEffect(() => {
-        axios.get(`https://cedarkids.work.gd/api/product/get/${id}`)
+        axios.get(`http://localhost:8081/product/get/${id}`)
             .then(response => {
                 setProduct(response.data);
                 const images = [response.data.image, ...response.data.gallery.map(img => img.imageUrl)];

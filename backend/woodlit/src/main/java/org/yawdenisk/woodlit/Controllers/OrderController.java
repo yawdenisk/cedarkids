@@ -15,7 +15,7 @@ import org.yawdenisk.woodlit.Services.*;
 import java.time.LocalDate;
 
 @RestController
-@RequestMapping("/api/order")
+@RequestMapping("/order")
 public class OrderController {
     @Autowired
     private OrderService orderService;
