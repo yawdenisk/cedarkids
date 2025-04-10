@@ -16,7 +16,7 @@ import java.util.UUID;
 @Getter
 @Setter
 @Table(name = "delivery_details")
-public class DeliveryDetails {
+public class    DeliveryDetails {
     @Id
     @UuidGenerator
     private UUID id;

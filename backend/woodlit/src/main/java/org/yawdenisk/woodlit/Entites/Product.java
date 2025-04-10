@@ -29,6 +29,9 @@ public class Product {
     private String features;
     @Column(nullable = false)
     private Float lastPrice;
+    @Column(nullable = false)
+    private Float installationPrice;
+
     @OneToMany(mappedBy = "product", cascade = CascadeType.ALL)
     private List<ProductGallery> gallery = new ArrayList<>();
 }

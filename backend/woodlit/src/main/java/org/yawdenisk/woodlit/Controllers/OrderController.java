@@ -52,18 +52,25 @@ public class OrderController {
                         return userService.findUserByEmail(userRequest.getEmail())
                                 .orElseThrow(UserNotFoundException::new);
                     });
-            order.getDeliveryDetails().setUser(user);
             boolean deliveryExists = user.getDeliveryDetails().stream()
                     .anyMatch(existingDelivery -> existingDelivery.getPhone().equals(order.getDeliveryDetails().getPhone()) &&
                             existingDelivery.getAddress().equals(order.getDeliveryDetails().getAddress()) &&
+                            existingDelivery.getCountry().equals(order.getDeliveryDetails().getCountry()) &&
                             existingDelivery.getCity().equals(order.getDeliveryDetails().getCity()) &&
                             existingDelivery.getPostalCode().equals(order.getDeliveryDetails().getPostalCode()));
             if (!deliveryExists) {
                 user.getDeliveryDetails().add(order.getDeliveryDetails());
+                order.getDeliveryDetails().setUser(user);
             }
             order.setUser(user);
             order.setStatus("UNPAID");
             order.setDate(LocalDate.now());
+            order.getCart().forEach(cartItem -> {
+                if (cartItem.isInstallation()) {
+                    float priceWithInstallation = cartItem.getProduct().getPrice() + cartItem.getProduct().getInstallationPrice();
+                    cartItem.getProduct().setPrice(priceWithInstallation);
+                }
+            });
             StripeResponse stripeResponce = stripeService.checkoutProducts(order.getCart());
             order.setPaymentUrl(stripeResponce.getSessionUrl());
             orderService.createOrder(order);

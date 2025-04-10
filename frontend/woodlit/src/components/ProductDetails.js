@@ -10,6 +10,7 @@ export default function ProductDetails({cart, setCart}) {
     const [gallery, setGallery] = useState([]);
     const [currentSlide, setCurrentSlide] = useState(0);
     const [thumbsStartIndex, setThumbsStartIndex] = useState(0);
+    const [installation, setInstallation] = useState(false);
 
     useEffect(() => {
         axios.get(`http://localhost:8081/product/get/${id}`)
@@ -22,15 +23,17 @@ export default function ProductDetails({cart, setCart}) {
                 console.error(error);
             });
     }, [id]);
-
+    function handleChangeCheckbox(event){
+        setInstallation(event.target.checked);  
+      };
     function addToCart(id) {
         const existingProduct = cart.find(item => item.product.id === id);
         if (existingProduct) {
             setCart(cart.map(item =>
-                item.product.id === id ? {...item, quantity: item.quantity + 1} : item
+                item.product.id === id ? {...item, quantity: item.quantity + 1, installation: installation} : item
             ));
         } else {
-            setCart([...cart, {product: product, quantity: 1}]);
+            setCart([...cart, {product: product, quantity: 1, installation: installation}]);
         }
     }
 
@@ -84,10 +87,16 @@ export default function ProductDetails({cart, setCart}) {
 
                 <div className='information'>
                     <p>{product.name}</p>
+                    <div className='price'>
                     <p>€ {product.price}</p>
-                    <button onClick={() => addToCart(product.id)}>ADD TO CART</button>
-
-                    <div className='description'>
+                    <s>€ {product.lastPrice}</s>
+                    </div>  
+                    <div className='installation'>
+                    <input type='checkbox' checked={installation} onChange={handleChangeCheckbox}></input>
+                    <p>installation + {product.installationPrice}</p>
+                    </div>
+                    <button onClick={() => addToCart(product.id, installation)}>ADD TO CART</button>
+                    <div className='description'>   
                         <ul>
                             <li onClick={() => setActiveTab('description')}
                                 style={{borderBottom: activeTab === 'description' ? '1px solid black' : 'none'}}>DESCRIPTION

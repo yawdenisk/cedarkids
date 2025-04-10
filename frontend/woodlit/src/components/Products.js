@@ -29,8 +29,11 @@ export default function Products() {
                             <li key={product.id}>
                                 <Link to={`product/${product.id}`}><img src={product.image}
                                                                         alt='none image'></img></Link>
-                                <p>{product.name}</p>
+                                <p>{product.name}</p>   
+                                <div className='price'>
+                                <s>€ {product.lastPrice}</s>
                                 <p>€ {product.price}</p>
+                                </div>
                             </li>
                         ))}
                     </ul>

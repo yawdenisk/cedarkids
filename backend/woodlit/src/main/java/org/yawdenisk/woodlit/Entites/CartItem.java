@@ -20,6 +20,8 @@ public class CartItem {
     private Long id;
     @Column(nullable = false)
     private Long quantity;
+    @Column(nullable = false)
+    private boolean installation = false;
 
     @ManyToOne
     @JoinColumn(name = "product_id")

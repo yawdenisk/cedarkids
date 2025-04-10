@@ -111,6 +111,10 @@
   margin: 20px 0;
   border: 2px solid black;
 }
+.uploadProductPopUpForm form input:nth-child(6n),
+.uploadProductPopUpForm form input:nth-child(7n) {
+  border: 0;
+}
 .uploadProductPopUpForm form button {
   display: block;
   margin: 0 auto;
@@ -255,9 +259,18 @@ nav a:hover {
 }
 .products ul li {
   list-style-type: none;
+  margin: 5px 0;
 }
 .products ul li p {
   text-align: center;
+}
+.products ul li .price {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.products ul li .price p {
+  color: rgb(22, 202, 22);
 }
 .products ul li img {
   height: 400px;
@@ -349,6 +362,23 @@ nav a:hover {
 .information p {
   margin: 25px 0;
   font-size: 17px;
+}
+.information .price p {
+  display: inline;
+}
+.information .price s {
+  margin: 0 10px;
+}
+.information .installation {
+  display: flex;
+  margin: 10px 0;
+  gap: 10px;
+}
+.information .installation input {
+  width: 20px;
+}
+.information .installation p {
+  margin: 0;
 }
 .information .description {
   margin: 25px 0;

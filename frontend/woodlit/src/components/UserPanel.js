@@ -115,7 +115,12 @@ export default function UserPanel() {
                                                     {order.status}
                                                 </p>
                                                 <p>{order.date}</p>
-                                                <p>€ {order.cart.reduce((total, item) => total + item.product.price * item.quantity, 0).toFixed(2)}</p>
+                                                <p>€ {order.cart.reduce((total, item) => 
+    total + (item.installation 
+        ? (item.product.price + item.product.installationPrice) * item.quantity 
+        : item.product.price * item.quantity
+    ), 0)
+}</p>
                                                 {order.status == 'UNPAID' &&
                                                     <a href={order.paymentUrl}>Pay</a>
                                                 }

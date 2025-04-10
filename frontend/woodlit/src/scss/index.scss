@@ -105,7 +105,8 @@
       margin: 20px 0;
       border: 2px solid black;
     }
-    input:nth-child(6n,7n){
+    input:nth-child(6n),
+    input:nth-child(7n) {
       border: 0;
     }
 
@@ -274,9 +275,17 @@ nav {
 
     li {
       list-style-type: none;
-
+      margin: 5px 0;
       p {
         text-align: center;
+      }
+      .price{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        p{
+          color: rgb(22, 202, 22);
+        }
       }
 
       img {
@@ -381,6 +390,25 @@ nav {
   p {
     margin: 25px 0;
     font-size: 17px;
+  }
+  .price{
+    p{
+      display: inline;
+    }
+    s{
+      margin: 0 10px;
+    }
+  }
+  .installation{
+    display: flex;
+    margin: 10px 0;
+    gap: 10px;
+    input{
+      width: 20px;
+    }
+    p{
+      margin: 0;
+    }
   }
 
   .description {

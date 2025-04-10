@@ -26,6 +26,7 @@ public class ProductController {
                                                 @RequestParam("description") String description,
                                                 @RequestParam("price") float price,
                                                 @RequestParam("lastPrice") float lastPrice,
+                                                @RequestParam("installationPrice") float installationPrice,
                                                 @RequestParam("features") String features,
                                                 @RequestParam("image") MultipartFile image,
                                                 @RequestParam("gallery") List<MultipartFile> gallery) {
@@ -43,6 +44,7 @@ public class ProductController {
             product.setLastPrice(lastPrice);
             product.setImage(imageUrl);
             product.setFeatures(features);
+            product.setInstallationPrice(installationPrice);
             for (MultipartFile multipartFile : gallery) {
                 String fileGalleryName = System.currentTimeMillis() + "_" + multipartFile.getOriginalFilename();
                 s3Client.putObject(request -> request.bucket("woodlit").key(fileGalleryName), RequestBody.fromBytes(multipartFile.getBytes()));

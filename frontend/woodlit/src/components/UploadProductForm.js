@@ -9,6 +9,7 @@ export default function UploadProductForm({setShowUploadProductForm}) {
     const [description, setDescription] = useState(null);
     const [features, setFeatures] = useState(null);
     const [image, setImage] = useState(null);
+    const [installationPrice, setInstallationPrice] = useState(null);
      const [galleryImages, setGalleryImages] = useState([]);
     
 
@@ -19,6 +20,7 @@ export default function UploadProductForm({setShowUploadProductForm}) {
         setError(null);
         
         const formData = new FormData();
+        formData.append("installationPrice", installationPrice);
         formData.append("name", name);
         formData.append("price", price);
         formData.append("lastPrice", lastPrice);
@@ -52,6 +54,7 @@ export default function UploadProductForm({setShowUploadProductForm}) {
                 <input name='name' onChange={(e) => setName(e.target.value)} placeholder='Name'></input>
                 <input name='price' onChange={(e) => setPrice(e.target.value)} placeholder='Price'></input>
                 <input name='lastPrice' onChange={(e) => setLastPrice(e.target.value)} placeholder='Last Price'></input>
+                <input name='installationPrice' onChange={(e) => setInstallationPrice(e.target.value)} placeholder='Installation Price'></input>
                 <input name='description' onChange={(e) => setDescription(e.target.value)} placeholder='Description'></input>
                 <input name='features' onChange={(e) => setFeatures(e.target.value)} placeholder='Features'></input>
                     <input type='file' onChange={(e) => setImage(e.target.files[0])} placeholder='Image' />
