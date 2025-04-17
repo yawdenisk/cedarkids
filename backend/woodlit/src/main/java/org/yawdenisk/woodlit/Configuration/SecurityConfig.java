@@ -34,7 +34,7 @@ public class SecurityConfig {
                 .cors(cors -> cors.configurationSource(corsConfigurationSource()))
                 .authorizeRequests(authorizeRequests ->
                         authorizeRequests
-                                .requestMatchers("/product/upload","/order/create", "/product/get/{id}", "/product/getAll", "/user/create", "/user/login")
+                                .requestMatchers("/review/upload", "/product/upload","/order/create", "/product/get/{id}", "/product/getAll", "/user/create", "/user/login")
                                 .permitAll()
                                 .anyRequest().authenticated());
         http.oauth2ResourceServer(resourceServer -> {

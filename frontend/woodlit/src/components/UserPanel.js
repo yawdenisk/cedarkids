@@ -45,7 +45,7 @@ export default function UserPanel() {
                 }
             });
             localStorage.clear('Authorization')
-            navigate('/products')
+            navigate('/')
         } catch (error) {
             if (error.response.status == 401) {
                 navigate('/login');
@@ -115,11 +115,11 @@ export default function UserPanel() {
                                                     {order.status}
                                                 </p>
                                                 <p>{order.date}</p>
-                                                <p>€ {order.cart.reduce((total, item) => 
+                                                <p>€ {(order.cart.reduce((total, item) => 
     total + (item.installation 
         ? (item.product.price + item.product.installationPrice) * item.quantity 
-        : item.product.price * item.quantity
-    ), 0)
+        : (item.product.price * item.quantity)
+    ), 0)).toFixed(2)
 }</p>
                                                 {order.status == 'UNPAID' &&
                                                     <a href={order.paymentUrl}>Pay</a>
@@ -130,6 +130,9 @@ export default function UserPanel() {
                                                 <li key={item.id}>
                                                     <img src={item.product.image}/>
                                                     <h4>{item.product.name}</h4>
+                                                    {item.installation && (
+                                                        <p>+ installation</p>
+                                                    )}
                                                     <h4>{item.quantity}</h4>
                                                 </li>
                                             )}

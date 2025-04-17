@@ -6,6 +6,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.yawdenisk.woodlit.DTO.StripeResponse;
 import org.yawdenisk.woodlit.DTO.UserRequest;
+import org.yawdenisk.woodlit.Entites.DeliveryDetails;
 import org.yawdenisk.woodlit.Entites.Order;
 import org.yawdenisk.woodlit.Entites.User;
 import org.yawdenisk.woodlit.Exceptions.UserNotFoundException;
@@ -52,17 +53,20 @@ public class OrderController {
                         return userService.findUserByEmail(userRequest.getEmail())
                                 .orElseThrow(UserNotFoundException::new);
                     });
-            boolean deliveryExists = user.getDeliveryDetails().stream()
-                    .anyMatch(existingDelivery -> existingDelivery.getPhone().equals(order.getDeliveryDetails().getPhone()) &&
+            DeliveryDetails deliveryToUse = user.getDeliveryDetails().stream()
+                    .filter(existingDelivery -> existingDelivery.getPhone().equals(order.getDeliveryDetails().getPhone()) &&
                             existingDelivery.getAddress().equals(order.getDeliveryDetails().getAddress()) &&
                             existingDelivery.getCountry().equals(order.getDeliveryDetails().getCountry()) &&
                             existingDelivery.getCity().equals(order.getDeliveryDetails().getCity()) &&
-                            existingDelivery.getPostalCode().equals(order.getDeliveryDetails().getPostalCode()));
-            if (!deliveryExists) {
-                user.getDeliveryDetails().add(order.getDeliveryDetails());
-                order.getDeliveryDetails().setUser(user);
-            }
+                            existingDelivery.getPostalCode().equals(order.getDeliveryDetails().getPostalCode()))
+                    .findFirst()
+                    .orElseGet(() -> {
+                        user.getDeliveryDetails().add(order.getDeliveryDetails());
+                        order.getDeliveryDetails().setUser(user);
+                        return order.getDeliveryDetails();
+                    });
             order.setUser(user);
+            order.setDeliveryDetails(deliveryToUse);
             order.setStatus("UNPAID");
             order.setDate(LocalDate.now());
             order.getCart().forEach(cartItem -> {

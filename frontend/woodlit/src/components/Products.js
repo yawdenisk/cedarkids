@@ -31,8 +31,8 @@ export default function Products() {
                                                                         alt='none image'></img></Link>
                                 <p>{product.name}</p>   
                                 <div className='price'>
-                                <s>€ {product.lastPrice}</s>
-                                <p>€ {product.price}</p>
+                                <s>€ {(product.lastPrice).toFixed(2)}</s>
+                                <p>€ {(product.price).toFixed(2)}</p>
                                 </div>
                             </li>
                         ))}

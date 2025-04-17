@@ -32,6 +32,9 @@ public class Product {
     @Column(nullable = false)
     private Float installationPrice;
 
+    @OneToMany(mappedBy = "product")
+    private List<Review> reviews = new ArrayList<>();
+
     @OneToMany(mappedBy = "product", cascade = CascadeType.ALL)
     private List<ProductGallery> gallery = new ArrayList<>();
 }

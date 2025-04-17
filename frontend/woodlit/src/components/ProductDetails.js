@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, {useEffect, useState} from 'react';
 import {useParams} from 'react-router-dom';
 import loading from '../images/loading.svg';
+import ReviewForm from './ReviewForm';
 
 export default function ProductDetails({cart, setCart}) {
     const {id} = useParams();
@@ -11,6 +12,7 @@ export default function ProductDetails({cart, setCart}) {
     const [currentSlide, setCurrentSlide] = useState(0);
     const [thumbsStartIndex, setThumbsStartIndex] = useState(0);
     const [installation, setInstallation] = useState(false);
+    const [showReviewForm, setShowReviewForm] = useState(false);
 
     useEffect(() => {
         axios.get(`http://localhost:8081/product/get/${id}`)
@@ -88,12 +90,12 @@ export default function ProductDetails({cart, setCart}) {
                 <div className='information'>
                     <p>{product.name}</p>
                     <div className='price'>
-                    <p>€ {product.price}</p>
-                    <s>€ {product.lastPrice}</s>
+                    <p>€ {(product.price).toFixed(2)}</p>
+                    <s>€ {(product.lastPrice).toFixed(2)}</s>
                     </div>  
                     <div className='installation'>
                     <input type='checkbox' checked={installation} onChange={handleChangeCheckbox}></input>
-                    <p>installation + {product.installationPrice}</p>
+                    <p>installation + € {(product.installationPrice).toFixed(2)}</p>
                     </div>
                     <button onClick={() => addToCart(product.id, installation)}>ADD TO CART</button>
                     <div className='description'>   
@@ -153,7 +155,10 @@ export default function ProductDetails({cart, setCart}) {
                         </button>
                     </div>
                 </div>
+                
             </div>
+            <ReviewForm setShowReviewForm={setShowReviewForm} product={product} />
+
         </div>
     );
 }

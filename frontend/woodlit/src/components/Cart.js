@@ -103,8 +103,10 @@
                             {cart.map(item => (
                                 <li key={item.product.id}>
                                     <img src={item.product.image} alt='none image'></img>
+                                    <div className='text-area'>
                                     <p>{item.product.name}</p>
                                     <p>{item.installation ? "installation + € "+ (item.product.installationPrice * item.quantity).toFixed(2) : null}</p>
+                                    </div>
                                     <div className='counters'>
                                         <button onClick={() => decreaseQuantity(item.product.id)}>-</button>
                                         <p>{item.quantity}</p>

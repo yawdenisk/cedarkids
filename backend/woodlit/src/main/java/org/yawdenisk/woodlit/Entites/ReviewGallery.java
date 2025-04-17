@@ -1,5 +1,6 @@
 package org.yawdenisk.woodlit.Entites;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -13,8 +14,8 @@ import java.util.UUID;
 @NoArgsConstructor
 @Getter
 @Setter
-@Table(name = "product_gallery")
-public class ProductGallery {
+@Table(name = "review_gallery")
+public class ReviewGallery {
     @Id
     @UuidGenerator
     private UUID id;
@@ -22,7 +23,7 @@ public class ProductGallery {
     private String ImageUrl;
 
     @ManyToOne
-    @JoinColumn(name = "product_id")
+    @JoinColumn(name = "review_id")
     @JsonIgnore
-    private Product product;
+    private Review review;
 }
