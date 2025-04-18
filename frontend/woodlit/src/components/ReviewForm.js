@@ -36,10 +36,6 @@ export default function ReviewForm({ setShowReviewForm, product }) {
     <div className='reviewForm'>
             <form onSubmit={sendForm}>
                 <p>Add new Review</p>
-                {error &&
-                    <p className="error">{error}</p>
-                }
-                <span className="close" onClick={() => setShowReviewForm(false)}>&#10006;</span>
                 <input name='fullName' onChange={(e) => setFullName(e.target.value)} placeholder='Full name'></input>
                 <div className="rating">
       {[1, 2, 3, 4, 5].map((star) => (
@@ -56,7 +52,7 @@ export default function ReviewForm({ setShowReviewForm, product }) {
         </span>
       ))}
     </div>
-                <input name='text' onChange={(e) => setText(e.target.value)} placeholder='Text'></input>
+                <input name='text' onChange={(e) => setText(e.target.value)} placeholder='Your comment'></input>
                 <input type='file' multiple onChange={(e) => setGalleryImages(Array.from(e.target.files))} placeholder='Gallery'></input>
                 <button type='submit'>Submit</button>
             </form>

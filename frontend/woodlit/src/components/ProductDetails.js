@@ -204,6 +204,8 @@ export default function ProductDetails({cart, setCart}) {
                               ★
                             </span>
                             ))}
+                            <span> /</span>
+                            <span style={{color: 'gold',fontSize: '24px'}}> ★★★★★</span>
                             <p>{averageRate.toFixed(2)} / 5.00</p>
                             <p>Based on {product.reviews.length} reviews</p>
                             <button onClick={() => setShowReviewForm(!showReviewForm)}>Write a review</button>

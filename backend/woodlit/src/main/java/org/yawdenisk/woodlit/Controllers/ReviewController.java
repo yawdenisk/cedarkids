@@ -24,21 +24,23 @@ public class ReviewController {
     private S3Client s3Client;
     @Autowired
     private ReviewService reviewService;
-    @Autowired private ProductService productService;
+    @Autowired
+    private ProductService productService;
+
     @PostMapping("/upload")
     public ResponseEntity<String> upload(@RequestParam("fullName") String fullName,
                                          @RequestParam("text") String text,
                                          @RequestParam("rate") int rate,
                                          @RequestParam("productId") UUID productId,
-                                         @RequestParam("gallery") List<MultipartFile> gallery) {
-        try{
+                                         @RequestParam(value = "gallery", required = false) List<MultipartFile> gallery) {
+        try {
             Review review = new Review();
             review.setFullName(fullName);
             review.setText(text);
             review.setRate(rate);
             Product product = productService.getProductById(productId).orElseThrow(ProductNotFoundException::new);
             review.setProduct(product);
-            if (!gallery.isEmpty()) {
+            if (gallery != null && !gallery.isEmpty()) {
                 for (MultipartFile multipartFile : gallery) {
                     String fileGalleryName = System.currentTimeMillis() + "_" + multipartFile.getOriginalFilename();
                     s3Client.putObject(request -> request.bucket("woodlit").key(fileGalleryName), RequestBody.fromBytes(multipartFile.getBytes()));

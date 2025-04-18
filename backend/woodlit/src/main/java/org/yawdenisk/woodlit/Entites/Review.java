@@ -23,7 +23,7 @@ public class Review {
     private UUID id;
     @Column(nullable = false)
     private String fullName;
-    @Column(nullable = false)
+    @Column(nullable = false, length = 1024)
     private String text;
     @Column(nullable = false)
     private int rate;

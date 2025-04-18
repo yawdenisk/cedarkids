@@ -126,8 +126,27 @@
     }
   }
  }
+ .reviewForm{
+  input{
+    display: block;
+    margin: 10px 0;
+  }
+  button {
+    display: block;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 5px 30px;
+    border-radius: 10px;
+    background: none;
+    border: 2px solid rgb(121, 227, 121);
+  }
+  button:hover {
+    background: rgb(191, 245, 191);
+  }
+ }
 .popUpForm {
   position: fixed;
+  top: 30%;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -344,8 +363,27 @@ nav {
   margin-top: 30px;
   text-align: center;
   font-size: 20px;
+  p{
+    font-size: 17px;
+    margin: 10px 0;
+  }
+  button {
+    display: block;
+    margin: 10px auto;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 5px 60px;
+    border-radius: 10px;
+    background: none;
+    border: 2px solid rgb(121, 227, 121);
+  }
+
+  button:hover {
+    background: rgb(191, 245, 191);
+  }
 }
 .reviews{
+  font-size: 20px;
   .comment{
     margin-top: 20px;
     .userInfo{
