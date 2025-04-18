@@ -24,6 +24,7 @@ public class ProductController {
     @PostMapping("/upload")
     public ResponseEntity<String> uploadProduct(@RequestParam("name") String name,
                                                 @RequestParam("description") String description,
+                                                @RequestParam("demensions") String demensions,
                                                 @RequestParam("price") float price,
                                                 @RequestParam("lastPrice") float lastPrice,
                                                 @RequestParam("installationPrice") float installationPrice,
@@ -45,6 +46,7 @@ public class ProductController {
             product.setImage(imageUrl);
             product.setFeatures(features);
             product.setInstallationPrice(installationPrice);
+            product.setDemensions(demensions);
             for (MultipartFile multipartFile : gallery) {
                 String fileGalleryName = System.currentTimeMillis() + "_" + multipartFile.getOriginalFilename();
                 s3Client.putObject(request -> request.bucket("woodlit").key(fileGalleryName), RequestBody.fromBytes(multipartFile.getBytes()));
@@ -78,6 +80,7 @@ public class ProductController {
                                                 @RequestParam(required = false, name = "lastPrice") Float lastPrice,
                                                 @RequestParam(required = false, name = "name") String name,
                                                 @RequestParam(required = false, name = "description") String description,
+                                                @RequestParam(required = false, name = "demensions") String demensions,
                                                 @RequestParam(required = false, name = "price") Float price,
                                                 @RequestParam(required = false, name = "features") String features,
                                                 @RequestParam(required = false, name = "image") MultipartFile image,
@@ -86,6 +89,7 @@ public class ProductController {
             Product product = productService.getProductById(id).orElseThrow(ProductNotFoundException::new);
             if (name != null) product.setName(name);
             if (description != null) product.setDescription(description);
+            if (demensions != null) product.setDemensions(demensions);
             if (price != null) product.setPrice(price);
             if (features != null) product.setFeatures(features);
             if (features != null) product.setLastPrice(lastPrice);

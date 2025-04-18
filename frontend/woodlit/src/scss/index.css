@@ -297,6 +297,49 @@ nav a:hover {
   width: 40px;
 }
 
+.whyBlock {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 0;
+  list-style-type: none;
+}
+.whyBlock li {
+  width: 400px;
+}
+.whyBlock li p {
+  font-weight: 600;
+  font-size: 20px;
+  margin: 10px 0;
+}
+.whyBlock li p:last-child {
+  font-weight: 400;
+  font-size: 17px;
+}
+.whyBlock li img {
+  border-radius: 40px;
+  width: inherit;
+}
+
+.reviewDetails {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.reviews .comment {
+  margin-top: 20px;
+}
+.reviews .comment .userInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.reviews .comment .userInfo img {
+  width: 50px;
+}
+
 .productDetails {
   margin: 50px 0;
   display: block;

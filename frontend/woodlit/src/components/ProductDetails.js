@@ -1,8 +1,12 @@
 import axios from 'axios';
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useMemo, useState} from 'react';
 import {useParams} from 'react-router-dom';
 import loading from '../images/loading.svg';
+import quality from '../images/quality.webp';
+import warranty from '../images/warranty.webp';
+import cert from '../images/cert.webp';
 import ReviewForm from './ReviewForm';
+import userIcon from '../images/user.png'
 
 export default function ProductDetails({cart, setCart}) {
     const {id} = useParams();
@@ -25,9 +29,17 @@ export default function ProductDetails({cart, setCart}) {
                 console.error(error);
             });
     }, [id]);
-    function handleChangeCheckbox(event){
-        setInstallation(event.target.checked);  
-      };
+
+    const averageRate = useMemo(() => {
+        if (!product || !product.reviews || product.reviews.length === 0) return 0;
+        const total = product.reviews.reduce((sum, review) => sum + review.rate, 0);
+        return total / product.reviews.length;
+    }, [product]);
+
+    function handleChangeCheckbox(event) {
+        setInstallation(event.target.checked);
+    };
+
     function addToCart(id) {
         const existingProduct = cart.find(item => item.product.id === id);
         if (existingProduct) {
@@ -90,15 +102,15 @@ export default function ProductDetails({cart, setCart}) {
                 <div className='information'>
                     <p>{product.name}</p>
                     <div className='price'>
-                    <p>€ {(product.price).toFixed(2)}</p>
-                    <s>€ {(product.lastPrice).toFixed(2)}</s>
-                    </div>  
+                        <p>€ {(product.price).toFixed(2)}</p>
+                        <s>€ {(product.lastPrice).toFixed(2)}</s>
+                    </div>
                     <div className='installation'>
-                    <input type='checkbox' checked={installation} onChange={handleChangeCheckbox}></input>
-                    <p>installation + € {(product.installationPrice).toFixed(2)}</p>
+                        <input type='checkbox' checked={installation} onChange={handleChangeCheckbox}></input>
+                        <p>installation + € {(product.installationPrice).toFixed(2)}</p>
                     </div>
                     <button onClick={() => addToCart(product.id, installation)}>ADD TO CART</button>
-                    <div className='description'>   
+                    <div className='description'>
                         <ul>
                             <li onClick={() => setActiveTab('description')}
                                 style={{borderBottom: activeTab === 'description' ? '1px solid black' : 'none'}}>DESCRIPTION
@@ -155,10 +167,71 @@ export default function ProductDetails({cart, setCart}) {
                         </button>
                     </div>
                 </div>
-                
-            </div>
-            <ReviewForm setShowReviewForm={setShowReviewForm} product={product} />
 
+            </div>
+                <ul className='whyBlock'>
+                    <li>
+                        <img src={quality}/>
+                        <p>High Quality Design</p>
+                        <p>We work hard to make sure your swing set features design elements as stylish as they are
+                            strong. From the materials to the colors to the overall aesthetic, these are swing sets
+                            you’ll be proud to have in your backyard. </p>
+                    </li>
+                    <li>
+                        <img src={cert}/>
+                        <p>Tested and Certified</p>
+                        <p>All of our swing sets are certified to meet and exceed ASTM standards. We test our
+                            performance for kids up to 12-years-old, going above and beyond industry standards.</p>
+                    </li>
+                    <li>
+                        <img src={warranty}/>
+                        <p>Warranty and Assembly</p>
+                        <p>With a 5 Year Limited Warranty and 3D interactive assembly instructions with the BILT® app,
+                            you’ll be supported from the very beginning for years and years of backyard fun.</p>
+                    </li>
+                </ul>
+                <div className='reviewDetails'>
+                    <p>CUSTOMER REVIEWS</p>
+
+                            {[1, 2, 3, 4, 5].map((star) => (
+                                <span
+                                    key={star}
+                                    style={{
+                                        color: averageRate >= star ? 'gold' : 'gray',
+                                        fontSize: '24px',
+                                    }}
+                                >
+                              ★
+                            </span>
+                            ))}
+                            <p>{averageRate.toFixed(2)} / 5.00</p>
+                            <p>Based on {product.reviews.length} reviews</p>
+                            <button onClick={() => setShowReviewForm(!showReviewForm)}>Write a review</button>
+                </div>
+            {showReviewForm && 
+            <ReviewForm setShowReviewForm={setShowReviewForm} product={product}/>}
+            <div className='reviews'>
+                    {product.reviews.map(item => (
+                        <div className='comment'>
+                            <div className='userInfo'>
+                                <img src={userIcon}/>
+                            <p>{item.fullName}</p>
+                            </div>
+                            {[1, 2, 3, 4, 5].map((star) => (
+                                <span
+                                    key={star}
+                                    style={{
+                                        color: item.rate >= star ? 'gold' : 'gray',
+                                        fontSize: '24px',
+                                    }}
+                                >
+                              ★
+                            </span>
+                            ))}
+                            <p>{item.text}</p>
+                        </div>
+                    ))}
+            </div>
         </div>
     );
 }

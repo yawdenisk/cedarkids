@@ -31,6 +31,8 @@ public class Product {
     private Float lastPrice;
     @Column(nullable = false)
     private Float installationPrice;
+    @Column(nullable = false)
+    private String demensions;
 
     @OneToMany(mappedBy = "product")
     private List<Review> reviews = new ArrayList<>();
