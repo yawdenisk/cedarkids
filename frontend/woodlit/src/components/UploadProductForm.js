@@ -9,6 +9,7 @@ export default function UploadProductForm({setShowUploadProductForm}) {
     const [description, setDescription] = useState(null);
     const [features, setFeatures] = useState(null);
     const [image, setImage] = useState(null);
+    const [demensions, setDemensions] = useState(null);
     const [installationPrice, setInstallationPrice] = useState(null);
      const [galleryImages, setGalleryImages] = useState([]);
     
@@ -25,6 +26,7 @@ export default function UploadProductForm({setShowUploadProductForm}) {
         formData.append("price", price);
         formData.append("lastPrice", lastPrice);
         formData.append("description", description);
+        formData.append("demensions", demensions);
         formData.append("features", features);
         formData.append("image", image); 
         
@@ -51,12 +53,13 @@ export default function UploadProductForm({setShowUploadProductForm}) {
                     <p className="error">{error}</p>
                 }
                 <span className="close" onClick={() => setShowUploadProductForm(false)}>&#10006;</span>
-                <input name='name' onChange={(e) => setName(e.target.value)} placeholder='Name'></input>
+                <input name='name' onChange={(e) => setName(e.target.value)} placeholder='Name'></input> 
                 <input name='price' onChange={(e) => setPrice(e.target.value)} placeholder='Price'></input>
                 <input name='lastPrice' onChange={(e) => setLastPrice(e.target.value)} placeholder='Last Price'></input>
                 <input name='installationPrice' onChange={(e) => setInstallationPrice(e.target.value)} placeholder='Installation Price'></input>
                 <input name='description' onChange={(e) => setDescription(e.target.value)} placeholder='Description'></input>
-                <input name='features' onChange={(e) => setFeatures(e.target.value)} placeholder='Features'></input>
+                <textarea name='demensions' onChange={(e) => setDemensions(e.target.value)} placeholder='Demensions'></textarea>
+                <textarea name='features' onChange={(e) => setFeatures(e.target.value)} placeholder='Features'></textarea>
                     <input type='file' onChange={(e) => setImage(e.target.files[0])} placeholder='Image' />
                 <input type='file' multiple onChange={(e) => setGalleryImages(Array.from(e.target.files))} placeholder='Gallery'></input>
                 <button type='submit'>Submit</button>

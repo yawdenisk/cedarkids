@@ -52,7 +52,7 @@ export default function ReviewForm({ setShowReviewForm, product }) {
         </span>
       ))}
     </div>
-                <input name='text' onChange={(e) => setText(e.target.value)} placeholder='Your comment'></input>
+                <textarea name='text' onChange={(e) => setText(e.target.value)} placeholder='Your comment'></textarea>
                 <input type='file' multiple onChange={(e) => setGalleryImages(Array.from(e.target.files))} placeholder='Gallery'></input>
                 <button type='submit'>Submit</button>
             </form>

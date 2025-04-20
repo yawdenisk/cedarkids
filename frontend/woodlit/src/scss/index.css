@@ -62,6 +62,18 @@
   }
 }
 
+.demensions {
+  margin: 40px 0;
+  text-align: center;
+  font-size: 20px;
+}
+.demensions p:first-child {
+  font-size: 25px;
+}
+.demensions p {
+  margin: 20px 0;
+}
+
 .container {
   margin: 0 60px;
 }
@@ -129,9 +141,18 @@
   background: rgb(191, 245, 191);
 }
 
+.reviewForm p {
+  margin-bottom: 5px;
+  font-size: 20px;
+}
 .reviewForm input {
   display: block;
-  margin: 10px 0;
+}
+.reviewForm textarea {
+  margin-bottom: 5px;
+  width: 100%;
+  height: 100px;
+  font-size: 20px;
 }
 .reviewForm button {
   display: block;
@@ -140,6 +161,7 @@
   padding: 5px 30px;
   border-radius: 10px;
   background: none;
+  margin-top: 10px;
   border: 2px solid rgb(121, 227, 121);
 }
 .reviewForm button:hover {
@@ -367,6 +389,8 @@ nav a:hover {
   font-size: 20px;
 }
 .reviews .comment {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.253);
+  padding-bottom: 20px;
   margin-top: 20px;
 }
 .reviews .comment .userInfo {
@@ -376,6 +400,53 @@ nav a:hover {
 }
 .reviews .comment .userInfo img {
   width: 50px;
+}
+.reviews .comment ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+  display: flex;
+  gap: 20px;
+}
+.reviews .comment ul li img {
+  cursor: pointer;
+  height: 100px;
+  width: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.reviews .comment .imageContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+.reviews .comment .imageContent {
+  position: relative;
+  height: 80%;
+}
+.reviews .comment .imageContent img {
+  max-width: 100%;
+  max-height: 100%;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+.reviews .comment .closeButton {
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  background: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
 }
 
 .productDetails {
@@ -391,6 +462,7 @@ nav a:hover {
   position: relative;
 }
 .productDetails .view img {
+  cursor: pointer;
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -477,7 +549,12 @@ nav a:hover {
   list-style-type: none;
   cursor: pointer;
 }
-.information .description p {
+.information .description .description-content {
+  max-height: 145px;
+  overflow-y: scroll;
+  transition: max-height 0.3s ease;
+}
+.information .description .description-content p {
   height: 150px;
   font-size: 17px;
 }

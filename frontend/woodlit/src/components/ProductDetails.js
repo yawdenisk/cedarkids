@@ -17,6 +17,8 @@ export default function ProductDetails({cart, setCart}) {
     const [thumbsStartIndex, setThumbsStartIndex] = useState(0);
     const [installation, setInstallation] = useState(false);
     const [showReviewForm, setShowReviewForm] = useState(false);
+    const [showImage, setShowImage] = useState(false);
+    const [currentImage, setCurrentImage] = useState();
 
     useEffect(() => {
         axios.get(`http://localhost:8081/product/get/${id}`)
@@ -58,6 +60,9 @@ export default function ProductDetails({cart, setCart}) {
     const formattedFeatures = product.features.split("\n").map((line, index) => (
         <span key={index}>{line}<br/></span>
     ));
+    const formattedDemensions = product.demensions.split("\n").map((line, index) => (
+        <span key={index}>{line}<br/></span>
+    ));
 
     const maxVisibleThumbs = 4;
 
@@ -95,7 +100,7 @@ export default function ProductDetails({cart, setCart}) {
             <div className='productDetails'>
                 <div className='view'>
                     <button className="prev" onClick={prevSlide}>&#10094;</button>
-                    <img src={gallery[currentSlide]} alt="Product"/>
+                    <img onClick={() => {setCurrentImage(gallery[currentSlide]); setShowImage(true)}} src={gallery[currentSlide]} alt="Product"/>
                     <button className="next" onClick={nextSlide}>&#10095;</button>
                 </div>
 
@@ -190,6 +195,11 @@ export default function ProductDetails({cart, setCart}) {
                             you’ll be supported from the very beginning for years and years of backyard fun.</p>
                     </li>
                 </ul>
+                <div className='demensions'>
+                <p>Assembled Dimensions</p>
+                <p>{formattedDemensions}</p>
+                <p>This product is intended for RESIDENTIAL USE ONLY. Any use of this product outside of a residential setting will make the product warranty null and void.</p>
+                </div>
                 <div className='reviewDetails'>
                     <p>CUSTOMER REVIEWS</p>
 
@@ -231,6 +241,22 @@ export default function ProductDetails({cart, setCart}) {
                             </span>
                             ))}
                             <p>{item.text}</p>
+                            <ul>{item.reviewGallery.map(item => (
+           
+                                    <li>
+                                        <img onClick={() => {setCurrentImage(item.imageUrl); setShowImage(true)}} src={item.imageUrl}/>
+                                    </li>
+                            ))}
+                            </ul>
+                            {showImage && (
+  <div className='imageContainer' onClick={() => setShowImage(false)}>
+    <div className='imageContent' onClick={(e) => e.stopPropagation()}>
+      <button className='closeButton' onClick={() => setShowImage(false)}>✕</button>
+      <img src={currentImage} alt="Full View" />
+    </div>
+  </div>
+)}
+
                         </div>
                     ))}
             </div>
