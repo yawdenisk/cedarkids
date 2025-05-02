@@ -11,6 +11,16 @@ import adminIcon from '../images/admin.png';
 export default function Header({cart}) {
     const [isOpen, setIsOpen] = useState(false);
     return (
+       <>
+       {isOpen && (
+        <div className='bMenu'>
+            <Link onClick={() => setIsOpen(!isOpen)} to="/">Home</Link>
+            <Link onClick={() => setIsOpen(!isOpen)} to="/">Products</Link>
+            <Link onClick={() => setIsOpen(!isOpen)} to="/">Learn</Link>
+            <Link onClick={() => setIsOpen(!isOpen)} to="/">Blog</Link>
+            <Link onClick={() => setIsOpen(!isOpen)} to="/">Contacts</Link>
+        </div>
+       )}
         <div className='container'>
             <header>
                 <div className='headerMedia'>
@@ -43,5 +53,6 @@ export default function Header({cart}) {
                 <Link to="/">Contacts</Link>
             </div>
         </div>
+       </>
     )
 }

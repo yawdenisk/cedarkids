@@ -30,7 +30,7 @@ export default function Login() {
                 <input type='text' name='password' placeholder='password'
                        onChange={(e) => setPassword(e.target.value)}></input>
                 <button type='submit'>Submit</button>
-                <h6>Don't have an account? <Link to="/register">Sign up</Link></h6>
+                <p>Don't have an account? <Link to="/register">Sign up</Link></p>
             </form>
         </>
     )

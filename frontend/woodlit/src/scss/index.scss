@@ -12,6 +12,7 @@ header {
 
   .burgerMenu {
     display: none;
+    z-index: 100;
   }
 
   .headerMedia {
@@ -38,7 +39,7 @@ header {
 
       span {
         position: absolute;
-        right: -10px;
+        right: -5px;
         top: -10px;
         width: 20px;
         height: 20px;
@@ -46,8 +47,28 @@ header {
         border-radius: 50px;
         text-align: center;
         vertical-align: middle;
+        font-size: 16px;
       }
     }
+  }
+}
+.bMenu{
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  opacity: 0.9;
+  z-index: 99;
+  a{
+    text-align: right;
+    display: block;
+    padding: 10px;
+    margin: 30px 50px;
+    margin-left: 150px;
+    font-size: 20px;
+    color: white;
+    border-bottom: 1px solid white;
+    text-decoration: none;
   }
 }
 
@@ -87,11 +108,11 @@ header {
 
     li {
       list-style-type: none;
-      margin: 5px 0;
-
+      margin: 10px 0;
       p {
         text-align: center;
         margin: 3px 0;
+        max-width: inherit;
       }
 
       .price {
@@ -110,14 +131,47 @@ header {
       }
 
       img {
-        height: 400px;
-        width: 400px;
+        height: 350px;
+        width: 350px;
         overflow: hidden;
         object-fit: cover;
       }
     }
   }
 }
+
+.formLogin {
+  margin-top: 40px;
+  text-align: center;
+  p:first-child{
+    font-size: 20px;
+  }
+  input {
+    width: 300px;
+    height: 30px;
+    background-color: white;
+    border-radius: 10px;
+    display: block;
+    margin: 20px auto;
+    border: 1px solid green;
+    padding: 10px;
+  }
+
+  button {
+    margin: 20px;
+    height: 40px;
+    width: 320px;
+    border-radius: 10px;
+    border: 1px solid green;
+    cursor: pointer;
+    background: rgb(121, 227, 121);
+  }
+
+  a {
+    color: rgb(13, 125, 13);;
+  }
+}
+
 .error {
   position: fixed;
   top: 20px;
@@ -181,7 +235,6 @@ header {
   }
 
 }
-
 
 .demensions {
   margin: 40px 0;
@@ -844,103 +897,6 @@ header {
   }
 }
 
-.formLogin {
-  font-size: 30px;
-  margin-top: 40px;
-  text-align: center;
-
-  input {
-    width: 300px;
-    height: 30px;
-    font-size: 20px;
-    background-color: white;
-    border-radius: 10px;
-    display: block;
-    margin: 20px auto;
-    border: 1px solid green;
-    padding: 10px;
-  }
-
-  button {
-    margin: 20px;
-    height: 40px;
-    width: 320px;
-    border-radius: 10px;
-    border: 1px solid green;
-    font-size: 20px;
-    cursor: pointer;
-    background: rgb(121, 227, 121);
-  }
-
-  h6 {
-    font-size: 15px;
-  }
-
-  a {
-    color: rgb(13, 125, 13);;
-  }
-}
-
-.registration {
-  text-align: center;
-  font-size: 30px;
-
-  p {
-    padding-bottom: 20px;
-  }
-
-  .error {
-    width: 20%;
-    color: black;
-    background-color: rgb(244, 179, 179);
-    margin: 0 auto;
-    border: 1px solid red;
-    border-radius: 10px;
-    padding: 20px;
-    font-size: 15px;
-
-    p {
-      padding: 0;
-    }
-  }
-
-  form {
-    font-size: 30px;
-    text-align: center;
-
-    input {
-      width: 300px;
-      height: 20px;
-      font-size: 20px;
-      background-color: white;
-      border-radius: 10px;
-      display: block;
-      margin: 20px auto;
-      border: 1px solid green;
-      padding: 10px;
-    }
-
-    button {
-      height: 40px;
-      width: 320px;
-      border-radius: 10px;
-      border: 1px solid green;
-      font-size: 20px;
-      cursor: pointer;
-      background: rgb(121, 227, 121);
-    }
-
-    h6 {
-      padding: 20px;
-      font-size: 15px;
-    }
-
-    a {
-      color: rgb(13, 125, 13);;
-    }
-  }
-}
-
 .cart {
   margin: 50px 100px;
   display: flex;
@@ -1296,6 +1252,7 @@ header {
 
         &.active span:nth-child(1) {
           transform: translateY(9px) rotate(45deg);
+          background: white;
         }
 
         &.active span:nth-child(2) {
@@ -1304,6 +1261,7 @@ header {
 
         &.active span:nth-child(3) {
           transform: translateY(-9px) rotate(-45deg);
+          background: white;
         }
       }
 
@@ -1348,6 +1306,16 @@ header {
   }
   .container{
     margin:0 5px;
+  }
+  .formLogin{
+    input{
+      width: 200px;
+      height: 20px;
+    }
+    button{
+      width: 220px;
+      height: 40px;
+    }
   }
   .products{
     ul{

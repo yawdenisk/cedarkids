@@ -67,7 +67,7 @@ export default function Registration() {
     };
 
     return (
-        <div className='registration'>
+        <div className='formLogin'>
             <p>Sing up</p>
             {Object.keys(errors).length > 0 && (
                 <div className="error">
@@ -104,7 +104,7 @@ export default function Registration() {
                     style={getFieldStyle('lastName')}
                 />
                 <button type="submit">Submit</button>
-                <h6>Already have an account? <Link to="/login">Sign in</Link></h6>
+                <p>Already have an account? <Link to="/login">Sign in</Link></p>
             </form>
         </div>
     );
