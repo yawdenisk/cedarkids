@@ -100,7 +100,7 @@ header .headerNavbar a span {
 .products ul li p {
   text-align: center;
   margin: 3px 0;
-  max-width: inherit;
+  max-width: 350px;
 }
 .products ul li .price {
   display: flex;
@@ -152,6 +152,117 @@ header .headerNavbar a span {
 }
 .formLogin a {
   color: rgb(13, 125, 13);
+}
+
+.cart {
+  margin: 50px 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.cart ul {
+  padding: 0;
+  width: 60%;
+}
+.cart ul li {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid rgb(121, 227, 121);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart ul li .text-area {
+  max-width: 30%;
+  word-break: break-all;
+  overflow-x: hidden;
+}
+.cart ul li img {
+  height: 100px;
+  width: 100px;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.cart ul li .counters {
+  display: flex;
+  align-items: center;
+}
+.cart ul li button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+}
+.cart ul li button img {
+  width: 20px;
+  height: 20px;
+}
+.cart ul form ul button {
+  margin: 20px 0;
+  height: 30px;
+  width: 200px;
+  border-radius: 10px;
+  border: 1px solid green;
+  cursor: pointer;
+  background: rgb(121, 227, 121);
+}
+.cart ul form ul li {
+  display: block;
+  cursor: pointer;
+  max-width: 100%;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.cart ul form ul li p {
+  padding: 0;
+  border: none;
+}
+.cart ul form p {
+  padding: 10px;
+  border-bottom: 1px solid black;
+}
+.cart ul form input {
+  margin: 10px;
+  padding: 0 10px;
+  display: block;
+  width: 50%;
+  height: 25px;
+  border: 1px solid rgb(121, 227, 121);
+  border-radius: 50px;
+}
+.cart .shipment {
+  margin: 10px;
+  border: 1px solid rgb(121, 227, 121);
+  width: 35%;
+  max-height: 300px;
+}
+.cart .shipment p:first-child {
+  font-size: 25px;
+  text-align: center;
+  margin: 20px 0;
+}
+.cart .shipment p {
+  margin: 25px 50px;
+}
+.cart .shipment a {
+  display: block;
+  margin: 15px auto;
+  width: 70%;
+  border: 2px solid rgb(121, 227, 121);
+  background: rgb(121, 227, 121);
+  text-align: center;
+  padding: 5px 10px;
+  color: black;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.cart .shipment a:hover {
+  background: rgb(191, 245, 191);
+}
+.cart .shipment a:last-child {
+  background: none;
+  border: 2px solid rgb(121, 227, 121);
 }
 
 .error {
@@ -774,125 +885,6 @@ header .headerNavbar a span {
   border: 0;
 }
 
-.cart {
-  margin: 50px 100px;
-  display: flex;
-  justify-content: space-between;
-}
-.cart ul {
-  padding: 0;
-  width: 60%;
-}
-.cart ul form ul {
-  width: 100%;
-}
-.cart ul form ul button {
-  margin: 10px 0;
-  font-size: 15px;
-  cursor: pointer;
-  padding: 3px 30px;
-  border-radius: 10px;
-  background: none;
-  border: 2px solid rgb(121, 227, 121);
-}
-.cart ul form ul button:hover {
-  background-color: rgb(191, 245, 191);
-}
-.cart ul form ul li {
-  display: block;
-  cursor: pointer;
-  width: 50%;
-  margin: 0;
-  margin-bottom: 10px;
-}
-.cart ul form ul li p {
-  font-size: 17px;
-  padding: 0;
-  border: none;
-}
-.cart ul form p {
-  padding: 10px;
-  font-size: 20px;
-  border-bottom: 1px solid black;
-}
-.cart ul form input {
-  margin: 10px;
-  padding: 0 10px;
-  display: block;
-  width: 50%;
-  height: 25px;
-  border: 1px solid rgb(121, 227, 121);
-  border-radius: 50px;
-}
-.cart ul li {
-  margin: 10px 0;
-  padding: 10px;
-  border: 1px solid rgb(121, 227, 121);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.cart ul li img {
-  height: 100px;
-  width: 100px;
-  overflow: hidden;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.cart ul li p {
-  font-size: 17px;
-}
-.cart ul li .counters {
-  display: flex;
-  align-items: center;
-}
-.cart ul li button {
-  width: 30px;
-  height: 30px;
-  border: none;
-  cursor: pointer;
-  font-size: 20px;
-  background-color: white;
-}
-.cart ul li button img {
-  width: 20px;
-  height: 20px;
-}
-.cart .shipment {
-  margin: 10px;
-  border: 1px solid rgb(121, 227, 121);
-  width: 35%;
-  height: 250px;
-}
-.cart .shipment p:first-child {
-  font-size: 30px;
-  text-align: center;
-  margin: 20px 0;
-}
-.cart .shipment p {
-  margin: 15px 50px;
-  font-size: 18px;
-}
-.cart .shipment a {
-  display: block;
-  margin: 15px auto;
-  width: 70%;
-  border: 2px solid rgb(121, 227, 121);
-  background: rgb(121, 227, 121);
-  text-align: center;
-  padding: 5px 10px;
-  color: black;
-  border-radius: 10px;
-  text-decoration: none;
-}
-.cart .shipment a:hover {
-  background: rgb(191, 245, 191);
-}
-.cart .shipment a:last-child {
-  background: none;
-  border: 2px solid rgb(121, 227, 121);
-}
-
 .updateProduct .viewport {
   display: flex;
   width: 100%;
@@ -999,7 +991,6 @@ header .headerNavbar a span {
 }
 .cartEmpty p {
   text-align: center;
-  font-size: 30px;
 }
 .cartEmpty img {
   margin: 0 auto;
@@ -1014,14 +1005,23 @@ header .headerNavbar a span {
     width: 300px;
     height: 300px;
   }
+  .products ul li p {
+    max-width: 300px;
+  }
   .products ul li .price p {
     font-size: 14px;
   }
   .products ul li .price s {
     font-size: 14px;
   }
+  .cartEmpty img {
+    width: 50px;
+  }
 }
 @media screen and (max-width: 1024px) {
+  .products ul li p {
+    max-width: 250px;
+  }
   .products ul li img {
     width: 250px;
     height: 250px;
@@ -1031,6 +1031,12 @@ header .headerNavbar a span {
   }
   .products ul li .price s {
     font-size: 14px;
+  }
+  .cart {
+    margin: 0;
+  }
+  .cart .shipment {
+    max-height: 270px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1087,6 +1093,9 @@ header .headerNavbar a span {
   .navigation {
     display: none;
   }
+  .products ul li p {
+    max-width: 180px;
+  }
   .products ul li img {
     width: 180px;
     height: 180px;
@@ -1096,6 +1105,37 @@ header .headerNavbar a span {
   }
   .products ul li .price s {
     font-size: 12px;
+  }
+  .cart {
+    width: 100%;
+    display: block;
+  }
+  .cart ul {
+    width: 100%;
+  }
+  .cart ul form input {
+    display: block;
+    width: 50%;
+    margin: 10px auto;
+  }
+  .cart ul form ul button {
+    margin: 10px 0;
+  }
+  .cart .shipment {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 200px;
+  }
+  .cart .shipment p:first-child {
+    margin: 10px 0;
+  }
+  .cart .shipment p {
+    text-align: center;
+    margin: 5px;
+  }
+  .cart .shipment a {
+    width: 200px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1113,6 +1153,9 @@ header .headerNavbar a span {
     width: 220px;
     height: 40px;
   }
+  .products ul li p {
+    max-width: 150px;
+  }
   .products ul li img {
     width: 150px;
     height: 150px;
@@ -1122,5 +1165,16 @@ header .headerNavbar a span {
   }
   .products ul li .price s {
     font-size: 10px;
+  }
+  .cart ul li img {
+    width: 50px;
+    height: 50px;
+  }
+  .cart ul li button img {
+    width: 10px;
+    height: 10px;
+  }
+  .cartEmpty {
+    padding: 50px 0;
   }
 }/*# sourceMappingURL=index.css.map */
