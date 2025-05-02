@@ -25,6 +25,7 @@ public class ProductController {
     public ResponseEntity<String> uploadProduct(@RequestParam("name") String name,
                                                 @RequestParam("description") String description,
                                                 @RequestParam("demensions") String demensions,
+                                                @RequestParam("construction") String construction,
                                                 @RequestParam("price") float price,
                                                 @RequestParam("lastPrice") float lastPrice,
                                                 @RequestParam("installationPrice") float installationPrice,
@@ -43,6 +44,7 @@ public class ProductController {
             product.setDescription(description);
             product.setPrice(price);
             product.setLastPrice(lastPrice);
+            product.setConstruction(construction);
             product.setImage(imageUrl);
             product.setFeatures(features);
             product.setInstallationPrice(installationPrice);
@@ -81,6 +83,7 @@ public class ProductController {
                                                 @RequestParam(required = false, name = "name") String name,
                                                 @RequestParam(required = false, name = "description") String description,
                                                 @RequestParam(required = false, name = "demensions") String demensions,
+                                                @RequestParam(required = false, name = "construction") String construction,
                                                 @RequestParam(required = false, name = "price") Float price,
                                                 @RequestParam(required = false, name = "features") String features,
                                                 @RequestParam(required = false, name = "image") MultipartFile image,
@@ -90,6 +93,7 @@ public class ProductController {
             if (name != null) product.setName(name);
             if (description != null) product.setDescription(description);
             if (demensions != null) product.setDemensions(demensions);
+            if (construction != null) product.setConstruction(construction);
             if (price != null) product.setPrice(price);
             if (features != null) product.setFeatures(features);
             if (features != null) product.setLastPrice(lastPrice);

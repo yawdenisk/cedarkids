@@ -33,6 +33,8 @@ public class Product {
     private Float installationPrice;
     @Column(nullable = false)
     private String demensions;
+    @Column(nullable = false)
+    private String construction;
 
     @OneToMany(mappedBy = "product")
     private List<Review> reviews = new ArrayList<>();

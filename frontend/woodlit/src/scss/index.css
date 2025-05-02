@@ -1,6 +1,104 @@
 * {
   margin: 0;
+  max-width: 100%;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 18px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .burgerMenu {
+  display: none;
+}
+header .headerMedia {
+  display: flex;
+  gap: 30px;
+}
+header .headerMedia a img {
+  width: 25px;
+}
+header .headerNavbar {
+  display: flex;
+  gap: 30px;
+}
+header .headerNavbar a {
+  position: relative;
+}
+header .headerNavbar a img {
+  width: 25px;
+}
+header .headerNavbar a span {
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+}
+.navigation a {
+  padding: 20px 40px;
+  text-decoration: none;
+  color: black;
+}
+.navigation a:hover {
+  border-bottom: 1px solid black;
+}
+
+.products .filter {
+  text-align: right;
+  margin: 5px 10px;
+}
+.products .filter button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+.products ul {
+  padding: 0;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.products ul li {
+  list-style-type: none;
+  margin: 5px 0;
+}
+.products ul li p {
+  text-align: center;
+  margin: 3px 0;
+}
+.products ul li .price {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+.products ul li .price p {
+  color: rgb(200, 86, 29);
+  font-size: 16px;
+}
+.products ul li .price s {
+  opacity: 0.5;
+  font-size: 16px;
+}
+.products ul li img {
+  height: 400px;
+  width: 400px;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .error {
@@ -228,100 +326,6 @@
   background: rgb(191, 245, 191);
 }
 
-header {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-header .header-media {
-  display: flex;
-}
-header .header-media a {
-  padding: 10px 15px;
-}
-header .header-media a img {
-  width: 25px;
-}
-header .header-navbar {
-  display: flex;
-}
-header .header-navbar a {
-  padding: 10px 15px;
-  position: relative;
-}
-header .header-navbar a img {
-  width: 25px;
-}
-header .header-navbar a span {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 20px;
-  height: 20px;
-  background-color: red;
-  border-radius: 50px;
-  text-align: center;
-  vertical-align: middle;
-}
-
-nav {
-  display: flex;
-  justify-content: center;
-}
-nav a {
-  padding: 20px 40px;
-  text-decoration: none;
-  color: black;
-}
-nav a:hover {
-  border-bottom: 1px solid black;
-}
-
-.products {
-  margin: 0;
-}
-.products .filter {
-  text-align: right;
-  padding: 10px 0;
-}
-.products .filter button {
-  background: none;
-  border: 0;
-  cursor: pointer;
-}
-.products ul {
-  padding: 0;
-  flex-wrap: wrap;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.products ul li {
-  list-style-type: none;
-  margin: 5px 0;
-}
-.products ul li p {
-  text-align: center;
-}
-.products ul li .price {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  align-items: center;
-}
-.products ul li .price p {
-  color: rgb(12, 158, 12);
-  font-size: 18px;
-}
-.products ul li img {
-  height: 400px;
-  width: 400px;
-  overflow: hidden;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .loading {
   top: 0;
   position: absolute;
@@ -338,7 +342,7 @@ nav a:hover {
 }
 
 .whyBlock {
-  margin-top: 100px;
+  margin-top: 5%;
   display: flex;
   justify-content: space-between;
   text-align: center;
@@ -1032,4 +1036,113 @@ nav a:hover {
 .cartEmpty img {
   margin: 0 auto;
   display: block;
+}
+
+@media screen and (max-width: 1280px) {
+  * {
+    font-size: 16px;
+  }
+  .products ul li img {
+    width: 300px;
+    height: 300px;
+  }
+  .products ul li .price p {
+    font-size: 14px;
+  }
+  .products ul li .price s {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .products ul li img {
+    width: 250px;
+    height: 250px;
+  }
+  .products ul li .price p {
+    font-size: 14px;
+  }
+  .products ul li .price s {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 768px) {
+  * {
+    font-size: 14px;
+  }
+  header .headerNavbar {
+    gap: 15px;
+  }
+  header .burgerMenu {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  header .burgerMenu button {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 22px;
+    background: transparent;
+    border: none;
+    z-index: 10;
+  }
+  header .burgerMenu button span {
+    height: 4px;
+    width: 100%;
+    background: #333;
+    border-radius: 2px;
+    transition: 0.3s ease;
+  }
+  header .burgerMenu button.active span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+  header .burgerMenu button.active span:nth-child(2) {
+    opacity: 0;
+  }
+  header .burgerMenu button.active span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+  header .burgerMenu a {
+    display: flex;
+    align-items: center;
+  }
+  header .headerMedia {
+    display: none;
+  }
+  header .logo {
+    width: 150px;
+  }
+  .navigation {
+    display: none;
+  }
+  .products ul li img {
+    width: 180px;
+    height: 180px;
+  }
+  .products ul li .price p {
+    font-size: 12px;
+  }
+  .products ul li .price s {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 480px) {
+  * {
+    font-size: 12px;
+  }
+  .container {
+    margin: 0 5px;
+  }
+  .products ul li img {
+    width: 150px;
+    height: 150px;
+  }
+  .products ul li .price p {
+    font-size: 10px;
+  }
+  .products ul li .price s {
+    font-size: 10px;
+  }
 }/*# sourceMappingURL=index.css.map */

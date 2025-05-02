@@ -29,10 +29,10 @@ export default function Products() {
                             <li key={product.id}>
                                 <Link to={`product/${product.id}`}><img src={product.image}
                                                                         alt='none image'></img></Link>
-                                <p>{product.name}</p>   
+                                <p>{product.name}</p>
                                 <div className='price'>
-                                <s>€ {(product.lastPrice).toFixed(2)}</s>
-                                <p>€ {(product.price).toFixed(2)}</p>
+                                    <p>€{(product.price).toFixed(2)}</p>
+                                    <s>€{(product.lastPrice).toFixed(2)}</s>
                                 </div>
                             </li>
                         ))}

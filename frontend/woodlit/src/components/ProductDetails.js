@@ -174,6 +174,7 @@ export default function ProductDetails({cart, setCart}) {
                 </div>
 
             </div>
+            <p style={{textAlign:'center', fontSize:'25px', marginTop:'100px'}}>WHY CEDARKIDS SWING SETS?</p>
                 <ul className='whyBlock'>
                     <li>
                         <img src={quality}/>
