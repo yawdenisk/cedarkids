@@ -176,24 +176,24 @@ export default function ProductDetails({cart, setCart}) {
                 </div>
 
             </div>
-            <p style={{textAlign: 'center', fontSize: '25px', marginTop: '100px'}}>WHY CEDARKIDS SWING SETS?</p>
+            <p style={{textAlign: 'center', fontSize: '25px', marginTop: '50px'}}>WHY CEDARKIDS SWING SETS?</p>
             <ul className='whyBlock'>
                 <li>
                     <img src={quality}/>
-                    <p>High Quality Design</p>
+                    <h1>High Quality Design</h1>
                     <p>We work hard to make sure your swing set features design elements as stylish as they are
                         strong. From the materials to the colors to the overall aesthetic, these are swing sets
                         you’ll be proud to have in your backyard. </p>
                 </li>
                 <li>
                     <img src={cert}/>
-                    <p>Tested and Certified</p>
+                    <h1>Tested and Certified</h1>
                     <p>All of our swing sets are certified to meet and exceed ASTM standards. We test our
                         performance for kids up to 12-years-old, going above and beyond industry standards.</p>
                 </li>
                 <li>
                     <img src={warranty}/>
-                    <p>Warranty and Assembly</p>
+                    <h1>Warranty and Assembly</h1>
                     <p>With a 5 Year Limited Warranty and 3D interactive assembly instructions with the BILT® app,
                         you’ll be supported from the very beginning for years and years of backyard fun.</p>
                 </li>
