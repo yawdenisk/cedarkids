@@ -64,7 +64,7 @@ export default function ProductDetails({cart, setCart}) {
         <span key={index}>{line}<br/></span>
     ));
 
-    const maxVisibleThumbs = 4;
+    const maxVisibleThumbs = 3;
 
     const nextSlide = () => {
         setCurrentSlide((prev) => {
@@ -100,12 +100,44 @@ export default function ProductDetails({cart, setCart}) {
             <div className='productDetails'>
                 <div className='view'>
                     <button className="prev" onClick={prevSlide}>&#10094;</button>
-                    <img onClick={() => {setCurrentImage(gallery[currentSlide]); setShowImage(true)}} src={gallery[currentSlide]} alt="Product"/>
+                    <img onClick={() => {
+                        setCurrentImage(gallery[currentSlide]);
+                        setShowImage(true)
+                    }} src={gallery[currentSlide]} alt="Product"/>
                     <button className="next" onClick={nextSlide}>&#10095;</button>
+                    <div className="thumbnail-gallery">
+                        <button
+                            className="thumb-prev"
+                            onClick={() => setThumbsStartIndex(Math.max(0, thumbsStartIndex - 1))}
+                            disabled={thumbsStartIndex === 0}
+                        >
+                            &#10094;
+                        </button>
+                        <div className="thumbs-container">
+                            <div className="thumbs-wrapper"
+                                 style={{transform: `translateX(-${thumbsStartIndex * 161}px)`}}>
+                                {gallery.map((img, index) => (
+                                    <img key={index}
+                                         src={img}
+                                         alt="Thumbnail"
+                                         className={currentSlide === index ? "active-thumbnail" : ""}
+                                         onClick={() => selectImage(index)}
+                                    />
+                                ))}
+                            </div>
+                        </div>
+                        <button
+                            className="thumb-next"
+                            onClick={() => setThumbsStartIndex(Math.min(gallery.length - maxVisibleThumbs, thumbsStartIndex + 1))}
+                            disabled={thumbsStartIndex >= gallery.length - maxVisibleThumbs}
+                        >
+                            &#10095;
+                        </button>
+                    </div>
                 </div>
 
                 <div className='information'>
-                    <p>{product.name}</p>
+                    <h1>{product.name}</h1>
                     <div className='price'>
                         <p>€ {(product.price).toFixed(2)}</p>
                         <s>€ {(product.lastPrice).toFixed(2)}</s>
@@ -141,125 +173,99 @@ export default function ProductDetails({cart, setCart}) {
                             )}
                         </div>
                     </div>
-
-                    <div className="thumbnail-gallery">
-                        <button
-                            className="thumb-prev"
-                            onClick={() => setThumbsStartIndex(Math.max(0, thumbsStartIndex - 1))}
-                            disabled={thumbsStartIndex === 0}
-                        >
-                            &#10094;
-                        </button>
-                        <div className="thumbs-container">
-                            <div className="thumbs-wrapper"
-                                 style={{transform: `translateX(-${thumbsStartIndex * 170}px)`}}>
-                                {gallery.map((img, index) => (
-                                    <img key={index}
-                                         src={img}
-                                         alt="Thumbnail"
-                                         className={currentSlide === index ? "active-thumbnail" : ""}
-                                         onClick={() => selectImage(index)}
-                                    />
-                                ))}
-                            </div>
-                        </div>
-                        <button
-                            className="thumb-next"
-                            onClick={() => setThumbsStartIndex(Math.min(gallery.length - maxVisibleThumbs, thumbsStartIndex + 1))}
-                            disabled={thumbsStartIndex >= gallery.length - maxVisibleThumbs}
-                        >
-                            &#10095;
-                        </button>
-                    </div>
                 </div>
 
             </div>
-            <p style={{textAlign:'center', fontSize:'25px', marginTop:'100px'}}>WHY CEDARKIDS SWING SETS?</p>
-                <ul className='whyBlock'>
-                    <li>
-                        <img src={quality}/>
-                        <p>High Quality Design</p>
-                        <p>We work hard to make sure your swing set features design elements as stylish as they are
-                            strong. From the materials to the colors to the overall aesthetic, these are swing sets
-                            you’ll be proud to have in your backyard. </p>
-                    </li>
-                    <li>
-                        <img src={cert}/>
-                        <p>Tested and Certified</p>
-                        <p>All of our swing sets are certified to meet and exceed ASTM standards. We test our
-                            performance for kids up to 12-years-old, going above and beyond industry standards.</p>
-                    </li>
-                    <li>
-                        <img src={warranty}/>
-                        <p>Warranty and Assembly</p>
-                        <p>With a 5 Year Limited Warranty and 3D interactive assembly instructions with the BILT® app,
-                            you’ll be supported from the very beginning for years and years of backyard fun.</p>
-                    </li>
-                </ul>
-                <div className='demensions'>
+            <p style={{textAlign: 'center', fontSize: '25px', marginTop: '100px'}}>WHY CEDARKIDS SWING SETS?</p>
+            <ul className='whyBlock'>
+                <li>
+                    <img src={quality}/>
+                    <p>High Quality Design</p>
+                    <p>We work hard to make sure your swing set features design elements as stylish as they are
+                        strong. From the materials to the colors to the overall aesthetic, these are swing sets
+                        you’ll be proud to have in your backyard. </p>
+                </li>
+                <li>
+                    <img src={cert}/>
+                    <p>Tested and Certified</p>
+                    <p>All of our swing sets are certified to meet and exceed ASTM standards. We test our
+                        performance for kids up to 12-years-old, going above and beyond industry standards.</p>
+                </li>
+                <li>
+                    <img src={warranty}/>
+                    <p>Warranty and Assembly</p>
+                    <p>With a 5 Year Limited Warranty and 3D interactive assembly instructions with the BILT® app,
+                        you’ll be supported from the very beginning for years and years of backyard fun.</p>
+                </li>
+            </ul>
+            <div className='demensions'>
                 <p>Assembled Dimensions</p>
                 <p>{formattedDemensions}</p>
-                <p>This product is intended for RESIDENTIAL USE ONLY. Any use of this product outside of a residential setting will make the product warranty null and void.</p>
-                </div>
-                <div className='reviewDetails'>
-                    <p>CUSTOMER REVIEWS</p>
+                <p>This product is intended for RESIDENTIAL USE ONLY. Any use of this product outside of a residential
+                    setting will make the product warranty null and void.</p>
+            </div>
+            <div className='reviewDetails'>
+                <p>CUSTOMER REVIEWS</p>
 
-                            {[1, 2, 3, 4, 5].map((star) => (
-                                <span
-                                    key={star}
-                                    style={{
-                                        color: averageRate >= star ? 'gold' : 'gray',
-                                        fontSize: '24px',
-                                    }}
-                                >
+                {[1, 2, 3, 4, 5].map((star) => (
+                    <span
+                        key={star}
+                        style={{
+                            color: averageRate >= star ? 'gold' : 'gray',
+                            fontSize: '24px',
+                        }}
+                    >
                               ★
                             </span>
-                            ))}
-                            <span> /</span>
-                            <span style={{color: 'gold',fontSize: '24px'}}> ★★★★★</span>
-                            <p>{averageRate.toFixed(2)} / 5.00</p>
-                            <p>Based on {product.reviews.length} reviews</p>
-                            <button onClick={() => setShowReviewForm(!showReviewForm)}>Write a review</button>
-                </div>
-            {showReviewForm && 
-            <ReviewForm setShowReviewForm={setShowReviewForm} product={product}/>}
+                ))}
+                <span> /</span>
+                <span style={{color: 'gold', fontSize: '24px'}}> ★★★★★</span>
+                <p>{averageRate.toFixed(2)} / 5.00</p>
+                <p>Based on {product.reviews.length} reviews</p>
+                <button onClick={() => setShowReviewForm(!showReviewForm)}>Write a review</button>
+            </div>
+            {showReviewForm &&
+                <ReviewForm setShowReviewForm={setShowReviewForm} product={product}/>}
             <div className='reviews'>
-                    {product.reviews.map(item => (
-                        <div className='comment'>
-                            <div className='userInfo'>
-                                <img src={userIcon}/>
+                {product.reviews.map(item => (
+                    <div className='comment'>
+                        <div className='userInfo'>
+                            <img src={userIcon}/>
                             <p>{item.fullName}</p>
-                            </div>
-                            {[1, 2, 3, 4, 5].map((star) => (
-                                <span
-                                    key={star}
-                                    style={{
-                                        color: item.rate >= star ? 'gold' : 'gray',
-                                        fontSize: '24px',
-                                    }}
-                                >
+                        </div>
+                        {[1, 2, 3, 4, 5].map((star) => (
+                            <span
+                                key={star}
+                                style={{
+                                    color: item.rate >= star ? 'gold' : 'gray',
+                                    fontSize: '24px',
+                                }}
+                            >
                               ★
                             </span>
-                            ))}
-                            <p>{item.text}</p>
-                            <ul>{item.reviewGallery.map(item => (
-           
-                                    <li>
-                                        <img onClick={() => {setCurrentImage(item.imageUrl); setShowImage(true)}} src={item.imageUrl}/>
-                                    </li>
-                            ))}
-                            </ul>
-                            {showImage && (
-  <div className='imageContainer' onClick={() => setShowImage(false)}>
-    <div className='imageContent' onClick={(e) => e.stopPropagation()}>
-      <button className='closeButton' onClick={() => setShowImage(false)}>✕</button>
-      <img src={currentImage} alt="Full View" />
-    </div>
-  </div>
-)}
+                        ))}
+                        <p>{item.text}</p>
+                        <ul>{item.reviewGallery.map(item => (
 
-                        </div>
-                    ))}
+                            <li>
+                                <img onClick={() => {
+                                    setCurrentImage(item.imageUrl);
+                                    setShowImage(true)
+                                }} src={item.imageUrl}/>
+                            </li>
+                        ))}
+                        </ul>
+                        {showImage && (
+                            <div className='imageContainer' onClick={() => setShowImage(false)}>
+                                <div className='imageContent' onClick={(e) => e.stopPropagation()}>
+                                    <button className='closeButton' onClick={() => setShowImage(false)}>✕</button>
+                                    <img src={currentImage} alt="Full View"/>
+                                </div>
+                            </div>
+                        )}
+
+                    </div>
+                ))}
             </div>
         </div>
     );
