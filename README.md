@@ -35,24 +35,23 @@
 
 ## 🧩 Project Structure
 
+--- 
+
+
 cedarkids/
 ├── backend/
-│ ├── controllers/
-│ ├── models/
-│ ├── routes/
-│ └── app.js
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   └── app.js
 ├── frontend/
-│ ├── src/
-│ │ ├── components/
-│ │ ├── pages/
-│ │ ├── redux/
-│ │ └── App.tsx
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── redux/
+│   │   └── App.tsx
 ├── package.json
 └── README.md
-
-yaml
-Копировать
-Редактировать
 
 ---
 
