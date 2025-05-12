@@ -29,9 +29,6 @@ export default function DeliveryDetailsForm({setShowUserDetailsForm}) {
         <div className='popUpForm'>
             <form onSubmit={sendForm}>
                 <p>Edit account</p>
-                {error &&
-                    <p className="error">{error}</p>
-                }
                 <span className="close" onClick={() => setShowUserDetailsForm(false)}>&#10006;</span>
                 <input name='firstName' onChange={(e) => setFirstName(e.target.value)} placeholder='First name'></input>
                 <input name='lastName' onChange={(e) => setLastName(e.target.value)} placeholder='Last name'></input>

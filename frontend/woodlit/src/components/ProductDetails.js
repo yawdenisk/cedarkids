@@ -257,10 +257,8 @@ export default function ProductDetails({cart, setCart}) {
                         </ul>
                         {showImage && (
                             <div className='imageContainer' onClick={() => setShowImage(false)}>
-                                <div className='imageContent' onClick={(e) => e.stopPropagation()}>
                                     <button className='closeButton' onClick={() => setShowImage(false)}>✕</button>
                                     <img src={currentImage} alt="Full View"/>
-                                </div>
                             </div>
                         )}
 

@@ -478,13 +478,11 @@ header .headerNavbar a span {
   border: 1px solid #e0e0e0;
   border-radius: 12px;
   margin-bottom: 2rem;
-  background-color: #ffffff;
   box-shadow: 0 2px 8px rgba(0, 128, 0, 0.05);
-  overflow: hidden;
 }
 .panel .view .orders li nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background-color: #f5fff5;
   padding: 15px 25px;
@@ -493,120 +491,49 @@ header .headerNavbar a span {
 .panel .view .orders li nav p {
   margin: 0;
   font-weight: 500;
-  font-size: 0.95rem;
 }
 .panel .view .orders li nav p:first-child {
   font-weight: bold;
 }
 .panel .view .orders li nav a {
-  padding: 0.4rem 0.8rem;
+  padding: 5px 10px;
   background-color: #00aa55;
   color: #fff;
   border-radius: 6px;
-  font-size: 0.9rem;
   text-decoration: none;
   transition: background-color 0.3s ease;
+  border: 2px solid #00aa55;
 }
 .panel .view .orders li nav a:hover {
-  background-color: #008f47;
+  color: #00aa55;
+  background: none;
 }
-.panel .view .orders li > ul {
+.panel .view .orders li ul {
   list-style: none;
-  padding: 1rem 1.5rem;
+  margin: 20px 10px;
+  padding: 0;
 }
-.panel .view .orders li > ul li {
+.panel .view .orders li ul li {
   display: flex;
+  margin: 10px 0;
   align-items: center;
-  padding: 0.8rem 0;
-  border-bottom: 1px solid #f0f0f0;
+  justify-content: space-between;
+  padding: 5px 10px;
 }
-.panel .view .orders li > ul li:last-child {
-  border-bottom: none;
-}
-.panel .view .orders li > ul li img {
+.panel .view .orders li ul li img {
   width: 60px;
   height: 60px;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-right: 1rem;
   border-radius: 8px;
-  border: 1px solid #ddd;
 }
-.panel .view .orders li > ul li p {
-  margin: 0;
-  font-size: 0.95rem;
-  color: #333;
+.panel .view .orders li ul li p {
+  max-width: 50%;
+  overflow-x: auto;
 }
-.panel .view .orders li > ul li p + p {
-  margin-left: 0.5rem;
+.panel .view .orders li ul li p + p {
   font-style: italic;
   color: #4caf50;
-}
-.panel .view .orders li > ul li h4 {
-  margin-left: auto;
-  margin-right: 1rem;
-  font-size: 1rem;
-  font-weight: bold;
-  color: #333;
-}
-
-.error {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  background-color: red;
-  color: white;
-  padding: 20px 20px;
-  font-size: 14px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  animation: fadeIn 0.3s ease-in-out, fadeOut 0.5s ease-in-out 4.5s;
-}
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-@keyframes fadeOut {
-  from {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  to {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-}
-.error .close-btn {
-  background: none;
-  border: none;
-  color: white;
-  font-size: 18px;
-  cursor: pointer;
-}
-.error .progress-bar {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background-color: rgba(255, 255, 255, 0.5);
-  animation: progress 5s linear forwards;
-}
-@keyframes progress {
-  from {
-    width: 100%;
-  }
-  to {
-    width: 0%;
-  }
 }
 
 .demensions {
@@ -623,156 +550,6 @@ header .headerNavbar a span {
 
 .container {
   margin: 0 60px;
-}
-
-.uploadProductPopUpForm {
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-.uploadProductPopUpForm form {
-  position: relative;
-  border: 2px solid rgb(121, 227, 121);
-  padding: 20px;
-  background: white;
-}
-.uploadProductPopUpForm form .error {
-  background-color: red;
-  font-size: 17px;
-  padding: 10px;
-  border-radius: 10px;
-  margin: 10px;
-}
-.uploadProductPopUpForm form span {
-  position: absolute;
-  top: 0;
-  right: 5px;
-  font-size: 28px;
-  font-weight: bold;
-  cursor: pointer;
-  color: rgb(248, 0, 0);
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-.uploadProductPopUpForm form span:hover {
-  color: rgb(121, 227, 121);
-  transform: rotate(90deg);
-}
-.uploadProductPopUpForm form p {
-  text-align: center;
-  font-size: 25px;
-}
-.uploadProductPopUpForm form input {
-  display: block;
-  width: 350px;
-  height: 25px;
-  border-radius: 10px;
-  margin: 20px 0;
-  border: 2px solid black;
-}
-.uploadProductPopUpForm form input:nth-child(6n),
-.uploadProductPopUpForm form input:nth-child(7n) {
-  border: 0;
-}
-.uploadProductPopUpForm form button {
-  display: block;
-  margin: 0 auto;
-  font-size: 15px;
-  cursor: pointer;
-  padding: 5px 60px;
-  border-radius: 10px;
-  background: none;
-  border: 2px solid rgb(121, 227, 121);
-}
-.uploadProductPopUpForm form button:hover {
-  background: rgb(191, 245, 191);
-}
-
-.reviewForm p {
-  margin-bottom: 5px;
-  font-size: 20px;
-}
-.reviewForm input {
-  display: block;
-}
-.reviewForm textarea {
-  margin-bottom: 5px;
-  width: 100%;
-  height: 100px;
-  font-size: 20px;
-}
-.reviewForm button {
-  display: block;
-  font-size: 15px;
-  cursor: pointer;
-  padding: 5px 30px;
-  border-radius: 10px;
-  background: none;
-  margin-top: 10px;
-  border: 2px solid rgb(121, 227, 121);
-}
-.reviewForm button:hover {
-  background: rgb(191, 245, 191);
-}
-
-.popUpForm {
-  position: fixed;
-  top: 30%;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-.popUpForm form {
-  position: relative;
-  border: 2px solid rgb(121, 227, 121);
-  padding: 20px;
-  background: white;
-}
-.popUpForm form .error {
-  background-color: red;
-  font-size: 17px;
-  padding: 10px;
-  border-radius: 10px;
-  margin: 10px;
-}
-.popUpForm form span {
-  position: absolute;
-  top: 0;
-  right: 5px;
-  font-size: 28px;
-  font-weight: bold;
-  cursor: pointer;
-  color: rgb(248, 0, 0);
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-.popUpForm form span:hover {
-  color: rgb(121, 227, 121);
-  transform: rotate(90deg);
-}
-.popUpForm form p {
-  text-align: center;
-  font-size: 25px;
-}
-.popUpForm form input {
-  display: block;
-  width: 350px;
-  height: 25px;
-  border-radius: 10px;
-  margin: 20px 0;
-  border: 2px solid black;
-}
-.popUpForm form button {
-  display: block;
-  margin: 0 auto;
-  font-size: 15px;
-  cursor: pointer;
-  padding: 5px 60px;
-  border-radius: 10px;
-  background: none;
-  border: 2px solid rgb(121, 227, 121);
-}
-.popUpForm form button:hover {
-  background: rgb(191, 245, 191);
 }
 
 .loading {
@@ -844,38 +621,280 @@ header .headerNavbar a span {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.reviews .comment .imageContainer {
+
+.cartEmpty {
+  padding: 100px;
+}
+.cartEmpty p {
+  text-align: center;
+}
+.cartEmpty img {
+  margin: 0 auto;
+  display: block;
+}
+
+.popUpForm {
+  position: fixed;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.popUpForm form {
+  position: relative;
+  border: 2px solid rgb(121, 227, 121);
+  padding: 20px;
+  background: white;
+}
+.popUpForm form span {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  color: rgb(248, 0, 0);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.popUpForm form span:hover {
+  color: rgb(121, 227, 121);
+  transform: rotate(90deg);
+}
+.popUpForm form p {
+  text-align: center;
+}
+.popUpForm form input {
+  display: block;
+  border-radius: 10px;
+  margin: 20px 20px;
+  padding: 5px 10px;
+  border: 2px solid black;
+}
+.popUpForm form button {
+  display: block;
+  margin: 20px auto;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background: none;
+  border: 2px solid rgb(121, 227, 121);
+}
+.popUpForm form button:hover {
+  background: rgb(191, 245, 191);
+}
+
+.reviewForm p {
+  margin-bottom: 5px;
+}
+.reviewForm input {
+  display: block;
+}
+.reviewForm textarea {
+  margin-bottom: 5px;
+  width: 90%;
+  height: 100px;
+}
+.reviewForm button {
+  display: block;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 5px 30px;
+  border-radius: 10px;
+  background: none;
+  margin-top: 10px;
+  border: 2px solid rgb(121, 227, 121);
+}
+.reviewForm button:hover {
+  background: rgb(191, 245, 191);
+}
+
+.imageContainer {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 9999;
+  padding: 20px;
+  box-sizing: border-box;
 }
-.reviews .comment .imageContent {
-  position: relative;
-  height: 80%;
-}
-.reviews .comment .imageContent img {
-  max-width: 100%;
-  max-height: 100%;
+.imageContainer img {
+  max-width: 90%;
+  max-height: 90vh;
+  -o-object-fit: contain;
+     object-fit: contain;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
 }
-.reviews .comment .closeButton {
-  position: absolute;
-  top: -30px;
-  right: -30px;
-  background: white;
+.imageContainer .closeButton {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.9);
   border: none;
   border-radius: 50%;
-  font-size: 20px;
+  font-size: 24px;
   cursor: pointer;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 10000;
+}
+.imageContainer .closeButton:hover {
+  background: white;
+  transform: scale(1.1);
+}
+
+.error {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(220, 53, 69, 0.95);
+  color: white;
+  padding: 12px 20px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  min-width: 280px;
+  max-width: 90%;
+  z-index: 10000;
+  animation: fadeIn 0.3s ease-in-out, fadeOut 0.5s ease-in-out 4.5s;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -20px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+  to {
+    opacity: 0;
+    transform: translate(-50%, -20px);
+  }
+}
+.error .close-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 0;
+  margin-left: auto;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+.error .close-btn:hover {
+  opacity: 1;
+}
+.error .progress-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 0 0 8px 8px;
+  overflow: hidden;
+}
+.error .progress-bar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  animation: progress 5s linear forwards;
+}
+@keyframes progress {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.uploadProductPopUpForm {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.uploadProductPopUpForm form {
+  position: relative;
+  border: 2px solid rgb(121, 227, 121);
+  padding: 20px;
+  background: white;
+}
+.uploadProductPopUpForm form .error {
+  background-color: red;
+  font-size: 17px;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+}
+.uploadProductPopUpForm form span {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  color: rgb(248, 0, 0);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.uploadProductPopUpForm form span:hover {
+  color: rgb(121, 227, 121);
+  transform: rotate(90deg);
+}
+.uploadProductPopUpForm form p {
+  text-align: center;
+  font-size: 25px;
+}
+.uploadProductPopUpForm form input {
+  display: block;
+  width: 350px;
+  height: 25px;
+  border-radius: 10px;
+  margin: 20px 0;
+  border: 2px solid black;
+}
+.uploadProductPopUpForm form input:nth-child(6n),
+.uploadProductPopUpForm form input:nth-child(7n) {
+  border: 0;
+}
+.uploadProductPopUpForm form button {
+  display: block;
+  margin: 0 auto;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 5px 60px;
+  border-radius: 10px;
+  background: none;
+  border: 2px solid rgb(121, 227, 121);
+}
+.uploadProductPopUpForm form button:hover {
+  background: rgb(191, 245, 191);
 }
 
 .updateProduct .viewport {
@@ -979,17 +998,6 @@ header .headerNavbar a span {
   height: 150px;
 }
 
-.cartEmpty {
-  padding: 100px;
-}
-.cartEmpty p {
-  text-align: center;
-}
-.cartEmpty img {
-  margin: 0 auto;
-  display: block;
-}
-
 @media screen and (max-width: 1280px) {
   * {
     font-size: 16px;
@@ -1019,9 +1027,6 @@ header .headerNavbar a span {
   .whyBlock li {
     width: 300px;
   }
-  .panel .view ul li ul {
-    width: 70%;
-  }
 }
 @media screen and (max-width: 1024px) {
   .products ul li p {
@@ -1044,9 +1049,6 @@ header .headerNavbar a span {
     height: 90px;
     width: 90px;
   }
-  .productDetails .view {
-    width: 50%;
-  }
   .productDetails .view img {
     height: 350px;
   }
@@ -1068,9 +1070,6 @@ header .headerNavbar a span {
   }
   .productDetails .information .price {
     margin: 10px 0;
-  }
-  .panel .view ul li ul {
-    width: 90%;
   }
   .cart {
     margin: 0;
@@ -1139,11 +1138,12 @@ header .headerNavbar a span {
   .panel .view {
     margin: 10px 20px;
   }
-  .panel .view ul li ul {
-    width: 100%;
-  }
   .panel .view .deliveryDetails li {
     width: 100%;
+  }
+  .panel .view .orders li nav {
+    justify-content: space-between;
+    padding: 10px 10px;
   }
   .products ul li p {
     max-width: 180px;
@@ -1202,14 +1202,14 @@ header .headerNavbar a span {
     align-items: center;
     text-align: center;
   }
+  .productDetails .information {
+    width: 100%;
+  }
   .productDetails .view {
     width: 80%;
   }
   .productDetails .view img {
     height: 350px;
-  }
-  .productDetails .information {
-    width: 80%;
   }
   .productDetails .information .installation {
     justify-content: center;
@@ -1219,6 +1219,19 @@ header .headerNavbar a span {
   }
   .productDetails .information .description-content {
     text-align: left;
+  }
+  .imageContainer {
+    padding: 10px;
+  }
+  .imageContainer img {
+    max-width: 95%;
+  }
+  .imageContainer .closeButton {
+    top: 10px;
+    right: 10px;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1231,8 +1244,28 @@ header .headerNavbar a span {
   .panel {
     justify-content: space-around;
   }
+  .panel .menu ul li {
+    padding: 10px 0;
+  }
+  .panel .view {
+    margin: 10px 5px;
+    max-width: 250px;
+  }
   .panel .view .userInfo button {
     padding: 5px 5px;
+  }
+  .panel .view .orders {
+    margin: 0;
+  }
+  .panel .view .orders li nav {
+    padding: 5px;
+  }
+  .panel .view .orders li ul {
+    margin: 5px;
+  }
+  .panel .view .orders li ul li img {
+    width: 40px;
+    height: 40px;
   }
   .formLogin input {
     width: 200px;
@@ -1275,5 +1308,15 @@ header .headerNavbar a span {
   .productDetails .view .prev, .productDetails .view .next {
     height: 300px;
     top: 150px;
+  }
+  .imageContainer {
+    padding: 5px;
+  }
+  .imageContainer .closeButton {
+    top: 5px;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
   }
 }/*# sourceMappingURL=index.css.map */

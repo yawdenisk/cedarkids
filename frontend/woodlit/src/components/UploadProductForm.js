@@ -50,7 +50,11 @@ export default function UploadProductForm({setShowUploadProductForm}) {
             <form onSubmit={sendForm}>
                 <p>Add new Product</p>
                 {error &&
-                    <p className="error">{error}</p>
+                    <div className="error">
+                    <span>{error}</span>
+                    <button className="close-btn">✕</button>
+                    <div className="progress-bar"></div>
+                </div>
                 }
                 <span className="close" onClick={() => setShowUploadProductForm(false)}>&#10006;</span>
                 <input name='name' onChange={(e) => setName(e.target.value)} placeholder='Name'></input> 

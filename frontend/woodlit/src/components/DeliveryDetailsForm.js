@@ -40,14 +40,7 @@ export default function DeliveryDetailsForm({setShowDeliveryDetailsForm}) {
 
     return (
         <>
-         {error &&
-                     <div className="error">
-                     <span>{error}</span>
-                     <button className="close-btn" onClick={() => setError(false)}>×</button>
-                     <div className="progress-bar"></div>
-                 </div>
-                }
-                <div className='popUpForm'>
+            <div className='popUpForm'>
             <form onSubmit={sendForm}>
                 <p>New address</p>
                 <span className="close" onClick={() => setShowDeliveryDetailsForm(false)}>&#10006;</span>
