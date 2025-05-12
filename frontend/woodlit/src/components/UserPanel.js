@@ -106,12 +106,11 @@ export default function UserPanel() {
                             </>
                         )}
                         {item == 'orders' && (
-                            <ul>
+                            <ul className='orders'>
                                 {userDetails.orders.map(order => (
                                     <li key={order.id}>
-                                        <ul>
                                             <nav>
-                                                <p style={{background: order.status === 'UNPAID' ? 'rgb(248, 0, 0)' : 'rgb(121, 227, 121)'}}>
+                                                <p style={{color: order.status === 'UNPAID' ? 'rgb(248, 0, 0)' : 'rgb(121, 227, 121)'}}>
                                                     {order.status}
                                                 </p>
                                                 <p>{order.date}</p>
@@ -125,11 +124,11 @@ export default function UserPanel() {
                                                     <a href={order.paymentUrl}>Pay</a>
                                                 }
                                             </nav>
-
+                                            <ul>
                                             {order.cart.map(item =>
                                                 <li key={item.id}>
                                                     <img src={item.product.image}/>
-                                                    <h4>{item.product.name}</h4>
+                                                    <p>{item.product.name}</p>
                                                     {item.installation && (
                                                         <p>+ installation</p>
                                                     )}

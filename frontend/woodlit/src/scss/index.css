@@ -419,6 +419,137 @@ header .headerNavbar a span {
   width: inherit;
 }
 
+.panel {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.panel .menu {
+  text-align: end;
+}
+.panel .menu ul {
+  border-right: 1px solid black;
+  list-style-type: none;
+  padding: 0;
+}
+.panel .menu ul li {
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+.panel .view {
+  margin: 10px 50px;
+}
+.panel .view .userInfo p {
+  margin: 5px 0;
+}
+.panel .view .userInfo span {
+  margin: 5px 0;
+  display: block;
+  border-bottom: 1px solid black;
+}
+.panel .view .userInfo button {
+  margin: 5px 0;
+  cursor: pointer;
+  padding: 3px 30px;
+  border-radius: 10px;
+  background: none;
+  border: 2px solid rgb(121, 227, 121);
+}
+.panel .view .userInfo button:hover {
+  background-color: rgb(191, 245, 191);
+}
+.panel .view .deliveryDetails {
+  list-style-type: none;
+  padding: 0;
+}
+.panel .view .deliveryDetails li {
+  width: 100%;
+  padding: 5px;
+  margin: 5px 0;
+  border: 1px solid rgb(121, 227, 121);
+}
+.panel .view .orders {
+  list-style: none;
+  padding: 0;
+  margin: 0 50px;
+}
+.panel .view .orders li {
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 128, 0, 0.05);
+  overflow: hidden;
+}
+.panel .view .orders li nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5fff5;
+  padding: 15px 25px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.panel .view .orders li nav p {
+  margin: 0;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+.panel .view .orders li nav p:first-child {
+  font-weight: bold;
+}
+.panel .view .orders li nav a {
+  padding: 0.4rem 0.8rem;
+  background-color: #00aa55;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.panel .view .orders li nav a:hover {
+  background-color: #008f47;
+}
+.panel .view .orders li > ul {
+  list-style: none;
+  padding: 1rem 1.5rem;
+}
+.panel .view .orders li > ul li {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+.panel .view .orders li > ul li:last-child {
+  border-bottom: none;
+}
+.panel .view .orders li > ul li img {
+  width: 60px;
+  height: 60px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+.panel .view .orders li > ul li p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #333;
+}
+.panel .view .orders li > ul li p + p {
+  margin-left: 0.5rem;
+  font-style: italic;
+  color: #4caf50;
+}
+.panel .view .orders li > ul li h4 {
+  margin-left: auto;
+  margin-right: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
 .error {
   position: fixed;
   top: 20px;
@@ -747,118 +878,6 @@ header .headerNavbar a span {
   height: 30px;
 }
 
-.panel {
-  display: flex;
-  margin-top: 10px;
-}
-.panel .menu {
-  width: 40%;
-  text-align: end;
-}
-.panel .menu ul {
-  border-right: 1px solid black;
-  list-style-type: none;
-}
-.panel .menu ul li {
-  padding: 10px;
-  margin: 10px;
-  cursor: pointer;
-}
-.panel .view {
-  width: 60%;
-  text-align: start;
-  margin: 10px 50px;
-}
-.panel .view p {
-  margin: 5px;
-  font-size: 20px;
-}
-.panel .view .userInfo p {
-  font-size: 17px;
-}
-.panel .view .userInfo span {
-  display: block;
-  width: 50%;
-  margin: 10px 5px;
-  border-bottom: 1px solid black;
-}
-.panel .view .userInfo button {
-  margin: 5px;
-  font-size: 15px;
-  cursor: pointer;
-  padding: 3px 30px;
-  border-radius: 10px;
-  background: none;
-  border: 2px solid rgb(121, 227, 121);
-}
-.panel .view .userInfo button:hover {
-  background-color: rgb(191, 245, 191);
-}
-.panel .view .deliveryDetails li {
-  width: 50%;
-  margin: 5px;
-  border: 1px solid rgb(121, 227, 121);
-  margin-top: 15px;
-}
-.panel .view .deliveryDetails li p {
-  font-size: 15px;
-}
-.panel .view ul {
-  padding: 0;
-}
-.panel .view ul li {
-  list-style-type: none;
-}
-.panel .view ul li ul {
-  width: 50%;
-  margin-bottom: 20px;
-  padding: 10px;
-  border: 1px solid rgb(121, 227, 121);
-}
-.panel .view ul li ul p {
-  font-size: 17px;
-}
-.panel .view ul li ul nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 0;
-}
-.panel .view ul li ul nav p:first-child {
-  margin: 0;
-  padding: 5px 10px;
-  background: rgb(248, 0, 0);
-  border-radius: 10px;
-}
-.panel .view ul li ul nav a {
-  border: 2px solid rgb(121, 227, 121);
-  font-size: 17px;
-  background: rgb(121, 227, 121);
-  border-radius: 10px;
-  padding: 5px 10px;
-}
-.panel .view ul li ul nav a:hover {
-  background: rgb(191, 245, 191);
-}
-.panel .view ul li ul li {
-  margin-bottom: 5px;
-  display: flex;
-  padding: 5px 0;
-  align-items: center;
-  border-bottom: 1px solid gray;
-  justify-content: space-between;
-}
-.panel .view ul li ul li img {
-  width: 50px;
-  height: 50px;
-}
-.panel .view ul li ul li h4 {
-  font-weight: 300;
-}
-.panel .view ul li ul li:last-child {
-  border: 0;
-}
-
 .updateProduct .viewport {
   display: flex;
   width: 100%;
@@ -1000,6 +1019,9 @@ header .headerNavbar a span {
   .whyBlock li {
     width: 300px;
   }
+  .panel .view ul li ul {
+    width: 70%;
+  }
 }
 @media screen and (max-width: 1024px) {
   .products ul li p {
@@ -1046,6 +1068,9 @@ header .headerNavbar a span {
   }
   .productDetails .information .price {
     margin: 10px 0;
+  }
+  .panel .view ul li ul {
+    width: 90%;
   }
   .cart {
     margin: 0;
@@ -1110,6 +1135,15 @@ header .headerNavbar a span {
   }
   .navigation {
     display: none;
+  }
+  .panel .view {
+    margin: 10px 20px;
+  }
+  .panel .view ul li ul {
+    width: 100%;
+  }
+  .panel .view .deliveryDetails li {
+    width: 100%;
   }
   .products ul li p {
     max-width: 180px;
@@ -1193,6 +1227,12 @@ header .headerNavbar a span {
   }
   .container {
     margin: 0 5px;
+  }
+  .panel {
+    justify-content: space-around;
+  }
+  .panel .view .userInfo button {
+    padding: 5px 5px;
   }
   .formLogin input {
     width: 200px;
