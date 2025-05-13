@@ -9,6 +9,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 15px 0;
+  transition: all 0.3s ease;
 }
 header .burgerMenu {
   display: none;
@@ -20,6 +22,10 @@ header .headerMedia {
 }
 header .headerMedia a img {
   width: 25px;
+  transition: opacity 0.2s ease;
+}
+header .headerMedia a img:hover {
+  opacity: 0.8;
 }
 header .headerNavbar {
   display: flex;
@@ -27,9 +33,14 @@ header .headerNavbar {
 }
 header .headerNavbar a {
   position: relative;
+  transition: transform 0.2s ease;
 }
 header .headerNavbar a img {
   width: 25px;
+  transition: opacity 0.2s ease;
+}
+header .headerNavbar a img:hover {
+  opacity: 0.8;
 }
 header .headerNavbar a span {
   position: absolute;
@@ -72,9 +83,38 @@ header .headerNavbar a span {
   padding: 20px 40px;
   text-decoration: none;
   color: black;
+  position: relative;
+  transition: all 0.3s ease;
 }
 .navigation a:hover {
-  border-bottom: 1px solid black;
+  color: rgb(121, 227, 121);
+}
+.navigation a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: rgb(121, 227, 121);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+.navigation a:hover::after {
+  width: 100%;
+}
+.navigation a button {
+  background: none;
+  border: none;
+  color: black;
+  padding: 0;
+  font-size: inherit;
+}
+.navigation a button:hover {
+  background: none;
+  color: rgb(121, 227, 121);
+  transform: none;
+  box-shadow: none;
 }
 
 .products .filter {
@@ -85,6 +125,10 @@ header .headerNavbar a span {
   background: none;
   border: 0;
   cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.products .filter button:hover {
+  transform: scale(1.1);
 }
 .products ul {
   padding: 0;
@@ -92,6 +136,7 @@ header .headerNavbar a span {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  transition: all 0.3s ease;
 }
 .products ul li {
   list-style-type: none;
@@ -101,6 +146,7 @@ header .headerNavbar a span {
   text-align: center;
   margin: 3px 0;
   max-width: 350px;
+  transition: color 0.3s ease;
 }
 .products ul li .price {
   display: flex;
@@ -122,6 +168,10 @@ header .headerNavbar a span {
   overflow: hidden;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.products ul li img:hover {
+  transform: scale(1.05);
 }
 
 .formLogin {
@@ -140,15 +190,74 @@ header .headerNavbar a span {
   margin: 20px auto;
   border: 1px solid green;
   padding: 10px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.formLogin input:focus {
+  border-color: rgb(121, 227, 121);
+  box-shadow: 0 0 5px rgba(121, 227, 121, 0.3);
+  outline: none;
 }
 .formLogin button {
-  margin: 20px;
-  height: 40px;
-  width: 320px;
-  border-radius: 10px;
-  border: 1px solid green;
   cursor: pointer;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  border: 2px solid rgb(121, 227, 121);
+  background: none;
+  color: rgb(121, 227, 121);
+  padding: 8px 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: inherit;
+}
+.formLogin button:hover {
   background: rgb(121, 227, 121);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(121, 227, 121, 0.2);
+}
+.formLogin button:active {
+  transform: translateY(0);
+}
+.formLogin button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  background: #ccc;
+  border-color: #ccc;
+  color: #666;
+}
+.formLogin button img {
+  width: 20px;
+  height: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.formLogin button.secondary {
+  background: transparent;
+  color: rgb(121, 227, 121);
+}
+.formLogin button.secondary:hover {
+  background: rgba(121, 227, 121, 0.1);
+}
+.formLogin button.small {
+  padding: 4px 12px;
+  font-size: 14px;
+  border-width: 1px;
+}
+.formLogin button.small img {
+  width: 16px;
+  height: 16px;
+}
+.formLogin button.large {
+  padding: 12px 30px;
+  font-size: 18px;
+  border-width: 2px;
+}
+.formLogin button.large img {
+  width: 24px;
+  height: 24px;
 }
 .formLogin a {
   color: rgb(13, 125, 13);
@@ -188,24 +297,40 @@ header .headerNavbar a span {
   align-items: center;
 }
 .cart ul li button {
-  width: 30px;
-  height: 30px;
+  padding: 4px;
+  background: none;
   border: none;
-  cursor: pointer;
-  background-color: white;
+  color: black;
+  transition: transform 0.3s ease;
+}
+.cart ul li button:hover {
+  background: none;
+  transform: scale(1.1);
+  box-shadow: none;
 }
 .cart ul li button img {
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
 }
 .cart ul form ul button {
   margin: 20px 0;
   height: 30px;
   width: 200px;
   border-radius: 10px;
-  border: 1px solid green;
+  border: 2px solid rgb(121, 227, 121);
   cursor: pointer;
   background: rgb(121, 227, 121);
+  color: white;
+  transition: all 0.3s ease;
+}
+.cart ul form ul button:hover {
+  background: rgb(101, 207, 101);
+  border-color: rgb(101, 207, 101);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(121, 227, 121, 0.2);
+}
+.cart ul form ul button:active {
+  transform: translateY(0);
 }
 .cart ul form ul li {
   display: block;
@@ -256,9 +381,11 @@ header .headerNavbar a span {
   color: black;
   border-radius: 10px;
   text-decoration: none;
+  transition: all 0.3s ease;
 }
 .cart .shipment a:hover {
-  background: rgb(191, 245, 191);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(121, 227, 121, 0.2);
 }
 .cart .shipment a:last-child {
   background: none;
@@ -286,15 +413,21 @@ header .headerNavbar a span {
   width: 40px;
   top: 37%;
   height: 500px;
-  background-color: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.3);
   color: white;
   font-size: 30px;
   border: none;
   cursor: pointer;
   z-index: 2;
+  transition: all 0.3s ease;
 }
 .productDetails .view .prev:hover, .productDetails .view .next:hover {
-  background-color: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.6);
+  transform: none;
+  box-shadow: none;
+}
+.productDetails .view .prev:active, .productDetails .view .next:active {
+  transform: translateY(-50%) scale(1);
 }
 .productDetails .view .prev {
   left: 0;
@@ -314,15 +447,26 @@ header .headerNavbar a span {
   background: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;
-  padding: 5px 5px;
+  padding: 8px 12px;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 8px;
   font-size: 20px;
+  transition: all 0.3s ease;
+}
+.productDetails .thumbnail-gallery .thumb-prev:hover,
+.productDetails .thumbnail-gallery .thumb-next:hover {
+  background: rgba(0, 0, 0, 0.7);
+  transform: scale(1.1);
+}
+.productDetails .thumbnail-gallery .thumb-prev:active,
+.productDetails .thumbnail-gallery .thumb-next:active {
+  transform: scale(1);
 }
 .productDetails .thumbnail-gallery .thumb-prev:disabled,
 .productDetails .thumbnail-gallery .thumb-next:disabled {
   opacity: 0.3;
   cursor: not-allowed;
+  transform: none;
 }
 .productDetails .thumbnail-gallery .thumbs-container {
   overflow: hidden;
@@ -342,10 +486,14 @@ header .headerNavbar a span {
   cursor: pointer;
   border: 2px solid transparent;
   border-radius: 5px;
-  transition: 0.3s;
+  transition: all 0.3s ease;
 }
 .productDetails .thumbnail-gallery .thumbs-container .thumbs-wrapper img.active-thumbnail {
   border: 2px solid rgb(121, 227, 121);
+  box-shadow: 0 0 10px rgba(121, 227, 121, 0.5);
+}
+.productDetails .thumbnail-gallery .thumbs-container .thumbs-wrapper img:hover {
+  transform: scale(1.05);
 }
 
 .information {
@@ -364,9 +512,17 @@ header .headerNavbar a span {
   border-radius: 10px;
   background: rgb(121, 227, 121);
   border: 2px solid rgb(121, 227, 121);
+  color: white;
+  transition: all 0.3s ease;
 }
 .information button:hover {
-  background: rgb(191, 245, 191);
+  background: rgb(101, 207, 101);
+  border-color: rgb(101, 207, 101);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(121, 227, 121, 0.2);
+}
+.information button:active {
+  transform: translateY(0);
 }
 .information .price {
   margin: 40px 0;
@@ -436,6 +592,11 @@ header .headerNavbar a span {
   padding: 10px;
   margin: 10px;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+.panel .menu ul li:hover {
+  color: rgb(121, 227, 121);
+  transform: translateX(5px);
 }
 .panel .view {
   margin: 10px 50px;
@@ -455,9 +616,11 @@ header .headerNavbar a span {
   border-radius: 10px;
   background: none;
   border: 2px solid rgb(121, 227, 121);
+  transition: all 0.3s ease;
 }
 .panel .view .userInfo button:hover {
-  background-color: rgb(191, 245, 191);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(121, 227, 121, 0.2);
 }
 .panel .view .deliveryDetails {
   list-style-type: none;
@@ -496,17 +659,25 @@ header .headerNavbar a span {
   font-weight: bold;
 }
 .panel .view .orders li nav a {
-  padding: 5px 10px;
-  background-color: #00aa55;
-  color: #fff;
-  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgb(121, 227, 121);
+  color: white;
+  border: 2px solid rgb(121, 227, 121);
+  padding: 8px 16px;
+  border-radius: 10px;
   text-decoration: none;
-  transition: background-color 0.3s ease;
-  border: 2px solid #00aa55;
+  transition: all 0.3s ease;
 }
 .panel .view .orders li nav a:hover {
-  color: #00aa55;
-  background: none;
+  background: rgb(101, 207, 101);
+  border-color: rgb(101, 207, 101);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(121, 227, 121, 0.2);
+}
+.panel .view .orders li nav a:active {
+  transform: translateY(0);
 }
 .panel .view .orders li ul {
   list-style: none;
@@ -582,13 +753,21 @@ header .headerNavbar a span {
   margin: 10px auto;
   font-size: 15px;
   cursor: pointer;
-  padding: 5px 60px;
+  padding: 8px 20px;
   border-radius: 10px;
   background: none;
   border: 2px solid rgb(121, 227, 121);
+  color: rgb(121, 227, 121);
+  transition: all 0.3s ease;
 }
 .reviewDetails button:hover {
-  background: rgb(191, 245, 191);
+  background: rgb(121, 227, 121);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(121, 227, 121, 0.2);
+}
+.reviewDetails button:active {
+  transform: translateY(0);
 }
 
 .reviews {
@@ -598,6 +777,10 @@ header .headerNavbar a span {
   border-bottom: 1px solid rgba(0, 0, 0, 0.253);
   padding-bottom: 20px;
   margin-top: 20px;
+  transition: all 0.3s ease;
+}
+.reviews .comment:hover {
+  background-color: rgba(121, 227, 121, 0.05);
 }
 .reviews .comment .userInfo {
   display: flex;
@@ -606,6 +789,10 @@ header .headerNavbar a span {
 }
 .reviews .comment .userInfo img {
   width: 50px;
+  transition: transform 0.3s ease;
+}
+.reviews .comment .userInfo img:hover {
+  transform: scale(1.1);
 }
 .reviews .comment ul {
   list-style-type: none;
@@ -621,6 +808,27 @@ header .headerNavbar a span {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.reviews .reviewForm button {
+  width: 100%;
+  max-width: 300px;
+  margin: 10px auto;
+  display: block;
+  background: rgb(121, 227, 121);
+  color: white;
+  border: 2px solid rgb(121, 227, 121);
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.reviews .reviewForm button:hover {
+  background: rgb(101, 207, 101);
+  border-color: rgb(101, 207, 101);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(121, 227, 121, 0.2);
+}
+.reviews .reviewForm button:active {
+  transform: translateY(0);
+}
 
 .cartEmpty {
   padding: 100px;
@@ -633,54 +841,108 @@ header .headerNavbar a span {
   display: block;
 }
 
-.popUpForm {
+.popUpForm, .uploadProductPopUpForm {
   position: fixed;
-  margin: auto;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
   display: flex;
   justify-content: center;
-  width: 100%;
+  align-items: center;
+  z-index: 10000;
 }
-.popUpForm form {
+.popUpForm form, .uploadProductPopUpForm form {
   position: relative;
   border: 2px solid rgb(121, 227, 121);
-  padding: 20px;
+  padding: 30px;
   background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
-.popUpForm form span {
+.popUpForm form .error, .uploadProductPopUpForm form .error {
+  background-color: red;
+  font-size: 17px;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0;
+  color: white;
+}
+.popUpForm form span, .uploadProductPopUpForm form span {
   position: absolute;
-  top: 0;
-  right: 5px;
+  top: 10px;
+  right: 10px;
   font-size: 28px;
   font-weight: bold;
   cursor: pointer;
   color: rgb(248, 0, 0);
-  transition: color 0.3s ease, transform 0.3s ease;
+  transition: all 0.3s ease;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-.popUpForm form span:hover {
-  color: rgb(121, 227, 121);
-  transform: rotate(90deg);
+.popUpForm form span:hover, .uploadProductPopUpForm form span:hover {
+  transform: rotate(90deg) scale(1.1);
+  background: white;
 }
-.popUpForm form p {
+.popUpForm form p, .uploadProductPopUpForm form p {
   text-align: center;
+  font-size: 25px;
+  margin: 0;
+  color: #333;
 }
-.popUpForm form input {
+.popUpForm form input, .uploadProductPopUpForm form input {
   display: block;
-  border-radius: 10px;
-  margin: 20px 20px;
-  padding: 5px 10px;
-  border: 2px solid black;
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  margin: 0;
+  border: 2px solid #ddd;
+  padding: 0 15px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
 }
-.popUpForm form button {
+.popUpForm form input:focus, .uploadProductPopUpForm form input:focus {
+  border-color: rgb(121, 227, 121);
+  box-shadow: 0 0 5px rgba(121, 227, 121, 0.3);
+  outline: none;
+}
+.popUpForm form input[type=file], .uploadProductPopUpForm form input[type=file] {
+  border: none;
+  padding: 10px 0;
+  height: auto;
+}
+.popUpForm form button, .uploadProductPopUpForm form button {
   display: block;
-  margin: 20px auto;
+  margin: 0;
+  font-size: 16px;
   cursor: pointer;
-  padding: 5px 10px;
-  border-radius: 10px;
-  background: none;
+  padding: 10px 40px;
+  border-radius: 8px;
+  background: rgb(121, 227, 121);
   border: 2px solid rgb(121, 227, 121);
+  color: white;
+  transition: all 0.3s ease;
+  align-self: center;
 }
-.popUpForm form button:hover {
-  background: rgb(191, 245, 191);
+.popUpForm form button:hover, .uploadProductPopUpForm form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(121, 227, 121, 0.2);
+}
+.popUpForm form button:active, .uploadProductPopUpForm form button:active {
+  transform: translateY(0);
 }
 
 .reviewForm p {
@@ -698,14 +960,22 @@ header .headerNavbar a span {
   display: block;
   font-size: 15px;
   cursor: pointer;
-  padding: 5px 30px;
+  padding: 8px 20px;
   border-radius: 10px;
   background: none;
-  margin-top: 10px;
   border: 2px solid rgb(121, 227, 121);
+  color: rgb(121, 227, 121);
+  margin-top: 10px;
+  transition: all 0.3s ease;
 }
 .reviewForm button:hover {
-  background: rgb(191, 245, 191);
+  background: rgb(121, 227, 121);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(121, 227, 121, 0.2);
+}
+.reviewForm button:active {
+  transform: translateY(0);
 }
 
 .imageContainer {
@@ -731,25 +1001,29 @@ header .headerNavbar a span {
   border-radius: 8px;
 }
 .imageContainer .closeButton {
-  position: fixed;
+  position: absolute;
   top: 20px;
   right: 20px;
-  background: rgba(255, 255, 255, 0.9);
-  border: none;
-  border-radius: 50%;
-  font-size: 24px;
-  cursor: pointer;
   width: 40px;
   height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  color: #333;
+  font-size: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
-  z-index: 10000;
+  z-index: 2;
 }
 .imageContainer .closeButton:hover {
   background: white;
   transform: scale(1.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.imageContainer .closeButton:active {
+  transform: scale(1);
 }
 
 .error {
@@ -834,69 +1108,6 @@ header .headerNavbar a span {
   }
 }
 
-.uploadProductPopUpForm {
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-.uploadProductPopUpForm form {
-  position: relative;
-  border: 2px solid rgb(121, 227, 121);
-  padding: 20px;
-  background: white;
-}
-.uploadProductPopUpForm form .error {
-  background-color: red;
-  font-size: 17px;
-  padding: 10px;
-  border-radius: 10px;
-  margin: 10px;
-}
-.uploadProductPopUpForm form span {
-  position: absolute;
-  top: 0;
-  right: 5px;
-  font-size: 28px;
-  font-weight: bold;
-  cursor: pointer;
-  color: rgb(248, 0, 0);
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-.uploadProductPopUpForm form span:hover {
-  color: rgb(121, 227, 121);
-  transform: rotate(90deg);
-}
-.uploadProductPopUpForm form p {
-  text-align: center;
-  font-size: 25px;
-}
-.uploadProductPopUpForm form input {
-  display: block;
-  width: 350px;
-  height: 25px;
-  border-radius: 10px;
-  margin: 20px 0;
-  border: 2px solid black;
-}
-.uploadProductPopUpForm form input:nth-child(6n),
-.uploadProductPopUpForm form input:nth-child(7n) {
-  border: 0;
-}
-.uploadProductPopUpForm form button {
-  display: block;
-  margin: 0 auto;
-  font-size: 15px;
-  cursor: pointer;
-  padding: 5px 60px;
-  border-radius: 10px;
-  background: none;
-  border: 2px solid rgb(121, 227, 121);
-}
-.uploadProductPopUpForm form button:hover {
-  background: rgb(191, 245, 191);
-}
-
 .updateProduct .viewport {
   display: flex;
   width: 100%;
@@ -929,6 +1140,38 @@ header .headerNavbar a span {
 .updateProduct .gallery ul {
   justify-content: flex-start;
 }
+.updateProduct .gallery button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  color: #333;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+.updateProduct .gallery button:hover {
+  background: white;
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.updateProduct .gallery button:active {
+  transform: translateY(-50%) scale(1);
+}
+.updateProduct .gallery button.prev {
+  left: 10px;
+}
+.updateProduct .gallery button.next {
+  right: 10px;
+}
+
 .adminPanel {
   margin: 10px 0;
 }
@@ -938,10 +1181,18 @@ header .headerNavbar a span {
   gap: 50px;
 }
 .adminPanel .menu button {
-  cursor: pointer;
   background: none;
-  border: 0;
-  font-size: 15px;
+  border: none;
+  color: black;
+  padding: 0;
+  font-size: inherit;
+  transition: color 0.3s ease;
+}
+.adminPanel .menu button:hover {
+  background: none;
+  color: rgb(121, 227, 121);
+  transform: none;
+  box-shadow: none;
 }
 .adminPanel .view {
   width: -moz-fit-content;
@@ -949,17 +1200,26 @@ header .headerNavbar a span {
   margin: 10px;
 }
 .adminPanel .view .products button {
-  display: block;
-  margin: 20px auto;
-  font-size: 15px;
-  cursor: pointer;
-  padding: 3px 30px;
-  border-radius: 10px;
-  background: none;
   border: 2px solid rgb(121, 227, 121);
+  background: none;
+  color: rgb(121, 227, 121);
+  padding: 8px 16px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
 }
 .adminPanel .view .products button:hover {
-  background-color: rgb(191, 245, 191);
+  background: rgb(121, 227, 121);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(121, 227, 121, 0.2);
+}
+.adminPanel .view .products button:active {
+  transform: translateY(0);
+}
+.adminPanel .view .products button img {
+  width: 16px;
+  height: 16px;
+  margin-left: 8px;
 }
 .adminPanel .view .products ul {
   display: flex;
@@ -998,9 +1258,30 @@ header .headerNavbar a span {
   height: 150px;
 }
 
+.panel .view .userInfo button {
+  border: 2px solid rgb(121, 227, 121);
+  background: none;
+  color: rgb(121, 227, 121);
+  padding: 8px 16px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.panel .view .userInfo button:hover {
+  background: rgb(121, 227, 121);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(121, 227, 121, 0.2);
+}
+.panel .view .userInfo button:active {
+  transform: translateY(0);
+}
+
 @media screen and (max-width: 1280px) {
   * {
     font-size: 16px;
+  }
+  .container {
+    margin: 0 30px;
   }
   .products ul li img {
     width: 300px;
@@ -1009,11 +1290,11 @@ header .headerNavbar a span {
   .products ul li p {
     max-width: 300px;
   }
-  .products ul li .price p {
+  .products ul li .price p, .products ul li .price s {
     font-size: 14px;
   }
-  .products ul li .price s {
-    font-size: 14px;
+  .cartEmpty {
+    padding: 50px;
   }
   .cartEmpty img {
     width: 50px;
@@ -1029,6 +1310,9 @@ header .headerNavbar a span {
   }
 }
 @media screen and (max-width: 1024px) {
+  .container {
+    margin: 0 20px;
+  }
   .products ul li p {
     max-width: 250px;
   }
@@ -1036,10 +1320,7 @@ header .headerNavbar a span {
     width: 250px;
     height: 250px;
   }
-  .products ul li .price p {
-    font-size: 14px;
-  }
-  .products ul li .price s {
+  .products ul li .price p, .products ul li .price s {
     font-size: 14px;
   }
   .productDetails .thumbnail-gallery .thumbs-container {
@@ -1084,6 +1365,9 @@ header .headerNavbar a span {
 @media screen and (max-width: 768px) {
   * {
     font-size: 14px;
+  }
+  .container {
+    margin: 0 15px;
   }
   header .headerNavbar {
     gap: 15px;
@@ -1152,10 +1436,7 @@ header .headerNavbar a span {
     width: 180px;
     height: 180px;
   }
-  .products ul li .price p {
-    font-size: 12px;
-  }
-  .products ul li .price s {
+  .products ul li .price p, .products ul li .price s {
     font-size: 12px;
   }
   .cart {
@@ -1220,26 +1501,29 @@ header .headerNavbar a span {
   .productDetails .information .description-content {
     text-align: left;
   }
-  .imageContainer {
-    padding: 10px;
+  .popUpForm form, .uploadProductPopUpForm form {
+    padding: 20px;
+    width: 95%;
+    gap: 12px;
   }
-  .imageContainer img {
-    max-width: 95%;
-  }
-  .imageContainer .closeButton {
-    top: 10px;
-    right: 10px;
-    width: 35px;
-    height: 35px;
+  .popUpForm form p, .uploadProductPopUpForm form p {
     font-size: 20px;
+  }
+  .popUpForm form input, .uploadProductPopUpForm form input {
+    height: 35px;
+    font-size: 14px;
+  }
+  .popUpForm form button, .uploadProductPopUpForm form button {
+    padding: 8px 30px;
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 480px) {
   * {
-    font-size: 12px;
+    font-size: 13px;
   }
   .container {
-    margin: 0 5px;
+    margin: 0 10px;
   }
   .panel {
     justify-content: space-around;
@@ -1282,41 +1566,180 @@ header .headerNavbar a span {
     width: 150px;
     height: 150px;
   }
-  .products ul li .price p {
+  .products ul li .price p, .products ul li .price s {
     font-size: 10px;
   }
-  .products ul li .price s {
-    font-size: 10px;
+  .cart ul li {
+    padding: 8px;
   }
   .cart ul li img {
     width: 50px;
     height: 50px;
   }
   .cart ul li button img {
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
   }
-  .cartEmpty {
-    padding: 50px 0;
+  .cart .shipment p:first-child {
+    font-size: 20px;
+    margin: 15px 0;
+  }
+  .cart .shipment p {
+    margin: 10px 20px;
+    font-size: 14px;
+  }
+  .cart .shipment a {
+    width: 180px;
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+  .popUpForm form, .uploadProductPopUpForm form {
+    padding: 15px;
+    gap: 10px;
+  }
+  .popUpForm form p, .uploadProductPopUpForm form p {
+    font-size: 18px;
+  }
+  .popUpForm form input, .uploadProductPopUpForm form input {
+    height: 30px;
+    font-size: 13px;
+  }
+  .popUpForm form button, .uploadProductPopUpForm form button {
+    padding: 6px 25px;
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 360px) {
+  * {
+    font-size: 11px;
+  }
+  .container {
+    margin: 0 5px;
+  }
+  .products ul li p {
+    max-width: 120px;
+  }
+  .products ul li img {
+    width: 120px;
+    height: 120px;
+  }
+  .cart ul li img {
+    width: 40px;
+    height: 40px;
   }
   .productDetails .view {
-    width: 90%;
+    width: 95%;
   }
   .productDetails .view img {
-    height: 300px;
+    height: 250px;
   }
   .productDetails .view .prev, .productDetails .view .next {
-    height: 300px;
-    top: 150px;
+    height: 250px;
+    top: 125px;
   }
-  .imageContainer {
-    padding: 5px;
+  .formLogin input {
+    width: 180px;
   }
-  .imageContainer .closeButton {
-    top: 5px;
-    right: 5px;
-    width: 30px;
-    height: 30px;
-    font-size: 18px;
+  .formLogin button {
+    width: 200px;
+  }
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+a.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border: 2px solid rgb(121, 227, 121);
+  background: none;
+  color: rgb(121, 227, 121);
+  transition: all 0.3s ease;
+}
+a.button:hover {
+  background: rgb(121, 227, 121);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(121, 227, 121, 0.2);
+}
+a.button:active {
+  transform: translateY(0);
+}
+a.button img {
+  width: 20px;
+  height: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+a.button.primary {
+  background: rgb(121, 227, 121);
+  color: white;
+}
+a.button.primary:hover {
+  background: rgb(101, 207, 101);
+  border-color: rgb(101, 207, 101);
+}
+a.button.small {
+  padding: 4px 12px;
+  font-size: 14px;
+  border-width: 1px;
+}
+a.button.small img {
+  width: 16px;
+  height: 16px;
+}
+a.button.large {
+  padding: 12px 30px;
+  font-size: 18px;
+  border-width: 2px;
+}
+a.button.large img {
+  width: 24px;
+  height: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  a.button {
+    padding: 6px 16px;
+    font-size: 14px;
+  }
+  a.button img {
+    width: 18px;
+    height: 18px;
+  }
+  a.button.large {
+    padding: 10px 24px;
+    font-size: 16px;
+  }
+  .cart .shipment a {
+    width: 200px;
+    padding: 6px 16px;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 480px) {
+  a.button {
+    padding: 5px 14px;
+    font-size: 13px;
+  }
+  a.button img {
+    width: 16px;
+    height: 16px;
+  }
+  a.button.large {
+    padding: 8px 20px;
+    font-size: 15px;
+  }
+  .cart .shipment a {
+    width: 180px;
+    padding: 5px 14px;
+    font-size: 13px;
   }
 }/*# sourceMappingURL=index.css.map */

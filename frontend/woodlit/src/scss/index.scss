@@ -9,6 +9,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 15px 0;
+  transition: all 0.3s ease;
 
   .burgerMenu {
     display: none;
@@ -22,6 +24,11 @@ header {
     a {
       img {
         width: 25px;
+        transition: opacity 0.2s ease;
+        
+        &:hover {
+          opacity: 0.8;
+        }
       }
     }
   }
@@ -32,9 +39,15 @@ header {
 
     a {
       position: relative;
+      transition: transform 0.2s ease;
 
       img {
         width: 25px;
+        transition: opacity 0.2s ease;
+        
+        &:hover {
+          opacity: 0.8;
+        }
       }
 
       span {
@@ -80,10 +93,43 @@ header {
     padding: 20px 40px;
     text-decoration: none;
     color: black;
-  }
+    position: relative;
+    transition: all 0.3s ease;
+    
+    &:hover {
+      color: rgb(121, 227, 121);
+    }
+    
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background-color: rgb(121, 227, 121);
+      transition: all 0.3s ease;
+      transform: translateX(-50%);
+    }
+    
+    &:hover::after {
+      width: 100%;
+    }
 
-  a:hover {
-    border-bottom: 1px solid black;
+    button {
+      background: none;
+      border: none;
+      color: black;
+      padding: 0;
+      font-size: inherit;
+
+      &:hover {
+        background: none;
+        color: rgb(121, 227, 121);
+        transform: none;
+        box-shadow: none;
+      }
+    }
   }
 }
 
@@ -96,6 +142,11 @@ header {
       background: none;
       border: 0;
       cursor: pointer;
+      transition: transform 0.2s ease;
+      
+      &:hover {
+        transform: scale(1.1);
+      }
     }
   }
 
@@ -105,6 +156,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    transition: all 0.3s ease;
 
     li {
       list-style-type: none;
@@ -113,6 +165,7 @@ header {
         text-align: center;
         margin: 3px 0;
         max-width: 350px;
+        transition: color 0.3s ease;
       }
 
       .price {
@@ -135,6 +188,11 @@ header {
         width: 350px;
         overflow: hidden;
         object-fit: cover;
+        transition: transform 0.3s ease;
+        
+        &:hover {
+          transform: scale(1.05);
+        }
       }
     }
   }
@@ -155,16 +213,85 @@ header {
     margin: 20px auto;
     border: 1px solid green;
     padding: 10px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    
+    &:focus {
+      border-color: rgb(121, 227, 121);
+      box-shadow: 0 0 5px rgba(121, 227, 121, 0.3);
+      outline: none;
+    }
   }
 
   button {
-    margin: 20px;
-    height: 40px;
-    width: 320px;
-    border-radius: 10px;
-    border: 1px solid green;
     cursor: pointer;
-    background: rgb(121, 227, 121);
+    border-radius: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    border: 2px solid rgb(121, 227, 121);
+    background: none;
+    color: rgb(121, 227, 121);
+    padding: 8px 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-family: inherit;
+
+    &:hover {
+      background: rgb(121, 227, 121);
+      color: white;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(121, 227, 121, 0.2);
+    }
+
+    &:active {
+      transform: translateY(0);
+    }
+
+    &:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+      background: #ccc;
+      border-color: #ccc;
+      color: #666;
+    }
+
+    img {
+      width: 20px;
+      height: 20px;
+      object-fit: contain;
+    }
+  }
+
+  button.secondary {
+    background: transparent;
+    color: rgb(121, 227, 121);
+
+    &:hover {
+      background: rgba(121, 227, 121, 0.1);
+    }
+  }
+
+  button.small {
+    padding: 4px 12px;
+    font-size: 14px;
+    border-width: 1px;
+
+    img {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  button.large {
+    padding: 12px 30px;
+    font-size: 18px;
+    border-width: 2px;
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
   }
 
   a {
@@ -200,23 +327,27 @@ header {
         object-fit: cover;
       }
 
-
-
       .counters {
         display: flex;
         align-items: center;
       }
 
       button {
-        width: 30px;
-        height: 30px;
+        padding: 4px;
+        background: none;
         border: none;
-        cursor: pointer;
-        background-color: white;
+        color: black;
+        transition: transform 0.3s ease;
+
+        &:hover {
+          background: none;
+          transform: scale(1.1);
+          box-shadow: none;
+        }
 
         img {
-          width: 20px;
-          height: 20px;
+          width: 16px;
+          height: 16px;
         }
       }
     }
@@ -227,9 +358,22 @@ header {
           height: 30px;
           width: 200px;
           border-radius: 10px;
-          border: 1px solid green;
+          border: 2px solid rgb(121, 227, 121);
           cursor: pointer;
           background: rgb(121, 227, 121);
+          color: white;
+          transition: all 0.3s ease;
+
+          &:hover {
+            background: rgb(101, 207, 101);
+            border-color: rgb(101, 207, 101);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(121, 227, 121, 0.2);
+          }
+
+          &:active {
+            transform: translateY(0);
+          }
         }
         li {
           display: block;
@@ -289,10 +433,12 @@ header {
       color: black;
       border-radius: 10px;
       text-decoration: none;
-    }
-
-    a:hover {
-      background: rgb(191, 245, 191);
+      transition: all 0.3s ease;
+      
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(121, 227, 121, 0.2);
+      }
     }
 
     a:last-child {
@@ -321,15 +467,22 @@ header {
       width: 40px;
       top: 37%;
       height: 500px;
-      background-color: rgba(0, 0, 0, 0.3);
+      background: rgba(0, 0, 0, 0.3);
       color: white;
       font-size: 30px;
       border: none;
       cursor: pointer;
       z-index: 2;
+      transition: all 0.3s ease;
 
       &:hover {
-        background-color: rgba(0, 0, 0, 0.5);
+        background: rgba(0, 0, 0, 0.6);
+        transform: none;
+        box-shadow: none;
+      }
+
+      &:active {
+        transform: translateY(-50%) scale(1);
       }
     }
 
@@ -354,14 +507,25 @@ header {
       background: rgba(0, 0, 0, 0.5);
       color: white;
       border: none;
-      padding: 5px 5px;
+      padding: 8px 12px;
       cursor: pointer;
-      border-radius: 5px;
+      border-radius: 8px;
       font-size: 20px;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: rgba(0, 0, 0, 0.7);
+        transform: scale(1.1);
+      }
+
+      &:active {
+        transform: scale(1);
+      }
 
       &:disabled {
         opacity: 0.3;
         cursor: not-allowed;
+        transform: none;
       }
     }
 
@@ -382,10 +546,15 @@ header {
           cursor: pointer;
           border: 2px solid transparent;
           border-radius: 5px;
-          transition: 0.3s;
+          transition: all 0.3s ease;
 
           &.active-thumbnail {
             border: 2px solid rgb(121, 227, 121);
+            box-shadow: 0 0 10px rgba(121, 227, 121, 0.5);
+          }
+
+          &:hover {
+            transform: scale(1.05);
           }
         }
       }
@@ -409,11 +578,20 @@ header {
     border-radius: 10px;
     background: rgb(121, 227, 121);
     border: 2px solid rgb(121, 227, 121);
-  }
+    color: white;
+    transition: all 0.3s ease;
 
-  button:hover {
-    background: rgb(191, 245, 191);
-  }   
+    &:hover {
+      background: rgb(101, 207, 101);
+      border-color: rgb(101, 207, 101);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(121, 227, 121, 0.2);
+    }
+
+    &:active {
+      transform: translateY(0);
+    }
+  }
 
   .price {
     margin: 40px 0;
@@ -492,6 +670,12 @@ header {
         padding: 10px;
         margin: 10px;
         cursor: pointer;
+        transition: all 0.3s ease;
+        
+        &:hover {
+          color: rgb(121, 227, 121);
+          transform: translateX(5px);
+        }
       }
     }
   }
@@ -515,10 +699,12 @@ header {
         border-radius: 10px;
         background: none;
         border: 2px solid rgb(121, 227, 121);
+        transition: all 0.3s ease;
       }
 
       button:hover {
-        background-color: rgb(191, 245, 191);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(121, 227, 121, 0.2);
       }
     }
 
@@ -560,17 +746,26 @@ header {
           }
     
           a {
-            padding: 5px 10px;
-            background-color: #00aa55;
-            color: #fff;
-            border-radius: 6px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgb(121, 227, 121);
+            color: white;
+            border: 2px solid rgb(121, 227, 121);
+            padding: 8px 16px;
+            border-radius: 10px;
             text-decoration: none;
-            transition: background-color 0.3s ease;
-            border: 2px solid #00aa55;
-    
+            transition: all 0.3s ease;
+
             &:hover {
-              color: #00aa55;
-              background: none;
+              background: rgb(101, 207, 101);
+              border-color: rgb(101, 207, 101);
+              transform: translateY(-2px);
+              box-shadow: 0 4px 8px rgba(121, 227, 121, 0.2);
+            }
+
+            &:active {
+              transform: translateY(0);
             }
           }
         }
@@ -657,14 +852,23 @@ header {
     margin: 10px auto;
     font-size: 15px;
     cursor: pointer;
-    padding: 5px 60px;
+    padding: 8px 20px;
     border-radius: 10px;
     background: none;
     border: 2px solid rgb(121, 227, 121);
-  }
+    color: rgb(121, 227, 121);
+    transition: all 0.3s ease;
 
-  button:hover {
-    background: rgb(191, 245, 191);
+    &:hover {
+      background: rgb(121, 227, 121);
+      color: white;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(121, 227, 121, 0.2);
+    }
+
+    &:active {
+      transform: translateY(0);
+    }
   }
 }
 
@@ -675,6 +879,11 @@ header {
     border-bottom: 1px solid rgba(0, 0, 0, 0.253);
     padding-bottom: 20px;
     margin-top: 20px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: rgba(121, 227, 121, 0.05);
+    }
 
     .userInfo {
       display: flex;
@@ -683,6 +892,11 @@ header {
 
       img {
         width: 50px;
+        transition: transform 0.3s ease;
+        
+        &:hover {
+          transform: scale(1.1);
+        }
       }
     }
 
@@ -703,6 +917,32 @@ header {
       }
     }
   }
+
+  .reviewForm {
+    button {
+      width: 100%;
+      max-width: 300px;
+      margin: 10px auto;
+      display: block;
+      background: rgb(121, 227, 121);
+      color: white;
+      border: 2px solid rgb(121, 227, 121);
+      padding: 10px 20px;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: rgb(101, 207, 101);
+        border-color: rgb(101, 207, 101);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(121, 227, 121, 0.2);
+      }
+
+      &:active {
+        transform: translateY(0);
+      }
+    }
+  }
 }
 .cartEmpty {
   padding: 100px;
@@ -716,59 +956,117 @@ header {
     display: block;
   }
 }
-.popUpForm {
+.popUpForm, .uploadProductPopUpForm {
   position: fixed;
-  margin: auto;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
   display: flex;
   justify-content: center;
-  width: 100%;
+  align-items: center;
+  z-index: 10000;
 
   form {
     position: relative;
     border: 2px solid rgb(121, 227, 121);
-    padding: 20px;
+    padding: 30px;
     background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    .error {
+      background-color: red;
+      font-size: 17px;
+      padding: 10px;
+      border-radius: 10px;
+      margin: 0;
+      color: white;
+    }
 
     span {
       position: absolute;
-      top: 0;
-      right: 5px;
+      top: 10px;
+      right: 10px;
       font-size: 28px;
       font-weight: bold;
       cursor: pointer;
       color: rgb(248, 0, 0);
-      transition: color 0.3s ease, transform 0.3s ease;
-    }
+      transition: all 0.3s ease;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 
-    span:hover {
-      color: rgb(121, 227, 121);
-      transform: rotate(90deg);
+      &:hover {
+        transform: rotate(90deg) scale(1.1);
+        background: white;
+      }
     }
 
     p {
       text-align: center;
+      font-size: 25px;
+      margin: 0;
+      color: #333;
     }
 
     input {
       display: block;
-      border-radius: 10px;
-      margin: 20px 20px;
-      padding: 5px 10px;
-      border: 2px solid black;
+      width: 100%;
+      height: 40px;
+      border-radius: 8px;
+      margin: 0;
+      border: 2px solid #ddd;
+      padding: 0 15px;
+      font-size: 16px;
+      transition: all 0.3s ease;
+      box-sizing: border-box;
+
+      &:focus {
+        border-color: rgb(121, 227, 121);
+        box-shadow: 0 0 5px rgba(121, 227, 121, 0.3);
+        outline: none;
+      }
+    }
+
+    input[type="file"] {
+      border: none;
+      padding: 10px 0;
+      height: auto;
     }
 
     button {
       display: block;
-      margin: 20px auto;
+      margin: 0;
+      font-size: 16px;
       cursor: pointer;
-      padding: 5px 10px;
-      border-radius: 10px;
-      background: none;
+      padding: 10px 40px;
+      border-radius: 8px;
+      background: rgb(121, 227, 121);
       border: 2px solid rgb(121, 227, 121);
-    }
+      color: white;
+      transition: all 0.3s ease;
+      align-self: center;
 
-    button:hover {
-      background: rgb(191, 245, 191);
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(121, 227, 121, 0.2);
+      }
+
+      &:active {
+        transform: translateY(0);
+      }
     }
   }
 }
@@ -791,15 +1089,24 @@ header {
     display: block;
     font-size: 15px;
     cursor: pointer;
-    padding: 5px 30px;
+    padding: 8px 20px;
     border-radius: 10px;
     background: none;
-    margin-top: 10px;
     border: 2px solid rgb(121, 227, 121);
-  }
+    color: rgb(121, 227, 121);
+    margin-top: 10px;
+    transition: all 0.3s ease;
 
-  button:hover {
-    background: rgb(191, 245, 191);
+    &:hover {
+      background: rgb(121, 227, 121);
+      color: white;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(121, 227, 121, 0.2);
+    }
+
+    &:active {
+      transform: translateY(0);
+    }
   }
 }
 .imageContainer {
@@ -825,25 +1132,30 @@ header {
   }
   
   .closeButton {
-    position: fixed;
+    position: absolute;
     top: 20px;
     right: 20px;
-    background: rgba(255, 255, 255, 0.9);
-    border: none;
-    border-radius: 50%;
-    font-size: 24px;
-    cursor: pointer;
     width: 40px;
     height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    color: #333;
+    font-size: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
-    z-index: 10000;
+    z-index: 2;
 
     &:hover {
       background: white;
       transform: scale(1.1);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    &:active {
+      transform: scale(1);
     }
   }
 }
@@ -937,78 +1249,6 @@ header {
   }
 }
 
-.uploadProductPopUpForm {
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-
-  form {
-    position: relative;
-    border: 2px solid rgb(121, 227, 121);
-    padding: 20px;
-    background: white;
-
-    .error {
-      background-color: red;
-      font-size: 17px;
-      padding: 10px;
-      border-radius: 10px;
-      margin: 10px;
-    }
-
-    span {
-      position: absolute;
-      top: 0;
-      right: 5px;
-      font-size: 28px;
-      font-weight: bold;
-      cursor: pointer;
-      color: rgb(248, 0, 0);
-      transition: color 0.3s ease, transform 0.3s ease;
-    }
-
-    span:hover {
-      color: rgb(121, 227, 121);
-      transform: rotate(90deg);
-    }
-
-    p {
-      text-align: center;
-      font-size: 25px;
-    }
-
-    input {
-      display: block;
-      width: 350px;
-      height: 25px;
-      border-radius: 10px;
-      margin: 20px 0;
-      border: 2px solid black;
-    }
-
-    input:nth-child(6n),
-    input:nth-child(7n) {
-      border: 0;
-    }
-
-    button {
-      display: block;
-      margin: 0 auto;
-      font-size: 15px;
-      cursor: pointer;
-      padding: 5px 60px;
-      border-radius: 10px;
-      background: none;
-      border: 2px solid rgb(121, 227, 121);
-    }
-
-    button:hover {
-      background: rgb(191, 245, 191);
-    }
-  }
-}
-
 .updateProduct {
   .viewport {
     display: flex;
@@ -1051,6 +1291,42 @@ header {
       li {
       }
     }
+
+    button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.9);
+      border: none;
+      color: #333;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+      z-index: 2;
+
+      &:hover {
+        background: white;
+        transform: translateY(-50%) scale(1.1);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      &:active {
+        transform: translateY(-50%) scale(1);
+      }
+
+      &.prev {
+        left: 10px;
+      }
+
+      &.next {
+        right: 10px;
+      }
+    }
   }
 }
 
@@ -1063,10 +1339,19 @@ header {
     gap: 50px;
 
     button {
-      cursor: pointer;
       background: none;
-      border: 0;
-      font-size: 15px;
+      border: none;
+      color: black;
+      padding: 0;
+      font-size: inherit;
+      transition: color 0.3s ease;
+
+      &:hover {
+        background: none;
+        color: rgb(121, 227, 121);
+        transform: none;
+        box-shadow: none;
+      }
     }
   }
 
@@ -1076,18 +1361,29 @@ header {
 
     .products {
       button {
-        display: block;
-        margin: 20px auto;
-        font-size: 15px;
-        cursor: pointer;
-        padding: 3px 30px;
-        border-radius: 10px;
-        background: none;
         border: 2px solid rgb(121, 227, 121);
-      }
+        background: none;
+        color: rgb(121, 227, 121);
+        padding: 8px 16px;
+        border-radius: 10px;
+        transition: all 0.3s ease;
 
-      button:hover {
-        background-color: rgb(191, 245, 191);
+        &:hover {
+          background: rgb(121, 227, 121);
+          color: white;
+          transform: translateY(-2px);
+          box-shadow: 0 4px 8px rgba(121, 227, 121, 0.2);
+        }
+
+        &:active {
+          transform: translateY(0);
+        }
+
+        img {
+          width: 16px;
+          height: 16px;
+          margin-left: 8px;
+        }
       }
 
       ul {
@@ -1133,93 +1429,112 @@ header {
     }
   }
 }
+
+.panel {
+  .view .userInfo {
+    button {
+      border: 2px solid rgb(121, 227, 121);
+      background: none;
+      color: rgb(121, 227, 121);
+      padding: 8px 16px;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: rgb(121, 227, 121);
+        color: white;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(121, 227, 121, 0.2);
+      }
+
+      &:active {
+        transform: translateY(0);
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 1280px) {
-  *{
+  * {
     font-size: 16px;
   }
-  .products{
-    ul{
-      li{
-        img{
+  .container {
+    margin: 0 30px;
+  }
+  .products {
+    ul {
+      li {
+        img {
           width: 300px;
           height: 300px;
         }
-        p{
+        p {
           max-width: 300px;
         }
-        .price{
-          p{
-            font-size: 14px;
-          }
-          s{
+        .price {
+          p, s {
             font-size: 14px;
           }
         }
       }
     }
   }
-  .cartEmpty{
-    img{
+  .cartEmpty {
+    padding: 50px;
+    img {
       width: 50px;
     }
   }
-  .productDetails{
-    .view{
+  .productDetails {
+    .view {
       width: 50%;
     }
-    .information{
+    .information {
       width: 40%;
     }
   }
-  .whyBlock{
-      li{
-        width: 300px;
-      }
+  .whyBlock {
+    li {
+      width: 300px;
     }
-    .panel{
-      .view{
-        ul{
-         
-        }
-      }
-    }
+  }
 }
 @media screen and (max-width: 1024px) {
-  .products{
-    ul{
-      li{
-        p{
+  .container {
+    margin: 0 20px;
+  }
+  .products {
+    ul {
+      li {
+        p {
           max-width: 250px;
         }
-        img{
+        img {
           width: 250px;
           height: 250px;
         }
-        .price{
-          p{
-            font-size: 14px;
-          }
-          s{
+        .price {
+          p, s {
             font-size: 14px;
           }
         }
       }
     }
   }
-  .productDetails{
-    .thumbnail-gallery{
-      .thumbs-container{
+  .productDetails {
+    .thumbnail-gallery {
+      .thumbs-container {
         height: 100px;
-        .thumbs-wrapper{
-          img{
+        .thumbs-wrapper {
+          img {
             height: 90px;
             width: 90px;
           }
         }
       }
     }
-    .view{
-      img{
+    .view {
+      img {
         height: 350px;
       }
       .prev, .next {
@@ -1229,42 +1544,45 @@ header {
         font-size: 20px;
       }
     }
-    .information{
+    .information {
       width: 40%;
-      button{
+      button {
         margin: 10px 0;
         padding: 5px 50px;
       }
-    .description{
-      ul{
-        li{
-          padding: 0 10px;
+      .description {
+        ul {
+          li {
+            padding: 0 10px;
+          }
         }
       }
-    }
-      .price{
+      .price {
         margin: 10px 0;
       }
     }
   }
-  .cart{
+  .cart {
     margin: 0;
-    .shipment{
+    .shipment {
       max-height: 270px;
     }
   }
-  .whyBlock{
-    li{
+  .whyBlock {
+    li {
       width: 200px;
     }
   }
 }
 @media screen and (max-width: 768px) {
-  *{
+  * {
     font-size: 14px;
   }
+  .container {
+    margin: 0 15px;
+  }
   header {
-    .headerNavbar{
+    .headerNavbar {
       gap: 15px;
     }
     .burgerMenu {
@@ -1315,176 +1633,177 @@ header {
     .headerMedia {
       display: none;
     }
-    .logo{
+    .logo {
       width: 150px;
     }
   }
   .navigation {
     display: none;
   }
-  .panel{
-    .view{
-      margin: 10px 20px ;
-      .deliveryDetails{
-        li{
+  .panel {
+    .view {
+      margin: 10px 20px;
+      .deliveryDetails {
+        li {
           width: 100%;
         }
       }
-
-          .orders{
-            li{
-              nav{
-                justify-content: space-between;
-                padding: 10px 10px;
-              }
-            }
+      .orders {
+        li {
+          nav {
+            justify-content: space-between;
+            padding: 10px 10px;
           }
-
+        }
+      }
     }
   }
-  .products{
-    ul{
-      li{
-        p{
+  .products {
+    ul {
+      li {
+        p {
           max-width: 180px;
         }
-        img{
+        img {
           width: 180px;
-          height: 180px;  
+          height: 180px;
         }
-        .price{
-          p{
-            font-size: 12px;
-          }
-          s{
+        .price {
+          p, s {
             font-size: 12px;
           }
         }
       }
     }
   }
-  .cart{
+  .cart {
     width: 100%;
     display: block;
-    ul{
+    ul {
       width: 100%;
-      form{
-        input{
+      form {
+        input {
           display: block;
           width: 50%;
           margin: 10px auto;
         }
-        ul{
-          button{
+        ul {
+          button {
             margin: 10px 0;
           }
         }
       }
-    }   
-    .shipment{  
+    }
+    .shipment {
       display: block;
       margin: 0 auto;
       width: 100%;
       height: 200px;
-      p:first-child{
+      p:first-child {
         margin: 10px 0;
       }
-      p{
+      p {
         text-align: center;
         margin: 5px;
       }
-      a{
+      a {
         width: 200px;
       }
     }
   }
-  .whyBlock{
+  .whyBlock {
     flex-direction: column;
     align-items: center;
-    li{
+    li {
       margin: 20px 0;
       width: 80%;
     }
   }
-  .productDetails{
+  .productDetails {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    .information{
+    .information {
       width: 100%;
     }
-    .view{
+    .view {
       width: 80%;
-      img{
+      img {
         height: 350px;
       }
     }
-    .information{
-      .installation{
+    .information {
+      .installation {
         justify-content: center;
       }
-      .description{
-        ul{
+      .description {
+        ul {
           justify-content: center;
         }
       }
-      .description-content{
+      .description-content {
         text-align: left;
       }
     }
   }
-  .imageContainer {
-    padding: 10px;
-    
-    img {
-      max-width: 95%;
-    }
-    
-    .closeButton {
-      top: 10px;
-      right: 10px;
-      width: 35px;
-      height: 35px;
-      font-size: 20px;
+  .popUpForm, .uploadProductPopUpForm {
+    form {
+      padding: 20px;
+      width: 95%;
+      gap: 12px;
+
+      p {
+        font-size: 20px;
+      }
+
+      input {
+        height: 35px;
+        font-size: 14px;
+      }
+
+      button {
+        padding: 8px 30px;
+        font-size: 14px;
+      }
     }
   }
 }
 @media screen and (max-width: 480px) {
-  *{
-    font-size: 12px;
+  * {
+    font-size: 13px;
   }
-  .container{
-    margin:0 5px;
+  .container {
+    margin: 0 10px;
   }
-  .panel{
+  .panel {
     justify-content: space-around;
-    .menu{
-      ul{
-        li{
+    .menu {
+      ul {
+        li {
           padding: 10px 0;
         }
       }
     }
-    .view{
+    .view {
       margin: 10px 5px;
       max-width: 250px;
-      .userInfo{
-        button{
+      .userInfo {
+        button {
           padding: 5px 5px;
         }
       }
-      .orders{
+      .orders {
         margin: 0;
-        li{
-          nav{
-              padding: 5px;
+        li {
+          nav {
+            padding: 5px;
           }
-          ul{
+          ul {
             margin: 5px;
-            li{
-              img{
-                  width: 40px;
-                  height: 40px;
+            li {
+              img {
+                width: 40px;
+                height: 40px;
               }
             }
           }
@@ -1492,77 +1811,265 @@ header {
       }
     }
   }
-  .formLogin{
-    input{
+  .formLogin {
+    input {
       width: 200px;
       height: 20px;
     }
-    button{
+    button {
       width: 220px;
       height: 40px;
     }
   }
-  .products{
-    ul{
-      li{
-        p{
+  .products {
+    ul {
+      li {
+        p {
           max-width: 150px;
         }
-        img{
+        img {
           width: 150px;
-          height: 150px;  
+          height: 150px;
         }
-        .price{
-          p{
-            font-size: 10px;
-          }
-          s{
+        .price {
+          p, s {
             font-size: 10px;
           }
         }
       }
     }
   }
-  .cart{
-    ul{
-      li{
-        img{
+  .cart {
+    ul {
+      li {
+        padding: 8px;
+        
+        img {
           width: 50px;
           height: 50px;
         }
-        button{
-          img{
-            width: 10px;
-            height: 10px;
+
+        button {
+          img {
+            width: 12px;
+            height: 12px;
           }
         }
       }
     }
-  }
-  .cartEmpty{
-    padding: 50px 0;
-  }
-  .productDetails{
-    .view{
-      width: 90%;
-      img{
-        height: 300px;
+    .shipment {
+      p:first-child {
+        font-size: 20px;
+        margin: 15px 0;
       }
-      .prev , .next{
-        height: 300px;
-        top: 150px;
+
+      p {
+        margin: 10px 20px;
+        font-size: 14px;
+      }
+
+      a {
+        width: 180px;
+        padding: 6px 12px;
+        font-size: 13px;
       }
     }
   }
-  .imageContainer {
-    padding: 5px;
-    
-    .closeButton {
-      top: 5px;
-      right: 5px;
-      width: 30px;
-      height: 30px;
+  .popUpForm, .uploadProductPopUpForm {
+    form {
+      padding: 15px;
+      gap: 10px;
+
+      p {
+        font-size: 18px;
+      }
+
+      input {
+        height: 30px;
+        font-size: 13px;
+      }
+
+      button {
+        padding: 6px 25px;
+        font-size: 13px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 360px) {
+  * {
+    font-size: 11px;
+  }
+  .container {
+    margin: 0 5px;
+  }
+  .products {
+    ul {
+      li {
+        p {
+          max-width: 120px;
+        }
+        img {
+          width: 120px;
+          height: 120px;
+        }
+      }
+    }
+  }
+  .cart {
+    ul {
+      li {
+        img {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+  }
+  .productDetails {
+    .view {
+      width: 95%;
+      img {
+        height: 250px;
+      }
+      .prev, .next {
+        height: 250px;
+        top: 125px;
+      }
+    }
+  }
+  .formLogin {
+    input {
+      width: 180px;
+    }
+    button {
+      width: 200px;
+    }
+  }
+}
+
+// Стили для ссылочных кнопок
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+
+  &.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid rgb(121, 227, 121);
+    background: none;
+    color: rgb(121, 227, 121);
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: rgb(121, 227, 121);
+      color: white;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(121, 227, 121, 0.2);
+    }
+
+    &:active {
+      transform: translateY(0);
+    }
+
+    img {
+      width: 20px;
+      height: 20px;
+      object-fit: contain;
+    }
+
+    &.primary {
+      background: rgb(121, 227, 121);
+      color: white;
+
+      &:hover {
+        background: rgb(101, 207, 101);
+        border-color: rgb(101, 207, 101);
+      }
+    }
+
+    &.small {
+      padding: 4px 12px;
+      font-size: 14px;
+      border-width: 1px;
+
+      img {
+        width: 16px;
+        height: 16px;
+      }
+    }
+
+    &.large {
+      padding: 12px 30px;
       font-size: 18px;
+      border-width: 2px;
+
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}
+
+// Медиа-запросы для адаптивности ссылочных кнопок
+@media screen and (max-width: 768px) {
+  a.button {
+    padding: 6px 16px;
+    font-size: 14px;
+
+    img {
+      width: 18px;
+      height: 18px;
+    }
+
+    &.large {
+      padding: 10px 24px;
+      font-size: 16px;
+    }
+  }
+
+  .cart {
+    .shipment {
+      a {
+        width: 200px;
+        padding: 6px 16px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  a.button {
+    padding: 5px 14px;
+    font-size: 13px;
+
+    img {
+      width: 16px;
+      height: 16px;
+    }
+
+    &.large {
+      padding: 8px 20px;
+      font-size: 15px;
+    }
+  }
+
+  .cart {
+    .shipment {
+      a {
+        width: 180px;
+        padding: 5px 14px;
+        font-size: 13px;
+      }
     }
   }
 }
