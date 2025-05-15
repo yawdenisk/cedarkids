@@ -2,7 +2,7 @@
   margin: 0;
   max-width: 100%;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 header {  
@@ -45,9 +45,6 @@ header {
         width: 25px;
         transition: opacity 0.2s ease;
         
-        &:hover {
-          opacity: 0.8;
-        }
       }
 
       span {
@@ -448,6 +445,7 @@ header {
   }
 }
 .productDetails {
+  margin-top: 20px;
   display: flex;
   justify-content: space-between;
   .view {
@@ -473,16 +471,14 @@ header {
       border: none;
       cursor: pointer;
       z-index: 2;
-      transition: all 0.3s ease;
+      transition: background-color 0.3s ease;
 
       &:hover {
         background: rgba(0, 0, 0, 0.6);
-        transform: none;
-        box-shadow: none;
       }
 
       &:active {
-        transform: translateY(-50%) scale(1);
+        background: rgba(0, 0, 0, 0.7);
       }
     }
 
@@ -511,21 +507,15 @@ header {
       cursor: pointer;
       border-radius: 8px;
       font-size: 20px;
-      transition: all 0.3s ease;
+      transition: background-color 0.3s ease;
 
       &:hover {
         background: rgba(0, 0, 0, 0.7);
-        transform: scale(1.1);
-      }
-
-      &:active {
-        transform: scale(1);
       }
 
       &:disabled {
         opacity: 0.3;
         cursor: not-allowed;
-        transform: none;
       }
     }
 
@@ -566,13 +556,13 @@ header {
 .information {
   width: 50%;
   h1{
-    font-size: 35px;
+    font-size: 32px;
     margin: 20px 0;
     font-weight: 400;
   }
   button {
     margin: 30px 0;
-    font-size: 15px;
+    font-size: 16px;
     cursor: pointer;
     padding: 10px 100px;
     border-radius: 10px;
@@ -597,9 +587,11 @@ header {
     margin: 40px 0;
     p {
       display: inline;
+      font-size: 24px;
     }
     s {
       margin: 0 10px;
+      font-size: 20px;
     }
   }
 
@@ -614,6 +606,7 @@ header {
 
     p {
       margin: 0;
+      font-size: 16px;
     }
   }
 
@@ -627,6 +620,7 @@ header {
         padding: 10px 20px;
         list-style-type: none;
         cursor: pointer;
+        font-size: 16px;
       }
     }
   }
@@ -1456,7 +1450,7 @@ header {
 
 @media screen and (max-width: 1280px) {
   * {
-    font-size: 16px;
+    font-size: 15px;
   }
   .container {
     margin: 0 30px;
@@ -1576,7 +1570,7 @@ header {
 }
 @media screen and (max-width: 768px) {
   * {
-    font-size: 14px;
+    font-size: 13px;
   }
   .container {
     margin: 0 15px;
@@ -1770,7 +1764,7 @@ header {
 }
 @media screen and (max-width: 480px) {
   * {
-    font-size: 13px;
+    font-size: 12px;
   }
   .container {
     margin: 0 10px;
@@ -2070,6 +2064,203 @@ a {
         padding: 5px 14px;
         font-size: 13px;
       }
+    }
+  }
+}
+
+.footer {
+  background-color: #f8f8f8;
+  padding: 60px 0 20px;
+  margin-top: 60px;
+  border-top: 1px solid #eee;
+
+  .footer-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin-bottom: 40px;
+
+    .footer-section {
+      h3 {
+        color: rgb(121, 227, 121);
+        font-size: 24px;
+        margin-bottom: 15px;
+      }
+
+      h4 {
+        font-size: 18px;
+        margin-bottom: 15px;
+        color: #333;
+      }
+
+      p {
+        color: #666;
+        line-height: 1.6;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+          margin-bottom: 10px;
+
+          a {
+            color: #666;
+            text-decoration: none;
+            transition: color 0.3s ease;
+
+            &:hover {
+              color: rgb(121, 227, 121);
+            }
+          }
+        }
+      }
+
+      .social-links {
+        display: flex;
+        gap: 15px;
+
+        a {
+          color: #666;
+          text-decoration: none;
+          transition: color 0.3s ease;
+
+          &:hover {
+            color: rgb(121, 227, 121);
+          }
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #666;
+    font-size: 14px;
+
+    .creator {
+      a {
+        color: rgb(121, 227, 121);
+        text-decoration: none;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: rgb(101, 207, 101);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .footer {
+    .footer-content {
+      gap: 30px;
+      
+      .footer-section {
+        h3 {
+          font-size: 22px;
+        }
+        
+        h4 {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .footer {
+    padding: 50px 0 20px;
+    
+    .footer-content {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      
+      .footer-section {
+        h3 {
+          font-size: 20px;
+        }
+        
+        h4 {
+          font-size: 16px;
+        }
+        
+        p, li, .social-links a {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 40px 0 20px;
+    margin-top: 40px;
+
+    .footer-content {
+      grid-template-columns: 1fr;
+      gap: 25px;
+      text-align: center;
+      
+      .footer-section {
+        h3 {
+          font-size: 20px;
+        }
+        
+        h4 {
+          font-size: 16px;
+          margin-top: 20px;
+        }
+        
+        .social-links {
+          justify-content: center;
+        }
+      }
+    }
+
+    .footer-bottom {
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+      font-size: 13px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+    padding: 30px 0 15px;
+    margin-top: 30px;
+
+    .footer-content {
+      gap: 20px;
+      
+      .footer-section {
+        h3 {
+          font-size: 18px;
+        }
+        
+        h4 {
+          font-size: 15px;
+        }
+        
+        p, li, .social-links a {
+          font-size: 13px;
+        }
+      }
+    }
+
+    .footer-bottom {
+      font-size: 12px;
     }
   }
 }
