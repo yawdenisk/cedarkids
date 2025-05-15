@@ -24,7 +24,7 @@ export default function ReviewForm({ setShowReviewForm, product }) {
         });
     
         try {
-            await axios.post('http://localhost:8081/review/upload', formData, {
+            await axios.post('https://cedarkid.work.gd/api/review/upload', formData, {
                 headers: { 'Content-Type': 'multipart/form-data' }
             });
             window.location.reload();

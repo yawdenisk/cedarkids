@@ -21,7 +21,7 @@ export default function ProductDetails({cart, setCart}) {
     const [currentImage, setCurrentImage] = useState();
 
     useEffect(() => {
-        axios.get(`http://localhost:8081/product/get/${id}`)
+        axios.get(`https://cedarkid.work.gd/api/product/get/${id}`)
             .then(response => {
                 setProduct(response.data);
                 const images = [response.data.image, ...response.data.gallery.map(img => img.imageUrl)];

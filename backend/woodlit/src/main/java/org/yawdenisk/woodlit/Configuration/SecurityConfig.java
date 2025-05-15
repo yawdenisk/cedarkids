@@ -18,7 +18,7 @@ public class SecurityConfig {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowedOrigins(List.of("http://localhost:3000", "http://localhost:8080"));
+        configuration.setAllowedOrigins(List.of("http://localhost:3000", "http://localhost:8080", "https://cedarkid.work.gd"));
         configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE"));
         configuration.setAllowedHeaders(List.of("Content-Type", "Authorization"));
         configuration.setAllowCredentials(true);
@@ -34,7 +34,7 @@ public class SecurityConfig {
                 .cors(cors -> cors.configurationSource(corsConfigurationSource()))
                 .authorizeRequests(authorizeRequests ->
                         authorizeRequests
-                                .requestMatchers("/review/upload", "/product/upload","/order/create", "/product/get/{id}", "/product/getAll", "/user/create", "/user/login")
+                                .requestMatchers("/api/user/login", "/api/user/create", "/api/product/**", "/api/order/create", "/api/review/upload")
                                 .permitAll()
                                 .anyRequest().authenticated());
         http.oauth2ResourceServer(resourceServer -> {

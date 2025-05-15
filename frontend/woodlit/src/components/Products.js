@@ -6,7 +6,7 @@ import loading from '../images/loading.svg'
 export default function Products() {
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        axios.get('http://localhost:8081/product/getAll')
+        axios.get('https://cedarkid.work.gd/api/product/getAll')
             .then(responce => {
                 setProducts(responce.data);
             })

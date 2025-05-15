@@ -26,7 +26,7 @@ export default function Cart({cart, setCart}) {
 
     async function fetchUserDetails() {
         try {
-            const response = await axios.get('http://localhost:8081/user/getUserDetails', {
+            const response = await axios.get('https://cedarkid.work.gd/api/user/getUserDetails', {
                 headers: {
                     'Authorization': `Bearer ${localStorage.getItem("access_tocken")}`
                 }
@@ -51,7 +51,7 @@ export default function Cart({cart, setCart}) {
     }
 
     async function createOrder() {
-        const response = await axios.post('http://localhost:8081/order/create', {
+        const response = await axios.post('https://cedarkid.work.gd/api//order/create', {
                 cart,
                 user: {
                     email: email || userDetails.email,

@@ -35,7 +35,7 @@ export default function UploadProductForm({setShowUploadProductForm}) {
         });
     
         try {
-            await axios.post('http://localhost:8081/product/upload', formData, {
+            await axios.post('https://cedarkid.work.gd/api/product/upload', formData, {
                 headers: { 'Content-Type': 'multipart/form-data' }
             });
             window.location.reload();

@@ -23,7 +23,7 @@ public class DeliveryDetailsController {
     private UserService userService;
     @Autowired
     private KeycloakService keycloakService;
-    @PostMapping("/create")
+    @PostMapping("/api/create")
     public ResponseEntity<String> createDeliveryDetails(@RequestBody DeliveryDetails deliveryDetails,
                                                         @RequestHeader("Authorization") String token){
         try{

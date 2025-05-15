@@ -11,7 +11,7 @@ export default function DeliveryDetailsForm({setShowUserDetailsForm}) {
         e.preventDefault();
         setError(null);
         try {
-            await axios.put('http://localhost:8081/user/update/', {
+            await axios.put('https://cedarkid.work.gd/api/user/update/', {
                 firstName,
                 lastName
             }, {
