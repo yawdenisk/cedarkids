@@ -31,9 +31,9 @@ public class Product {
     private Float lastPrice;
     @Column(nullable = false)
     private Float installationPrice;
-    @Column(nullable = false)
+    @Column(nullable = false, length = 1024)
     private String demensions;
-    @Column(nullable = false)
+    @Column(nullable = false, length = 1024)
     private String construction;
 
     @OneToMany(mappedBy = "product")

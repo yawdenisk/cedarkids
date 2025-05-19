@@ -36,7 +36,7 @@ public class UserController {
             userService.createUser(userRequest);
             return ResponseEntity.ok().body("User created successfully");
         } catch (Exception e) {
-            return ResponseEntity.badRequest().body("Error creating user");
+            return ResponseEntity.badRequest().body("Error creating user" + e.getMessage());
         }
     }
 

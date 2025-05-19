@@ -39,7 +39,7 @@ public class SecurityConfig {
                                 .anyRequest().authenticated());
         http.oauth2ResourceServer(resourceServer -> {
             resourceServer.jwt(jwtDecoder -> {
-                jwtDecoder.jwkSetUri("http://localhost:8080/realms/cedarkids/protocol/openid-connect/certs");
+                jwtDecoder.jwkSetUri("https://cedarkid.work.gd/auth/realms/cedarkids/protocol/openid-connect/certs");
             });
         });
         return http.build();
