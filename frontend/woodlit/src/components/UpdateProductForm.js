@@ -32,8 +32,11 @@ export default function UpdateProductForm({currentProduct, setCurrentProduct}) {
         formData.append("name", currentProduct.name);
         formData.append("price", currentProduct.price);
         formData.append("lastPrice", currentProduct.lastPrice);
+        formData.append("installationPrice", currentProduct.installationPrice);
         formData.append("description", currentProduct.description);
         formData.append("features", currentProduct.features);
+        formData.append("construction", currentProduct.construction);
+        formData.append("demensions", currentProduct.demensions);
     
         if (newImage) {
             formData.append("image", newImage); 
@@ -72,10 +75,18 @@ export default function UpdateProductForm({currentProduct, setCurrentProduct}) {
                 <input type="number" name="price" value={currentProduct.price} onChange={handleInputChange}/>
                 <label>LastPrice</label>
                 <input type="number" name="lastPrice" value={currentProduct.lastPrice} onChange={handleInputChange}/>
+                 <label>LastPrice</label>
+                <input type="number" name="installationPrice" value={currentProduct.installationPrice} onChange={handleInputChange}/>
                 <label>Features</label>
                 <textarea name="features" value={currentProduct.features} onChange={handleInputChange}/>
                 <label>Description</label>
                 <textarea name="description" value={currentProduct.description} onChange={handleInputChange}/>
+                 <label>Construction</label>
+                <textarea name="construction" value={currentProduct.construction} onChange={handleInputChange}/>
+                 <label>Demensions</label>
+                <textarea name="demensions" value={currentProduct.demensions} onChange={handleInputChange}/>
+                 <label>Features</label>
+                <textarea name="features" value={currentProduct.features} onChange={handleInputChange}/>
             </form>
             <img src={currentProduct.image} alt="Product"/>
             </div>
