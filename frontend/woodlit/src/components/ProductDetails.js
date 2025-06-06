@@ -21,7 +21,7 @@ export default function ProductDetails({cart, setCart}) {
     const [currentImage, setCurrentImage] = useState();
 
     useEffect(() => {
-        axios.get(`https://cedarkid.work.gd/api/product/get/${id}`)
+        axios.get(`http://localhost:8081/api/product/get/${id}`)
             .then(response => {
                 setProduct(response.data);
                 const images = [response.data.image, ...response.data.gallery.map(img => img.imageUrl)];
@@ -57,12 +57,13 @@ export default function ProductDetails({cart, setCart}) {
         return <div className='loading'><img src={loading} alt='Loading'/></div>;
     }
 
-    const formattedFeatures = product.features.split("\n").map((line, index) => (
+    const formattedFeatures = product.features ? product.features.split("\n").map((line, index) => (
         <span key={index}>{line}<br/></span>
-    ));
-    const formattedDemensions = product.demensions.split("\n").map((line, index) => (
+    )) : [];
+
+    const formattedDemensions = product.demensions ? product.demensions.split("\n").map((line, index) => (
         <span key={index}>{line}<br/></span>
-    ));
+    )) : [];
 
     const maxVisibleThumbs = 3;
 
@@ -147,32 +148,10 @@ export default function ProductDetails({cart, setCart}) {
                         <p>installation + € {(product.installationPrice).toFixed(2)}</p>
                     </div>
                     <button onClick={() => addToCart(product.id, installation)}>ADD TO CART</button>
-                    <div className='description'>
-                        <ul>
-                            <li onClick={() => setActiveTab('description')}
-                                style={{borderBottom: activeTab === 'description' ? '1px solid black' : 'none'}}>DESCRIPTION
-                            </li>
-                            <li onClick={() => setActiveTab('features')}
-                                style={{borderBottom: activeTab === 'features' ? '1px solid black' : 'none'}}>FEATURES
-                            </li>
-                            <li onClick={() => setActiveTab('construction')}
-                                style={{borderBottom: activeTab === 'construction' ? '1px solid black' : 'none'}}>ALL-CEDAR
-                                CONSTRUCTION
-                            </li>
-                        </ul>
-                        <div className="description-content">
-                            {activeTab === 'description' && <p>{product.description}</p>}
-                            {activeTab === 'features' && <p>{formattedFeatures}</p>}
-                            {activeTab === 'construction' && (
-                                <p>The Cedar Cove is made from 100% cedar. With small, tight knot structure, your lumber
-                                    will be less likely to develop small cracks emanating from knots. In laboratory
-                                    testing, our durable cedar wood proved to be rot resistant and highly resistant to
-                                    natural decay. All lumber is pre-stained for a smooth and clear appearance, as well
-                                    as cut and stamped with the part number to help speed up the building process. Some
-                                    pilot-hole drilling may be required. </p>
-                            )}
+                        <div className="description">
+                            <h5>Description</h5>
+                            <p>{product.description}</p>
                         </div>
-                    </div>
                 </div>
 
             </div>
@@ -183,7 +162,7 @@ export default function ProductDetails({cart, setCart}) {
                     <h1>High Quality Design</h1>
                     <p>We work hard to make sure your swing set features design elements as stylish as they are
                         strong. From the materials to the colors to the overall aesthetic, these are swing sets
-                        you’ll be proud to have in your backyard. </p>
+                        you'll be proud to have in your backyard. </p>
                 </li>
                 <li>
                     <img src={cert}/>
@@ -195,7 +174,7 @@ export default function ProductDetails({cart, setCart}) {
                     <img src={warranty}/>
                     <h1>Warranty and Assembly</h1>
                     <p>With a 5 Year Limited Warranty and 3D interactive assembly instructions with the BILT® app,
-                        you’ll be supported from the very beginning for years and years of backyard fun.</p>
+                        you'll be supported from the very beginning for years and years of backyard fun.</p>
                 </li>
             </ul>
             <div className='demensions'>

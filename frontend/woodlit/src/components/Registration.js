@@ -24,7 +24,7 @@ export default function Registration() {
             return;
         }
         try {
-            await axios.post('https://cedarkid.work.gd/api/user/create', {
+            await axios.post('https://cedarkids.eu/api/user/create', {
                 password,
                 email,
                 firstName,

@@ -25,11 +25,9 @@ public class ProductController {
     public ResponseEntity<String> uploadProduct(@RequestParam("name") String name,
                                                 @RequestParam("description") String description,
                                                 @RequestParam("demensions") String demensions,
-                                                @RequestParam("construction") String construction,
                                                 @RequestParam("price") float price,
                                                 @RequestParam("lastPrice") float lastPrice,
                                                 @RequestParam("installationPrice") float installationPrice,
-                                                @RequestParam("features") String features,
                                                 @RequestParam("image") MultipartFile image,
                                                 @RequestParam("gallery") List<MultipartFile> gallery) {
         try {
@@ -44,9 +42,7 @@ public class ProductController {
             product.setDescription(description);
             product.setPrice(price);
             product.setLastPrice(lastPrice);
-            product.setConstruction(construction);
             product.setImage(imageUrl);
-            product.setFeatures(features);
             product.setInstallationPrice(installationPrice);
             product.setDemensions(demensions);
             for (MultipartFile multipartFile : gallery) {
@@ -93,9 +89,7 @@ public class ProductController {
             if (name != null) product.setName(name);
             if (description != null) product.setDescription(description);
             if (demensions != null) product.setDemensions(demensions);
-            if (construction != null) product.setConstruction(construction);
             if (price != null) product.setPrice(price);
-            if (features != null) product.setFeatures(features);
             if (features != null) product.setLastPrice(lastPrice);
             if (image != null) {
                 s3Client.deleteObject(request -> request.bucket("woodlit").key(product.getImage()));

@@ -26,15 +26,11 @@ public class Product {
     @Column(nullable = false)
     private Float price;
     @Column(nullable = false, length = 1024)
-    private String features;
-    @Column(nullable = false)
     private Float lastPrice;
     @Column(nullable = false)
     private Float installationPrice;
     @Column(nullable = false, length = 1024)
     private String demensions;
-    @Column(nullable = false, length = 1024)
-    private String construction;
 
     @OneToMany(mappedBy = "product")
     private List<Review> reviews = new ArrayList<>();

@@ -50,7 +50,7 @@ export default function UpdateProductForm({currentProduct, setCurrentProduct}) {
     
         try {
             await axios.put(
-                `https://cedarkid.work.gd/api/product/update/${currentProduct.id}`,
+                `https://cedarkids.eu/product/update/${currentProduct.id}`,
                 formData,
                 {
                     headers: { "Content-Type": "multipart/form-data" }
