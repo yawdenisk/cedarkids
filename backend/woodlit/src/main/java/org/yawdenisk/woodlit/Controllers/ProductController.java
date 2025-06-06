@@ -25,24 +25,31 @@ public class ProductController {
     public ResponseEntity<String> uploadProduct(@RequestParam("name") String name,
                                                 @RequestParam("description") String description,
                                                 @RequestParam("demensions") String demensions,
+                                                @RequestParam("composition") String composition,
                                                 @RequestParam("price") float price,
                                                 @RequestParam("lastPrice") float lastPrice,
                                                 @RequestParam("installationPrice") float installationPrice,
                                                 @RequestParam("image") MultipartFile image,
+                                                @RequestParam("compositionImage") MultipartFile compositionImage,
                                                 @RequestParam("gallery") List<MultipartFile> gallery) {
         try {
-            if (image.isEmpty() && gallery.isEmpty()) {
-                return ResponseEntity.badRequest().body("Image file and gallery is empty");
+            if (image.isEmpty() && compositionImage.isEmpty() && gallery.isEmpty()) {
+                return ResponseEntity.badRequest().body("Image file or gallery or compositionImage is empty");
             }
             String fileName = System.currentTimeMillis() + "_" + image.getOriginalFilename();
             s3Client.putObject(request -> request.bucket("woodlit").key(fileName), RequestBody.fromBytes(image.getBytes()));
             String imageUrl = "https://woodlit.s3.amazonaws.com/" + fileName;
+            String fileCompositionName = System.currentTimeMillis() + "_" + compositionImage.getOriginalFilename();
+            s3Client.putObject(request -> request.bucket("woodlit").key(fileCompositionName), RequestBody.fromBytes(compositionImage.getBytes()));
+            String compositionImageUrl = "https://woodlit.s3.amazonaws.com/" + fileCompositionName;
             Product product = new Product();
             product.setName(name);
             product.setDescription(description);
+            product.setComposition(composition);
             product.setPrice(price);
             product.setLastPrice(lastPrice);
             product.setImage(imageUrl);
+            product.setComposition(compositionImageUrl);
             product.setInstallationPrice(installationPrice);
             product.setDemensions(demensions);
             for (MultipartFile multipartFile : gallery) {
@@ -66,6 +73,7 @@ public class ProductController {
         try {
             Product product = productService.getProductById(id).orElseThrow(() -> new ProductNotFoundException());
             s3Client.deleteObject(request -> request.bucket("woodlit").key(product.getImage()));
+            s3Client.deleteObject(request -> request.bucket("woodlit").key(product.getCompositionImage()));
             productService.deleteProduct(id);
             return ResponseEntity.ok("Product deleted sucessfully");
         } catch (Exception e) {
@@ -79,16 +87,18 @@ public class ProductController {
                                                 @RequestParam(required = false, name = "name") String name,
                                                 @RequestParam(required = false, name = "description") String description,
                                                 @RequestParam(required = false, name = "demensions") String demensions,
-                                                @RequestParam(required = false, name = "construction") String construction,
+                                                @RequestParam(required = false, name = "composition") String composition,
                                                 @RequestParam(required = false, name = "price") Float price,
                                                 @RequestParam(required = false, name = "features") String features,
                                                 @RequestParam(required = false, name = "image") MultipartFile image,
+                                                @RequestParam(required = false, name = "compositionImage") MultipartFile compositionImage,
                                                 @RequestParam(required = false, name = "gallery") List<MultipartFile> gallery) {
         try {
             Product product = productService.getProductById(id).orElseThrow(ProductNotFoundException::new);
             if (name != null) product.setName(name);
             if (description != null) product.setDescription(description);
             if (demensions != null) product.setDemensions(demensions);
+            if (composition != null) product.setComposition(composition);
             if (price != null) product.setPrice(price);
             if (features != null) product.setLastPrice(lastPrice);
             if (image != null) {
@@ -96,6 +106,13 @@ public class ProductController {
                 String fileName = System.currentTimeMillis() + "_" + image.getOriginalFilename();
                 s3Client.putObject(request -> request.bucket("woodlit").key(fileName), RequestBody.fromBytes(image.getBytes()));
                 String imageUrl = "https://woodlit.s3.amazonaws.com/" + fileName;
+                product.setImage(imageUrl);
+            }
+            if (compositionImage != null) {
+                s3Client.deleteObject(request -> request.bucket("woodlit").key(product.getCompositionImage()));
+                String fileCompositionName = System.currentTimeMillis() + "_" + compositionImage.getOriginalFilename();
+                s3Client.putObject(request -> request.bucket("woodlit").key(fileCompositionName), RequestBody.fromBytes(compositionImage.getBytes()));
+                String imageUrl = "https://woodlit.s3.amazonaws.com/" + fileCompositionName;
                 product.setImage(imageUrl);
             }
             if(gallery != null &&   !gallery.isEmpty()){

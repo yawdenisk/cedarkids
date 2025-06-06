@@ -21,16 +21,20 @@ public class Product {
     private String name;
     @Column(nullable = false)
     private String image;
+    @Column(nullable = false)
+    private String compositionImage;
     @Column(nullable = false, length = 1024)
     private String description;
     @Column(nullable = false)
     private Float price;
-    @Column(nullable = false, length = 1024)
+    @Column(nullable = false)
     private Float lastPrice;
     @Column(nullable = false)
     private Float installationPrice;
     @Column(nullable = false, length = 1024)
     private String demensions;
+    @Column(nullable = false, length = 1024)
+    private String composition;
 
     @OneToMany(mappedBy = "product")
     private List<Review> reviews = new ArrayList<>();
