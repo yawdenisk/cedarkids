@@ -7,9 +7,9 @@ export default function UploadProductForm({setShowUploadProductForm}) {
     const [price, setPrice] = useState(null);
     const [lastPrice, setLastPrice] = useState(null);
     const [description, setDescription] = useState(null);
-     const [construction, setConstruction] = useState(null);
-    const [features, setFeatures] = useState(null);
+    const [composition, setComposition] = useState(null);
     const [image, setImage] = useState(null);
+    const [compositionImage, setCompositionImage] = useState(null);
     const [demensions, setDemensions] = useState(null);
     const [installationPrice, setInstallationPrice] = useState(null);
      const [galleryImages, setGalleryImages] = useState([]);
@@ -27,17 +27,17 @@ export default function UploadProductForm({setShowUploadProductForm}) {
         formData.append("price", price);
         formData.append("lastPrice", lastPrice);
         formData.append("description", description);
-        formData.append("construction", construction);
+        formData.append("composition", composition);
         formData.append("demensions", demensions);
-        formData.append("features", features);
         formData.append("image", image); 
+        formData.append("compositionImage", compositionImage); 
         
         galleryImages.forEach((file, index) => {
             formData.append(`gallery`, file); 
         });
     
         try {
-            await axios.post('https://cedarkids.eu/api/product/upload', formData, {
+            await axios.post('http://localhost:8081/api/product/upload', formData, {
                 headers: { 'Content-Type': 'multipart/form-data' }
             });
             window.location.reload();
@@ -64,10 +64,10 @@ export default function UploadProductForm({setShowUploadProductForm}) {
                 <input name='lastPrice' onChange={(e) => setLastPrice(e.target.value)} placeholder='Last Price'></input>
                 <input name='installationPrice' onChange={(e) => setInstallationPrice(e.target.value)} placeholder='Installation Price'></input>
                 <input name='description' onChange={(e) => setDescription(e.target.value)} placeholder='Description'></input>
-                <input name='construction' onChange={(e) => setConstruction(e.target.value)} placeholder='Construction'></input>
                 <textarea name='demensions' onChange={(e) => setDemensions(e.target.value)} placeholder='Demensions'></textarea>
-                <textarea name='features' onChange={(e) => setFeatures(e.target.value)} placeholder='Features'></textarea>
+                <textarea name='composition' onChange={(e) => setComposition(e.target.value)} placeholder='Composition'></textarea>
                     <input type='file' onChange={(e) => setImage(e.target.files[0])} placeholder='Image' />
+                    <input type='file' onChange={(e) => setCompositionImage(e.target.files[0])} placeholder='Composition Image' />
                 <input type='file' multiple onChange={(e) => setGalleryImages(Array.from(e.target.files))} placeholder='Gallery'></input>
                 <button type='submit'>Submit</button>
             </form>

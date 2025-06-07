@@ -49,7 +49,7 @@ public class ProductController {
             product.setPrice(price);
             product.setLastPrice(lastPrice);
             product.setImage(imageUrl);
-            product.setComposition(compositionImageUrl);
+            product.setCompositionImage(compositionImageUrl);
             product.setInstallationPrice(installationPrice);
             product.setDemensions(demensions);
             for (MultipartFile multipartFile : gallery) {
