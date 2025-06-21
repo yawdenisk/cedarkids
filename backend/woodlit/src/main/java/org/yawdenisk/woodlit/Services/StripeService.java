@@ -17,7 +17,8 @@ import java.util.List;
 public class StripeService {
     @Value("${stripe.secret}")
     private String stripeSecret;
-    public StripeResponse checkoutProducts(List<CartItem> cart){
+
+    public StripeResponse checkoutProducts(List<CartItem> cart) {
         Stripe.apiKey = stripeSecret;
         List<SessionCreateParams.LineItem> lineItems = new ArrayList<>();
         for (CartItem cartItem : cart) {
@@ -46,7 +47,7 @@ public class StripeService {
                         .addAllLineItem(lineItems)
                         .build();
         Session session = null;
-        try{
+        try {
             session = Session.create(params);
         } catch (StripeException e) {
             throw new RuntimeException(e);

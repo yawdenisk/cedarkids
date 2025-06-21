@@ -34,11 +34,7 @@ public class Order {
     private User user;
 
     @ManyToMany(cascade = CascadeType.ALL)
-    @JoinTable(
-            name = "order_cart_item",
-            joinColumns = @JoinColumn(name = "order_id"),
-            inverseJoinColumns = @JoinColumn(name = "cart_item_id")
-    )
+    @JoinTable(name = "order_cart_item", joinColumns = @JoinColumn(name = "order_id"), inverseJoinColumns = @JoinColumn(name = "cart_item_id"))
     private List<CartItem> cart = new ArrayList<>();
 
     @ManyToOne

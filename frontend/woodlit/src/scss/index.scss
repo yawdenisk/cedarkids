@@ -4,7 +4,6 @@
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 16px;
 }
-
 header {  
   display: flex;
   justify-content: space-between;
@@ -444,6 +443,16 @@ header {
     }
   }
 }
+.composition{
+    display: flex;
+    align-items: center;
+    img{
+      width: 50%;
+    }
+    ul{
+      margin: 20px 0;
+    }
+  }
 .productDetails {
   margin-top: 20px;
   display: flex;
@@ -1773,6 +1782,15 @@ header {
   .container {
     margin: 0 15px;
   }
+  .composition{
+    display: block;
+    img{
+      width: 100%;
+    }
+    ul{
+      margin: 20px 0;
+    }
+  }
   header {
     .headerNavbar {
       gap: 15px;
@@ -1925,6 +1943,9 @@ header {
       }
     }
     .information {
+      .price{
+        justify-content: center;
+      }
       .installation {
         justify-content: center;
       }
@@ -2140,7 +2161,6 @@ header {
   }
 }
 
-// Стили для ссылочных кнопок
 a {
   text-decoration: none;
   color: inherit;
@@ -2211,7 +2231,6 @@ a {
   }
 }
 
-// Медиа-запросы для адаптивности ссылочных кнопок
 @media screen and (max-width: 768px) {
   a.button {
     padding: 6px 16px;
@@ -2357,6 +2376,15 @@ a {
 }
 
 @media screen and (max-width: 1280px) {
+  .composition{
+    display: flex;
+    img{
+      width: 50%;
+    }
+    ul{
+      margin: 20px 0;
+    }
+  }
   .footer {
     .footer-content {
       gap: 30px;
@@ -2375,6 +2403,15 @@ a {
 }
 
 @media screen and (max-width: 1024px) {
+  .composition{
+    display: flex;
+    img{
+      width: 50%;
+    }
+    ul{
+      margin: 20px 0;
+    }
+  }
   .footer {
     padding: 50px 0 20px;
     
@@ -2400,6 +2437,15 @@ a {
 }
 
 @media screen and (max-width: 768px) {
+  .composition{
+    display: block;
+    img{
+      width: 100%;
+    }
+    ul{
+      margin: 20px 0;
+    }
+  }
   .footer {
     padding: 40px 0 20px;
     margin-top: 40px;
@@ -2435,6 +2481,12 @@ a {
 }
 
 @media screen and (max-width: 480px) {
+   .composition{
+    display: block;
+    ul{
+      margin: 20px 0;
+    }
+  }
   .footer {
     padding: 30px 0 15px;
     margin-top: 30px;

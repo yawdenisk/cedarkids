@@ -9,6 +9,7 @@ export default function UploadProductForm({setShowUploadProductForm}) {
     const [description, setDescription] = useState(null);
     const [composition, setComposition] = useState(null);
     const [image, setImage] = useState(null);
+    const [movie, setMovie] = useState(null);
     const [compositionImage, setCompositionImage] = useState(null);
     const [demensions, setDemensions] = useState(null);
     const [installationPrice, setInstallationPrice] = useState(null);
@@ -30,6 +31,7 @@ export default function UploadProductForm({setShowUploadProductForm}) {
         formData.append("composition", composition);
         formData.append("demensions", demensions);
         formData.append("image", image); 
+        formData.append("movie", movie); 
         formData.append("compositionImage", compositionImage); 
         
         galleryImages.forEach((file, index) => {
@@ -68,6 +70,7 @@ export default function UploadProductForm({setShowUploadProductForm}) {
                 <textarea name='composition' onChange={(e) => setComposition(e.target.value)} placeholder='Composition'></textarea>
                     <input type='file' onChange={(e) => setImage(e.target.files[0])} placeholder='Image' />
                     <input type='file' onChange={(e) => setCompositionImage(e.target.files[0])} placeholder='Composition Image' />
+                    <input type='file' onChange={(e) => setMovie(e.target.files[0])} placeholder='Movie' />
                 <input type='file' multiple onChange={(e) => setGalleryImages(Array.from(e.target.files))} placeholder='Gallery'></input>
                 <button type='submit'>Submit</button>
             </form>

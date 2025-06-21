@@ -185,19 +185,12 @@ export default function ProductDetails({cart, setCart}) {
             </div>
 
             <div className='composition'>
-                <h2>Skład zestawu</h2>
-                <div className='composition-content'>
-                    <div className='composition-list'>
+                        <img src={product.compositionImage} alt="Composition" />
                         <ul>
                             {product.composition && product.composition.split("\n").map((item, index) => (
                                 <li key={index}>{item}</li>
                             ))}
                         </ul>
-                    </div>
-                    <div className='composition-image'>
-                        <img src={product.compositionImage} alt="Composition" />
-                    </div>
-                </div>
             </div>
 
             <div className='reviewDetails'>

@@ -31,6 +31,7 @@ public class ProductController {
                                                 @RequestParam("installationPrice") float installationPrice,
                                                 @RequestParam("image") MultipartFile image,
                                                 @RequestParam("compositionImage") MultipartFile compositionImage,
+                                                @RequestParam("movie") MultipartFile movie,
                                                 @RequestParam("gallery") List<MultipartFile> gallery) {
         try {
             if (image.isEmpty() && compositionImage.isEmpty() && gallery.isEmpty()) {
@@ -42,6 +43,9 @@ public class ProductController {
             String fileCompositionName = System.currentTimeMillis() + "_" + compositionImage.getOriginalFilename();
             s3Client.putObject(request -> request.bucket("woodlit").key(fileCompositionName), RequestBody.fromBytes(compositionImage.getBytes()));
             String compositionImageUrl = "https://woodlit.s3.amazonaws.com/" + fileCompositionName;
+            String movieName = System.currentTimeMillis() + "_" + movie.getOriginalFilename();
+            s3Client.putObject(request -> request.bucket("woodlit").key(movieName), RequestBody.fromBytes(movie.getBytes()));
+            String movieUrl = "https://woodlit.s3.amazonaws.com/" + movieName;
             Product product = new Product();
             product.setName(name);
             product.setDescription(description);
@@ -49,6 +53,7 @@ public class ProductController {
             product.setPrice(price);
             product.setLastPrice(lastPrice);
             product.setImage(imageUrl);
+            product.setMovie(movieUrl);
             product.setCompositionImage(compositionImageUrl);
             product.setInstallationPrice(installationPrice);
             product.setDemensions(demensions);

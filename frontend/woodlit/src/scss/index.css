@@ -389,6 +389,17 @@ header .headerNavbar a span {
   border: 2px solid rgb(121, 227, 121);
 }
 
+.composition {
+  display: flex;
+  align-items: center;
+}
+.composition img {
+  width: 50%;
+}
+.composition ul {
+  margin: 20px 0;
+}
+
 .productDetails {
   margin-top: 20px;
   display: flex;
@@ -485,10 +496,11 @@ header .headerNavbar a span {
 .productDetails .thumbnail-gallery .thumbs-container .thumbs-wrapper img:hover {
   transform: scale(1.05);
 }
-.productDetails .information {
+
+.information {
   width: 50%;
 }
-.productDetails .information h1 {
+.information h1 {
   font-size: 28px;
   margin: 20px 0;
   font-weight: 400;
@@ -496,45 +508,44 @@ header .headerNavbar a span {
   line-height: 1.3;
   letter-spacing: -0.5px;
 }
-.productDetails .information .price {
+.information .price {
   margin: 25px 0;
   display: flex;
   align-items: baseline;
   gap: 12px;
-  justify-content: flex-start;
 }
-.productDetails .information .price p {
+.information .price p {
   display: inline;
   font-size: 24px;
   font-weight: 500;
   color: #333;
 }
-.productDetails .information .price s {
+.information .price s {
   margin: 0;
   font-size: 16px;
   color: #999;
   text-decoration-thickness: 1px;
 }
-.productDetails .information .description {
+.information .description {
   margin-top: 30px;
   padding: 25px;
   background: #f8f8f8;
   border-radius: 12px;
 }
-.productDetails .information .description h5 {
+.information .description h5 {
   font-size: 18px;
   font-weight: 500;
   color: #333;
   margin-bottom: 15px;
   letter-spacing: -0.3px;
 }
-.productDetails .information .description p {
+.information .description p {
   font-size: 15px;
   line-height: 1.6;
   color: #666;
   margin: 0;
 }
-.productDetails .information button {
+.information button {
   margin: 30px 0;
   font-size: 15px;
   cursor: pointer;
@@ -547,29 +558,28 @@ header .headerNavbar a span {
   font-weight: 500;
   letter-spacing: 0.3px;
 }
-.productDetails .information button:hover {
+.information button:hover {
   background: rgb(101, 207, 101);
   border-color: rgb(101, 207, 101);
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(121, 227, 121, 0.2);
 }
-.productDetails .information button:active {
+.information button:active {
   transform: translateY(0);
 }
-.productDetails .information .installation {
+.information .installation {
   display: flex;
   margin: 15px 0;
   gap: 10px;
   align-items: center;
-  justify-content: flex-start;
 }
-.productDetails .information .installation input[type=checkbox] {
+.information .installation input[type=checkbox] {
   width: 18px;
   height: 18px;
   accent-color: rgb(121, 227, 121);
   cursor: pointer;
 }
-.productDetails .information .installation p {
+.information .installation p {
   margin: 0;
   font-size: 15px;
   color: #666;
@@ -1540,6 +1550,15 @@ header .headerNavbar a span {
   .container {
     margin: 0 15px;
   }
+  .composition {
+    display: block;
+  }
+  .composition img {
+    width: 100%;
+  }
+  .composition ul {
+    margin: 20px 0;
+  }
   header .headerNavbar {
     gap: 15px;
   }
@@ -1656,24 +1675,24 @@ header .headerNavbar a span {
   }
   .productDetails .information {
     width: 100%;
-    text-align: center;
+  }
+  .productDetails .view {
+    width: 80%;
+  }
+  .productDetails .view img {
+    height: 350px;
   }
   .productDetails .information .price {
     justify-content: center;
-    margin: 15px auto;
-  }
-  .productDetails .information .price p {
-    font-size: 20px;
-  }
-  .productDetails .information .price s {
-    font-size: 14px;
   }
   .productDetails .information .installation {
     justify-content: center;
-    margin: 15px auto;
   }
-  .productDetails .information .installation p {
-    font-size: 14px;
+  .productDetails .information .description ul {
+    justify-content: center;
+  }
+  .productDetails .information .description-content {
+    text-align: left;
   }
   .popUpForm form, .uploadProductPopUpForm form {
     padding: 20px;
@@ -1780,15 +1799,6 @@ header .headerNavbar a span {
   }
   .popUpForm form button, .uploadProductPopUpForm form button {
     padding: 6px 25px;
-    font-size: 13px;
-  }
-  .productDetails .information .price p {
-    font-size: 18px;
-  }
-  .productDetails .information .price s {
-    font-size: 12px;
-  }
-  .productDetails .information .installation p {
     font-size: 13px;
   }
 }
@@ -1999,6 +2009,15 @@ a.button.large img {
 }
 
 @media screen and (max-width: 1280px) {
+  .composition {
+    display: flex;
+  }
+  .composition img {
+    width: 50%;
+  }
+  .composition ul {
+    margin: 20px 0;
+  }
   .footer .footer-content {
     gap: 30px;
   }
@@ -2010,6 +2029,15 @@ a.button.large img {
   }
 }
 @media screen and (max-width: 1024px) {
+  .composition {
+    display: flex;
+  }
+  .composition img {
+    width: 50%;
+  }
+  .composition ul {
+    margin: 20px 0;
+  }
   .footer {
     padding: 50px 0 20px;
   }
@@ -2028,6 +2056,15 @@ a.button.large img {
   }
 }
 @media screen and (max-width: 768px) {
+  .composition {
+    display: block;
+  }
+  .composition img {
+    width: 100%;
+  }
+  .composition ul {
+    margin: 20px 0;
+  }
   .footer {
     padding: 40px 0 20px;
     margin-top: 40px;
@@ -2055,6 +2092,12 @@ a.button.large img {
   }
 }
 @media screen and (max-width: 480px) {
+  .composition {
+    display: block;
+  }
+  .composition ul {
+    margin: 20px 0;
+  }
   .footer {
     padding: 30px 0 15px;
     margin-top: 30px;

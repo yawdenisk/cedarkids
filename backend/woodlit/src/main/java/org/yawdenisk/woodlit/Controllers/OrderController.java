@@ -39,7 +39,6 @@ public class OrderController {
                         userRequest.setFirstName(order.getUser().getFirstName());
                         userRequest.setLastName(order.getUser().getLastName());
                         userRequest.setPassword(passwordGenerator.randomPass(8));
-                        System.out.println(userRequest.getPassword());
                         try {
                             keycloakService.createUser(userRequest);
                         } catch (JsonProcessingException e) {
@@ -85,7 +84,7 @@ public class OrderController {
     }
 
     @GetMapping("/getAllOrders")
-    public ResponseEntity<?> getAllOrders(){
+    public ResponseEntity<?> getAllOrders() {
         try {
             return ResponseEntity.ok().body(orderService.getAllOrders());
         } catch (Exception e) {

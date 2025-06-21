@@ -22,6 +22,8 @@ public class Product {
     @Column(nullable = false)
     private String image;
     @Column(nullable = false)
+    private String movie;
+    @Column(nullable = false)
     private String compositionImage;
     @Column(nullable = false, length = 1024)
     private String description;

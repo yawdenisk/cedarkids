@@ -2,11 +2,11 @@ import React, {useEffect, useState} from 'react'
 import axios from 'axios';
 import {Link} from 'react-router-dom';
 import loading from '../images/loading.svg'
-
+import config from '../config'
 export default function Products() {
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        axios.get('http://localhost:8081/api/product/getAll')
+        axios.get(`${config.API_URL}/api/product/getAll`)
             .then(responce => {
                 setProducts(responce.data);
             })

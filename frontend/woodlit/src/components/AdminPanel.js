@@ -4,6 +4,7 @@ import editIcon from '../images/edit.png'
 import addProductIcon from '../images/addProduct.png'
 import UpdateProductForm from './UpdateProductForm';
 import UploadProductForm from './UploadProductForm';
+import config from '../config'
 
 export default function AdminPanel() {
     const [item, setItem] = useState('orders');
@@ -12,7 +13,7 @@ export default function AdminPanel() {
     const [showUploadProductForm, setShowUploadProductForm] = useState(false);
     const [error, setError] = useState(false);
     useEffect(() => {
-        axios.get('https://cedarkids.eu/api/product/getAll')
+        axios.get(`${config.API_URL}/api/product/getAll`)
             .then(responce => {
                 setProducts(responce.data);
             })
