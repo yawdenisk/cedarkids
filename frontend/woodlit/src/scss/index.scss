@@ -4,6 +4,40 @@
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 16px;
 }
+.shipping{
+  margin: 20px 0;
+  text-align: center;
+  p{
+    margin: 20px 0;
+  }
+  span{
+    width: 100%;
+    display: block;
+    height: 1px;
+    background: black;
+    opacity: 0.3;
+  }
+  .area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p{
+      margin:10px 0 ;
+    }
+    h1{
+      font-size: 25px;
+    }
+    img{
+      width: 100%;
+      object-fit: cover;
+      max-height: 350px;
+    }
+    .text-area{
+      text-align: start;
+      padding: 10%;
+    }
+  }
+}
 header {  
   display: flex;
   justify-content: space-between;

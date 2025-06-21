@@ -9,6 +9,7 @@ import React, {useState} from 'react'
 import Registration from "./components/Registration";
 import Cart from "./components/Cart";
 import AdminPanel from "./components/AdminPanel";
+import Shipping from "./components/Shipping";
 
 function App() {
      const [cart, setCart] = useState([]);
@@ -19,6 +20,7 @@ function App() {
                 <Route path="/" element={<Products/>}></Route>
                 <Route path="/product/:id" element={<ProductDetails cart={cart} setCart={setCart}/>}></Route>
                 <Route path="/user" element={<UserPanel/>}></Route>
+                <Route path="/shipping" element={<Shipping/>}></Route>
                 <Route path="/login" element={<Login/>}></Route>
                 <Route path="/register" element={<Registration/>}></Route>
                 <Route path="/cart" element={<Cart cart={cart} setCart={setCart}/>}></Route>

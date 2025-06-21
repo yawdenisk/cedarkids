@@ -5,6 +5,42 @@
   font-size: 16px;
 }
 
+.shipping {
+  margin: 20px 0;
+  text-align: center;
+}
+.shipping p {
+  margin: 20px 0;
+}
+.shipping span {
+  width: 100%;
+  display: block;
+  height: 1px;
+  background: black;
+  opacity: 0.3;
+}
+.shipping .area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.shipping .area p {
+  margin: 10px 0;
+}
+.shipping .area h1 {
+  font-size: 25px;
+}
+.shipping .area img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 350px;
+}
+.shipping .area .text-area {
+  text-align: start;
+  padding: 10%;
+}
+
 header {
   display: flex;
   justify-content: space-between;

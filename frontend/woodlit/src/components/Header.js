@@ -7,18 +7,17 @@ import searchIcon from '../images/search.png';
 import profileIcon from '../images/profile.png';
 import cartIcon from '../images/cart.png';
 import adminIcon from '../images/admin.png';
-
 export default function Header({cart}) {
     const [isOpen, setIsOpen] = useState(false);
     return (
        <>
        {isOpen && (
         <div className='bMenu'>
-            <Link onClick={() => setIsOpen(!isOpen)} to="/">Home</Link>
-            <Link onClick={() => setIsOpen(!isOpen)} to="/">Products</Link>
-            <Link onClick={() => setIsOpen(!isOpen)} to="/">Learn</Link>
+            <Link onClick={() => setIsOpen(!isOpen)} to="/">About Us</Link>
+            <Link onClick={() => setIsOpen(!isOpen)} to="/">Swing Sets</Link>
+            <Link onClick={() => setIsOpen(!isOpen)} to="/">Assembly</Link>
+            <Link onClick={() => setIsOpen(!isOpen)} to="/shipping">Shipping</Link>
             <Link onClick={() => setIsOpen(!isOpen)} to="/">Blog</Link>
-            <Link onClick={() => setIsOpen(!isOpen)} to="/">Contacts</Link>
         </div>
        )}
         <div className='container'>
@@ -46,11 +45,11 @@ export default function Header({cart}) {
                 </div>
             </header>
             <div className='navigation'>
-                <Link to="/">Home</Link>
-                <Link to="/">Products</Link>
-                <Link to="/">Learn</Link>
+                <Link to="/">About Us</Link>
+                <Link to="/">Swing Sets</Link>
+                <Link to="/">Assembly</Link>
+                <Link to="/shipping">Shipping</Link>
                 <Link to="/">Blog</Link>
-                <Link to="/">Contacts</Link>
             </div>
         </div>
        </>
