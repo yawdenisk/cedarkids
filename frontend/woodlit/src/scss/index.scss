@@ -1813,6 +1813,13 @@ header {
   * {
     font-size: 13px;
   }
+  .shipping{
+    .area{
+      .text-area{
+       padding: 5%;
+      }
+    }
+  }
   .container {
     margin: 0 15px;
   }
@@ -2018,6 +2025,11 @@ header {
 @media screen and (max-width: 480px) {
   * {
     font-size: 12px;
+  }
+  .shipping{
+    .area{
+      display: block;
+    }
   }
   .container {
     margin: 0 10px;
