@@ -13,7 +13,7 @@ export default function Header({cart}) {
        <>
        {isOpen && (
         <div className='bMenu'>
-            <Link onClick={() => setIsOpen(!isOpen)} to="/">About Us</Link>
+            <Link onClick={() => setIsOpen(!isOpen)} to="/about">About Us</Link>
             <Link onClick={() => setIsOpen(!isOpen)} to="/">Swing Sets</Link>
             <Link onClick={() => setIsOpen(!isOpen)} to="/">Assembly</Link>
             <Link onClick={() => setIsOpen(!isOpen)} to="/shipping">Shipping</Link>
@@ -45,7 +45,7 @@ export default function Header({cart}) {
                 </div>
             </header>
             <div className='navigation'>
-                <Link to="/">About Us</Link>
+                <Link to="/about">About Us</Link>
                 <Link to="/">Swing Sets</Link>
                 <Link to="/">Assembly</Link>
                 <Link to="/shipping">Shipping</Link>

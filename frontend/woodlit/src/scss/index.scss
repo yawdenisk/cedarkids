@@ -4,6 +4,23 @@
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 16px;
 }
+.about{
+  display: flex;
+  margin: 20px 0;
+  align-items: center;
+  img{
+    width: 50%;
+  }
+  .text-area{
+    padding: 5%;
+    h1{
+      font-size: 25px;
+    }
+    p{
+      margin: 40px 0;
+    }
+  }
+}
 .shipping{
   margin: 20px 0;
   text-align: center;
@@ -1812,6 +1829,17 @@ header {
 @media screen and (max-width: 768px) {
   * {
     font-size: 13px;
+  }
+  .about{
+    display: block;
+    img{
+      width: 100%;
+    }
+    .text-area{
+      h1{
+        text-align: center;
+      }
+    }
   }
   .shipping{
     .area{

@@ -10,6 +10,7 @@ import Registration from "./components/Registration";
 import Cart from "./components/Cart";
 import AdminPanel from "./components/AdminPanel";
 import Shipping from "./components/Shipping";
+import AboutUs from "./components/AboutUs";
 
 function App() {
      const [cart, setCart] = useState([]);
@@ -25,6 +26,7 @@ function App() {
                 <Route path="/register" element={<Registration/>}></Route>
                 <Route path="/cart" element={<Cart cart={cart} setCart={setCart}/>}></Route>
                 <Route path="/admin" element={<AdminPanel/>}></Route>
+                <Route path="/about" element={<AboutUs/>}></Route>
             </Routes>
             <Footer/>
         </Router>

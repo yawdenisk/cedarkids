@@ -5,6 +5,24 @@
   font-size: 16px;
 }
 
+.about {
+  display: flex;
+  margin: 20px 0;
+  align-items: center;
+}
+.about img {
+  width: 50%;
+}
+.about .text-area {
+  padding: 5%;
+}
+.about .text-area h1 {
+  font-size: 25px;
+}
+.about .text-area p {
+  margin: 40px 0;
+}
+
 .shipping {
   margin: 20px 0;
   text-align: center;
@@ -1582,6 +1600,15 @@ header .headerNavbar a span {
 @media screen and (max-width: 768px) {
   * {
     font-size: 13px;
+  }
+  .about {
+    display: block;
+  }
+  .about img {
+    width: 100%;
+  }
+  .about .text-area h1 {
+    text-align: center;
   }
   .shipping .area .text-area {
     padding: 5%;
