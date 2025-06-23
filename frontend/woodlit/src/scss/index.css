@@ -5,6 +5,51 @@
   font-size: 16px;
 }
 
+.assembly h1 {
+  margin: 30px 20%;
+}
+.assembly h2 {
+  padding: 0 20%;
+  font-weight: 500;
+}
+.assembly h5 {
+  font-weight: 500;
+  font-size: 35px;
+  text-align: center;
+}
+.assembly h6 {
+  font-weight: 300;
+  margin: 20px 0;
+  font-size: 20px;
+  text-align: center;
+  padding: 0 20%;
+}
+.assembly span {
+  display: block;
+  margin: 0 20%;
+  height: 1px;
+  background: black;
+  opacity: 0.4;
+}
+.assembly .accordion {
+  margin: 10px 0;
+  padding: 0 20%;
+}
+.assembly .accordion p {
+  margin-top: 20px;
+}
+.assembly .accordion .accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.assembly .accordion button {
+  font-size: 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
 .about {
   display: flex;
   margin: 20px 0;
@@ -1600,6 +1645,25 @@ header .headerNavbar a span {
 @media screen and (max-width: 768px) {
   * {
     font-size: 13px;
+  }
+  .assembly h1 {
+    margin: 10px 10%;
+  }
+  .assembly h2 {
+    padding: 0 10%;
+  }
+  .assembly h5 {
+    font-size: 30px;
+  }
+  .assembly h6 {
+    font-size: 15px;
+    padding: 0 10%;
+  }
+  .assembly span {
+    margin: 0 10%;
+  }
+  .assembly .accordion {
+    padding: 0 10%;
   }
   .about {
     display: block;

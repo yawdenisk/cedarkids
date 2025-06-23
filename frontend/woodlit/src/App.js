@@ -11,6 +11,7 @@ import Cart from "./components/Cart";
 import AdminPanel from "./components/AdminPanel";
 import Shipping from "./components/Shipping";
 import AboutUs from "./components/AboutUs";
+import Assembly from "./components/Assembly";
 
 function App() {
      const [cart, setCart] = useState([]);
@@ -27,6 +28,7 @@ function App() {
                 <Route path="/cart" element={<Cart cart={cart} setCart={setCart}/>}></Route>
                 <Route path="/admin" element={<AdminPanel/>}></Route>
                 <Route path="/about" element={<AboutUs/>}></Route>
+                <Route path="/assembly" element={<Assembly/>}></Route>
             </Routes>
             <Footer/>
         </Router>
