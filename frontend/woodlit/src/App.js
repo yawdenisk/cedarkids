@@ -12,6 +12,9 @@ import AdminPanel from "./components/AdminPanel";
 import Shipping from "./components/Shipping";
 import AboutUs from "./components/AboutUs";
 import Assembly from "./components/Assembly";
+import Blogs from "./components/Blogs";
+import BlogDetails from "./components/BlogDetails";
+import UploadProductForm from "./components/UploadProductForm";
 
 function App() {
      const [cart, setCart] = useState([]);
@@ -29,6 +32,9 @@ function App() {
                 <Route path="/admin" element={<AdminPanel/>}></Route>
                 <Route path="/about" element={<AboutUs/>}></Route>
                 <Route path="/assembly" element={<Assembly/>}></Route>
+                 <Route path="/blogs" element={<Blogs/>}></Route>
+                 <Route path="/blog/:id" element={<BlogDetails/>}></Route>
+                 <Route path="/admin/uploadProduct" element={<UploadProductForm/>}></Route>
             </Routes>
             <Footer/>
         </Router>

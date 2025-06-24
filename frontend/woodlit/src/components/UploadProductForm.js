@@ -50,7 +50,7 @@ export default function UploadProductForm({setShowUploadProductForm}) {
     
 
     return (
-        <div className='uploadProductPopUpForm'>
+        <div className='uploadProductForm'>
             <form onSubmit={sendForm}>
                 <p>Add new Product</p>
                 {error &&
@@ -68,10 +68,15 @@ export default function UploadProductForm({setShowUploadProductForm}) {
                 <input name='description' onChange={(e) => setDescription(e.target.value)} placeholder='Description'></input>
                 <textarea name='demensions' onChange={(e) => setDemensions(e.target.value)} placeholder='Demensions'></textarea>
                 <textarea name='composition' onChange={(e) => setComposition(e.target.value)} placeholder='Composition'></textarea>
-                    <input type='file' onChange={(e) => setImage(e.target.files[0])} placeholder='Image' />
+                <p>Composition image</p>
                     <input type='file' onChange={(e) => setCompositionImage(e.target.files[0])} placeholder='Composition Image' />
-                    <input type='file' onChange={(e) => setMovie(e.target.files[0])} placeholder='Movie' />
+                <p>Image</p>
+                    <input type='file' onChange={(e) => setImage(e.target.files[0])} placeholder='Image' />
+                     <p>Gallery</p>
                 <input type='file' multiple onChange={(e) => setGalleryImages(Array.from(e.target.files))} placeholder='Gallery'></input>
+                    <p>Movie</p>
+                    <input type='file' onChange={(e) => setMovie(e.target.files[0])} placeholder='Movie' />
+            
                 <button type='submit'>Submit</button>
             </form>
         </div>

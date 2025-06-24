@@ -5,6 +5,81 @@
   font-size: 16px;
 }
 
+.uploadProductForm {
+  margin: 20px 0;
+}
+.uploadProductForm input {
+  display: block;
+  margin: 10px auto;
+  width: 20%;
+  height: 25px;
+}
+.uploadProductForm textarea {
+  display: block;
+  margin: 10px auto;
+  width: 20%;
+  height: 100px;
+}
+.uploadProductForm p {
+  text-align: center;
+}
+.uploadProductForm button {
+  display: block;
+  margin: 10px auto;
+}
+
+.admin {
+  margin: 20px 0;
+}
+.admin .menu {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.blog {
+  margin: 20px 0;
+  padding: 0 20%;
+}
+.blog img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.blog p:first-child {
+  text-align: center;
+  font-size: 30px;
+}
+.blog p {
+  margin: 30px 0;
+}
+
+.blogs {
+  margin: 20px 0;
+  padding: 0;
+  display: flex;
+  gap: 5%;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+.blogs li {
+  text-align: center;
+}
+.blogs li img {
+  width: 70%;
+}
+.blogs li p {
+  margin: 10px 0;
+  font-weight: 600;
+}
+.blogs li p:last-child {
+  font-weight: 500;
+}
+
 .assembly h1 {
   margin: 30px 20%;
 }
@@ -1588,6 +1663,24 @@ header .headerNavbar a span {
   .whyBlock li {
     width: 300px;
   }
+  .composition {
+    display: flex;
+  }
+  .composition img {
+    width: 50%;
+  }
+  .composition ul {
+    margin: 20px 0;
+  }
+  .footer .footer-content {
+    gap: 30px;
+  }
+  .footer .footer-content .footer-section h3 {
+    font-size: 22px;
+  }
+  .footer .footer-content .footer-section h4 {
+    font-size: 16px;
+  }
 }
 @media screen and (max-width: 1024px) {
   .container {
@@ -1640,6 +1733,31 @@ header .headerNavbar a span {
   }
   .whyBlock li {
     width: 200px;
+  }
+  .composition {
+    display: flex;
+  }
+  .composition img {
+    width: 50%;
+  }
+  .composition ul {
+    margin: 20px 0;
+  }
+  .footer {
+    padding: 50px 0 20px;
+  }
+  .footer .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  .footer .footer-content .footer-section h3 {
+    font-size: 20px;
+  }
+  .footer .footer-content .footer-section h4 {
+    font-size: 16px;
+  }
+  .footer .footer-content .footer-section p, .footer .footer-content .footer-section li, .footer .footer-content .footer-section .social-links a {
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1840,6 +1958,48 @@ header .headerNavbar a span {
     padding: 8px 30px;
     font-size: 14px;
   }
+  a.button {
+    padding: 6px 16px;
+    font-size: 14px;
+  }
+  a.button img {
+    width: 18px;
+    height: 18px;
+  }
+  a.button.large {
+    padding: 10px 24px;
+    font-size: 16px;
+  }
+  .cart .shipment a {
+    width: 200px;
+    padding: 6px 16px;
+    font-size: 14px;
+  }
+  .footer {
+    padding: 40px 0 20px;
+    margin-top: 40px;
+  }
+  .footer .footer-content {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    text-align: center;
+  }
+  .footer .footer-content .footer-section h3 {
+    font-size: 20px;
+  }
+  .footer .footer-content .footer-section h4 {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  .footer .footer-content .footer-section .social-links {
+    justify-content: center;
+  }
+  .footer .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    font-size: 13px;
+  }
 }
 @media screen and (max-width: 480px) {
   * {
@@ -1919,6 +2079,12 @@ header .headerNavbar a span {
     padding: 6px 12px;
     font-size: 13px;
   }
+  .blog {
+    padding: 0 10%;
+  }
+  .blog p:first-child {
+    font-size: 20px;
+  }
   .popUpForm form, .uploadProductPopUpForm form {
     padding: 15px;
     gap: 10px;
@@ -1933,6 +2099,48 @@ header .headerNavbar a span {
   .popUpForm form button, .uploadProductPopUpForm form button {
     padding: 6px 25px;
     font-size: 13px;
+  }
+  a.button {
+    padding: 5px 14px;
+    font-size: 13px;
+  }
+  a.button img {
+    width: 16px;
+    height: 16px;
+  }
+  a.button.large {
+    padding: 8px 20px;
+    font-size: 15px;
+  }
+  .cart .shipment a {
+    width: 180px;
+    padding: 5px 14px;
+    font-size: 13px;
+  }
+  .composition {
+    display: block;
+  }
+  .composition ul {
+    margin: 20px 0;
+  }
+  .footer {
+    padding: 30px 0 15px;
+    margin-top: 30px;
+  }
+  .footer .footer-content {
+    gap: 20px;
+  }
+  .footer .footer-content .footer-section h3 {
+    font-size: 18px;
+  }
+  .footer .footer-content .footer-section h4 {
+    font-size: 15px;
+  }
+  .footer .footer-content .footer-section p, .footer .footer-content .footer-section li, .footer .footer-content .footer-section .social-links a {
+    font-size: 13px;
+  }
+  .footer .footer-bottom {
+    font-size: 12px;
   }
 }
 @media screen and (max-width: 360px) {
@@ -2190,10 +2398,10 @@ a.button.large img {
 }
 @media screen and (max-width: 768px) {
   .composition {
-    display: block;
+    display: flex;
   }
   .composition img {
-    width: 100%;
+    width: 50%;
   }
   .composition ul {
     margin: 20px 0;

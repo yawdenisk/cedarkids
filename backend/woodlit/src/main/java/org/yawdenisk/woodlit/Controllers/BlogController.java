@@ -5,10 +5,13 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.yawdenisk.woodlit.Entites.Blog;
+import org.yawdenisk.woodlit.Exceptions.BlogNotFoundException;
 import org.yawdenisk.woodlit.Services.BlogService;
 import software.amazon.awssdk.services.s3.S3Client;
 
 import java.util.List;
+import java.util.Optional;
+import java.util.UUID;
 
 @RestController
 @RequestMapping("/api/blog")
@@ -40,5 +43,9 @@ public class BlogController {
     @GetMapping("/getAll")
     public List<Blog> getAllBlogs() {
         return blogService.getAll();
+    }
+    @GetMapping("/get/{id}")
+    public Blog getBlogById(@PathVariable UUID id) {
+        return blogService.getById(id).orElseThrow(BlogNotFoundException::new);
     }
 }
