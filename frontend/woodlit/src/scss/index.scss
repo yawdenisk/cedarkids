@@ -4,217 +4,37 @@
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 16px;
 }
-.uploadProductForm{
-  margin: 20px 0;
-  input{
-    display: block;
-    margin: 10px auto;
-    width: 20%;
-    height: 25px;
-  }
-  textarea{
-    display: block;
-    margin: 10px auto;
-    width: 20%;
-    height: 100px;
-  }
-  p{
-    text-align: center;
-  }
-  button{
-    display: block;
-    margin: 10px auto;
-  }
-}
-.admin{
-  margin: 20px 0;
-  .menu{
-    display: flex;
-    justify-content: center;
-    gap: 10%;
-    list-style-type: none;
-    cursor: pointer;
-  }
-}
-.blog{
-  margin: 20px 0;
-  padding: 0 20%;
-  img{
-    width: 100%;
-    display: block;
-    margin: 0 auto;
-  }
-  p:first-child{
-    text-align: center;
-    font-size: 30px;
-  }
-  p{
-    margin: 30px 0;
-  }
-}
-.blogs{
-  margin: 20px 0;
-  padding: 0;
+
+header {
   display: flex;
-  gap: 5%;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
-  list-style-type: none;
-  li{
-    text-align: center;
-    img{
-      width: 70%;
-    }
-    p{
-      margin: 10px 0;
-      font-weight: 600;
-    }
-    p:last-child{
-      font-weight: 500;
-    }
-  }
-}
-.assembly{
-  h1{
-    margin: 30px 20%;
-  }
-  h2{
-    padding: 0 20%;
-    font-weight: 500;
-  }
-  h5{
-    font-weight: 500;
-    font-size: 35px;
-    text-align: center;
-  }
-   h6{
-    font-weight: 300;
-    margin: 20px 0;
-    font-size: 20px;
-    text-align: center;
-    padding: 0 20%;
-  }
-  span{
-      display: block;
-      margin: 0 20%;
-      height: 1px;
-      background: black;
-      opacity: 0.4;
-
-    }
-  .accordion{
-    margin: 10px 0;
-    padding: 0 20%;
-    p{
-      margin-top: 20px;
-    }
-    .accordion-header{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    button{
-      font-size: 20px;
-      border: none;
-      background: none;
-      cursor: pointer;
-    }
-  }
-}
-.about{
-  display: flex;
-  margin: 20px 0;
-  align-items: center;
-  img{
-    width: 50%;
-  }
-  .text-area{
-    padding: 5%;
-    h1{
-      font-size: 25px;
-    }
-    p{
-      margin: 40px 0;
-    }
-  }
-}
-.shipping{
-  margin: 20px 0;
-  text-align: center;
-  p{
-    margin: 20px 0;
-  }
-  span{
-    width: 100%;
-    display: block;
-    height: 1px;
-    background: black;
-    opacity: 0.3;
-  }
-  .area{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    p{
-      margin:10px 0 ;
-    }
-    h1{
-      font-size: 25px;
-    }
-    img{
-      width: 100%;
-      object-fit: cover;
-      max-height: 350px;
-    }
-    .text-area{
-      text-align: start;
-      padding: 10%;
-    }
-  }
-}
-header {  
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 0;
-  transition: all 0.3s ease;
+  padding: 20px 0;
 
   .burgerMenu {
     display: none;
     z-index: 100;
   }
-
-  .headerMedia {
+  .headerLeft {
     display: flex;
     gap: 30px;
 
     a {
       img {
         width: 25px;
-        transition: opacity 0.2s ease;
-        
-        &:hover {
-          opacity: 0.8;
-        }
       }
     }
   }
 
-  .headerNavbar {
+  .headerRight{
     display: flex;
     gap: 30px;
 
     a {
       position: relative;
-      transition: transform 0.2s ease;
-
       img {
         width: 25px;
-        transition: opacity 0.2s ease;
-        
       }
-
       span {
         position: absolute;
         right: -5px;
@@ -225,33 +45,15 @@ header {
         border-radius: 50px;
         text-align: center;
         vertical-align: middle;
-        font-size: 16px;
+        font-size: 17px;
       }
     }
   }
 }
-.bMenu{
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  position: absolute;
-  opacity: 0.9;
-  z-index: 99;
-  a{
-    text-align: right;
-    display: block;
-    padding: 10px;
-    margin: 30px 50px;
-    margin-left: 150px;
-    font-size: 20px;
-    color: white;
-    border-bottom: 1px solid white;
-    text-decoration: none;
-  }
-}
-
+// 
 .navigation {
   display: flex;
+  gap: 10px;
   justify-content: center;
 
   a {
@@ -260,11 +62,11 @@ header {
     color: black;
     position: relative;
     transition: all 0.3s ease;
-    
+
     &:hover {
       color: rgb(121, 227, 121);
     }
-    
+
     &::after {
       content: '';
       position: absolute;
@@ -276,7 +78,7 @@ header {
       transition: all 0.3s ease;
       transform: translateX(-50%);
     }
-    
+
     &:hover::after {
       width: 100%;
     }
@@ -298,6 +100,234 @@ header {
   }
 }
 
+.uploadProductForm {
+  margin: 20px 0;
+
+  input {
+    display: block;
+    margin: 10px auto;
+    width: 20%;
+    height: 25px;
+  }
+
+  textarea {
+    display: block;
+    margin: 10px auto;
+    width: 20%;
+    height: 100px;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  button {
+    display: block;
+    margin: 10px auto;
+  }
+}
+
+.admin {
+  margin: 20px 0;
+
+  .menu {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    list-style-type: none;
+    cursor: pointer;
+  }
+}
+
+.blog {
+  margin: 20px 0;
+  padding: 0 20%;
+
+  img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  p:first-child {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  p {
+    margin: 30px 0;
+  }
+}
+
+.blogs {
+  margin: 20px 0;
+  padding: 0;
+  display: flex;
+  gap: 5%;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+
+  li {
+    text-align: center;
+
+    img {
+      width: 70%;
+    }
+
+    p {
+      margin: 10px 0;
+      font-weight: 600;
+    }
+
+    p:last-child {
+      font-weight: 500;
+    }
+  }
+}
+
+.assembly {
+  h1 {
+    margin: 30px 20%;
+  }
+
+  h2 {
+    padding: 0 20%;
+    font-weight: 500;
+  }
+
+  h5 {
+    font-weight: 500;
+    font-size: 35px;
+    text-align: center;
+  }
+
+  h6 {
+    font-weight: 300;
+    margin: 20px 0;
+    font-size: 20px;
+    text-align: center;
+    padding: 0 20%;
+  }
+
+  span {
+    display: block;
+    margin: 0 20%;
+    height: 1px;
+    background: black;
+    opacity: 0.4;
+
+  }
+
+  .accordion {
+    margin: 10px 0;
+    padding: 0 20%;
+
+    p {
+      margin-top: 20px;
+    }
+
+    .accordion-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    button {
+      font-size: 20px;
+      border: none;
+      background: none;
+      cursor: pointer;
+    }
+  }
+}
+
+.about {
+  display: flex;
+  margin: 20px 0;
+  align-items: center;
+
+  img {
+    width: 50%;
+  }
+
+  .text-area {
+    padding: 5%;
+
+    h1 {
+      font-size: 25px;
+    }
+
+    p {
+      margin: 40px 0;
+    }
+  }
+}
+
+.shipping {
+  margin: 20px 0;
+  text-align: center;
+
+  p {
+    margin: 20px 0;
+  }
+
+  span {
+    width: 100%;
+    display: block;
+    height: 1px;
+    background: black;
+    opacity: 0.3;
+  }
+
+  .area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+      margin: 10px 0;
+    }
+
+    h1 {
+      font-size: 25px;
+    }
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      max-height: 350px;
+    }
+
+    .text-area {
+      text-align: start;
+      padding: 10%;
+    }
+  }
+}
+
+.bMenu {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  opacity: 0.9;
+  z-index: 99;
+
+  a {
+    text-align: right;
+    display: block;
+    padding: 10px;
+    margin: 30px 50px;
+    margin-left: 150px;
+    font-size: 20px;
+    color: white;
+    border-bottom: 1px solid white;
+    text-decoration: none;
+  }
+}
+
 .products {
   .filter {
     text-align: right;
@@ -308,7 +338,7 @@ header {
       border: 0;
       cursor: pointer;
       transition: transform 0.2s ease;
-      
+
       &:hover {
         transform: scale(1.1);
       }
@@ -326,6 +356,7 @@ header {
     li {
       list-style-type: none;
       margin: 10px 0;
+
       p {
         text-align: center;
         margin: 3px 0;
@@ -338,11 +369,13 @@ header {
         justify-content: center;
         gap: 10px;
         align-items: center;
+
         p {
           color: rgb(200, 86, 29);
           font-size: 16px;
         }
-        s{
+
+        s {
           opacity: 0.5;
           font-size: 16px;
         }
@@ -354,7 +387,7 @@ header {
         overflow: hidden;
         object-fit: cover;
         transition: transform 0.3s ease;
-        
+
         &:hover {
           transform: scale(1.05);
         }
@@ -366,9 +399,11 @@ header {
 .formLogin {
   margin-top: 40px;
   text-align: center;
-  p:first-child{
+
+  p:first-child {
     font-size: 20px;
   }
+
   input {
     width: 300px;
     height: 30px;
@@ -379,7 +414,7 @@ header {
     border: 1px solid green;
     padding: 10px;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
-    
+
     &:focus {
       border-color: rgb(121, 227, 121);
       box-shadow: 0 0 5px rgba(121, 227, 121, 0.3);
@@ -472,6 +507,7 @@ header {
   ul {
     padding: 0;
     width: 60%;
+
     li {
       margin: 10px 0;
       padding: 10px;
@@ -479,10 +515,11 @@ header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      .text-area{
+
+      .text-area {
         max-width: 30%;
         word-break: break-all;
-        overflow-x: hidden  ;
+        overflow-x: hidden;
       }
 
       img {
@@ -516,6 +553,7 @@ header {
         }
       }
     }
+
     form {
       ul {
         button {
@@ -540,6 +578,7 @@ header {
             transform: translateY(0);
           }
         }
+
         li {
           display: block;
           cursor: pointer;
@@ -599,7 +638,7 @@ header {
       border-radius: 10px;
       text-decoration: none;
       transition: all 0.3s ease;
-      
+
       &:hover {
         transform: translateY(-2px);
         box-shadow: 0 4px 8px rgba(121, 227, 121, 0.2);
@@ -612,20 +651,25 @@ header {
     }
   }
 }
-.composition{
-    display: flex;
-    align-items: center;
-    img{
-      width: 50%;
-    }
-    ul{
-      margin: 20px 0;
-    }
+
+.composition {
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 50%;
   }
+
+  ul {
+    margin: 20px 0;
+  }
+}
+
 .productDetails {
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
+
   .view {
     width: 40%;
     position: relative;
@@ -733,6 +777,7 @@ header {
 
 .information {
   width: 50%;
+
   h1 {
     font-size: 28px;
     margin: 20px 0;
@@ -768,7 +813,7 @@ header {
     padding: 25px;
     background: #f8f8f8;
     border-radius: 12px;
-    
+
     h5 {
       font-size: 18px;
       font-weight: 500;
@@ -842,7 +887,7 @@ header {
   li {
     width: 350px;
 
-    h1{
+    h1 {
       margin: 10px 0;
     }
 
@@ -852,6 +897,7 @@ header {
     }
   }
 }
+
 .panel {
   display: flex;
   justify-content: center;
@@ -870,7 +916,7 @@ header {
         margin: 10px;
         cursor: pointer;
         transition: all 0.3s ease;
-        
+
         &:hover {
           color: rgb(121, 227, 121);
           transform: translateX(5px);
@@ -881,10 +927,12 @@ header {
 
   .view {
     margin: 10px 50px;
+
     .userInfo {
-      p{
+      p {
         margin: 5px 0;
       }
+
       span {
         margin: 5px 0;
         display: block;
@@ -910,6 +958,7 @@ header {
     .deliveryDetails {
       list-style-type: none;
       padding: 0;
+
       li {
         width: 100%;
         padding: 5px;
@@ -917,17 +966,18 @@ header {
         border: 1px solid rgb(121, 227, 121);
       }
     }
+
     .orders {
       list-style: none;
       padding: 0;
       margin: 0 50px;
-    
+
       li {
         border: 1px solid #e0e0e0;
         border-radius: 12px;
         margin-bottom: 2rem;
         box-shadow: 0 2px 8px rgba(0, 128, 0, 0.05);
-    
+
         nav {
           display: flex;
           justify-content: space-around;
@@ -935,15 +985,16 @@ header {
           background-color: #f5fff5;
           padding: 15px 25px;
           border-bottom: 1px solid #e0e0e0;
-    
+
           p {
             margin: 0;
             font-weight: 500;
+
             &:first-child {
               font-weight: bold;
             }
           }
-    
+
           a {
             display: inline-flex;
             align-items: center;
@@ -968,30 +1019,30 @@ header {
             }
           }
         }
-    
+
         ul {
           list-style: none;
           margin: 20px 10px;
           padding: 0;
-    
+
           li {
             display: flex;
             margin: 10px 0;
             align-items: center;
             justify-content: space-between;
             padding: 5px 10px;
-    
+
             img {
               width: 60px;
               height: 60px;
               object-fit: cover;
               border-radius: 8px;
             }
-    
+
             p {
               max-width: 50%;
               overflow-x: auto;
-    
+
               & + p {
                 font-style: italic;
                 color: #4caf50;
@@ -1001,9 +1052,10 @@ header {
         }
       }
     }
-    
+
   }
 }
+
 .demensions {
   margin: 40px 0;
   text-align: center;
@@ -1017,9 +1069,11 @@ header {
     margin: 20px 0;
   }
 }
+
 .container {
   margin: 0 60px;
 }
+
 .loading {
   top: 0;
   position: absolute;
@@ -1036,6 +1090,7 @@ header {
     width: 40px;
   }
 }
+
 .reviewDetails {
   margin-top: 30px;
   text-align: center;
@@ -1092,7 +1147,7 @@ header {
       img {
         width: 50px;
         transition: transform 0.3s ease;
-        
+
         &:hover {
           transform: scale(1.1);
         }
@@ -1143,6 +1198,7 @@ header {
     }
   }
 }
+
 .cartEmpty {
   padding: 100px;
 
@@ -1155,6 +1211,7 @@ header {
     display: block;
   }
 }
+
 .popUpForm, .uploadProductPopUpForm {
   position: fixed;
   top: 0;
@@ -1269,6 +1326,7 @@ header {
     }
   }
 }
+
 .reviewForm {
   p {
     margin-bottom: 5px;
@@ -1308,6 +1366,7 @@ header {
     }
   }
 }
+
 .imageContainer {
   position: fixed;
   top: 0;
@@ -1329,7 +1388,7 @@ header {
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
     border-radius: 8px;
   }
-  
+
   .closeButton {
     position: absolute;
     top: 20px;
@@ -1838,9 +1897,11 @@ header {
           width: 300px;
           height: 300px;
         }
+
         p {
           max-width: 300px;
         }
+
         .price {
           p, s {
             font-size: 14px;
@@ -1851,6 +1912,7 @@ header {
   }
   .cartEmpty {
     padding: 50px;
+
     img {
       width: 50px;
     }
@@ -1859,6 +1921,7 @@ header {
     .view {
       width: 50%;
     }
+
     .information {
       width: 40%;
     }
@@ -1868,22 +1931,26 @@ header {
       width: 300px;
     }
   }
-  .composition{
+  .composition {
     display: flex;
-    img{
+
+    img {
       width: 50%;
     }
-    ul{
+
+    ul {
       margin: 20px 0;
     }
   }
   .footer {
     .footer-content {
       gap: 30px;
+
       .footer-section {
         h3 {
           font-size: 22px;
         }
+
         h4 {
           font-size: 16px;
         }
@@ -1891,6 +1958,7 @@ header {
     }
   }
 }
+
 @media screen and (max-width: 1024px) {
   .container {
     margin: 0 20px;
@@ -1901,10 +1969,12 @@ header {
         p {
           max-width: 250px;
         }
+
         img {
           width: 250px;
           height: 250px;
         }
+
         .price {
           p, s {
             font-size: 14px;
@@ -1917,6 +1987,7 @@ header {
     .thumbnail-gallery {
       .thumbs-container {
         height: 100px;
+
         .thumbs-wrapper {
           img {
             height: 90px;
@@ -1925,10 +1996,12 @@ header {
         }
       }
     }
+
     .view {
       img {
         height: 350px;
       }
+
       .prev, .next {
         top: 175px;
         width: 20px;
@@ -1936,12 +2009,15 @@ header {
         font-size: 20px;
       }
     }
+
     .information {
       width: 40%;
+
       button {
         margin: 10px 0;
         padding: 5px 50px;
       }
+
       .description {
         ul {
           li {
@@ -1949,6 +2025,7 @@ header {
           }
         }
       }
+
       .price {
         margin: 10px 0;
       }
@@ -1956,6 +2033,7 @@ header {
   }
   .cart {
     margin: 0;
+
     .shipment {
       max-height: 270px;
     }
@@ -1965,27 +2043,33 @@ header {
       width: 200px;
     }
   }
-  .composition{
+  .composition {
     display: flex;
-    img{
+
+    img {
       width: 50%;
     }
-    ul{
+
+    ul {
       margin: 20px 0;
     }
   }
   .footer {
     padding: 50px 0 20px;
+
     .footer-content {
       grid-template-columns: repeat(2, 1fr);
       gap: 30px;
+
       .footer-section {
         h3 {
           font-size: 20px;
         }
+
         h4 {
           font-size: 16px;
         }
+
         p, li, .social-links a {
           font-size: 14px;
         }
@@ -1993,69 +2077,20 @@ header {
     }
   }
 }
+
 @media screen and (max-width: 768px) {
   * {
     font-size: 13px;
   }
-  .assembly{
-    h1{
-      margin: 10px 10%;
+   header {
+    .headerLeft {
+      display: none;
     }
-    h2{
-      padding: 0 10%;
-    }
-    h5{
-      font-size: 30px;
-    }
-    h6{
-      font-size: 15px;
-      padding: 0 10%;
-    }
-    span{
-      margin: 0 10%;
-    }
-    .accordion{
-      padding: 0 10%;
-    }
-  }
-  .about{
-    display: block;
-    img{
-      width: 100%;
-    }
-    .text-area{
-      h1{
-        text-align: center;
-      }
-    }
-  }
-  .shipping{
-    .area{
-      .text-area{
-        padding: 5%;
-      }
-    }
-  }
-  .container {
-    margin: 0 15px;
-  }
-  .composition{
-    display: block;
-    img{
-      width: 100%;
-    }
-    ul{
-      margin: 20px 0;
-    }
-  }
-  header {
-    .headerNavbar {
-      gap: 15px;
-    }
+
     .burgerMenu {
       display: flex;
       align-items: center;
-      gap: 15px;
+      gap: 30px;
       button {
         padding: 0;
         display: flex;
@@ -2066,6 +2101,7 @@ header {
         background: transparent;
         border: none;
         z-index: 10;
+
         span {
           height: 4px;
           width: 100%;
@@ -2073,28 +2109,82 @@ header {
           border-radius: 2px;
           transition: 0.3s ease;
         }
+
         &.active span:nth-child(1) {
           transform: translateY(9px) rotate(45deg);
           background: white;
         }
+
         &.active span:nth-child(2) {
           opacity: 0;
         }
+
         &.active span:nth-child(3) {
           transform: translateY(-9px) rotate(-45deg);
           background: white;
         }
       }
-      a {
-        display: flex;
-        align-items: center;
+    }
+  }
+  // 
+  .assembly {
+    h1 {
+      margin: 10px 10%;
+    }
+
+    h2 {
+      padding: 0 10%;
+    }
+
+    h5 {
+      font-size: 30px;
+    }
+
+    h6 {
+      font-size: 15px;
+      padding: 0 10%;
+    }
+
+    span {
+      margin: 0 10%;
+    }
+
+    .accordion {
+      padding: 0 10%;
+    }
+  }
+  .about {
+    display: block;
+
+    img {
+      width: 100%;
+    }
+
+    .text-area {
+      h1 {
+        text-align: center;
       }
     }
-    .headerMedia {
-      display: none;
+  }
+  .shipping {
+    .area {
+      .text-area {
+        padding: 5%;
+      }
     }
-    .logo {
-      width: 150px;
+  }
+  .container {
+    margin: 0 15px;
+  }
+  .composition {
+    display: block;
+
+    img {
+      width: 100%;
+    }
+
+    ul {
+      margin: 20px 0;
     }
   }
   .navigation {
@@ -2103,11 +2193,13 @@ header {
   .panel {
     .view {
       margin: 10px 20px;
+
       .deliveryDetails {
         li {
           width: 100%;
         }
       }
+
       .orders {
         li {
           nav {
@@ -2124,10 +2216,12 @@ header {
         p {
           max-width: 180px;
         }
+
         img {
           width: 180px;
           height: 180px;
         }
+
         .price {
           p, s {
             font-size: 12px;
@@ -2139,14 +2233,17 @@ header {
   .cart {
     width: 100%;
     display: block;
+
     ul {
       width: 100%;
+
       form {
         input {
           display: block;
           width: 50%;
           margin: 10px auto;
         }
+
         ul {
           button {
             margin: 10px 0;
@@ -2154,18 +2251,22 @@ header {
         }
       }
     }
+
     .shipment {
       display: block;
       margin: 0 auto;
       width: 100%;
       height: 200px;
+
       p:first-child {
         margin: 10px 0;
       }
+
       p {
         text-align: center;
         margin: 5px;
       }
+
       a {
         width: 200px;
       }
@@ -2174,6 +2275,7 @@ header {
   .whyBlock {
     flex-direction: column;
     align-items: center;
+
     li {
       margin: 20px 0;
       width: 80%;
@@ -2183,27 +2285,34 @@ header {
     flex-direction: column;
     align-items: center;
     text-align: center;
+
     .information {
       width: 100%;
     }
+
     .view {
       width: 80%;
+
       img {
         height: 350px;
       }
     }
+
     .information {
-      .price{
+      .price {
         justify-content: center;
       }
+
       .installation {
         justify-content: center;
       }
+
       .description {
         ul {
           justify-content: center;
         }
       }
+
       .description-content {
         text-align: left;
       }
@@ -2214,13 +2323,16 @@ header {
       padding: 20px;
       width: 95%;
       gap: 12px;
+
       p {
         font-size: 20px;
       }
+
       input {
         height: 35px;
         font-size: 14px;
       }
+
       button {
         padding: 8px 30px;
         font-size: 14px;
@@ -2230,10 +2342,12 @@ header {
   a.button {
     padding: 6px 16px;
     font-size: 14px;
+
     img {
       width: 18px;
       height: 18px;
     }
+
     &.large {
       padding: 10px 24px;
       font-size: 16px;
@@ -2251,23 +2365,28 @@ header {
   .footer {
     padding: 40px 0 20px;
     margin-top: 40px;
+
     .footer-content {
       grid-template-columns: 1fr;
       gap: 25px;
       text-align: center;
+
       .footer-section {
         h3 {
           font-size: 20px;
         }
+
         h4 {
           font-size: 16px;
           margin-top: 20px;
         }
+
         .social-links {
           justify-content: center;
         }
       }
     }
+
     .footer-bottom {
       flex-direction: column;
       gap: 10px;
@@ -2276,12 +2395,13 @@ header {
     }
   }
 }
+
 @media screen and (max-width: 480px) {
   * {
     font-size: 12px;
   }
-  .shipping{
-    .area{
+  .shipping {
+    .area {
       display: block;
     }
   }
@@ -2290,6 +2410,7 @@ header {
   }
   .panel {
     justify-content: space-around;
+
     .menu {
       ul {
         li {
@@ -2297,22 +2418,28 @@ header {
         }
       }
     }
+
     .view {
       margin: 10px 5px;
       max-width: 250px;
+
       .userInfo {
         button {
           padding: 5px 5px;
         }
       }
+
       .orders {
         margin: 0;
+
         li {
           nav {
             padding: 5px;
           }
+
           ul {
             margin: 5px;
+
             li {
               img {
                 width: 40px;
@@ -2329,6 +2456,7 @@ header {
       width: 200px;
       height: 20px;
     }
+
     button {
       width: 220px;
       height: 40px;
@@ -2340,10 +2468,12 @@ header {
         p {
           max-width: 150px;
         }
+
         img {
           width: 150px;
           height: 150px;
         }
+
         .price {
           p, s {
             font-size: 10px;
@@ -2356,10 +2486,12 @@ header {
     ul {
       li {
         padding: 8px;
+
         img {
           width: 50px;
           height: 50px;
         }
+
         button {
           img {
             width: 12px;
@@ -2368,15 +2500,18 @@ header {
         }
       }
     }
+
     .shipment {
       p:first-child {
         font-size: 20px;
         margin: 15px 0;
       }
+
       p {
         margin: 10px 20px;
         font-size: 14px;
       }
+
       a {
         width: 180px;
         padding: 6px 12px;
@@ -2384,9 +2519,10 @@ header {
       }
     }
   }
-  .blog{
+  .blog {
     padding: 0 10%;
-    p:first-child{
+
+    p:first-child {
       font-size: 20px;
     }
   }
@@ -2394,13 +2530,16 @@ header {
     form {
       padding: 15px;
       gap: 10px;
+
       p {
         font-size: 18px;
       }
+
       input {
         height: 30px;
         font-size: 13px;
       }
+
       button {
         padding: 6px 25px;
         font-size: 13px;
@@ -2410,10 +2549,12 @@ header {
   a.button {
     padding: 5px 14px;
     font-size: 13px;
+
     img {
       width: 16px;
       height: 16px;
     }
+
     &.large {
       padding: 8px 20px;
       font-size: 15px;
@@ -2428,34 +2569,41 @@ header {
       }
     }
   }
-  .composition{
+  .composition {
     display: block;
-    ul{
+
+    ul {
       margin: 20px 0;
     }
   }
   .footer {
     padding: 30px 0 15px;
     margin-top: 30px;
+
     .footer-content {
       gap: 20px;
+
       .footer-section {
         h3 {
           font-size: 18px;
         }
+
         h4 {
           font-size: 15px;
         }
+
         p, li, .social-links a {
           font-size: 13px;
         }
       }
     }
+
     .footer-bottom {
       font-size: 12px;
     }
   }
 }
+
 @media screen and (max-width: 360px) {
   * {
     font-size: 11px;
@@ -2469,6 +2617,7 @@ header {
         p {
           max-width: 120px;
         }
+
         img {
           width: 120px;
           height: 120px;
@@ -2489,9 +2638,11 @@ header {
   .productDetails {
     .view {
       width: 95%;
+
       img {
         height: 250px;
       }
+
       .prev, .next {
         height: 250px;
         top: 125px;
@@ -2502,6 +2653,7 @@ header {
     input {
       width: 180px;
     }
+
     button {
       width: 200px;
     }
@@ -2723,24 +2875,26 @@ a {
 }
 
 @media screen and (max-width: 1280px) {
-  .composition{
+  .composition {
     display: flex;
-    img{
+
+    img {
       width: 50%;
     }
-    ul{
+
+    ul {
       margin: 20px 0;
     }
   }
   .footer {
     .footer-content {
       gap: 30px;
-      
+
       .footer-section {
         h3 {
           font-size: 22px;
         }
-        
+
         h4 {
           font-size: 16px;
         }
@@ -2750,31 +2904,33 @@ a {
 }
 
 @media screen and (max-width: 1024px) {
-  .composition{
+  .composition {
     display: flex;
-    img{
+
+    img {
       width: 50%;
     }
-    ul{
+
+    ul {
       margin: 20px 0;
     }
   }
   .footer {
     padding: 50px 0 20px;
-    
+
     .footer-content {
       grid-template-columns: repeat(2, 1fr);
       gap: 30px;
-      
+
       .footer-section {
         h3 {
           font-size: 20px;
         }
-        
+
         h4 {
           font-size: 16px;
         }
-        
+
         p, li, .social-links a {
           font-size: 14px;
         }
@@ -2784,12 +2940,14 @@ a {
 }
 
 @media screen and (max-width: 768px) {
-  .composition{
+  .composition {
     display: flex;
-    img{
+
+    img {
       width: 50%;
     }
-    ul{
+
+    ul {
       margin: 20px 0;
     }
   }
@@ -2801,17 +2959,17 @@ a {
       grid-template-columns: 1fr;
       gap: 25px;
       text-align: center;
-      
+
       .footer-section {
         h3 {
           font-size: 20px;
         }
-        
+
         h4 {
           font-size: 16px;
           margin-top: 20px;
         }
-        
+
         .social-links {
           justify-content: center;
         }
@@ -2828,9 +2986,10 @@ a {
 }
 
 @media screen and (max-width: 480px) {
-   .composition{
+  .composition {
     display: block;
-    ul{
+
+    ul {
       margin: 20px 0;
     }
   }
@@ -2840,16 +2999,16 @@ a {
 
     .footer-content {
       gap: 20px;
-      
+
       .footer-section {
         h3 {
           font-size: 18px;
         }
-        
+
         h4 {
           font-size: 15px;
         }
-        
+
         p, li, .social-links a {
           font-size: 13px;
         }
