@@ -31,12 +31,15 @@ export default function ProductDetails({cart, setCart}) {
                 console.error(error);
             });
     }, [id]);
-
     const averageRate = useMemo(() => {
         if (!product || !product.reviews || product.reviews.length === 0) return 0;
         const total = product.reviews.reduce((sum, review) => sum + review.rate, 0);
         return total / product.reviews.length;
     }, [product]);
+
+     if (!product) {
+        return <div className='loading'><img src={loading} alt='none gif'></img></div>
+    }
 
     function handleChangeCheckbox(event) {
         setInstallation(event.target.checked);
@@ -52,14 +55,6 @@ export default function ProductDetails({cart, setCart}) {
             setCart([...cart, {product: product, quantity: 1, installation: installation}]);
         }
     }
-
-    if (!product) {
-        return <div className='loading'><img src={loading} alt='Loading'/></div>;
-    }
-
-    const formattedFeatures = product.features ? product.features.split("\n").map((line, index) => (
-        <span key={index}>{line}<br/></span>
-    )) : [];
 
     const formattedDemensions = product.demensions ? product.demensions.split("\n").map((line, index) => (
         <span key={index}>{line}<br/></span>

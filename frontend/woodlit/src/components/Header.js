@@ -24,11 +24,11 @@ useEffect(() => {
     return (
         <>
                 <div className={`bMenu ${isOpen ? 'active' : ''}`}>
-                    <Link onClick={() => setIsOpen(!isOpen)} to="/about">About Us</Link>
                     <Link onClick={() => setIsOpen(!isOpen)} to="/">Swing Sets</Link>
-                    <Link onClick={() => setIsOpen(!isOpen)} to="/assembly">Assembly</Link>
                     <Link onClick={() => setIsOpen(!isOpen)} to="/shipping">Shipping</Link>
                     <Link onClick={() => setIsOpen(!isOpen)} to="/blogs">Blog</Link>
+                    <Link onClick={() => setIsOpen(!isOpen)} to="/assembly">Assembly</Link>
+                    <Link onClick={() => setIsOpen(!isOpen)} to="/about">About Us</Link>
                 </div>
             <div className='container'>
                 <header>
