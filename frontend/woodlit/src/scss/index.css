@@ -13,7 +13,6 @@ header {
 }
 header .burgerMenu {
   display: none;
-  z-index: 100;
 }
 header .headerLeft {
   display: flex;
@@ -86,6 +85,36 @@ header .headerRight a span {
   color: rgb(121, 227, 121);
   transform: none;
   box-shadow: none;
+}
+
+.bMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.9;
+  z-index: 1;
+  transform: translateX(-100%);
+  transition: transform 0.4s ease;
+}
+.bMenu.active {
+  transform: translateX(0);
+}
+.bMenu a {
+  display: block;
+  text-align: end;
+  padding: 10px;
+  margin: 30px 50px 30px 20%;
+  font-size: 20px;
+  color: white;
+  border-bottom: 1px solid white;
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 60px;
 }
 
 .uploadProductForm {
@@ -260,26 +289,6 @@ header .headerRight a span {
 .shipping .area .text-area {
   text-align: start;
   padding: 10%;
-}
-
-.bMenu {
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  position: absolute;
-  opacity: 0.9;
-  z-index: 99;
-}
-.bMenu a {
-  text-align: right;
-  display: block;
-  padding: 10px;
-  margin: 30px 50px;
-  margin-left: 150px;
-  font-size: 20px;
-  color: white;
-  border-bottom: 1px solid white;
-  text-decoration: none;
 }
 
 .products .filter {
@@ -914,10 +923,6 @@ header .headerRight a span {
 }
 .demensions p {
   margin: 20px 0;
-}
-
-.container {
-  margin: 0 60px;
 }
 
 .loading {
@@ -1762,9 +1767,11 @@ header .headerRight a span {
     display: none;
   }
   header .burgerMenu {
+    position: relative;
     display: flex;
     align-items: center;
     gap: 30px;
+    z-index: 2;
   }
   header .burgerMenu button {
     padding: 0;
@@ -1794,6 +1801,12 @@ header .headerRight a span {
   header .burgerMenu button.active span:nth-child(3) {
     transform: translateY(-9px) rotate(-45deg);
     background: white;
+  }
+  .navigation {
+    display: none;
+  }
+  .container {
+    margin: 0 15px;
   }
   .assembly h1 {
     margin: 10px 10%;
@@ -1826,9 +1839,6 @@ header .headerRight a span {
   .shipping .area .text-area {
     padding: 5%;
   }
-  .container {
-    margin: 0 15px;
-  }
   .composition {
     display: block;
   }
@@ -1837,9 +1847,6 @@ header .headerRight a span {
   }
   .composition ul {
     margin: 20px 0;
-  }
-  .navigation {
-    display: none;
   }
   .panel .view {
     margin: 10px 20px;
@@ -1989,11 +1996,11 @@ header .headerRight a span {
   * {
     font-size: 12px;
   }
-  .shipping .area {
-    display: block;
-  }
   .container {
     margin: 0 10px;
+  }
+  .shipping .area {
+    display: block;
   }
   .panel {
     justify-content: space-around;
@@ -2162,67 +2169,6 @@ header .headerRight a span {
     width: 200px;
   }
 }
-a {
-  text-decoration: none;
-  color: inherit;
-  transition: all 0.3s ease;
-}
-a.button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  padding: 8px 20px;
-  border-radius: 10px;
-  font-size: 16px;
-  cursor: pointer;
-  border: 2px solid rgb(121, 227, 121);
-  background: none;
-  color: rgb(121, 227, 121);
-  transition: all 0.3s ease;
-}
-a.button:hover {
-  background: rgb(121, 227, 121);
-  color: white;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(121, 227, 121, 0.2);
-}
-a.button:active {
-  transform: translateY(0);
-}
-a.button img {
-  width: 20px;
-  height: 20px;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-a.button.primary {
-  background: rgb(121, 227, 121);
-  color: white;
-}
-a.button.primary:hover {
-  background: rgb(101, 207, 101);
-  border-color: rgb(101, 207, 101);
-}
-a.button.small {
-  padding: 4px 12px;
-  font-size: 14px;
-  border-width: 1px;
-}
-a.button.small img {
-  width: 16px;
-  height: 16px;
-}
-a.button.large {
-  padding: 12px 30px;
-  font-size: 18px;
-  border-width: 2px;
-}
-a.button.large img {
-  width: 24px;
-  height: 24px;
-}
-
 @media screen and (max-width: 768px) {
   a.button {
     padding: 6px 16px;

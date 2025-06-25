@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import {Link} from 'react-router-dom'
 import instagram from '../images/instagram.png';
 import facebook from '../images/facebook.png';
@@ -10,17 +10,26 @@ import adminIcon from '../images/admin.png';
 
 export default function Header({cart}) {
     const [isOpen, setIsOpen] = useState(false);
+    
+useEffect(() => {
+  if (isOpen) {
+    document.body.style.overflow = 'hidden';
+  } else {
+    document.body.style.overflow = 'auto'; 
+  }
+  return () => {
+    document.body.style.overflow = 'auto';
+  };
+}, [isOpen]);
     return (
         <>
-            {isOpen && (
-                <div className='bMenu'>
+                <div className={`bMenu ${isOpen ? 'active' : ''}`}>
                     <Link onClick={() => setIsOpen(!isOpen)} to="/about">About Us</Link>
                     <Link onClick={() => setIsOpen(!isOpen)} to="/">Swing Sets</Link>
                     <Link onClick={() => setIsOpen(!isOpen)} to="/assembly">Assembly</Link>
                     <Link onClick={() => setIsOpen(!isOpen)} to="/shipping">Shipping</Link>
                     <Link onClick={() => setIsOpen(!isOpen)} to="/blogs">Blog</Link>
                 </div>
-            )}
             <div className='container'>
                 <header>
                     <div className='headerLeft'>
