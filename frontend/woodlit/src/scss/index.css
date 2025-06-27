@@ -419,6 +419,174 @@ header .headerRight a span {
   box-shadow: 0 4px 8px rgba(121, 227, 121, 0.2);
 }
 
+.whyBlock {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 0;
+  gap: 20px;
+  list-style-type: none;
+}
+.whyBlock li {
+  width: 70%;
+}
+.whyBlock li h1 {
+  margin: 10px 0;
+}
+.whyBlock li img {
+  border-radius: 40px;
+  width: inherit;
+}
+
+.demensions {
+  margin-top: 40px;
+  text-align: center;
+}
+.demensions p:first-child {
+  font-size: 25px;
+}
+.demensions p {
+  margin: 20px 0;
+}
+
+.composition {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.composition img {
+  width: 50%;
+}
+.composition ul {
+  width: 50%;
+}
+
+.reviewDetails {
+  margin-top: 40px;
+  text-align: center;
+}
+.reviewDetails p {
+  margin: 10px 0;
+}
+.reviewDetails button {
+  display: block;
+  margin: 10px auto;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 8px 20px;
+  border-radius: 10px;
+  background: none;
+  border: 2px solid rgb(121, 227, 121);
+  color: rgb(121, 227, 121);
+  transition: all 0.3s ease;
+}
+.reviewDetails button:hover {
+  background: rgb(121, 227, 121);
+  color: white;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(121, 227, 121, 0.2);
+}
+
+.reviews {
+  margin-bottom: 40px;
+}
+.reviews .comment {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.253);
+  padding-bottom: 20px;
+  margin-top: 20px;
+}
+.reviews .comment .userInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.reviews .comment .userInfo img {
+  width: 50px;
+}
+.reviews .comment ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+  display: flex;
+  gap: 20px;
+}
+.reviews .comment ul li img {
+  cursor: pointer;
+  height: 100px;
+  width: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.reviews .reviewForm button {
+  width: 100%;
+  max-width: 300px;
+  margin: 10px auto;
+  display: block;
+  background: rgb(121, 227, 121);
+  color: white;
+  border: 2px solid rgb(121, 227, 121);
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.reviews .reviewForm button:hover {
+  background: rgb(101, 207, 101);
+  border-color: rgb(101, 207, 101);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(121, 227, 121, 0.2);
+}
+.reviews .reviewForm button:active {
+  transform: translateY(0);
+}
+
+.imageContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 3;
+}
+.imageContainer img {
+  max-width: 90%;
+  max-height: 90vh;
+  -o-object-fit: contain;
+     object-fit: contain;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+}
+.imageContainer .closeButton {
+  position: absolute;
+  cursor: pointer;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  color: #333;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+.imageContainer .closeButton:hover {
+  background: white;
+  transform: scale(1.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 .uploadProductForm {
   margin: 20px 0;
 }
@@ -811,36 +979,6 @@ header .headerRight a span {
   border: 2px solid rgb(121, 227, 121);
 }
 
-.composition {
-  display: flex;
-  align-items: center;
-}
-.composition img {
-  width: 50%;
-}
-.composition ul {
-  margin: 20px 0;
-}
-
-.whyBlock {
-  margin-top: 5%;
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  padding: 0;
-  list-style-type: none;
-}
-.whyBlock li {
-  width: 350px;
-}
-.whyBlock li h1 {
-  margin: 10px 0;
-}
-.whyBlock li img {
-  border-radius: 40px;
-  width: inherit;
-}
-
 .panel {
   display: flex;
   justify-content: center;
@@ -971,109 +1109,6 @@ header .headerRight a span {
 .panel .view .orders li ul li p + p {
   font-style: italic;
   color: #4caf50;
-}
-
-.demensions {
-  margin: 40px 0;
-  text-align: center;
-  font-size: 20px;
-}
-.demensions p:first-child {
-  font-size: 25px;
-}
-.demensions p {
-  margin: 20px 0;
-}
-
-.reviewDetails {
-  margin-top: 30px;
-  text-align: center;
-  font-size: 20px;
-}
-.reviewDetails p {
-  font-size: 17px;
-  margin: 10px 0;
-}
-.reviewDetails button {
-  display: block;
-  margin: 10px auto;
-  font-size: 15px;
-  cursor: pointer;
-  padding: 8px 20px;
-  border-radius: 10px;
-  background: none;
-  border: 2px solid rgb(121, 227, 121);
-  color: rgb(121, 227, 121);
-  transition: all 0.3s ease;
-}
-.reviewDetails button:hover {
-  background: rgb(121, 227, 121);
-  color: white;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(121, 227, 121, 0.2);
-}
-.reviewDetails button:active {
-  transform: translateY(0);
-}
-
-.reviews {
-  font-size: 20px;
-}
-.reviews .comment {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.253);
-  padding-bottom: 20px;
-  margin-top: 20px;
-  transition: all 0.3s ease;
-}
-.reviews .comment:hover {
-  background-color: rgba(121, 227, 121, 0.05);
-}
-.reviews .comment .userInfo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.reviews .comment .userInfo img {
-  width: 50px;
-  transition: transform 0.3s ease;
-}
-.reviews .comment .userInfo img:hover {
-  transform: scale(1.1);
-}
-.reviews .comment ul {
-  list-style-type: none;
-  padding: 0;
-  margin-top: 10px;
-  display: flex;
-  gap: 20px;
-}
-.reviews .comment ul li img {
-  cursor: pointer;
-  height: 100px;
-  width: 100px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.reviews .reviewForm button {
-  width: 100%;
-  max-width: 300px;
-  margin: 10px auto;
-  display: block;
-  background: rgb(121, 227, 121);
-  color: white;
-  border: 2px solid rgb(121, 227, 121);
-  padding: 10px 20px;
-  border-radius: 10px;
-  transition: all 0.3s ease;
-}
-.reviews .reviewForm button:hover {
-  background: rgb(101, 207, 101);
-  border-color: rgb(101, 207, 101);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(121, 227, 121, 0.2);
-}
-.reviews .reviewForm button:active {
-  transform: translateY(0);
 }
 
 .cartEmpty {
@@ -1222,54 +1257,6 @@ header .headerRight a span {
 }
 .reviewForm button:active {
   transform: translateY(0);
-}
-
-.imageContainer {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-  padding: 20px;
-  box-sizing: border-box;
-}
-.imageContainer img {
-  max-width: 90%;
-  max-height: 90vh;
-  -o-object-fit: contain;
-     object-fit: contain;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
-  border-radius: 8px;
-}
-.imageContainer .closeButton {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.9);
-  border: none;
-  color: #333;
-  font-size: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease;
-  z-index: 2;
-}
-.imageContainer .closeButton:hover {
-  background: white;
-  transform: scale(1.1);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-.imageContainer .closeButton:active {
-  transform: scale(1);
 }
 
 .error {
@@ -1690,18 +1677,6 @@ header .headerRight a span {
   .cartEmpty img {
     width: 50px;
   }
-  .whyBlock li {
-    width: 300px;
-  }
-  .composition {
-    display: flex;
-  }
-  .composition img {
-    width: 50%;
-  }
-  .composition ul {
-    margin: 20px 0;
-  }
   .footer .footer-content {
     gap: 30px;
   }
@@ -1754,18 +1729,6 @@ header .headerRight a span {
   }
   .cart .shipment {
     max-height: 270px;
-  }
-  .whyBlock li {
-    width: 200px;
-  }
-  .composition {
-    display: flex;
-  }
-  .composition img {
-    width: 50%;
-  }
-  .composition ul {
-    margin: 20px 0;
   }
   .footer {
     padding: 50px 0 20px;
@@ -1890,6 +1853,23 @@ header .headerRight a span {
   .productDetails .information .description-content {
     text-align: left;
   }
+  .whyBlock {
+    flex-direction: column;
+    align-items: center;
+  }
+  .whyBlock li {
+    margin: 20px 0;
+    width: 80%;
+  }
+  .composition {
+    display: block;
+  }
+  .composition img {
+    width: 100%;
+  }
+  .composition ul {
+    margin-top: 20px;
+  }
   .assembly h1 {
     margin: 10px 10%;
   }
@@ -1920,15 +1900,6 @@ header .headerRight a span {
   }
   .shipping .area .text-area {
     padding: 5%;
-  }
-  .composition {
-    display: block;
-  }
-  .composition img {
-    width: 100%;
-  }
-  .composition ul {
-    margin: 20px 0;
   }
   .panel .view {
     margin: 10px 20px;
@@ -1970,14 +1941,6 @@ header .headerRight a span {
   }
   .cart .shipment a {
     width: 200px;
-  }
-  .whyBlock {
-    flex-direction: column;
-    align-items: center;
-  }
-  .whyBlock li {
-    margin: 20px 0;
-    width: 80%;
   }
   .popUpForm form, .uploadProductPopUpForm form {
     padding: 20px;
@@ -2169,12 +2132,6 @@ header .headerRight a span {
     width: 180px;
     padding: 5px 14px;
     font-size: 13px;
-  }
-  .composition {
-    display: block;
-  }
-  .composition ul {
-    margin: 20px 0;
   }
   .footer {
     padding: 30px 0 15px;
