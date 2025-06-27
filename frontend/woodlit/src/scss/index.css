@@ -249,52 +249,58 @@ header .headerRight a span {
 }
 
 .productDetails {
-  margin-top: 20px;
+  margin: 20px 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .productDetails .view {
-  width: 40%;
-  position: relative;
+  width: 50%;
 }
-.productDetails .view img {
+.productDetails .view .img-area {
+  position: relative;
   width: 100%;
-  height: 500px;
+}
+.productDetails .view .img-area img {
+  height: inherit;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   cursor: pointer;
+  display: block;
 }
-.productDetails .view .prev, .productDetails .view .next {
+.productDetails .view .img-area .prev,
+.productDetails .view .img-area .next {
   position: absolute;
-  transform: translateY(-50%);
-  width: 40px;
-  top: 37%;
-  height: 500px;
+  top: 0;
+  height: 100%;
+  width: 7%;
   background: rgba(0, 0, 0, 0.3);
   color: white;
-  font-size: 30px;
+  font-size: 20px;
   border: none;
   cursor: pointer;
   z-index: 2;
   transition: background-color 0.3s ease;
 }
-.productDetails .view .prev:hover, .productDetails .view .next:hover {
+.productDetails .view .img-area .prev:hover,
+.productDetails .view .img-area .next:hover {
   background: rgba(0, 0, 0, 0.6);
 }
-.productDetails .view .prev:active, .productDetails .view .next:active {
+.productDetails .view .img-area .prev:active,
+.productDetails .view .img-area .next:active {
   background: rgba(0, 0, 0, 0.7);
 }
-.productDetails .view .prev {
+.productDetails .view .img-area .prev {
   left: 0;
 }
-.productDetails .view .next {
+.productDetails .view .img-area .next {
   right: 0;
 }
 .productDetails .thumbnail-gallery {
   margin-top: 20px;
   display: flex;
   align-items: center;
-  justify-content: center;
   width: 100%;
 }
 .productDetails .thumbnail-gallery .thumb-prev,
@@ -319,7 +325,7 @@ header .headerRight a span {
 }
 .productDetails .thumbnail-gallery .thumbs-container {
   overflow: hidden;
-  width: 600px;
+  width: 100%;
   margin: 0 10px;
 }
 .productDetails .thumbnail-gallery .thumbs-container .thumbs-wrapper {
@@ -343,6 +349,74 @@ header .headerRight a span {
 }
 .productDetails .thumbnail-gallery .thumbs-container .thumbs-wrapper img:hover {
   transform: scale(1.05);
+}
+.productDetails .information {
+  width: 40%;
+}
+.productDetails .information h1 {
+  font-size: 60px;
+  margin: 40px 0;
+  font-weight: 500;
+}
+.productDetails .information .price {
+  margin: 20px 0;
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+.productDetails .information .price p {
+  display: inline;
+  font-size: 24px;
+  font-weight: 500;
+  color: rgb(200, 86, 29);
+}
+.productDetails .information .price s {
+  margin: 0;
+  font-size: 16px;
+  color: #999;
+  text-decoration-thickness: 1px;
+}
+.productDetails .information .installation {
+  display: flex;
+  margin: 20px 0;
+  gap: 10px;
+  align-items: center;
+}
+.productDetails .information .installation input[type=checkbox] {
+  width: 18px;
+  height: 18px;
+  accent-color: rgb(121, 227, 121);
+  cursor: pointer;
+}
+.productDetails .information .installation p {
+  margin: 0;
+  font-size: 15px;
+}
+.productDetails .information .description {
+  margin-top: 30px;
+}
+.productDetails .information .description p {
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0;
+}
+.productDetails .information button {
+  display: block;
+  margin: 20px 0;
+  cursor: pointer;
+  width: 80%;
+  height: 35px;
+  border-radius: 10px;
+  background: none;
+  border: 2px solid rgb(121, 227, 121);
+  color: rgb(121, 227, 121);
+  transition: all 0.3s ease;
+}
+.productDetails .information button:hover {
+  background: rgb(121, 227, 121);
+  color: white;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(121, 227, 121, 0.2);
 }
 
 .uploadProductForm {
@@ -746,94 +820,6 @@ header .headerRight a span {
 }
 .composition ul {
   margin: 20px 0;
-}
-
-.information {
-  width: 50%;
-}
-.information h1 {
-  font-size: 28px;
-  margin: 20px 0;
-  font-weight: 400;
-  color: #333;
-  line-height: 1.3;
-  letter-spacing: -0.5px;
-}
-.information .price {
-  margin: 25px 0;
-  display: flex;
-  align-items: baseline;
-  gap: 12px;
-}
-.information .price p {
-  display: inline;
-  font-size: 24px;
-  font-weight: 500;
-  color: #333;
-}
-.information .price s {
-  margin: 0;
-  font-size: 16px;
-  color: #999;
-  text-decoration-thickness: 1px;
-}
-.information .description {
-  margin-top: 30px;
-  padding: 25px;
-  background: #f8f8f8;
-  border-radius: 12px;
-}
-.information .description h5 {
-  font-size: 18px;
-  font-weight: 500;
-  color: #333;
-  margin-bottom: 15px;
-  letter-spacing: -0.3px;
-}
-.information .description p {
-  font-size: 15px;
-  line-height: 1.6;
-  color: #666;
-  margin: 0;
-}
-.information button {
-  margin: 30px 0;
-  font-size: 15px;
-  cursor: pointer;
-  padding: 12px 40px;
-  border-radius: 8px;
-  background: rgb(121, 227, 121);
-  border: 2px solid rgb(121, 227, 121);
-  color: white;
-  transition: all 0.3s ease;
-  font-weight: 500;
-  letter-spacing: 0.3px;
-}
-.information button:hover {
-  background: rgb(101, 207, 101);
-  border-color: rgb(101, 207, 101);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(121, 227, 121, 0.2);
-}
-.information button:active {
-  transform: translateY(0);
-}
-.information .installation {
-  display: flex;
-  margin: 15px 0;
-  gap: 10px;
-  align-items: center;
-}
-.information .installation input[type=checkbox] {
-  width: 18px;
-  height: 18px;
-  accent-color: rgb(121, 227, 121);
-  cursor: pointer;
-}
-.information .installation p {
-  margin: 0;
-  font-size: 15px;
-  color: #666;
 }
 
 .whyBlock {
@@ -1704,12 +1690,6 @@ header .headerRight a span {
   .cartEmpty img {
     width: 50px;
   }
-  .productDetails .view {
-    width: 50%;
-  }
-  .productDetails .information {
-    width: 40%;
-  }
   .whyBlock li {
     width: 300px;
   }
@@ -1742,9 +1722,6 @@ header .headerRight a span {
   }
   .products li .price p, .products li .price s {
     font-size: 14px;
-  }
-  .productDetails .thumbnail-gallery .thumbs-container {
-    height: 100px;
   }
   .productDetails .thumbnail-gallery .thumbs-container .thumbs-wrapper img {
     height: 90px;
@@ -1887,6 +1864,32 @@ header .headerRight a span {
   .products li .price p, .products li .price s {
     font-size: 12px;
   }
+  .productDetails {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .productDetails .information {
+    width: 100%;
+  }
+  .productDetails .information button {
+    margin: 0 auto;
+  }
+  .productDetails .view {
+    width: 100%;
+  }
+  .productDetails .information .price {
+    justify-content: center;
+  }
+  .productDetails .information .installation {
+    justify-content: center;
+  }
+  .productDetails .information .description ul {
+    justify-content: center;
+  }
+  .productDetails .information .description-content {
+    text-align: left;
+  }
   .assembly h1 {
     margin: 10px 10%;
   }
@@ -1975,32 +1978,6 @@ header .headerRight a span {
   .whyBlock li {
     margin: 20px 0;
     width: 80%;
-  }
-  .productDetails {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  .productDetails .information {
-    width: 100%;
-  }
-  .productDetails .view {
-    width: 80%;
-  }
-  .productDetails .view img {
-    height: 350px;
-  }
-  .productDetails .information .price {
-    justify-content: center;
-  }
-  .productDetails .information .installation {
-    justify-content: center;
-  }
-  .productDetails .information .description ul {
-    justify-content: center;
-  }
-  .productDetails .information .description-content {
-    text-align: left;
   }
   .popUpForm form, .uploadProductPopUpForm form {
     padding: 20px;
@@ -2230,19 +2207,16 @@ header .headerRight a span {
     width: 12 0px;
     height: 120px;
   }
-  .cart ul li img {
-    width: 40px;
-    height: 40px;
-  }
-  .productDetails .view {
-    width: 95%;
-  }
   .productDetails .view img {
     height: 250px;
   }
   .productDetails .view .prev, .productDetails .view .next {
     height: 250px;
     top: 125px;
+  }
+  .cart ul li img {
+    width: 40px;
+    height: 40px;
   }
   .formLogin input {
     width: 180px;

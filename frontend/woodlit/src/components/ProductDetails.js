@@ -37,7 +37,7 @@ export default function ProductDetails({cart, setCart}) {
         return total / product.reviews.length;
     }, [product]);
 
-     if (!product) {
+    if (!product) {
         return <div className='loading'><img src={loading} alt='none gif'></img></div>
     }
 
@@ -95,12 +95,14 @@ export default function ProductDetails({cart, setCart}) {
         <div className='container'>
             <div className='productDetails'>
                 <div className='view'>
-                    <button className="prev" onClick={prevSlide}>&#10094;</button>
+                    <div className='img-area'>
+                        <button className="prev" onClick={prevSlide}>&#10094;</button>
                     <img onClick={() => {
                         setCurrentImage(gallery[currentSlide]);
                         setShowImage(true)
                     }} src={gallery[currentSlide]} alt="Product"/>
                     <button className="next" onClick={nextSlide}>&#10095;</button>
+                    </div>
                     <div className="thumbnail-gallery">
                         <button
                             className="thumb-prev"
@@ -111,7 +113,7 @@ export default function ProductDetails({cart, setCart}) {
                         </button>
                         <div className="thumbs-container">
                             <div className="thumbs-wrapper"
-                                 style={{transform: `translateX(-${thumbsStartIndex * 161}px)`}}>
+                                 style={{transform: `translateX(-${thumbsStartIndex * 160}px)`}}>
                                 {gallery.map((img, index) => (
                                     <img key={index}
                                          src={img}
@@ -143,10 +145,9 @@ export default function ProductDetails({cart, setCart}) {
                         <p>installation + € {(product.installationPrice).toFixed(2)}</p>
                     </div>
                     <button onClick={() => addToCart(product.id, installation)}>ADD TO CART</button>
-                        <div className="description">
-                            <h5>Description</h5>
-                            <p>{product.description}</p>
-                        </div>
+                    <div className="description">
+                        <p>{product.description}</p>
+                    </div>
                 </div>
 
             </div>
@@ -180,12 +181,12 @@ export default function ProductDetails({cart, setCart}) {
             </div>
 
             <div className='composition'>
-                        <img src={product.compositionImage} alt="Composition" />
-                        <ul>
-                            {product.composition && product.composition.split("\n").map((item, index) => (
-                                <li key={index}>{item}</li>
-                            ))}
-                        </ul>
+                <img src={product.compositionImage} alt="Composition"/>
+                <ul>
+                    {product.composition && product.composition.split("\n").map((item, index) => (
+                        <li key={index}>{item}</li>
+                    ))}
+                </ul>
             </div>
 
             <div className='reviewDetails'>
@@ -241,8 +242,8 @@ export default function ProductDetails({cart, setCart}) {
                         </ul>
                         {showImage && (
                             <div className='imageContainer' onClick={() => setShowImage(false)}>
-                                    <button className='closeButton' onClick={() => setShowImage(false)}>✕</button>
-                                    <img src={currentImage} alt="Full View"/>
+                                <button className='closeButton' onClick={() => setShowImage(false)}>✕</button>
+                                <img src={currentImage} alt="Full View"/>
                             </div>
                         )}
 
