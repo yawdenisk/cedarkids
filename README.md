@@ -17,9 +17,9 @@
 
 ### Frontend
 
-- **React.js**: Building a dynamic and responsive user interface.
-- **Scss**: preprocessor for css.
-- **Webpack**: Asset bundling and optimization.
+**React.js**: Building a dynamic and responsive user interface.
+**Scss**: preprocessor for css.
+**Webpack**: Asset bundling and optimization.
 
 ### Backend
 
