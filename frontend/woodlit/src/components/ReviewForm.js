@@ -7,11 +7,9 @@ export default function ReviewForm({setShowReviewForm, product}) {
     const [rating, setRating] = useState();
     const [text, setText] = useState();
     const [fullName, setFullName] = useState();
-    const [error, setError] = useState(null);
 
     async function sendForm(e) {
         e.preventDefault();
-        setError(null);
 
         const formData = new FormData();
         formData.append("fullName", fullName);
@@ -30,7 +28,7 @@ export default function ReviewForm({setShowReviewForm, product}) {
             });
             window.location.reload();
         } catch (error) {
-            setError(error.response.data);
+            console.error(error);
         }
     }
 

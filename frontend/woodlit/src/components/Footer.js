@@ -7,7 +7,9 @@ export default function Footer() {
                 <div className="footer-content">
                     <div className="footer-section">
                         <h3>CedarKids</h3>
-                        <p>Quality wooden products for your home</p>
+                        <p>Email: info@cedarkids.com</p>
+                        <p>Phone: +1 234 567 890</p>
+                        <p>Address: 123 Wood Street</p>
                     </div>
 
                     <div className="footer-section">
@@ -18,15 +20,6 @@ export default function Footer() {
                             <li><Link to="/blogs">Blog</Link></li>
                             <li><Link to="/assembly">Assembly</Link></li>
                             <li><Link to="/about">About Us</Link></li>
-                        </ul>
-                    </div>
-
-                    <div className="footer-section">
-                        <h4>Contact</h4>
-                        <ul>
-                            <li>Email: info@cedarkids.com</li>
-                            <li>Phone: +1 234 567 890</li>
-                            <li>Address: 123 Wood Street</li>
                         </ul>
                     </div>
 

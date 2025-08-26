@@ -4,6 +4,7 @@ import loading from '../images/loading.svg'
 import {useNavigate} from 'react-router-dom';
 import DeliveryDetailsForm from './DeliveryDetailsForm';
 import UserDetailsForm from './UserDetailsForm';
+import config from '../config'
 
 export default function UserPanel() {
     const [userDetails, setUserDetails] = useState({});
@@ -22,7 +23,7 @@ export default function UserPanel() {
 
     async function fetchUserDetails() {
         try {
-            const response = await axios.get('https://cedarkids.eu/api/user/getUserDetails', {
+            const response = await axios.get(`${config.API_URL}/api/user/getUserDetails`, {
                 headers: {
                     'Authorization': `Bearer ${localStorage.getItem("access_tocken")}`
                 }
@@ -39,7 +40,7 @@ export default function UserPanel() {
 
     async function logout() {
         try {
-            await axios.post('https://cedarkids.eu/api/user/logout', {}, {
+            await axios.post(`${config.API_URL}/api/user/logout`, {}, {
                 headers: {
                     'Authorization': `Bearer ${localStorage.getItem("access_tocken")}`
                 }
@@ -120,9 +121,9 @@ export default function UserPanel() {
         : (item.product.price * item.quantity)
     ), 0)).toFixed(2)
 }</p>
-                                                {order.status == 'UNPAID' &&
-                                                    <a href={order.paymentUrl}>Pay</a>
-                                                }
+                                                {/* {order.status == 'UNPAID' &&
+                                                    // <a href={order.paymentUrl}>Pay</a>
+                                                } */}
                                             </nav>
                                             <ul>
                                             {order.cart.map(item =>

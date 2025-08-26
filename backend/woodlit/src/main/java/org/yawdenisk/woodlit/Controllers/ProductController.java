@@ -20,6 +20,9 @@ public class ProductController {
     private ProductService productService;
     @Autowired
     private S3Client s3Client;
+    private String extractKeyFromUrl(String url) {
+        return url.replace("https://woodlit.s3.amazonaws.com/", "");
+    }
 
     @PostMapping("/upload")
     public ResponseEntity<String> uploadProduct(@RequestParam("name") String name,
@@ -77,12 +80,16 @@ public class ProductController {
     public ResponseEntity<String> deleteProduct(@PathVariable UUID id) {
         try {
             Product product = productService.getProductById(id).orElseThrow(() -> new ProductNotFoundException());
-            s3Client.deleteObject(request -> request.bucket("woodlit").key(product.getImage()));
-            s3Client.deleteObject(request -> request.bucket("woodlit").key(product.getCompositionImage()));
+            s3Client.deleteObject(request -> request.bucket("woodlit").key(extractKeyFromUrl(product.getImage())));
+            s3Client.deleteObject(request -> request.bucket("woodlit").key(extractKeyFromUrl(product.getCompositionImage())));
+            s3Client.deleteObject(request -> request.bucket("woodlit").key(extractKeyFromUrl(product.getMovie())));
+            for (ProductGallery productGallery : product.getGallery()) {
+                s3Client.deleteObject(request -> request.bucket("woodlit").key(extractKeyFromUrl(productGallery.getImageUrl())));
+            }
             productService.deleteProduct(id);
             return ResponseEntity.ok("Product deleted sucessfully");
         } catch (Exception e) {
-            return ResponseEntity.status(500).body("Error deleting product");
+            return ResponseEntity.status(500).body("Error deleting product" + e.getMessage());
         }
     }
 

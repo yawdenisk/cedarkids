@@ -74,10 +74,11 @@ public class OrderController {
                     cartItem.getProduct().setPrice(priceWithInstallation);
                 }
             });
-            StripeResponse stripeResponce = stripeService.checkoutProducts(order.getCart());
-            order.setPaymentUrl(stripeResponce.getSessionUrl());
+//            StripeResponse stripeResponce = stripeService.checkoutProducts(order.getCart());
+//            order.setPaymentUrl(stripeResponce.getSessionUrl());
             orderService.createOrder(order);
-            return ResponseEntity.ok().body(stripeResponce.getSessionUrl());
+//            return ResponseEntity.ok().body(stripeResponce.getSessionUrl());
+            return ResponseEntity.ok().body("Order created");
         } catch (Exception e) {
             return ResponseEntity.status(500).body("Error creating order" + e.getMessage());
         }

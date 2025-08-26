@@ -1,6 +1,7 @@
 package org.yawdenisk.woodlit.Entites;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -25,12 +26,12 @@ public class Order {
     private String status;
     @Column(nullable = false)
     private LocalDate date;
-    @Column(nullable = false, length = 1024)
-    private String paymentUrl;
+//    @Column(nullable = false, length = 1024)
+//    private String paymentUrl;
 
     @ManyToOne
     @JoinColumn(name = "user_id")
-    @JsonBackReference
+    @JsonIgnoreProperties("orders")
     private User user;
 
     @ManyToMany(cascade = CascadeType.ALL)

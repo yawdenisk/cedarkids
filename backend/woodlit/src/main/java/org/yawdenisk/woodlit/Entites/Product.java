@@ -21,11 +21,10 @@ public class Product {
     private String name;
     @Column(nullable = false)
     private String image;
-    @Column(nullable = false)
     private String movie;
     @Column(nullable = false)
     private String compositionImage;
-    @Column(nullable = false, length = 1024)
+    @Column(nullable = false, columnDefinition = "TEXT")
     private String description;
     @Column(nullable = false)
     private Float price;
@@ -33,9 +32,9 @@ public class Product {
     private Float lastPrice;
     @Column(nullable = false)
     private Float installationPrice;
-    @Column(nullable = false, length = 1024)
+    @Column(nullable = false, columnDefinition = "TEXT")
     private String demensions;
-    @Column(nullable = false, length = 1024)
+    @Column(nullable = false, columnDefinition = "TEXT")
     private String composition;
 
     @OneToMany(mappedBy = "product")

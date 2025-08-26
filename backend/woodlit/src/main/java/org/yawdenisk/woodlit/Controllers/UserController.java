@@ -60,7 +60,7 @@ public class UserController {
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Error getting user details");
         }
     }
-    @PutMapping("/update/")
+    @PutMapping("/update")
     public ResponseEntity<?> update(@RequestBody UserRequest userRequest,
                                     @RequestHeader("Authorization") String token) {
         try{

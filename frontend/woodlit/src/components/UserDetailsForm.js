@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, {useState} from 'react'
+import config from '../config'
 
 export default function DeliveryDetailsForm({setShowUserDetailsForm}) {
     const [firstName, setFirstName] = useState(null);
@@ -11,7 +12,7 @@ export default function DeliveryDetailsForm({setShowUserDetailsForm}) {
         e.preventDefault();
         setError(null);
         try {
-            await axios.put('https://cedarkids.eu/api/user/update/', {
+            await axios.put(`${config.API_URL}/api/user/update`, {
                 firstName,
                 lastName
             }, {
@@ -20,12 +21,26 @@ export default function DeliveryDetailsForm({setShowUserDetailsForm}) {
                 }
             })
             window.location.reload();
-        } catch (error) {
-            setError(error.response.data);
+        } catch (err) {
+        console.error("Something went wrong. Please try again.", err);
+        if (err.response && err.response.data && err.response.data.message) {
+            setError(err.response.data.message);
+        } else {
+            setError("Something went wrong. Please try again.");
         }
+         setTimeout(() => {
+        setError(null);
+    }, 5000);
+    }
     }
 
     return (
+        <>{error && (
+    <div className="error">
+        <p>{error}</p>
+        <button onClick={() => setError(null)}>✖</button>
+    </div>
+)}
         <div className='popUpForm'>
             <form onSubmit={sendForm}>
                 <p>Edit account</p>
@@ -35,5 +50,6 @@ export default function DeliveryDetailsForm({setShowUserDetailsForm}) {
                 <button type='submit'>Submit</button>
             </form>
         </div>
+        </>
     )
 }

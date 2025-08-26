@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.118d3929.css",
+    "main.js": "/static/js/main.84031b11.js",
+    "static/media/warehouse.webp": "/static/media/warehouse.1ac82e87b037ee5ed126.webp",
+    "static/media/about.webp": "/static/media/about.db551f94e28d03b0d962.webp",
+    "static/media/raben.webp": "/static/media/raben.7c5ed1bf69dd83badec6.webp",
+    "static/media/quality.webp": "/static/media/quality.8f88f63898e1f2336ccf.webp",
+    "static/media/cert.webp": "/static/media/cert.8374aa791fea5fc46c1f.webp",
+    "static/media/logo.jpg": "/static/media/logo.df0b4f01da239ab85b30.jpg",
+    "static/media/warranty.webp": "/static/media/warranty.9f175534c635e67b0912.webp",
+    "static/media/add-product-glyph-icon-vector.jpg": "/static/media/add-product-glyph-icon-vector.02d21933d9f50bd46cb2.jpg",
+    "static/media/loading.svg": "/static/media/loading.d1b1612fcfe3bf6d36371dedb1f09a2d.svg",
+    "index.html": "/index.html",
+    "main.118d3929.css.map": "/static/css/main.118d3929.css.map",
+    "main.84031b11.js.map": "/static/js/main.84031b11.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.118d3929.css",
+    "static/js/main.84031b11.js"
+  ]
+}

@@ -3,6 +3,7 @@ import deleteIcon from '../images/delete.png';
 import emptyIcon from '../images/empty.png';
 import axios from 'axios';
 import {Link, useNavigate} from 'react-router-dom';
+import config from '../config'
 
 export default function Cart({cart, setCart}) {
     const totalPrice = cart.reduce((total, item) =>
@@ -23,13 +24,13 @@ export default function Cart({cart, setCart}) {
     const [userDetails, setUserDetails] = useState(null);
     const [error, setError] = useState(null);
     const [selectedDelivery, setSelectedDelivery] = useState(null);
+    const token = localStorage.getItem("access_tocken");
+const headers = token ? { Authorization: `Bearer ${token}` } : {};
 
     async function fetchUserDetails() {
         try {
-            const response = await axios.get('https://cedarkids.eu/api/user/getUserDetails', {
-                headers: {
-                    'Authorization': `Bearer ${localStorage.getItem("access_tocken")}`
-                }
+            const response = await axios.get(`${config.API_URL}/api/user/getUserDetails`, {
+                headers
             })
             setUserDetails(response.data);
         } catch (error) {
@@ -50,26 +51,41 @@ export default function Cart({cart, setCart}) {
         )
     }
 
-    async function createOrder() {
-        const response = await axios.post('https://cedarkids.eu/api//order/create', {
-                cart,
-                user: {
-                    email: email || userDetails.email,
-                    firstName: firstName || userDetails.firstName,
-                    lastName: lastName || userDetails.lastName,
-
-                },
-                deliveryDetails: selectedDelivery || {
-                    city: city,
-                    country: country,
-                    phone: phone,
-                    postalCode: postalCode,
-                    address: address
-                }
+   async function createOrder(e) {
+    e.preventDefault();
+    
+    try {
+        const response = await axios.post(`${config.API_URL}/api/order/create`, {
+            cart,
+            user: {
+                email: email || userDetails?.email,
+                firstName: firstName || userDetails?.firstName,
+                lastName: lastName || userDetails?.lastName,
+            },
+            deliveryDetails: selectedDelivery || {
+                city,
+                country,
+                phone,
+                postalCode,
+                address
             }
-        );
-        window.location.href = response.data;
+        }, {
+            headers
+        });
+        window.location.href = "https://cedarkids.eu/orderCreated";
+
+    } catch (err) {
+        console.error("Error creating order:", err);
+        if (err.response && err.response.data && err.response.data.message) {
+            setError(err.response.data.message);
+        } else {
+            setError("Something went wrong. Please try again.");
+        }
+         setTimeout(() => {
+        setError(null);
+    }, 5000);
     }
+}
 
     function increaseQuantity(id) {
         setCart(
@@ -97,6 +113,12 @@ export default function Cart({cart, setCart}) {
 
     return (
         <>
+        {error && (
+    <div className="error">
+        <p>{error}</p>
+        <button onClick={() => setError(null)}>✖</button>
+    </div>
+)}
             <div className='container'>
                 <div className='cart'>
                     <ul>
@@ -181,7 +203,7 @@ export default function Cart({cart, setCart}) {
                         <p>Summary</p>
                         <p>Delivery: free</p>
                         <p>Total price: € {totalPrice.toFixed(2)}</p>
-                        <Link onClick={createOrder}>Pay</Link>
+                        <Link onClick={createOrder}>Buy</Link>
                         <Link to="/">Continue shopping</Link>
                     </div>
                 </div>

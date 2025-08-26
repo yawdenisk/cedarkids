@@ -1,7 +1,8 @@
 
 import axios from 'axios';
 import React, {useState} from 'react'
-
+import config from '../config'
+import loadingIcon from '../images/loading.svg'
 export default function UploadProductForm({setShowUploadProductForm}) {
     const [name, setName] = useState(null);
     const [price, setPrice] = useState(null);
@@ -14,13 +15,15 @@ export default function UploadProductForm({setShowUploadProductForm}) {
     const [demensions, setDemensions] = useState(null);
     const [installationPrice, setInstallationPrice] = useState(null);
      const [galleryImages, setGalleryImages] = useState([]);
-    
+    const [loading, setLoading] = useState(false);
+
 
     const [error, setError] = useState(null);
 
     async function sendForm(e) {
         e.preventDefault();
         setError(null);
+        setLoading(true);
         
         const formData = new FormData();
         formData.append("installationPrice", installationPrice);
@@ -39,28 +42,24 @@ export default function UploadProductForm({setShowUploadProductForm}) {
         });
     
         try {
-            await axios.post('http://localhost:8081/api/product/upload', formData, {
+            await axios.post(`${config.API_URL}/api/product/upload`, formData, {
                 headers: { 'Content-Type': 'multipart/form-data' }
             });
             window.location.reload();
         } catch (error) {
             setError(error.response.data);
-        }
+        }finally {
+        setLoading(false); 
+    }
     }
     
-
+if (loading == true) {
+        return <div className='loading'><img src={loadingIcon} alt='none gif'></img></div>
+    }
     return (
         <div className='uploadProductForm'>
             <form onSubmit={sendForm}>
                 <p>Add new Product</p>
-                {error &&
-                    <div className="error">
-                    <span>{error}</span>
-                    <button className="close-btn">✕</button>
-                    <div className="progress-bar"></div>
-                </div>
-                }
-                <span className="close" onClick={() => setShowUploadProductForm(false)}>&#10006;</span>
                 <input name='name' onChange={(e) => setName(e.target.value)} placeholder='Name'></input> 
                 <input name='price' onChange={(e) => setPrice(e.target.value)} placeholder='Price'></input>
                 <input name='lastPrice' onChange={(e) => setLastPrice(e.target.value)} placeholder='Last Price'></input>

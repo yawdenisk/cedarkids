@@ -7,10 +7,11 @@ import searchIcon from '../images/search.png';
 import profileIcon from '../images/profile.png';
 import cartIcon from '../images/cart.png';
 import adminIcon from '../images/admin.png';
+import { useTranslation } from "react-i18next";
 
 export default function Header({cart}) {
     const [isOpen, setIsOpen] = useState(false);
-    
+    const { t, i18n } = useTranslation();
 useEffect(() => {
   if (isOpen) {
     document.body.style.overflow = 'hidden';
@@ -23,13 +24,13 @@ useEffect(() => {
 }, [isOpen]);
     return (
         <>
-                <div className={`bMenu ${isOpen ? 'active' : ''}`}>
-                    <Link onClick={() => setIsOpen(!isOpen)} to="/">Swing Sets</Link>
-                    <Link onClick={() => setIsOpen(!isOpen)} to="/shipping">Shipping</Link>
-                    <Link onClick={() => setIsOpen(!isOpen)} to="/blogs">Blog</Link>
-                    <Link onClick={() => setIsOpen(!isOpen)} to="/assembly">Assembly</Link>
-                    <Link onClick={() => setIsOpen(!isOpen)} to="/about">About Us</Link>
-                </div>
+               <div className={`bMenu ${isOpen ? 'active' : ''}`}>
+  <Link onClick={() => setIsOpen(!isOpen)} to="/">{t("header.swingSets")}</Link>
+  <Link onClick={() => setIsOpen(!isOpen)} to="/shipping">{t("header.shipping")}</Link>
+  <Link onClick={() => setIsOpen(!isOpen)} to="/blogs">{t("header.blog")}</Link>
+  <Link onClick={() => setIsOpen(!isOpen)} to="/assembly">{t("header.assembly")}</Link>
+  <Link onClick={() => setIsOpen(!isOpen)} to="/about">{t("header.about")}</Link>
+</div>
             <div className='container'>
                 <header>
                     <div className='headerLeft'>
@@ -55,13 +56,13 @@ useEffect(() => {
                         <Link to="/cart"><span>{cart.length}</span><img src={cartIcon} alt='none image'/></Link>
                     </div>
                 </header>
-                <div className='navigation'>
-                    <Link to="/">Swing Sets</Link>
-                    <Link to="/shipping">Shipping</Link>
-                    <Link to="/blogs">Blog</Link>
-                    <Link to="/assembly">Assembly</Link>
-                    <Link to="/about">About Us</Link>
-                </div>
+               <div className='navigation'>
+  <Link to="/">{t("header.swingSets")}</Link>
+  <Link to="/shipping">{t("header.shipping")}</Link>
+  <Link to="/blogs">{t("header.blog")}</Link>
+  <Link to="/assembly">{t("header.assembly")}</Link>
+  <Link to="/about">{t("header.about")}</Link>
+</div>
             </div>
         </>
     )

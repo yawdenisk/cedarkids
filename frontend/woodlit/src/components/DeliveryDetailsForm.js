@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, {useEffect, useState} from 'react'
-
+import config from '../config'
 export default function DeliveryDetailsForm({setShowDeliveryDetailsForm}) {
     const [address, setAdress] = useState(null);
     const [city, setCity] = useState(null);
@@ -21,7 +21,7 @@ export default function DeliveryDetailsForm({setShowDeliveryDetailsForm}) {
         e.preventDefault();
         setError(null);
         try {
-            await axios.post('https://cedarkids.eu/api/deliveryDetails/create', {
+            await axios.post(`${config.API_URL}/api/deliveryDetails/create`, {
                 city,
                 country,
                 address,
@@ -33,13 +33,27 @@ export default function DeliveryDetailsForm({setShowDeliveryDetailsForm}) {
                 }
             })
             window.location.reload();
-        } catch (error) {
-            setError(error.response.data);
+        } catch (err) {
+        console.error("Something went wrong. Please try again.", err);
+        if (err.response && err.response.data && err.response.data.message) {
+            setError(err.response.data.message);
+        } else {
+            setError("Something went wrong. Please try again.");
         }
+         setTimeout(() => {
+        setError(null);
+    }, 5000);
+    }
     }
 
     return (
         <>
+        {error && (
+    <div className="error">
+        <p>{error}</p>
+        <button onClick={() => setError(null)}>✖</button>
+    </div>
+)}
             <div className='popUpForm'>
             <form onSubmit={sendForm}>
                 <p>New address</p>

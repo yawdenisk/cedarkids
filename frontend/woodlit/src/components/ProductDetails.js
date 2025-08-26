@@ -158,7 +158,31 @@ export default function ProductDetails({cart, setCart}) {
                     </div>
 
                 </div>
-                <p style={{textAlign: 'center', fontSize: '25px', marginTop: '50px'}}>WHY CEDARKIDS SWING SETS?</p>
+<div className='composition'>
+                    <img src={product.compositionImage} alt="Composition"/>
+                    <ul>
+                        <p>Set composition:</p>
+                        {product.composition && product.composition.split("\n").map((item, index) => (
+                            <li key={index}>{item}</li>
+                        ))}
+                    </ul>
+                </div>
+{product.movie && (
+        <video autoPlay muted loop playsInline>
+        <source src={product.movie} type="video/mp4" />
+        </video>
+)
+}
+
+                <div className='demensions'>
+                    <p>Assembled Dimensions</p>
+                    <p>{formattedDemensions}</p>
+                    <p>This product is intended for RESIDENTIAL USE ONLY. Any use of this product outside of a
+                        residential
+                        setting will make the product warranty null and void.</p>
+                </div>
+
+                 <p style={{textAlign: 'center', fontSize: '25px', marginTop: '50px'}}>WHY CEDARKIDS SWING SETS?</p>
                 <ul className='whyBlock'>
                     <li>
                         <img src={quality}/>
@@ -180,23 +204,6 @@ export default function ProductDetails({cart, setCart}) {
                             you'll be supported from the very beginning for years and years of backyard fun.</p>
                     </li>
                 </ul>
-                <div className='demensions'>
-                    <p>Assembled Dimensions</p>
-                    <p>{formattedDemensions}</p>
-                    <p>This product is intended for RESIDENTIAL USE ONLY. Any use of this product outside of a
-                        residential
-                        setting will make the product warranty null and void.</p>
-                </div>
-
-                <div className='composition'>
-                    <img src={product.compositionImage} alt="Composition"/>
-                    <ul>
-                        <p>Set composition:</p>
-                        {product.composition && product.composition.split("\n").map((item, index) => (
-                            <li key={index}>{item}</li>
-                        ))}
-                    </ul>
-                </div>
 
                 <div className='reviewDetails'>
                     <p>CUSTOMER REVIEWS</p>
