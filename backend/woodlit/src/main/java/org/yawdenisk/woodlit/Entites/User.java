@@ -28,6 +28,5 @@ public class User {
     private List<DeliveryDetails> deliveryDetails = new ArrayList<>();
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    @JsonManagedReference
     private List<Order> orders = new ArrayList<>();
 }
