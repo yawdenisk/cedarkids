@@ -1,0 +1,232 @@
+{
+  "header": {
+    "swingSets": "Legepladssæt",
+    "shipping": "Forsendelse",
+    "blog": "Blog",
+    "assembly": "Montering",
+    "about": "Om os",
+    "contacts": "Kontakt"
+  },
+  "footer": {
+    "navigation": "Navigation",
+    "followUs": "Følg os",
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "rights": "Alle rettigheder forbeholdes.",
+    "createdBy": "Lavet af"
+  },
+  "about": {
+    "title": "CedarKids",
+    "p1": "Siden 2007 har CedarKids leveret legepladssæt af høj kvalitet til familier i Europa. Som officiel distributør af Backyard Discovery tilbyder vi et bredt udvalg af cedertræssæt til alle budgetter og havestørrelser. I modsætning til gran eller fyr garanterer vores premium cedertræ holdbarhed og – vigtigst – sikkerhed.",
+    "p2": "Vi er en familievirksomhed inspireret af vores egne børns glæde ved deres legeredskaber i haven. Vi ved, hvor spændte børn er – derfor leverer vi hurtigt. Hos CedarKids sælger vi ikke kun sæt; vi hjælper med at skabe sikre steder fulde af glæde og familietid."
+  },
+  "notFound": {
+    "title": "Siden blev ikke fundet",
+    "desc": "Linket kan være forkert, eller du har ikke adgang til siden.",
+    "backHome": "Til forsiden"
+  },
+  "assembly": {
+    "guide": "Monteringsguide",
+    "welcome": "Velkommen til nem montering med Woodlit‑sæt! Designet til selvmontering – en tryg og sjov legeplads for dine børn.",
+    "before": "Før montering",
+    "during": "Under montering",
+    "after": "Efter montering",
+    "contactTitle": "Kontakt",
+    "contactDesc": "Har du spørgsmål? Vi hjælper gerne! Skriv til info@cedarkids.eu – vi svarer inden for 24 timer.",
+    "toolsTitle": "NØDVENDIGE VÆRKTØJER",
+    "toolsText": "Boremaskine, skruetrækker, hammer og målebånd. Nøgler og bits medfølger.",
+    "prepareTitle": "FORBERED DIT OMRÅDE",
+    "prepareText": "Vælg et plant område og ryd det. Lad 1,8 m fri plads rundt om sættet; ved gynger kræves ekstra plads svarende til dobbelte gyngehøjde for og bag.",
+    "safetyTitle": "SIKKERHED",
+    "safetyText": "Brug handsker og beskyttelsesbriller. Læs og følg vejledningen. Tjek alle dele først. Hold børn og dyr væk fra arbejdsområdet. Brug værktøj som angivet. Er du i tvivl, så få hjælp eller kontakt support.",
+    "timeTitle": "MONTERINGSTID",
+    "timeText": "4–20 timer afhængigt af sættets størrelse og erfaring.",
+    "stepsTitle": "TRIN FOR TRIN",
+    "stepsText": "Organisér dele og værktøj. Start med basen og nivellér den. Tilføj gynger og dele og tjek befæstelser. Manualen har tydelige illustrationer. For interaktiv hjælp – BILT‑appen. Support er tilgængelig.",
+    "troubleTitle": "FEJLFINDING",
+    "troubleText": "Gik du i stå? Intet problem. Vores team guider dig, så alt forløber glat.",
+    "maintenanceTitle": "VEDLIGEHOLDELSE",
+    "maintenanceText": "Beskyt træet hvert andet år med olie og bejdse. Tjek og efterspænd beslag årligt. Inspicér jævnligt – især før sæsonen. Udskift slidte eller beskadigede dele med det samme.",
+    "checksTitle": "SIKKERHEDSTJEK",
+    "checksText": "Månedligt tjek af løse skruer og slitage. Sikr stabilitet og niveau. Kontroller underlag og træ. Test gyngeophæng og slitage.",
+    "enjoyTitle": "NYD DIT LEGESÆT",
+    "enjoyText": "Skab varige minder. Frem støttende leg, udeliv og fællesskab. Nyd glæden i egen have!"
+  },
+  "shipping": {
+    "partnerLabel": "FRAGTPARTNER:",
+    "partnerName": "Raben Logistics",
+    "partnerDesc": "Din glæde er i gode hænder! I over 10 år har vi stolet på Raben som logistisk partner. Dit sæt leveres sikkert af vores erfarne team.",
+    "orderProcessingTitle": "ORDREHÅNDTERING",
+    "orderProcessingDesc": "Hurtig afsendelse garanteres! Forsendelse inden for 2–3 hverdage efter betaling.",
+    "estimatedDeliveryTitle": "ANSLÅET LEVERINGSTID",
+    "estimatedDeliveryDesc": "Glæden ankommer typisk inden for en uge – afhænger af din placering.",
+    "warehouseTitle": "LAGERPLACERING",
+    "warehouseName": "Polen, Łabiszyn",
+    "warehouseDesc": "Vi sender fra vores hub i Toruń (Polen). For afhentning eller egen fragt – kontakt os.",
+    "pickupTitle": "AFHENTNINGSVALG",
+    "pickupDesc": "Foretrækker du afhentning eller egen fragt? Skriv for instruktioner.",
+    "satisfaction": "Din tilfredshed er i fokus. Vi sikrer en smidig og sikker levering.",
+    "contact": "Spørgsmål eller brug for hjælp? Kontakt os endelig.",
+    "thankYou": "TAK, FORDI DU VALGTE OS TIL JERES LEGESTUNDER!"
+  },
+  "contacts": {
+    "title": "Kontakt os",
+    "subtitle": "Vi vil gerne høre fra dig! Send os en besked, og vi svarer så hurtigt som muligt.",
+    "form": {
+      "title": "Send os en besked",
+      "name": "Fuldt navn",
+      "email": "E-mailadresse",
+      "phone": "Telefonnummer",
+      "subject": "Emne",
+      "message": "Din besked",
+      "submit": "Send besked",
+      "sending": "Sender...",
+      "success": "Besked sendt succesfuldt!",
+      "error": "Fejl ved afsendelse af besked. Prøv igen."
+    },
+    "info": {
+      "title": "Kontaktoplysninger",
+      "email": "E-mail",
+      "phone": "Telefon",
+      "address": "Adresse",
+      "addressValue": "Polen, Łabiszyn",
+      "hours": "Åbningstider",
+      "hoursValue": "Mandag - Fredag: 9:00 - 18:00"
+    }
+  },
+  "cart": {
+    "empty": "Indkøbskurven er tom",
+    "delivery": "Fragt",
+    "installation": "installation",
+    "summary": "Oversigt",
+    "deliveryFree": "Fragt: gratis",
+    "total": "Totalpris",
+    "buy": "Køb",
+    "continue": "Fortsæt med at handle",
+    "addNewAddress": "Tilføj ny adresse",
+    "phone": "Telefon",
+    "country": "Land",
+    "city": "By",
+    "address": "Adresse",
+    "postalCode": "Postnummer",
+    "firstName": "Fornavn",
+    "lastName": "Efternavn",
+    "email": "E‑mail"
+  },
+  "deliveryForm": {
+    "newAddress": "Ny adresse",
+    "submit": "Send",
+    "postal": "Postnummer"
+  },
+  "login": {
+    "signIn": "Log ind",
+    "email": "email",
+    "password": "adgangskode",
+    "submit": "Send",
+    "noAccount": "Har du ikke en konto?",
+    "signUp": "Registrér"
+  },
+  "order": {
+    "successTitle": "Ordre oprettet",
+    "successDesc": "Tak for dit køb! Din ordre er registreret. En bekræftelse sendes snart via e‑mail.",
+    "backHome": "Til forsiden"
+  },
+  "registration": {
+    "signUp": "Registrér",
+    "email": "E‑mail",
+    "password": "Adgangskode",
+    "firstName": "Fornavn",
+    "lastName": "Efternavn",
+    "submit": "Send",
+    "haveAccount": "Har du allerede en konto?",
+    "signIn": "Log ind"
+  },
+  "review": {
+    "add": "Tilføj anmeldelse",
+    "fullName": "Fulde navn",
+    "comment": "Din kommentar",
+    "gallery": "Galleri",
+    "submit": "Send"
+  },
+  "product": {
+    "installation": "installation",
+    "addToCart": "LÆG I KURV",
+    "setComposition": "Sættets indhold:",
+    "assembledDimensions": "Mål samlet",
+    "residentialOnly": "Kun til PRIVAT BRUG. Brug uden for dette ophæver garantien.",
+    "whyTitle": "HVORFOR CEDARKIDS?",
+    "why1Title": "Design i høj kvalitet",
+    "why1Text": "Vi kombinerer stil og styrke: materialer, farver og helhedsudtryk – et sæt du er stolt af i haven.",
+    "why2Title": "Testet og certificeret",
+    "why2Text": "Vores sæt opfylder og overgår ASTM‑standarder. Testet til børn op til 12 år.",
+    "why3Title": "Garanti og montering",
+    "why3Text": "5 års begrænset garanti og 3D‑vejledning i BILT®‑appen – støtte fra dag ét.",
+    "customerReviews": "KUNDEANMELDELSER",
+    "basedOn": "Baseret på {{count}} anmeldelser",
+    "writeReview": "Skriv en anmeldelse"
+  },
+  "userPanel": {
+    "account": "Konto",
+    "orders": "Ordrer",
+    "logout": "Log ud",
+    "email": "E‑mail",
+    "name": "Navn",
+    "lastName": "Efternavn",
+    "edit": "Redigér",
+    "delivery": "Leveringsadresser",
+    "addNewAddress": "Tilføj ny adresse",
+    "status": "Status",
+    "date": "Dato"
+  },
+  "admin": {
+    "products": "Produkter",
+    "orders": "Ordrer",
+    "blogs": "Blogs",
+    "addProduct": "Tilføj produkt",
+    "order": "Ordre #{{id}}",
+    "status": "Status",
+    "date": "Dato",
+    "deliveryDetails": "Leveringsoplysninger",
+    "email": "E‑mail",
+    "phone": "Telefon",
+    "postalCode": "Postnummer",
+    "quantity": "Antal",
+    "price": "Pris",
+    "installationYes": "Ja",
+    "installationNo": "Nej"
+  },
+  "uploadForm": {
+    "title": "Tilføj nyt produkt",
+    "name": "Navn",
+    "price": "Pris",
+    "lastPrice": "Tidligere pris",
+    "installationPrice": "Installationspris",
+    "description": "Beskrivelse",
+    "demensions": "Mål",
+    "composition": "Sammensætning",
+    "compositionImage": "Sammensætningsbillede",
+    "image": "Billede",
+    "gallery": "Galleri",
+    "movie": "Video",
+    "submit": "Send"
+  },
+  "updateForm": {
+    "image": "Billede",
+    "name": "Navn",
+    "price": "Pris",
+    "lastPrice": "Tidligere pris",
+    "installationPrice": "Installationspris",
+    "features": "Egenskaber",
+    "description": "Beskrivelse",
+    "construction": "Konstruktion",
+    "demensions": "Mål",
+    "galleryAdd": "Tilføj billede til galleri",
+    "apply": "Anvend ændringer"
+  },
+  "userDetailsForm": {
+    "editAccount": "Redigér konto",
+    "firstName": "Fornavn",
+    "lastName": "Efternavn",
+    "submit": "Gem"
+  }
+}

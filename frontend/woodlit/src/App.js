@@ -19,6 +19,8 @@ import UpdateProductForm from "./components/UpdateProductForm";
 import OrderSuccess from "./components/OrderSuccess";
 import NotFound from "./components/NotFound";
 import LanguageSelector from "./components/LanguageSelector";
+import { FcContacts } from "react-icons/fc";
+import Contacts from "./components/Contacts"
 
 function App() {
      const [cart, setCart] = useState([]);
@@ -37,8 +39,9 @@ function App() {
                 <Route path="/admin" prefetch={false} element={<AdminPanel/>}></Route>
                 <Route path="/about" element={<AboutUs/>}></Route>
                 <Route path="/assembly" element={<Assembly/>}></Route>
-                 <Route path="/blogs" element={<Blogs/>}></Route>
-                 <Route path="/blog/:id" element={<BlogDetails/>}></Route>
+                 {/* <Route path="/blogs" element={<Blogs/>}></Route> */}
+                 {/* <Route path="/blog/:id" element={<BlogDetails/>}></Route> */}
+                  <Route path="/contacts" element={<Contacts/>}></Route>
                  <Route path="/admin/uploadProduct" element={<UploadProductForm/>}></Route>
                  <Route path="/admin/updateProduct/:id" element={<UpdateProductForm/>}></Route>
                  <Route path="/orderCreated" element={<OrderSuccess/>}></Route>

@@ -4,8 +4,10 @@ import emptyIcon from '../images/empty.png';
 import axios from 'axios';
 import {Link, useNavigate} from 'react-router-dom';
 import config from '../config'
+import { useTranslation } from 'react-i18next';
 
 export default function Cart({cart, setCart}) {
+    const { t } = useTranslation();
     const totalPrice = cart.reduce((total, item) =>
         total + (item.installation
                 ? (item.product.price + item.product.installationPrice) * item.quantity
@@ -45,7 +47,7 @@ const headers = token ? { Authorization: `Bearer ${token}` } : {};
     if (cart.length == 0) {
         return (
             <div className='cartEmpty'>
-                <p>Cart is empty</p>
+                <p>{t('cart.empty')}</p>
                 <img src={emptyIcon}></img>
             </div>
         )
@@ -127,7 +129,7 @@ const headers = token ? { Authorization: `Bearer ${token}` } : {};
                                 <img src={item.product.image} alt='none image'></img>
                                 <div className='text-area'>
                                     <p>{item.product.name}</p>
-                                    <p>{item.installation ? "installation + € " + (item.product.installationPrice * item.quantity).toFixed(2) : null}</p>
+                                    <p>{item.installation ? `${t('cart.installation')} + € ${(item.product.installationPrice * item.quantity).toFixed(2)}` : null}</p>
                                 </div>
                                 <div className='counters'>
                                     <button onClick={() => decreaseQuantity(item.product.id)}>-</button>
@@ -139,43 +141,43 @@ const headers = token ? { Authorization: `Bearer ${token}` } : {};
                             </li>
                         ))}
                         <form>
-                            <p>Delivery</p>
+                            <p>{t('cart.delivery')}</p>
                             {userDetails == null && (
                                 <>
-                                    <input onChange={(e) => setFirstName(e.target.value)} placeholder='First Name'
+                                    <input onChange={(e) => setFirstName(e.target.value)} placeholder={t('cart.firstName')}
                                            name='firstName' required/>
-                                    <input onChange={(e) => setLastName(e.target.value)} placeholder='Last Name'
+                                    <input onChange={(e) => setLastName(e.target.value)} placeholder={t('cart.lastName')}
                                            name='lastName' required/>
-                                    <input onChange={(e) => setEmail(e.target.value)} placeholder='Email' name='email'
+                                    <input onChange={(e) => setEmail(e.target.value)} placeholder={t('cart.email')} name='email'
                                            required/>
-                                    <input onChange={(e) => setPhone(e.target.value)} placeholder='Phone' name='phone'
+                                    <input onChange={(e) => setPhone(e.target.value)} placeholder={t('cart.phone')} name='phone'
                                            required/>
-                                    <input onChange={(e) => setCountry(e.target.value)} placeholder='Country'
+                                    <input onChange={(e) => setCountry(e.target.value)} placeholder={t('cart.country')}
                                            name='country'
                                            required/>
-                                    <input onChange={(e) => setCity(e.target.value)} placeholder='City' name='city'
+                                    <input onChange={(e) => setCity(e.target.value)} placeholder={t('cart.city')} name='city'
                                            required/>
-                                    <input onChange={(e) => setPostalCode(e.target.value)} placeholder='Postal Code'
+                                    <input onChange={(e) => setPostalCode(e.target.value)} placeholder={t('cart.postalCode')}
                                            name='postalCode' required/>
-                                    <input onChange={(e) => setAddress(e.target.value)} placeholder='Address'
+                                    <input onChange={(e) => setAddress(e.target.value)} placeholder={t('cart.address')}
                                            name='adress'
                                            required/>
                                 </>
                             )}
                             {userDetails != null && Array.isArray(userDetails.deliveryDetails) && (
                                 <ul key={selectedDelivery?.id || 'no-selection'}>
-                                    <button onClick={() => navigate('/user')}>Add new address</button>
+                                    <button onClick={() => navigate('/user')}>{t('cart.addNewAddress')}</button>
                                     {userDetails.deliveryDetails.map((item) => (
                                         <li style={{border: selectedDelivery?.id === item.id ? '2px solid green' : '1 px solid rgb(121, 227, 121)'}}
                                             onClick={() => {
                                                 setSelectedDelivery(item);
                                                 console.log("Selected delivery: ", item);
                                             }} key={item.id}>
-                                            <p>Phone: {item.phone}</p>
-                                            <p>Country: {item.country}</p>
-                                            <p>City: {item.city}</p>
-                                            <p>Address: {item.address}</p>
-                                            <p>Postal Code: {item.postalCode}</p>
+                                            <p>{t('cart.phone')}: {item.phone}</p>
+                                            <p>{t('cart.country')}: {item.country}</p>
+                                            <p>{t('cart.city')}: {item.city}</p>
+                                            <p>{t('cart.address')}: {item.address}</p>
+                                            <p>{t('cart.postalCode')}: {item.postalCode}</p>
                                         </li>
                                     ))}
                                 </ul>
@@ -183,16 +185,16 @@ const headers = token ? { Authorization: `Bearer ${token}` } : {};
                             {userDetails != null && userDetails.deliveryDetails.length == 0 && (
 
                                 <>
-                                    <input onChange={(e) => setPhone(e.target.value)} placeholder='Phone' name='phone'
+                                    <input onChange={(e) => setPhone(e.target.value)} placeholder={t('cart.phone')} name='phone'
                                            required/>
-                                    <input onChange={(e) => setCountry(e.target.value)} placeholder='Country'
+                                    <input onChange={(e) => setCountry(e.target.value)} placeholder={t('cart.country')}
                                            name='country'
                                            required/>
-                                    <input onChange={(e) => setCity(e.target.value)} placeholder='City' name='city'
+                                    <input onChange={(e) => setCity(e.target.value)} placeholder={t('cart.city')} name='city'
                                            required/>
-                                    <input onChange={(e) => setPostalCode(e.target.value)} placeholder='Postal Code'
+                                    <input onChange={(e) => setPostalCode(e.target.value)} placeholder={t('cart.postalCode')}
                                            name='postalCode' required/>
-                                    <input onChange={(e) => setAddress(e.target.value)} placeholder='Address'
+                                    <input onChange={(e) => setAddress(e.target.value)} placeholder={t('cart.address')}
                                            name='adress'
                                            required/>
                                 </>
@@ -200,11 +202,11 @@ const headers = token ? { Authorization: `Bearer ${token}` } : {};
                         </form>
                     </ul>
                     <div className='shipment'>
-                        <p>Summary</p>
-                        <p>Delivery: free</p>
-                        <p>Total price: € {totalPrice.toFixed(2)}</p>
-                        <Link onClick={createOrder}>Buy</Link>
-                        <Link to="/">Continue shopping</Link>
+                        <p>{t('cart.summary')}</p>
+                        <p>{t('cart.deliveryFree')}</p>
+                        <p>{t('cart.total')}: € {totalPrice.toFixed(2)}</p>
+                        <Link onClick={createOrder}>{t('cart.buy')}</Link>
+                        <Link to="/">{t('cart.continue')}</Link>
                     </div>
                 </div>
             </div>

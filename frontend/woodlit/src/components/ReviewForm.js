@@ -1,8 +1,10 @@
 import axios from 'axios';
 import React, {useState} from 'react'
 import config from '../config'
+import { useTranslation } from 'react-i18next'
 
 export default function ReviewForm({setShowReviewForm, product}) {
+    const { t } = useTranslation();
     const [galleryImages, setGalleryImages] = useState([]);
     const [rating, setRating] = useState();
     const [text, setText] = useState();
@@ -35,8 +37,8 @@ export default function ReviewForm({setShowReviewForm, product}) {
     return (
         <div className='reviewForm'>
             <form onSubmit={sendForm}>
-                <p>Add new Review</p>
-                <input name='fullName' onChange={(e) => setFullName(e.target.value)} placeholder='Full name'></input>
+                <p>{t('review.add')}</p>
+                <input name='fullName' onChange={(e) => setFullName(e.target.value)} placeholder={t('review.fullName')}></input>
                 <div className="rating">
                     {[1, 2, 3, 4, 5].map((star) => (
                         <span
@@ -52,10 +54,10 @@ export default function ReviewForm({setShowReviewForm, product}) {
         </span>
                     ))}
                 </div>
-                <textarea name='text' onChange={(e) => setText(e.target.value)} placeholder='Your comment'></textarea>
+                <textarea name='text' onChange={(e) => setText(e.target.value)} placeholder={t('review.comment')}></textarea>
                 <input type='file' multiple onChange={(e) => setGalleryImages(Array.from(e.target.files))}
-                       placeholder='Gallery'></input>
-                <button type='submit'>Submit</button>
+                       placeholder={t('review.gallery')}></input>
+                <button type='submit'>{t('review.submit')}</button>
             </form>
         </div>
     )

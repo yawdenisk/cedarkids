@@ -1,0 +1,234 @@
+{
+  "header": {
+    "swingSets": "Játszószettek",
+    "shipping": "Szállítás",
+    "blog": "Blog",
+    "assembly": "Összeszerelés",
+    "about": "Rólunk",
+    "contacts": "Kapcsolat"
+  },
+  "footer": {
+    "navigation": "Navigáció",
+    "followUs": "Kövess minket",
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "rights": "Minden jog fenntartva.",
+    "createdBy": "Készítette"
+  },
+  "about": {
+    "title": "CedarKids",
+    "p1": "2007 óta a CedarKids minőségi játszószetteket kínál európai családoknak. A Backyard Discovery hivatalos forgalmazójaként széles választékot kínálunk cédrusfa szettekből, minden költségvetéshez és kertmérethez. A luc- vagy fenyőfával szemben a prémium cédrus tartós, és ami a legfontosabb: biztonságos.",
+    "p2": "Családi vállalkozás vagyunk, akiket a gyerekeink kertben való önfeledt játéka inspirál. Tudjuk, milyen nagy a várakozás – ezért szállítunk gyorsan. A CedarKidsnél nem csak szetteket árulunk; biztonságos, örömteli családi tereket segítünk építeni."
+  },
+  "notFound": {
+    "title": "Az oldal nem található",
+    "desc": "Lehet, hogy hibás hivatkozást követtél, vagy nincs jogosultságod a megtekintéshez.",
+    "backHome": "Vissza a kezdőlapra"
+  },
+  "assembly": {
+    "guide": "Összeszerelési útmutató",
+    "welcome": "Üdvözöljük a Woodlit szettek könnyű összeszerelésében! Összeszerelésre tervezve – biztonságos, vidám játszótér a gyerekeknek.",
+    "before": "Összeszerelés előtt",
+    "during": "Összeszerelés közben",
+    "after": "Összeszerelés után",
+    "contactTitle": "Kapcsolat",
+    "contactDesc": "Kérdése van? Szívesen segítünk! Írjon az info@cedarkids.eu címre – 24 órán belül válaszolunk.",
+    "toolsTitle": "SZÜKSÉGES ESZKÖZÖK",
+    "toolsText": "Fúrógép, csavarhúzó, kalapács és mérőszalag. Kulcsok és bitek mellékelve.",
+    "prepareTitle": "A TERÜLET ELŐKÉSZÍTÉSE",
+    "prepareText": "Válasszon sík felületet és tisztítsa meg. Hagyjon 1,8 m szabad teret a szett körül; hinták esetén elöl-hátul a hinta magasságának kétszeresét.",
+    "safetyTitle": "BIZTONSÁG",
+    "safetyText": "Viseljen kesztyűt és védőszemüveget. Olvassa el és kövesse az útmutatót. Ellenőrizze az alkatrészeket indulás előtt. Tartsa távol a gyerekeket és háziállatokat. A szerszámokat az előírás szerint használja. Bizonytalan? Kérjen segítséget vagy lépjen kapcsolatba a támogatással.",
+    "timeTitle": "ÖSSZESZERELÉSI IDŐ",
+    "timeText": "4–20 óra, a szett méretétől és tapasztalattól függően.",
+    "stepsTitle": "LÉPÉSRŐL LÉPÉSRE",
+    "stepsText": "Rendezze el az alkatrészeket és szerszámokat. Kezdje az alappal és állítsa vízszintbe. Adja hozzá az elemeket, ellenőrizze a rögzítéseket. Az útmutató egyértelmű illusztrációkat tartalmaz. Interaktív segítség: BILT app. Támogatás elérhető.",
+    "troubleTitle": "HIBAELHÁRÍTÁS",
+    "troubleText": "Elakadt? Semmi gond. Csapatunk segít, hogy minden gördülékeny legyen.",
+    "maintenanceTitle": "KARBANTARTÁSI TIPPEK",
+    "maintenanceText": "Kétévente olaj és lazúr a fa védelmére. Évente ellenőrizze és húzza meg a kötőelemeket. Rendszeresen vizsgálja meg, különösen szezon előtt. A kopott vagy sérült részeket azonnal cserélje.",
+    "checksTitle": "BIZTONSÁGI ELLENŐRZÉSEK",
+    "checksText": "Havi ellenőrzés a laza csavarok és kopás miatt. Biztosítson stabilitást és szintet. Vizsgálja az alapot és a fát. Tesztelje a hintafelfüggesztést és a kopást.",
+    "enjoyTitle": "ÉLVEZZE A SZETTJÉT",
+    "enjoyText": "Teremtsen maradandó emlékeket. Ösztönözze a képzeletet, a szabadtéri játékot és az együttlétet. Élvezze az örömöt a saját kertjében!"
+  },
+  "shipping": {
+    "partnerLabel": "SZÁLLÍTÁSI PARTNER:",
+    "partnerName": "Raben Logistics",
+    "partnerDesc": "Az öröm jó kezekben van! Több mint 10 éve bízunk a Rabenben. A szettet tapasztalt csapatunk biztonságosan kézbesíti.",
+    "orderProcessingTitle": "RENDELÉS FELDOLGOZÁSA",
+    "orderProcessingDesc": "Gyors feladás garantált! 2–3 munkanapon belül a fizetés után.",
+    "estimatedDeliveryTitle": "BECSÜLT SZÁLLÍTÁSI IDŐ",
+    "estimatedDeliveryDesc": "Az öröm kb. egy héten belül megérkezik – helytől függően.",
+    "warehouseTitle": "RAKTÁR",
+    "warehouseName": "Lengyelország, Łabiszyn",
+    "warehouseDesc": "Küldés a toruńi (Lengyelország) központból. Személyes átvétel vagy saját futár esetén írjon nekünk.",
+    "pickupTitle": "ÁTVÉTELI LEHETŐSÉGEK",
+    "pickupDesc": "Személyes átvételt vagy saját futárt választana? Írjon instrukciókért.",
+    "satisfaction": "Az ön elégedettsége az első. Zökkenőmentes, biztonságos kézbesítést biztosítunk.",
+    "contact": "Kérdése van, segítség kell? Vegye fel velünk a kapcsolatot.",
+    "thankYou": "KÖSZÖNJÜK, HOGY MINKET VÁLASZTOTT A JÁTÉKOS PILLANATOKHOZ!"
+  },
+  "contacts": {
+    "title": "Lépjen kapcsolatba velünk",
+    "subtitle": "Szeretnénk hallani Öntől! Küldjön üzenetet, és amilyen gyorsan csak tudunk, válaszolunk.",
+    "form": {
+      "title": "Küldjön üzenetet",
+      "name": "Teljes név",
+      "email": "E-mail cím",
+      "phone": "Telefonszám",
+      "subject": "Tárgy",
+      "message": "Az Ön üzenete",
+      "submit": "Üzenet küldése",
+      "sending": "Küldés...",
+      "success": "Üzenet sikeresen elküldve!",
+      "error": "Hiba történt az üzenet küldése során. Kérjük, próbálja újra."
+    },
+    "info": {
+      "title": "Kapcsolati információk",
+      "email": "E-mail",
+      "phone": "Telefon",
+      "address": "Cím",
+      "addressValue": "Lengyelország, Łabiszyn",
+      "hours": "Nyitvatartás",
+      "hoursValue": "Hétfő - Péntek: 9:00 - 18:00"
+    }
+  },
+  "cart": {
+    "empty": "A kosár üres",
+    "delivery": "Szállítás",
+    "installation": "telepítés",
+    "summary": "Összegzés",
+    "deliveryFree": "Szállítás: ingyenes",
+    "total": "Végösszeg",
+    "buy": "Vásárlás",
+    "continue": "Vásárlás folytatása",
+    "addNewAddress": "Új cím hozzáadása",
+    "phone": "Telefon",
+    "country": "Ország",
+    "city": "Város",
+    "address": "Cím",
+    "postalCode": "Irányítószám",
+    "firstName": "Keresztnév",
+    "lastName": "Vezetéknév",
+    "email": "E‑mail"
+  },
+  "deliveryForm": {
+    "newAddress": "Új cím",
+    "submit": "Küldés",
+    "postal": "Irányítószám"
+  },
+  "login": {
+    "signIn": "Bejelentkezés",
+    "email": "email",
+    "password": "jelszó",
+    "submit": "Küldés",
+    "noAccount": "Nincs fiókja?",
+    "signUp": "Regisztráció"
+  },
+  "order": {
+    "successTitle": "Rendelés sikeresen létrehozva",
+    "successDesc": "Köszönjük a vásárlást! Rendelését fogadtuk. Hamarosan visszaigazoló e‑mailt kap.",
+    "backHome": "Vissza a kezdőlapra"
+  },
+  "registration": {
+    "signUp": "Regisztráció",
+    "email": "E‑mail",
+    "password": "Jelszó",
+    "firstName": "Keresztnév",
+    "lastName": "Vezetéknév",
+    "submit": "Küldés",
+    "haveAccount": "Már van fiókja?",
+    "signIn": "Bejelentkezés"
+  },
+  "review": {
+    "add": "Vélemény hozzáadása",
+    "fullName": "Teljes név",
+    "comment": "Megjegyzés",
+    "gallery": "Galéria",
+    "submit": "Küldés"
+  },
+  "product": {
+    "installation": "telepítés",
+    "addToCart": "KOSÁRBA",
+    "setComposition": "A szett tartalma:",
+    "assembledDimensions": "Méretek összeszerelve",
+    "residentialOnly": "A termék kizárólag OTTHONI HASZNÁLATRA. Ettől eltérő használat érvényteleníti a garanciát.",
+    "whyTitle": "MIÉRT A CEDARKIDS?",
+    "why1Title": "Magas minőségű design",
+    "why1Text": "Stílus és erő: anyagok, színek, megjelenés – egy szett, amelyre büszke lehet a kertben.",
+    "why2Title": "Tesztelt és tanúsított",
+    "why2Text": "Szettjeink megfelelnek és túl is mutatnak az ASTM szabványokon. 12 éves korig tesztelve.",
+    "why3Title": "Garancia és összeszerelés",
+    "why3Text": "5 év korlátozott garancia és 3D összeszerelési útmutató a BILT® appban – támogatás az első naptól.",
+    "customerReviews": "VÁSÁRLÓI VÉLEMÉNYEK",
+    "basedOn": "Alapul {{count}} véleményen",
+    "writeReview": "Írjon véleményt"
+  },
+  "userPanel": {
+    "account": "Fiók",
+    "orders": "Rendelések",
+    "logout": "Kijelentkezés",
+    "email": "E‑mail",
+    "name": "Név",
+    "lastName": "Vezetéknév",
+    "edit": "Szerkesztés",
+    "delivery": "Szállítási címek",
+    "addNewAddress": "Új cím hozzáadása",
+    "status": "Állapot",
+    "date": "Dátum"
+  },
+  "admin": {
+    "products": "Termékek",
+    "orders": "Rendelések",
+    "blogs": "Blogok",
+    "addProduct": "Termék hozzáadása",
+    "order": "Rendelés #{{id}}",
+    "status": "Állapot",
+    "date": "Dátum",
+    "deliveryDetails": "Szállítási adatok",
+    "email": "E‑mail",
+    "phone": "Telefon",
+    "postalCode": "Irányítószám",
+    "quantity": "Mennyiség",
+    "price": "Ár",
+    "installationYes": "Igen",
+    "installationNo": "Nem"
+  },
+  "uploadForm": {
+    "title": "Új termék hozzáadása",
+    "name": "Név",
+    "price": "Ár",
+    "lastPrice": "Korábbi ár",
+    "installationPrice": "Telepítés ára",
+    "description": "Leírás",
+    "demensions": "Méretek",
+    "composition": "Összetétel",
+    "compositionImage": "Összetétel kép",
+    "image": "Kép",
+    "gallery": "Galéria",
+    "movie": "Videó",
+    "submit": "Küldés"
+  },
+  "updateForm": {
+    "image": "Kép",
+    "name": "Név",
+    "price": "Ár",
+    "lastPrice": "Korábbi ár",
+    "installationPrice": "Telepítés ára",
+    "features": "Jellemzők",
+    "description": "Leírás",
+    "construction": "Konstrukció",
+    "demensions": "Méretek",
+    "galleryAdd": "Kép hozzáadása a galériához",
+    "apply": "Változtatások alkalmazása"
+  },
+  "userDetailsForm": {
+    "editAccount": "Fiók szerkesztése",
+    "firstName": "Keresztnév",
+    "lastName": "Vezetéknév",
+    "submit": "Mentés"
+  }
+}
+
+

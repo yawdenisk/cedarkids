@@ -1,0 +1,234 @@
+{
+  "header": {
+    "swingSets": "Šūpoļu komplekti",
+    "shipping": "Piegāde",
+    "blog": "Blogs",
+    "assembly": "Montāža",
+    "about": "Par mums",
+    "contacts": "Kontakti"
+  },
+  "footer": {
+    "navigation": "Navigācija",
+    "followUs": "Seko mums",
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "rights": "Visas tiesības aizsargātas.",
+    "createdBy": "Izstrādāja"
+  },
+  "about": {
+    "title": "CedarKids",
+    "p1": "Kopš 2007. gada CedarKids piegādā augstas kvalitātes šūpoļu komplektus Eiropas ģimenēm. Kā Backyard Discovery oficiālais izplatītājs piedāvājam plašu ciedrkoka komplektu klāstu dažādiem budžetiem un dārziem. Atšķirībā no egles vai priedes, mūsu premium ciedrs nodrošina izturību un, galvenokārt, drošību.",
+    "p2": "Mēs esam ģimenes uzņēmums, ko iedvesmo mūsu bērnu prieks par rotaļām pagalmā. Zinām, cik liela ir gaidīšana – tāpēc piegādājam ātri. CedarKids ne tikai pārdod komplektus; mēs palīdzam radīt drošas vietas, kas pilnas ar prieku un ģimenes atmiņām."
+  },
+  "notFound": {
+    "title": "Lapa nav atrasta",
+    "desc": "Iespējams, saite ir nepareiza vai jums nav piekļuves šai lapai.",
+    "backHome": "Atpakaļ uz sākumu"
+  },
+  "assembly": {
+    "guide": "Montāžas ceļvedis",
+    "welcome": "Laipni lūgti vienkāršā montāžā ar Woodlit komplektiem! Paredzēti pašmontāžai – droša un jautra rotaļu vieta bērniem.",
+    "before": "Pirms montāžas",
+    "during": "Montāžas laikā",
+    "after": "Pēc montāžas",
+    "contactTitle": "Kontakti",
+    "contactDesc": "Jautājumi? Ar prieku palīdzēsim! Rakstiet uz info@cedarkids.eu – atbildēsim 24 h laikā.",
+    "toolsTitle": "NEPIECIEŠAMIE RĪKI",
+    "toolsText": "Urbjmašīna, skrūvgriezis, āmurs un mērlente. Atslēgas un uzgaļi iekļauti.",
+    "prepareTitle": "SAGATAVOJAM TERITORIJU",
+    "prepareText": "Izvēlieties līdzenu laukumu un to notīriet. Atstājiet 1,8 m ap komplektu; šūpolēm papildu vieta – divkārša šūpoļu augstuma priekšā un aizmugurē.",
+    "safetyTitle": "DROŠĪBA",
+    "safetyText": "Lietojiet cimdus un aizsargbrilles. Rūpīgi izlasiet instrukciju. Pirms sākuma pārbaudiet detaļas. Turiet bērnus un mājdzīvniekus pa gabalu. Rīkus lietojiet saskaņā ar norādēm. Šaubu gadījumā – jautājiet vai sazinieties ar atbalstu.",
+    "timeTitle": "MONTĀŽAS LAIKS",
+    "timeText": "4–20 stundas atkarībā no komplekta un pieredzes.",
+    "stepsTitle": "SOLI PA SOLIM",
+    "stepsText": "Sakārtojiet detaļas un rīkus. Sāciet ar pamatu un līmeņojiet. Pievienojiet elementus un pārbaudiet stiprinājumus. Rokasgrāmatā ir skaidri attēli. Interaktīvai palīdzībai – BILT lietotne. Atbalsts pieejams.",
+    "troubleTitle": "PROBLĒMU RISINĀŠANA",
+    "troubleText": "Sastapāties ar grūtībām? Nekādu raižu. Mūsu komanda palīdzēs, lai viss noritētu gludi.",
+    "maintenanceTitle": "APKOPE",
+    "maintenanceText": "Aizsargājiet koku ik pēc diviem gadiem ar eļļu un lazūru. Reizi gadā pārbaudiet un pievelciet stiprinājumus. Regulāri pārbaudiet, īpaši pirms sezonas. Nolietotas vai bojātas detaļas nomainiet nekavējoties.",
+    "checksTitle": "DROŠĪBAS PĀRBAUDES",
+    "checksText": "Ik mēnesi pārbaudiet vaļīgus skrūvju savienojumus un nodilumu. Nodrošiniet stabilitāti un līmeni. Pārbaudiet pamatu un koku. Testējiet šūpoļu stiprinājumus un nolietojumu.",
+    "enjoyTitle": "IZBAUDIET SAVU KOMPLEKTU",
+    "enjoyText": "Veidojiet paliekošas atmiņas. Veiciniet iztēli, rotaļas ārā un kopā būšanu. Priecājieties savā dārzā!"
+  },
+  "shipping": {
+    "partnerLabel": "PIEGĀDES PARTNERIS:",
+    "partnerName": "Raben Logistics",
+    "partnerDesc": "Jūsu prieks ir drošās rokās! Vairāk nekā 10 gadus uzticamies Raben. Jūsu komplektu droši piegādās mūsu pieredzējusī komanda.",
+    "orderProcessingTitle": "PASŪTĪJUMA APSTRĀDE",
+    "orderProcessingDesc": "Garantēta ātra nosūtīšana! 2–3 darbdienu laikā pēc apmaksas.",
+    "estimatedDeliveryTitle": "APTUVENA PIEGĀDES LAIKA",
+    "estimatedDeliveryDesc": "Prieks parasti atnāk apmēram nedēļas laikā – atkarībā no vietas.",
+    "warehouseTitle": "NOLIKTAVA",
+    "warehouseName": "Polija, Łabiszyn",
+    "warehouseDesc": "Sūtām no mūsu centra Toruņā (Polija). Pašizņemšanai vai savam kurjeram – sazinieties ar mums.",
+    "pickupTitle": "SAŅEMŠANAS IESPĒJAS",
+    "pickupDesc": "Vēlaties pašizņemšanu vai savu kurjeru? Rakstiet, lai saņemtu instrukcijas.",
+    "satisfaction": "Jūsu gandarījums ir prioritāte. Nodrošinām plūstošu un drošu piegādi.",
+    "contact": "Jautājumi vai papildu palīdzība? Droši sazinieties.",
+    "thankYou": "PALDIES, KA IZVĒLĒJĀTIES MŪS JŪSU SPĒĻU MIRKĻIEM!"
+  },
+  "contacts": {
+    "title": "Sazinieties ar mums",
+    "subtitle": "Mēs priecātos dzirdēt no jums! Sūtiet mums ziņojumu, un mēs atbildēsim pēc iespējas ātrāk.",
+    "form": {
+      "title": "Sūtiet mums ziņojumu",
+      "name": "Pilns vārds",
+      "email": "E-pasta adrese",
+      "phone": "Tālruņa numurs",
+      "subject": "Temats",
+      "message": "Jūsu ziņojums",
+      "submit": "Sūtīt ziņojumu",
+      "sending": "Sūtīšana...",
+      "success": "Ziņojums veiksmīgi nosūtīts!",
+      "error": "Kļūda ziņojuma sūtīšanā. Lūdzu, mēģiniet vēlreiz."
+    },
+    "info": {
+      "title": "Kontaktinformācija",
+      "email": "E-pasts",
+      "phone": "Tālrunis",
+      "address": "Adrese",
+      "addressValue": "Polija, Łabiszyn",
+      "hours": "Darba laiks",
+      "hoursValue": "Pirmdiena - Piektdiena: 9:00 - 18:00"
+    }
+  },
+  "cart": {
+    "empty": "Grozs ir tukšs",
+    "delivery": "Piegāde",
+    "installation": "instalācija",
+    "summary": "Kopsavilkums",
+    "deliveryFree": "Piegāde: bez maksas",
+    "total": "Kopējā cena",
+    "buy": "Pirkt",
+    "continue": "Turpināt iepirkties",
+    "addNewAddress": "Pievienot jaunu adresi",
+    "phone": "Tālrunis",
+    "country": "Valsts",
+    "city": "Pilsēta",
+    "address": "Adrese",
+    "postalCode": "Pasta indekss",
+    "firstName": "Vārds",
+    "lastName": "Uzvārds",
+    "email": "E‑pasts"
+  },
+  "deliveryForm": {
+    "newAddress": "Jauna adrese",
+    "submit": "Iesniegt",
+    "postal": "Pasta indekss"
+  },
+  "login": {
+    "signIn": "Pieteikties",
+    "email": "email",
+    "password": "parole",
+    "submit": "Iesniegt",
+    "noAccount": "Nav konta?",
+    "signUp": "Reģistrēties"
+  },
+  "order": {
+    "successTitle": "Pasūtījums izveidots veiksmīgi",
+    "successDesc": "Paldies par pirkumu! Jūsu pasūtījums ir saņemts. Drīzumā saņemsiet apstiprinājuma e‑pastu.",
+    "backHome": "Atpakaļ uz sākumu"
+  },
+  "registration": {
+    "signUp": "Reģistrēties",
+    "email": "E‑pasts",
+    "password": "Parole",
+    "firstName": "Vārds",
+    "lastName": "Uzvārds",
+    "submit": "Iesniegt",
+    "haveAccount": "Jau ir konts?",
+    "signIn": "Pieteikties"
+  },
+  "review": {
+    "add": "Pievienot atsauksmi",
+    "fullName": "Pilns vārds",
+    "comment": "Jūsu komentārs",
+    "gallery": "Galerija",
+    "submit": "Iesniegt"
+  },
+  "product": {
+    "installation": "instalācija",
+    "addToCart": "PIEVIENOT GROZAM",
+    "setComposition": "Komplekta sastāvs:",
+    "assembledDimensions": "Izmēri saliktā veidā",
+    "residentialOnly": "Produkts paredzēts TIKAI MĀJSAIMNIECĪBAS LIETOŠANAI. Cita lietošana anulē garantiju.",
+    "whyTitle": "KĀPĒC CEDARKIDS?",
+    "why1Title": "Augstas kvalitātes dizains",
+    "why1Text": "Apvienojam stilu un izturību: materiāli, krāsas un izskats – komplekts, ar ko lepoties savā dārzā.",
+    "why2Title": "Pārbaudīts un sertificēts",
+    "why2Text": "Mūsu komplekti atbilst un pārsniedz ASTM standartus. Pārbaudīti līdz 12 gadu vecumam.",
+    "why3Title": "Garantija un montāža",
+    "why3Text": "5 gadu ierobežota garantija un 3D montāžas instrukcijas BILT® lietotnē – atbalsts no pirmās dienas.",
+    "customerReviews": "KLIENTU ATSAUKSMES",
+    "basedOn": "Balstīts uz {{count}} atsauksmēm",
+    "writeReview": "Rakstīt atsauksmi"
+  },
+  "userPanel": {
+    "account": "Konts",
+    "orders": "Pasūtījumi",
+    "logout": "Izrakstīties",
+    "email": "E‑pasts",
+    "name": "Vārds",
+    "lastName": "Uzvārds",
+    "edit": "Rediģēt",
+    "delivery": "Piegādes adreses",
+    "addNewAddress": "Pievienot jaunu adresi",
+    "status": "Statuss",
+    "date": "Datums"
+  },
+  "admin": {
+    "products": "Produkti",
+    "orders": "Pasūtījumi",
+    "blogs": "Blogi",
+    "addProduct": "Pievienot produktu",
+    "order": "Pasūtījums #{{id}}",
+    "status": "Statuss",
+    "date": "Datums",
+    "deliveryDetails": "Piegādes detaļas",
+    "email": "E‑pasts",
+    "phone": "Tālrunis",
+    "postalCode": "Pasta indekss",
+    "quantity": "Daudzums",
+    "price": "Cena",
+    "installationYes": "Jā",
+    "installationNo": "Nē"
+  },
+  "uploadForm": {
+    "title": "Pievienot jaunu produktu",
+    "name": "Nosaukums",
+    "price": "Cena",
+    "lastPrice": "Iepriekšējā cena",
+    "installationPrice": "Instalācijas cena",
+    "description": "Apraksts",
+    "demensions": "Izmēri",
+    "composition": "Sastāvs",
+    "compositionImage": "Sastāva attēls",
+    "image": "Attēls",
+    "gallery": "Galerija",
+    "movie": "Video",
+    "submit": "Iesniegt"
+  },
+  "updateForm": {
+    "image": "Attēls",
+    "name": "Nosaukums",
+    "price": "Cena",
+    "lastPrice": "Iepriekšējā cena",
+    "installationPrice": "Instalācijas cena",
+    "features": "Īpašības",
+    "description": "Apraksts",
+    "construction": "Konstrukcija",
+    "demensions": "Izmēri",
+    "galleryAdd": "Pievienot attēlu galerijai",
+    "apply": "Piemērot izmaiņas"
+  },
+  "userDetailsForm": {
+    "editAccount": "Rediģēt kontu",
+    "firstName": "Vārds",
+    "lastName": "Uzvārds",
+    "submit": "Saglabāt"
+  }
+}
+
+

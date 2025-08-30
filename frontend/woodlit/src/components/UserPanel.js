@@ -5,8 +5,10 @@ import {useNavigate} from 'react-router-dom';
 import DeliveryDetailsForm from './DeliveryDetailsForm';
 import UserDetailsForm from './UserDetailsForm';
 import config from '../config'
+import { useTranslation } from 'react-i18next'
 
 export default function UserPanel() {
+    const { t } = useTranslation();
     const [userDetails, setUserDetails] = useState({});
     const [item, setItem] = useState('account');
     const [showDeliveryDetailsForm, setShowDeliveryDetailsForm] = useState(false);
@@ -68,39 +70,39 @@ export default function UserPanel() {
                 <div className='panel'>
                     <div className='menu'>
                         <ul>
-                            <li onClick={() => setItem('account')}>Account</li>
-                            <li onClick={() => setItem('orders')}>Orders</li>
-                            <li onClick={logout}>Logout</li>
+                            <li onClick={() => setItem('account')}>{t('userPanel.account')}</li>
+                            <li onClick={() => setItem('orders')}>{t('userPanel.orders')}</li>
+                            <li onClick={logout}>{t('userPanel.logout')}</li>
                         </ul>
                     </div>
                     <div className='view'>
                         {item == 'account' && (
                             <>
                                 <div className='userInfo'>
-                                    <p>Email: {userDetails.email}</p>
-                                    <p>Name: {userDetails.firstName}</p>
-                                    <p>Last name: {userDetails.lastName}</p>
+                                    <p>{t('userPanel.email')}: {userDetails.email}</p>
+                                    <p>{t('userPanel.name')}: {userDetails.firstName}</p>
+                                    <p>{t('userPanel.lastName')}: {userDetails.lastName}</p>
                                     <button onClick={() => {
                                         setShowUserDetailsForm(true);
                                         setShowDeliveryDetailsForm(false)
-                                    }}>Edit
+                                    }}>{t('userPanel.edit')}
                                     </button>
                                     <span></span>
-                                    <p>Delivery</p>
+                                    <p>{t('userPanel.delivery')}</p>
                                     <button onClick={() => {
                                         setShowDeliveryDetailsForm(true);
                                         setShowUserDetailsForm(false)
-                                    }}>Add new address
+                                    }}>{t('userPanel.addNewAddress')}
                                     </button>
                                 </div>
                                 <ul className='deliveryDetails'>
                                     {userDetails.deliveryDetails.map(item => (
                                         <li key={item.id}>
-                                            <p>Phone: {item.phone}</p>
-                                            <p>Country: {item.country}</p>
-                                            <p>City: {item.city}</p>
-                                            <p>Address: {item.address}</p>
-                                            <p>Post index: {item.postalCode}</p>
+                                            <p>{t('cart.phone')}: {item.phone}</p>
+                                            <p>{t('cart.country')}: {item.country}</p>
+                                            <p>{t('cart.city')}: {item.city}</p>
+                                            <p>{t('cart.address')}: {item.address}</p>
+                                            <p>{t('cart.postalCode')}: {item.postalCode}</p>
                                         </li>
                                     ))}
                                 </ul>
@@ -131,7 +133,7 @@ export default function UserPanel() {
                                                     <img src={item.product.image}/>
                                                     <p>{item.product.name}</p>
                                                     {item.installation && (
-                                                        <p>+ installation</p>
+                                                        <p>+ {t('product.installation')}</p>
                                                     )}
                                                     <h4>{item.quantity}</h4>
                                                 </li>

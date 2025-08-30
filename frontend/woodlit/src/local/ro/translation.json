@@ -1,0 +1,234 @@
+{
+  "header": {
+    "swingSets": "Seturi de joacă",
+    "shipping": "Livrare",
+    "blog": "Blog",
+    "assembly": "Montaj",
+    "about": "Despre noi",
+    "contacts": "Contact"
+  },
+  "footer": {
+    "navigation": "Navigare",
+    "followUs": "Urmărește-ne",
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "rights": "Toate drepturile rezervate.",
+    "createdBy": "Creat de"
+  },
+  "about": {
+    "title": "CedarKids",
+    "p1": "Din 2007, CedarKids aduce seturi de joacă de înaltă calitate familiilor din Europa. Ca distribuitor oficial Backyard Discovery, oferim o gamă variată de seturi din lemn de cedru pentru orice buget și mărime de grădină. Spre deosebire de molid sau pin, cedrul premium asigură durabilitate și, mai ales, siguranță.",
+    "p2": "Suntem o afacere de familie, inspirată de bucuria propriilor noștri copii în spațiul de joacă din curte. Știm cât de nerăbdători sunt – de aceea livrăm rapid. La CedarKids nu vindem doar seturi; ajutăm la crearea unor locuri sigure, pline de veselie și amintiri în familie."
+  },
+  "notFound": {
+    "title": "Pagină negăsită",
+    "desc": "Este posibil ca linkul să fie greșit sau nu ai acces la această pagină.",
+    "backHome": "Înapoi la început"
+  },
+  "assembly": {
+    "guide": "Ghid de montaj",
+    "welcome": "Bun venit la o experiență de montaj ușoară cu seturile Woodlit! Proiectate pentru asamblare proprie – un spațiu sigur și plin de distracție pentru copii.",
+    "before": "Înainte de montaj",
+    "during": "În timpul montajului",
+    "after": "După montaj",
+    "contactTitle": "Contact",
+    "contactDesc": "Întrebări? Îți răspundem cu drag! Scrie-ne la info@cedarkids.eu și revenim în 24 h.",
+    "toolsTitle": "UNELTE NECESARE",
+    "toolsText": "Bormașină, șurubelniță, ciocan și ruletă. Chei și biți incluși.",
+    "prepareTitle": "PREGĂTIREA SPAȚIULUI",
+    "prepareText": "Alege o zonă plană și curăță. Lasă 1,8 m spațiu în jurul setului; pentru leagăne, spațiu suplimentar egal cu dublul înălțimii leagănului în față și spate.",
+    "safetyTitle": "SIGURANȚĂ",
+    "safetyText": "Poartă mănuși și ochelari. Citește atent instrucțiunile. Verifică piesele înainte de a începe. Ține copiii și animalele departe. Folosește uneltele conform indicațiilor. Dacă ai dubii, cere ajutor sau contactează suportul.",
+    "timeTitle": "TIMPI DE MONTAJ",
+    "timeText": "4–20 ore, în funcție de mărimea setului și experiență.",
+    "stepsTitle": "PAS CU PAS",
+    "stepsText": "Organizează piesele și uneltele. Pornește de la bază și niveleaz-o. Adaugă elemente și verifică prinderile. Manualul are ilustrații clare. Pentru ajutor interactiv: aplicația BILT. Suport disponibil.",
+    "troubleTitle": "DEPANARE",
+    "troubleText": "Întâmpini dificultăți? Nicio grijă. Echipa noastră te îndrumă pentru o montare fără griji.",
+    "maintenanceTitle": "ÎNTREȚINERE",
+    "maintenanceText": "Protejează lemnul la fiecare doi ani cu ulei și baiț. Verifică și strânge anual prinderile. Inspectează periodic, mai ales înainte de sezon. Înlocuiește piesele uzate sau deteriorate imediat.",
+    "checksTitle": "VERIFICĂRI DE SIGURANȚĂ",
+    "checksText": "Lunar: verifică șuruburi slăbite și uzură. Asigură stabilitatea și nivelul. Verifică solul și lemnul. Testează prinderile leagănelor și uzura.",
+    "enjoyTitle": "BUCURĂ-TE DE SET",
+    "enjoyText": "Creează amintiri de familie. Încurajează imaginația, joaca în aer liber și timpul împreună. Bucură-te de veselie în propria grădină!"
+  },
+  "shipping": {
+    "partnerLabel": "PARTENER DE LIVRARE:",
+    "partnerName": "Raben Logistics",
+    "partnerDesc": "Bucuria ta e pe mâini bune! De peste 10 ani avem încredere în Raben. Setul tău va fi livrat în siguranță de echipa noastră cu experiență.",
+    "orderProcessingTitle": "PROCESARE COMANDĂ",
+    "orderProcessingDesc": "Expediere rapidă garantată! În 2–3 zile lucrătoare de la plată.",
+    "estimatedDeliveryTitle": "TERMEN ESTIMAT DE LIVRARE",
+    "estimatedDeliveryDesc": "Veselia ajunge cam într-o săptămână – în funcție de locație.",
+    "warehouseTitle": "DEPOZIT",
+    "warehouseName": "Polonia, Łabiszyn",
+    "warehouseDesc": "Expediem din hub‑ul nostru din Toruń (Polonia). Pentru ridicare personală sau curier propriu, contactează‑ne.",
+    "pickupTitle": "OPȚIUNI DE RIDICARE",
+    "pickupDesc": "Preferi ridicarea personală sau curierul tău? Scrie‑ne pentru instrucțiuni.",
+    "satisfaction": "Satisfacția ta e prioritară. Asigurăm o livrare lină și sigură.",
+    "contact": "Întrebări sau ajutor suplimentar? Nu ezita să ne contactezi.",
+    "thankYou": "ÎȚI MULȚUMIM CĂ NE‑AI ALES PENTRU MOMENTELE TALE DE JOACĂ!"
+  },
+  "contacts": {
+    "title": "Ia legătura cu noi",
+    "subtitle": "Ne-ar plăcea să auzim de la tine! Trimite-ne un mesaj și vom răspunde cât mai curând posibil.",
+    "form": {
+      "title": "Trimite-ne un mesaj",
+      "name": "Nume complet",
+      "email": "Adresă de e-mail",
+      "phone": "Număr de telefon",
+      "subject": "Subiect",
+      "message": "Mesajul tău",
+      "submit": "Trimite mesaj",
+      "sending": "Se trimite...",
+      "success": "Mesaj trimis cu succes!",
+      "error": "Eroare la trimiterea mesajului. Te rugăm să încerci din nou."
+    },
+    "info": {
+      "title": "Informații de contact",
+      "email": "E-mail",
+      "phone": "Telefon",
+      "address": "Adresă",
+      "addressValue": "Polonia, Łabiszyn",
+      "hours": "Program de lucru",
+      "hoursValue": "Luni - Vineri: 9:00 - 18:00"
+    }
+  },
+  "cart": {
+    "empty": "Coșul este gol",
+    "delivery": "Livrare",
+    "installation": "instalare",
+    "summary": "Sumar",
+    "deliveryFree": "Livrare: gratuit",
+    "total": "Preț total",
+    "buy": "Cumpără",
+    "continue": "Continuă cumpărăturile",
+    "addNewAddress": "Adaugă adresă nouă",
+    "phone": "Telefon",
+    "country": "Țară",
+    "city": "Oraș",
+    "address": "Adresă",
+    "postalCode": "Cod poștal",
+    "firstName": "Prenume",
+    "lastName": "Nume",
+    "email": "E‑mail"
+  },
+  "deliveryForm": {
+    "newAddress": "Adresă nouă",
+    "submit": "Trimite",
+    "postal": "Cod poștal"
+  },
+  "login": {
+    "signIn": "Autentificare",
+    "email": "email",
+    "password": "parolă",
+    "submit": "Trimite",
+    "noAccount": "Nu ai cont?",
+    "signUp": "Înregistrează‑te"
+  },
+  "order": {
+    "successTitle": "Comandă creată cu succes",
+    "successDesc": "Îți mulțumim pentru achiziție! Comanda a fost înregistrată. Vei primi în curând un e‑mail de confirmare.",
+    "backHome": "Înapoi la început"
+  },
+  "registration": {
+    "signUp": "Înregistrează‑te",
+    "email": "E‑mail",
+    "password": "Parolă",
+    "firstName": "Prenume",
+    "lastName": "Nume",
+    "submit": "Trimite",
+    "haveAccount": "Ai deja cont?",
+    "signIn": "Autentifică‑te"
+  },
+  "review": {
+    "add": "Adaugă recenzie",
+    "fullName": "Nume complet",
+    "comment": "Comentariul tău",
+    "gallery": "Galerie",
+    "submit": "Trimite"
+  },
+  "product": {
+    "installation": "instalare",
+    "addToCart": "ADAUGĂ ÎN COȘ",
+    "setComposition": "Componența setului:",
+    "assembledDimensions": "Dimensiuni asamblat",
+    "residentialOnly": "Produs destinat EXCLUSIV UZULUI CASNIC. Utilizarea în alt mediu anulează garanția.",
+    "whyTitle": "DE CE CEDARKIDS?",
+    "why1Title": "Design de calitate",
+    "why1Text": "Îmbinăm stilul cu robustețea: materiale, culori și aspect – un set de care să fii mândru în grădină.",
+    "why2Title": "Testat și certificat",
+    "why2Text": "Seturile noastre respectă și depășesc standardele ASTM. Testate până la 12 ani.",
+    "why3Title": "Garanție și montaj",
+    "why3Text": "Garanție limitată 5 ani și instrucțiuni 3D în aplicația BILT® – suport de la început.",
+    "customerReviews": "REVIEW‑URI CLIENȚI",
+    "basedOn": "Bazat pe {{count}} review‑uri",
+    "writeReview": "Scrie un review"
+  },
+  "userPanel": {
+    "account": "Cont",
+    "orders": "Comenzi",
+    "logout": "Deconectare",
+    "email": "E‑mail",
+    "name": "Nume",
+    "lastName": "Prenume",
+    "edit": "Editează",
+    "delivery": "Adrese de livrare",
+    "addNewAddress": "Adaugă adresă nouă",
+    "status": "Stare",
+    "date": "Dată"
+  },
+  "admin": {
+    "products": "Produse",
+    "orders": "Comenzi",
+    "blogs": "Bloguri",
+    "addProduct": "Adaugă produs",
+    "order": "Comandă #{{id}}",
+    "status": "Stare",
+    "date": "Dată",
+    "deliveryDetails": "Detalii livrare",
+    "email": "E‑mail",
+    "phone": "Telefon",
+    "postalCode": "Cod poștal",
+    "quantity": "Cantitate",
+    "price": "Preț",
+    "installationYes": "Da",
+    "installationNo": "Nu"
+  },
+  "uploadForm": {
+    "title": "Adaugă produs nou",
+    "name": "Nume",
+    "price": "Preț",
+    "lastPrice": "Preț anterior",
+    "installationPrice": "Preț instalare",
+    "description": "Descriere",
+    "demensions": "Dimensiuni",
+    "composition": "Componență",
+    "compositionImage": "Imagine componență",
+    "image": "Imagine",
+    "gallery": "Galerie",
+    "movie": "Video",
+    "submit": "Trimite"
+  },
+  "updateForm": {
+    "image": "Imagine",
+    "name": "Nume",
+    "price": "Preț",
+    "lastPrice": "Preț anterior",
+    "installationPrice": "Preț instalare",
+    "features": "Caracteristici",
+    "description": "Descriere",
+    "construction": "Construcție",
+    "demensions": "Dimensiuni",
+    "galleryAdd": "Adaugă imagine în galerie",
+    "apply": "Aplică modificările"
+  },
+  "userDetailsForm": {
+    "editAccount": "Editează cont",
+    "firstName": "Prenume",
+    "lastName": "Nume",
+    "submit": "Salvează"
+  }
+}
+
+

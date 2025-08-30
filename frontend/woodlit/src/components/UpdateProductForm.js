@@ -2,8 +2,10 @@ import React, {use, useEffect, useState} from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import config from '../config'
+import { useTranslation } from 'react-i18next'
 
 export default function UpdateProductForm() {
+    const { t } = useTranslation();
     const [newImage, setNewImage] = useState(null);
     const [newGalleryImages, setNewGalleryImages] = useState([]);
     const [product, setProduct] = useState({})
@@ -75,32 +77,32 @@ export default function UpdateProductForm() {
         <div className='updateProduct'>
             <div className='viewport'>
             <form>
-                <label>Image</label>
+                <label>{t('updateForm.image')}</label>
                 <input type='file' onChange={handleFileChange}/>
-                <label>Name</label>
+                <label>{t('updateForm.name')}</label>
                 <input type="text" name="name" value={product.name} onChange={handleInputChange}/>
-                <label>Price</label>
+                <label>{t('updateForm.price')}</label>
                 <input type="number" name="price" value={product.price} onChange={handleInputChange}/>
-                <label>LastPrice</label>
+                <label>{t('updateForm.lastPrice')}</label>
                 <input type="number" name="lastPrice" value={product.lastPrice} onChange={handleInputChange}/>
-                 <label>LastPrice</label>
+                 <label>{t('updateForm.installationPrice')}</label>
                 <input type="number" name="installationPrice" value={product.installationPrice} onChange={handleInputChange}/>
-                <label>Features</label>
+                <label>{t('updateForm.features')}</label>
                 <textarea name="features" value={product.features} onChange={handleInputChange}/>
-                <label>Description</label>
+                <label>{t('updateForm.description')}</label>
                 <textarea name="description" value={product.description} onChange={handleInputChange}/>
-                 <label>Construction</label>
+                 <label>{t('updateForm.construction')}</label>
                 <textarea name="construction" value={product.construction} onChange={handleInputChange}/>
-                 <label>Demensions</label>
+                 <label>{t('updateForm.demensions')}</label>
                 <textarea name="demensions" value={product.demensions} onChange={handleInputChange}/>
-                 <label>Features</label>
+                 <label>{t('updateForm.features')}</label>
                 <textarea name="features" value={product.features} onChange={handleInputChange}/>
             </form>
             <img src={product.image} alt="Product"/>
             </div>
 
             <div className='gallery'>
-                <label>Add image to gallery</label>
+                <label>{t('updateForm.galleryAdd')}</label>
                 <input type='file' multiple onChange={handleGalleryChange}/>
                 <ul>
                     {product.gallery?.map((item, index) => (
@@ -110,7 +112,7 @@ export default function UpdateProductForm() {
                     ))}
                 </ul>
             </div>
-            <button onClick={handleUpdateProduct}>Apply changes</button>
+            <button onClick={handleUpdateProduct}>{t('updateForm.apply')}</button>
         </div>
     );
 }

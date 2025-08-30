@@ -1,0 +1,232 @@
+{
+  "header": {
+    "swingSets": "Schaukelsysteme",
+    "shipping": "Versand",
+    "blog": "Blog",
+    "assembly": "Montage",
+    "about": "Über uns",
+    "contacts": "Kontakt"
+  },
+  "footer": {
+    "navigation": "Navigation",
+    "followUs": "Folge uns",
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "rights": "Alle Rechte vorbehalten.",
+    "createdBy": "Erstellt von"
+  },
+  "about": {
+    "title": "CedarKids",
+    "p1": "Seit 2007 bringt CedarKids hochwertige Schaukelsysteme in europäische Familiengärten. Als offizieller Vertriebspartner von Backyard Discovery bieten wir eine große Auswahl an Schaukeln aus Zedernholz – für jedes Budget und jede Gartengröße. Anders als Mitbewerber mit Fichte oder Kiefer sorgt unser Premium-Zedernholz für Langlebigkeit und – am wichtigsten – Sicherheit.",
+    "p2": "Als Familienunternehmen, inspiriert von der Begeisterung unserer eigenen Kinder für ihr Spielgerät im Garten, wissen wir, welche Freude es bereitet. Wir setzen auf schnelle Lieferung – denn Kinder können kaum warten. Bei CedarKids verkaufen wir nicht nur Schaukeln: Wir helfen, sichere Orte voller Spaß und Familienmomente zu schaffen."
+  },
+  "notFound": {
+    "title": "Seite nicht gefunden",
+    "desc": "Der Link ist möglicherweise falsch oder dir fehlt die Berechtigung für diese Seite.",
+    "backHome": "Zur Startseite"
+  },
+  "assembly": {
+    "guide": "Montageanleitung",
+    "welcome": "Willkommen zu einer unkomplizierten Montage mit Woodlit-Schaukelsystemen! Für die Selbstmontage entwickelt – für einen sicheren, fröhlichen Spielbereich deiner Kinder.",
+    "before": "Vor der Montage",
+    "during": "Während der Montage",
+    "after": "Nach der Montage",
+    "contactTitle": "Kontakt",
+    "contactDesc": "Noch Fragen? Wir helfen gern! Schreibe an info@cedarkids.eu – wir melden uns innerhalb von 24 Stunden.",
+    "toolsTitle": "BENÖTIGTE WERKZEUGE",
+    "toolsText": "Bohrmaschine, Schraubendreher, Hammer und Maßband. Schlüssel und Bits sind enthalten.",
+    "prepareTitle": "DEINEN BEREICH VORBEREITEN",
+    "prepareText": "Wähle eine ebene Fläche und räume sie frei. Lasse rund um das Set 1,8 m Platz. Bei Schaukeln zusätzlich vorn und hinten je das Doppelte der Schaukellänge.",
+    "safetyTitle": "SICHERHEITSHINWEISE",
+    "safetyText": "Trage Handschuhe und Schutzbrille. Lies die Anleitung sorgfältig. Prüfe alle Teile vorab. Halte Kinder und Haustiere vom Montagebereich fern. Nutze Werkzeuge wie beschrieben. Bei Unsicherheit: Fachhilfe oder Support kontaktieren.",
+    "timeTitle": "MONTAGEZEIT",
+    "timeText": "Je nach Setgröße und Erfahrung ca. 4–20 Stunden.",
+    "stepsTitle": "SCHRITT-FÜR-SCHRITT",
+    "stepsText": "Ordne alle Teile und Werkzeuge. Beginne mit der Basis und richte sie aus. Baue weitere Elemente an und prüfe alle Verbindungen. Detaillierte Anleitungen mit Abbildungen findest du im Handbuch. Für interaktive Hilfe: BILT-App. Unser Support hilft gern weiter.",
+    "troubleTitle": "PROBLEMBEHANDLUNG",
+    "troubleText": "Ein kleiner Hänger? Kein Problem. Unser Support-Team begleitet dich, damit alles reibungslos läuft.",
+    "maintenanceTitle": "PFLEGE-TIPPS",
+    "maintenanceText": "Zum Schutz des Holzes alle zwei Jahre Öl- und Lasurbehandlung. Jährlich Beschläge prüfen und nachziehen. Vor der Spielsaison auf Abnutzung oder Schäden kontrollieren und Teile bei Bedarf umgehend ersetzen.",
+    "checksTitle": "SICHERHEITS-CHECKS",
+    "checksText": "Monatlich auf lockere Schrauben und Abnutzung prüfen. Stabilität und Ausrichtung sicherstellen. Untergrund und Holz inspizieren. Schaukeln auf sicheren Halt und Verschleiß prüfen.",
+    "enjoyTitle": "VIEL FREUDE AM SPIELSET",
+    "enjoyText": "Schaffe unvergessliche Familienmomente. Fördere Fantasie, Bewegung und Miteinander. Genieße die Freude direkt in deinem Garten!"
+  },
+  "shipping": {
+    "partnerLabel": "VERSANDPARTNER:",
+    "partnerName": "Raben Logistics",
+    "partnerDesc": "Deine Freude in guten Händen! Seit über 10 Jahren vertrauen wir auf Raben als zuverlässigen Logistikpartner. Dein Schaukelsystem wird sicher von unserem erfahrenen Team geliefert.",
+    "orderProcessingTitle": "BESTELLABWICKLUNG",
+    "orderProcessingDesc": "Schneller Versand garantiert! Wir versenden innerhalb von 2–3 Werktagen nach Zahlungseingang.",
+    "estimatedDeliveryTitle": "VORAUSSICHTLICHE LIEFERZEIT",
+    "estimatedDeliveryDesc": "Die Freude kommt meist in etwa einer Woche an – abhängig von deinem Standort.",
+    "warehouseTitle": "LAGERSTANDORT",
+    "warehouseName": "Polen, Łabiszyn",
+    "warehouseDesc": "Der Versand erfolgt aus unserem Hub in Toruń (Polen). Für Selbstabholung oder eigenen Kurier melde dich gern bei uns.",
+    "pickupTitle": "ABHOLOPTIONEN",
+    "pickupDesc": "Selbstabholung oder eigener Kurier gewünscht? Schreib uns für Details und Anweisungen.",
+    "satisfaction": "Deine Zufriedenheit hat Priorität – wir sorgen für eine reibungslose, sichere Zustellung.",
+    "contact": "Fragen oder zusätzlicher Support? Kontaktiere uns jederzeit.",
+    "thankYou": "DANKE, DASS DU UNS FÜR EURE SPIELZEIT-MOMENTE GEWÄHLT HAST!"
+  },
+  "contacts": {
+    "title": "Kontakt aufnehmen",
+    "subtitle": "Wir freuen uns von Ihnen zu hören! Senden Sie uns eine Nachricht und wir antworten so schnell wie möglich.",
+    "form": {
+      "title": "Senden Sie uns eine Nachricht",
+      "name": "Vollständiger Name",
+      "email": "E-Mail-Adresse",
+      "phone": "Telefonnummer",
+      "subject": "Betreff",
+      "message": "Ihre Nachricht",
+      "submit": "Nachricht senden",
+      "sending": "Wird gesendet...",
+      "success": "Nachricht erfolgreich gesendet!",
+      "error": "Fehler beim Senden der Nachricht. Bitte versuchen Sie es erneut."
+    },
+    "info": {
+      "title": "Kontaktinformationen",
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "address": "Adresse",
+      "addressValue": "Polen, Łabiszyn",
+      "hours": "Geschäftszeiten",
+      "hoursValue": "Montag - Freitag: 9:00 - 18:00 Uhr"
+    }
+  },
+  "cart": {
+    "empty": "Der Warenkorb ist leer",
+    "delivery": "Versand",
+    "installation": "Montage",
+    "summary": "Zusammenfassung",
+    "deliveryFree": "Versand: gratis",
+    "total": "Gesamtpreis",
+    "buy": "Kaufen",
+    "continue": "Weiter einkaufen",
+    "addNewAddress": "Neue Adresse hinzufügen",
+    "phone": "Telefon",
+    "country": "Land",
+    "city": "Stadt",
+    "address": "Adresse",
+    "postalCode": "Postleitzahl",
+    "firstName": "Vorname",
+    "lastName": "Nachname",
+    "email": "E-Mail"
+  },
+  "deliveryForm": {
+    "newAddress": "Neue Adresse",
+    "submit": "Senden",
+    "postal": "Postleitzahl"
+  },
+  "login": {
+    "signIn": "Anmelden",
+    "email": "E-Mail",
+    "password": "Passwort",
+    "submit": "Senden",
+    "noAccount": "Noch kein Konto?",
+    "signUp": "Registrieren"
+  },
+  "order": {
+    "successTitle": "Bestellung erfolgreich erstellt",
+    "successDesc": "Vielen Dank für deinen Einkauf! Deine Bestellung ist eingegangen. Du erhältst in Kürze eine Bestätigungs-E-Mail.",
+    "backHome": "Zur Startseite"
+  },
+  "registration": {
+    "signUp": "Registrieren",
+    "email": "E-Mail",
+    "password": "Passwort",
+    "firstName": "Vorname",
+    "lastName": "Nachname",
+    "submit": "Senden",
+    "haveAccount": "Schon ein Konto?",
+    "signIn": "Anmelden"
+  },
+  "review": {
+    "add": "Neue Bewertung hinzufügen",
+    "fullName": "Vollständiger Name",
+    "comment": "Dein Kommentar",
+    "gallery": "Galerie",
+    "submit": "Senden"
+  },
+  "product": {
+    "installation": "Montage",
+    "addToCart": "IN DEN WARENKORB",
+    "setComposition": "Lieferumfang:",
+    "assembledDimensions": "Maße aufgebaut",
+    "residentialOnly": "Dieses Produkt ist ausschließlich für den PRIVATGEBRAUCH bestimmt. Eine Nutzung außerhalb dieses Rahmens führt zum Erlöschen der Garantie.",
+    "whyTitle": "WARUM CEDARKIDS?",
+    "why1Title": "Hochwertiges Design",
+    "why1Text": "Wir legen Wert auf Stil und Stabilität: Materialien, Farben und Optik – ein Set, auf das du im Garten stolz bist.",
+    "why2Title": "Geprüft und zertifiziert",
+    "why2Text": "Unsere Sets erfüllen und übertreffen ASTM-Standards. Getestet für Kinder bis 12 Jahre.",
+    "why3Title": "Garantie und Montage",
+    "why3Text": "5 Jahre eingeschränkte Garantie und 3D-Montageanleitung in der BILT® App – Unterstützung von Anfang an.",
+    "customerReviews": "KUNDENBEWERTUNGEN",
+    "basedOn": "Basierend auf {{count}} Bewertungen",
+    "writeReview": "Bewertung schreiben"
+  },
+  "userPanel": {
+    "account": "Konto",
+    "orders": "Bestellungen",
+    "logout": "Abmelden",
+    "email": "E-Mail",
+    "name": "Name",
+    "lastName": "Nachname",
+    "edit": "Bearbeiten",
+    "delivery": "Lieferadressen",
+    "addNewAddress": "Neue Adresse hinzufügen",
+    "status": "Status",
+    "date": "Datum"
+  },
+  "admin": {
+    "products": "Produkte",
+    "orders": "Bestellungen",
+    "blogs": "Blogs",
+    "addProduct": "Produkt hinzufügen",
+    "order": "Bestellung #{{id}}",
+    "status": "Status",
+    "date": "Datum",
+    "deliveryDetails": "Lieferdetails",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "postalCode": "Postleitzahl",
+    "quantity": "Menge",
+    "price": "Preis",
+    "installationYes": "Ja",
+    "installationNo": "Nein"
+  },
+  "uploadForm": {
+    "title": "Neues Produkt hinzufügen",
+    "name": "Name",
+    "price": "Preis",
+    "lastPrice": "Vorheriger Preis",
+    "installationPrice": "Montagepreis",
+    "description": "Beschreibung",
+    "demensions": "Maße",
+    "composition": "Zusammenstellung",
+    "compositionImage": "Zusammensetzungsbild",
+    "image": "Bild",
+    "gallery": "Galerie",
+    "movie": "Video",
+    "submit": "Senden"
+  },
+  "updateForm": {
+    "image": "Bild",
+    "name": "Name",
+    "price": "Preis",
+    "lastPrice": "Vorheriger Preis",
+    "installationPrice": "Montagepreis",
+    "features": "Merkmale",
+    "description": "Beschreibung",
+    "construction": "Konstruktion",
+    "demensions": "Maße",
+    "galleryAdd": "Bild zur Galerie hinzufügen",
+    "apply": "Änderungen übernehmen"
+  },
+  "userDetailsForm": {
+    "editAccount": "Konto bearbeiten",
+    "firstName": "Vorname",
+    "lastName": "Nachname",
+    "submit": "Speichern"
+  }
+}

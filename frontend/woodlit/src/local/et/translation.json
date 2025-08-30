@@ -1,0 +1,234 @@
+{
+  "header": {
+    "swingSets": "Kiigekomplektid",
+    "shipping": "Kohaletoimetamine",
+    "blog": "Blogi",
+    "assembly": "Kokkupanek",
+    "about": "Meist",
+    "contacts": "Kontakt"
+  },
+  "footer": {
+    "navigation": "Navigeerimine",
+    "followUs": "Jälgi meid",
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "rights": "Kõik õigused kaitstud.",
+    "createdBy": "Loonud"
+  },
+  "about": {
+    "title": "CedarKids",
+    "p1": "Alates 2007. aastast toob CedarKids kvaliteetseid kiigekomplekte Euroopa peredeni. Backyard Discovery ametliku levitajana pakume laia valikut seedripuust komplekte igale eelarvele ja aiale. Erinevalt kuusest või männist tagab meie premium seedar vastupidavuse ja eelkõige ohutuse.",
+    "p2": "Oleme pereettevõte, keda innustab meie endi laste rõõm õuemängudest. Teame, kui kärsitult nad ootavad – seega toimetame kiiresti. CedarKidsis me ei müü ainult komplekte; aitame luua turvalisi kohti, mis on täis rõõmu ja pere mälestusi."
+  },
+  "notFound": {
+    "title": "Lehte ei leitud",
+    "desc": "Võib‑olla on link vale või teil puudub sellele lehele juurdepääs.",
+    "backHome": "Tagasi avalehele"
+  },
+  "assembly": {
+    "guide": "Kokkupaneku juhend",
+    "welcome": "Tere tulemast lihtsale kokkupanekule Woodlit komplektidega! Mõeldud iseseisvaks kokkupanekuks – turvaline ja lõbus mänguala lastele.",
+    "before": "Enne kokkupanekut",
+    "during": "Kokkupaneku ajal",
+    "after": "Pärast kokkupanekut",
+    "contactTitle": "Kontakt",
+    "contactDesc": "Küsimusi? Aitame hea meelega! Kirjutage meile aadressil info@cedarkids.eu – vastame 24 h jooksul.",
+    "toolsTitle": "VAJALIKUD TÖÖRIISTAD",
+    "toolsText": "Trell, kruvikeeraja, haamer ja mõõdulint. Võtmed ja otsikud kaasas.",
+    "prepareTitle": "VALMISTA OMA ALA",
+    "prepareText": "Valige tasane ala ja puhastage see. Jätke 1,8 m ruumi ümber komplekti; kiikude jaoks lisaruumi – kaks korda kiige kõrgus ette ja taha.",
+    "safetyTitle": "OHUTUS",
+    "safetyText": "Kandke kindaid ja kaitseprille. Lugege hoolikalt juhiseid. Kontrollige osad enne alustamist. Hoidke lapsed ja lemmikloomad eemal. Kasutage tööriistu vastavalt juhistele. Kahtluse korral küsige abi või võtke ühendust toega.",
+    "timeTitle": "KOKKUPANEKUAEG",
+    "timeText": "4–20 tundi olenevalt komplekti suurusest ja kogemusest.",
+    "stepsTitle": "SAMM‑SAMMULT",
+    "stepsText": "Seadke paika osad ja tööriistad. Alustage alusraamist ja viige see loodis. Lisage elemendid ja kontrollige kinnitusi. Juhendis on selged illustratsioonid. Interaktiivse abi jaoks – BILT rakendus. Tugi on saadaval.",
+    "troubleTitle": "PROBLEEMIDE LAHENDAMINE",
+    "troubleText": "Väike tõrge? Pole muret. Meie meeskond juhendab, et kõik kulgeks sujuvalt.",
+    "maintenanceTitle": "HOOLDUSSOOVITUSED",
+    "maintenanceText": "Kaitske puitu iga kahe aasta järel õli ja peitsiga. Kontrollige ja pingutage kinnitusdetaile kord aastas. Kontrollige regulaarselt, eriti enne hooaega. Kulunud või kahjustatud osad vahetage kohe välja.",
+    "checksTitle": "OHUTUSKONTROLLID",
+    "checksText": "Igakuine kontroll lahtiste kruvide ja kulumise suhtes. Tagage stabiilsus ja lood. Kontrollige alust ja puitu. Testige kiikude riputust ja kulumist.",
+    "enjoyTitle": "NAUTIGE OMA KOMPLEKTI",
+    "enjoyText": "Looge mälestusi. Julgustage fantaasiat, õuemänge ja koosolemist. Nautige rõõmu oma aias!"
+  },
+  "shipping": {
+    "partnerLabel": "TARNEPARTNER:",
+    "partnerName": "Raben Logistics",
+    "partnerDesc": "Teie rõõm on heades kätes! Oleme üle 10 aasta usaldanud Rabenit. Teie komplekti toimetab turvaliselt kohale meie kogenud meeskond.",
+    "orderProcessingTitle": "TELIMUSE TÖÖTLEMINE",
+    "orderProcessingDesc": "Kiire postitus garanteeritud! 2–3 tööpäeva jooksul pärast makset.",
+    "estimatedDeliveryTitle": "EELDATAV TARNETÄHTAEG",
+    "estimatedDeliveryDesc": "Rõõm jõuab tavaliselt umbes nädalaga – olenevalt asukohast.",
+    "warehouseTitle": "LADU",
+    "warehouseName": "Poola, Łabiszyn",
+    "warehouseDesc": "Postitame oma Toruń kesklaost (Poola). Ise järele tulemiseks või oma kullerile – võtke ühendust.",
+    "pickupTitle": "JÄRELETULEKU VÕIMALUSED",
+    "pickupDesc": "Eelistate ise järele tulla või oma kullerit? Kirjutage meile juhiste saamiseks.",
+    "satisfaction": "Teie rahulolu on prioriteet. Tagame sujuva ja turvalise tarne.",
+    "contact": "Küsimused või lisainfo? Võtke meiega julgelt ühendust.",
+    "thankYou": "AITÄH, ET VALISITE MEID TEIE MÄNGUHETKEDEKS!"
+  },
+  "contacts": {
+    "title": "Võtke meiega ühendust",
+    "subtitle": "Meile meeldiks teilt kuulda! Saatke meile sõnum ja vastame niipea kui võimalik.",
+    "form": {
+      "title": "Saatke meile sõnum",
+      "name": "Täisnimi",
+      "email": "E-posti aadress",
+      "phone": "Telefoninumber",
+      "subject": "Teema",
+      "message": "Teie sõnum",
+      "submit": "Saada sõnum",
+      "sending": "Saatmine...",
+      "success": "Sõnum edukalt saadetud!",
+      "error": "Sõnumi saatmisel esines viga. Palun proovige uuesti."
+    },
+    "info": {
+      "title": "Kontaktandmed",
+      "email": "E-post",
+      "phone": "Telefon",
+      "address": "Aadress",
+      "addressValue": "Poola, Łabiszyn",
+      "hours": "Tööaeg",
+      "hoursValue": "Esmaspäev - Reede: 9:00 - 18:00"
+    }
+  },
+  "cart": {
+    "empty": "Ostukorv on tühi",
+    "delivery": "Kohaletoimetamine",
+    "installation": "paigaldus",
+    "summary": "Kokkuvõte",
+    "deliveryFree": "Kohaletoimetamine: tasuta",
+    "total": "Koguhind",
+    "buy": "Osta",
+    "continue": "Jätka ostlemist",
+    "addNewAddress": "Lisa uus aadress",
+    "phone": "Telefon",
+    "country": "Riik",
+    "city": "Linn",
+    "address": "Aadress",
+    "postalCode": "Sihtnumber",
+    "firstName": "Eesnimi",
+    "lastName": "Perekonnanimi",
+    "email": "E‑post"
+  },
+  "deliveryForm": {
+    "newAddress": "Uus aadress",
+    "submit": "Saada",
+    "postal": "Sihtnumber"
+  },
+  "login": {
+    "signIn": "Logi sisse",
+    "email": "email",
+    "password": "parool",
+    "submit": "Saada",
+    "noAccount": "Kasutajat ei ole?",
+    "signUp": "Loo kasutaja"
+  },
+  "order": {
+    "successTitle": "Tellimus loodud edukalt",
+    "successDesc": "Aitäh ostu eest! Teie tellimus on registreeritud. Peagi saabub kinnitus e‑postile.",
+    "backHome": "Tagasi avalehele"
+  },
+  "registration": {
+    "signUp": "Loo kasutaja",
+    "email": "E‑post",
+    "password": "Parool",
+    "firstName": "Eesnimi",
+    "lastName": "Perekonnanimi",
+    "submit": "Saada",
+    "haveAccount": "On juba kasutaja?",
+    "signIn": "Logi sisse"
+  },
+  "review": {
+    "add": "Lisa arvustus",
+    "fullName": "Täisnimi",
+    "comment": "Teie kommentaar",
+    "gallery": "Galerii",
+    "submit": "Saada"
+  },
+  "product": {
+    "installation": "paigaldus",
+    "addToCart": "LISA KORVI",
+    "setComposition": "Komplekti koosseis:",
+    "assembledDimensions": "Mõõdud kokkupandult",
+    "residentialOnly": "Toode on mõeldud AINULT KODUSEKS KASUTAMISEKS. Kasutus mujal tühistab garantii.",
+    "whyTitle": "MIKS CEDARKIDS?",
+    "why1Title": "Kõrgekvaliteediline disain",
+    "why1Text": "Ühendame stiili ja tugevuse: materjalid, värvid ja ilme – komplekt, mille üle aias uhke olla.",
+    "why2Title": "Testitud ja sertifitseeritud",
+    "why2Text": "Meie komplektid vastavad ja ületavad ASTM standardeid. Testitud kuni 12‑aastastele.",
+    "why3Title": "Garantii ja kokkupanek",
+    "why3Text": "5‑aastane piiratud garantii ja 3D kokkupaneku juhised BILT® rakenduses – tugi algusest peale.",
+    "customerReviews": "KLIENDIARVUSTUSED",
+    "basedOn": "Põhineb {{count}} arvustusel",
+    "writeReview": "Kirjuta arvustus"
+  },
+  "userPanel": {
+    "account": "Konto",
+    "orders": "Tellimused",
+    "logout": "Logi välja",
+    "email": "E‑post",
+    "name": "Nimi",
+    "lastName": "Perekonnanimi",
+    "edit": "Muuda",
+    "delivery": "Kohaletoimetamise aadressid",
+    "addNewAddress": "Lisa uus aadress",
+    "status": "Olek",
+    "date": "Kuupäev"
+  },
+  "admin": {
+    "products": "Tooted",
+    "orders": "Tellimused",
+    "blogs": "Blogid",
+    "addProduct": "Lisa toode",
+    "order": "Tellimus #{{id}}",
+    "status": "Olek",
+    "date": "Kuupäev",
+    "deliveryDetails": "Tarnimise andmed",
+    "email": "E‑post",
+    "phone": "Telefon",
+    "postalCode": "Sihtnumber",
+    "quantity": "Kogus",
+    "price": "Hind",
+    "installationYes": "Jah",
+    "installationNo": "Ei"
+  },
+  "uploadForm": {
+    "title": "Lisa uus toode",
+    "name": "Nimi",
+    "price": "Hind",
+    "lastPrice": "Eelmine hind",
+    "installationPrice": "Paigalduse hind",
+    "description": "Kirjeldus",
+    "demensions": "Mõõdud",
+    "composition": "Koosseis",
+    "compositionImage": "Koosseisu pilt",
+    "image": "Pilt",
+    "gallery": "Galerii",
+    "movie": "Video",
+    "submit": "Saada"
+  },
+  "updateForm": {
+    "image": "Pilt",
+    "name": "Nimi",
+    "price": "Hind",
+    "lastPrice": "Eelmine hind",
+    "installationPrice": "Paigalduse hind",
+    "features": "Omadused",
+    "description": "Kirjeldus",
+    "construction": "Konstruktsioon",
+    "demensions": "Mõõdud",
+    "galleryAdd": "Lisa pilt galeriisse",
+    "apply": "Rakenda muudatused"
+  },
+  "userDetailsForm": {
+    "editAccount": "Muuda kontot",
+    "firstName": "Eesnimi",
+    "lastName": "Perekonnanimi",
+    "submit": "Salvesta"
+  }
+}
+
+

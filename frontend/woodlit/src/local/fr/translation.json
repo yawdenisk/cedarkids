@@ -1,0 +1,232 @@
+{
+  "header": {
+    "swingSets": "Aires de jeux",
+    "shipping": "Livraison",
+    "blog": "Blog",
+    "assembly": "Montage",
+    "about": "À propos",
+    "contacts": "Contact"
+  },
+  "footer": {
+    "navigation": "Navigation",
+    "followUs": "Suivez-nous",
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "rights": "Tous droits réservés.",
+    "createdBy": "Créé par"
+  },
+  "about": {
+    "title": "CedarKids",
+    "p1": "Depuis 2007, CedarKids propose des aires de jeux de haute qualité aux familles européennes. Distributeur officiel de Backyard Discovery, nous offrons un large choix de structures en cèdre, adaptées à tous les budgets et tailles de jardin. Contrairement à la sapinette ou au pin, notre cèdre premium garantit durabilité et, surtout, sécurité.",
+    "p2": "Entreprise familiale inspirée par l’enthousiasme de nos propres enfants pour leur aire de jeux, nous savons la joie qu’elle procure. Nous privilégions une livraison rapide – les enfants n’aiment pas attendre ! Chez CedarKids, nous ne vendons pas que des jeux : nous aidons à créer des espaces de plaisir et de souvenirs en famille."
+  },
+  "notFound": {
+    "title": "Page introuvable",
+    "desc": "Le lien est peut-être incorrect ou vous n’avez pas accès à cette page.",
+    "backHome": "Retour à l’accueil"
+  },
+  "assembly": {
+    "guide": "Guide de montage",
+    "welcome": "Bienvenue dans une expérience de montage simple avec les aires de jeux Woodlit ! Conçues pour l’auto‑montage, elles offrent un espace sûr et ludique pour vos enfants.",
+    "before": "Avant le montage",
+    "during": "Pendant le montage",
+    "after": "Après le montage",
+    "contactTitle": "Contact",
+    "contactDesc": "Des questions ? Nous sommes là pour vous aider. Écrivez‑nous à info@cedarkids.eu et nous vous répondrons sous 24 h.",
+    "toolsTitle": "OUTILS NÉCESSAIRES",
+    "toolsText": "Perceuse, tournevis, marteau et mètre ruban. Clés et embouts inclus.",
+    "prepareTitle": "PRÉPARER VOTRE ESPACE",
+    "prepareText": "Choisissez une zone plane et dégagée. Laissez 1,8 m de dégagement autour du jeu ; pour les balançoires, prévoyez en plus l’équivalent du double de la hauteur de la balançoire à l’avant et à l’arrière.",
+    "safetyTitle": "MESURES DE SÉCURITÉ",
+    "safetyText": "Portez des gants et des lunettes de protection. Lisez attentivement la notice. Vérifiez toutes les pièces avant de commencer. Tenez enfants et animaux éloignés de la zone de montage. Utilisez les outils comme indiqué. En cas de doute, demandez de l’aide professionnelle ou contactez notre support.",
+    "timeTitle": "TEMPS DE MONTAGE",
+    "timeText": "De 4 à 20 heures selon la taille du jeu et votre expérience.",
+    "stepsTitle": "GUIDE ÉTAPE PAR ÉTAPE",
+    "stepsText": "Organisez pièces et outils. Commencez par la base en la mettant de niveau. Ajoutez balançoires et éléments en vérifiant chaque fixation. La notice illustrée détaille chaque étape. Pour une aide interactive, téléchargez l’app BILT. Notre support est disponible.",
+    "troubleTitle": "DÉPANNAGE",
+    "troubleText": "Un contretemps ? Pas d’inquiétude. Notre équipe est là pour vous guider et assurer un montage fluide.",
+    "maintenanceTitle": "CONSEILS D’ENTRETIEN",
+    "maintenanceText": "Appliquez huile et lasure tous les deux ans pour protéger le bois. Vérifiez et resserrez la visserie chaque année. Inspectez régulièrement l’aire de jeux, surtout avant la saison. Remplacez immédiatement toute pièce usée ou endommagée.",
+    "checksTitle": "VÉRIFICATIONS DE SÉCURITÉ",
+    "checksText": "Chaque mois, contrôlez le serrage et l’usure. Assurez stabilité et niveau. Vérifiez le sol et le bois. Testez l’accrochage des balançoires et l’absence d’usure.",
+    "enjoyTitle": "PROFITEZ DE VOTRE AIRE DE JEUX",
+    "enjoyText": "Créez des souvenirs inoubliables. Encouragez le jeu imaginatif, l’activité en plein air et le partage. Profitez de la joie au jardin !"
+  },
+  "shipping": {
+    "partnerLabel": "PARTENAIRE DE LIVRAISON :",
+    "partnerName": "Raben Logistics",
+    "partnerDesc": "Votre bonheur est entre de bonnes mains ! Depuis plus de 10 ans, nous faisons confiance à Raben comme partenaire logistique. Votre aire de jeux sera livrée en toute sécurité par notre équipe expérimentée.",
+    "orderProcessingTitle": "TRAITEMENT DE LA COMMANDE",
+    "orderProcessingDesc": "Expédition rapide garantie ! Envoi sous 2 à 3 jours ouvrés après paiement.",
+    "estimatedDeliveryTitle": "DÉLAI DE LIVRAISON ESTIMÉ",
+    "estimatedDeliveryDesc": "La joie arrive en environ une semaine, selon votre localisation.",
+    "warehouseTitle": "EMPLACEMENT DU DÉPÔT",
+    "warehouseName": "Pologne, Łabiszyn",
+    "warehouseDesc": "Nos envois partent de notre hub de Toruń (Pologne). Pour un retrait sur place ou votre propre transporteur, contactez‑nous.",
+    "pickupTitle": "OPTIONS DE RETRAIT",
+    "pickupDesc": "Préférez‑vous retirer sur place ou choisir votre transporteur ? Écrivez‑nous pour les instructions.",
+    "satisfaction": "Votre satisfaction est notre priorité. Nous veillons à une livraison fluide et sûre.",
+    "contact": "Des questions ou besoin d’aide supplémentaire ? N’hésitez pas à nous contacter.",
+    "thankYou": "MERCI DE NOUS AVOIR CHOISIS POUR VOS MOMENTS DE JEU !"
+  },
+  "contacts": {
+    "title": "Contactez-nous",
+    "subtitle": "Nous aimerions avoir de vos nouvelles ! Envoyez-nous un message et nous vous répondrons dès que possible.",
+    "form": {
+      "title": "Envoyez-nous un message",
+      "name": "Nom complet",
+      "email": "Adresse e-mail",
+      "phone": "Numéro de téléphone",
+      "subject": "Sujet",
+      "message": "Votre message",
+      "submit": "Envoyer le message",
+      "sending": "Envoi en cours...",
+      "success": "Message envoyé avec succès !",
+      "error": "Erreur lors de l'envoi du message. Veuillez réessayer."
+    },
+    "info": {
+      "title": "Informations de contact",
+      "email": "E-mail",
+      "phone": "Téléphone",
+      "address": "Adresse",
+      "addressValue": "Pologne, Łabiszyn",
+      "hours": "Heures d'ouverture",
+      "hoursValue": "Lundi - Vendredi : 9h00 - 18h00"
+    }
+  },
+  "cart": {
+    "empty": "Le panier est vide",
+    "delivery": "Livraison",
+    "installation": "installation",
+    "summary": "Récapitulatif",
+    "deliveryFree": "Livraison : gratuite",
+    "total": "Prix total",
+    "buy": "Acheter",
+    "continue": "Continuer vos achats",
+    "addNewAddress": "Ajouter une nouvelle adresse",
+    "phone": "Téléphone",
+    "country": "Pays",
+    "city": "Ville",
+    "address": "Adresse",
+    "postalCode": "Code postal",
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "email": "E‑mail"
+  },
+  "deliveryForm": {
+    "newAddress": "Nouvelle adresse",
+    "submit": "Envoyer",
+    "postal": "Code postal"
+  },
+  "login": {
+    "signIn": "Se connecter",
+    "email": "email",
+    "password": "mot de passe",
+    "submit": "Envoyer",
+    "noAccount": "Pas de compte ?",
+    "signUp": "S’inscrire"
+  },
+  "order": {
+    "successTitle": "Commande créée avec succès",
+    "successDesc": "Merci pour votre achat ! Votre commande a bien été enregistrée. Un e‑mail de confirmation vous sera envoyé prochainement.",
+    "backHome": "Retour à l’accueil"
+  },
+  "registration": {
+    "signUp": "S’inscrire",
+    "email": "E‑mail",
+    "password": "Mot de passe",
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "submit": "Envoyer",
+    "haveAccount": "Vous avez déjà un compte ?",
+    "signIn": "Se connecter"
+  },
+  "review": {
+    "add": "Ajouter un avis",
+    "fullName": "Nom complet",
+    "comment": "Votre commentaire",
+    "gallery": "Galerie",
+    "submit": "Envoyer"
+  },
+  "product": {
+    "installation": "installation",
+    "addToCart": "AJOUTER AU PANIER",
+    "setComposition": "Composition du set :",
+    "assembledDimensions": "Dimensions assemblé",
+    "residentialOnly": "Produit destiné EXCLUSIVEMENT À UN USAGE RÉSIDENTIEL. Toute utilisation en dehors de ce cadre rend la garantie caduque.",
+    "whyTitle": "POURQUOI CEDARKIDS ?",
+    "why1Title": "Design de haute qualité",
+    "why1Text": "Nous soignons style et solidité : matériaux, couleurs et esthétique – un jeu dont vous serez fier dans votre jardin.",
+    "why2Title": "Testé et certifié",
+    "why2Text": "Nos aires de jeux respectent et dépassent les normes ASTM. Testées pour les enfants jusqu’à 12 ans.",
+    "why3Title": "Garantie et montage",
+    "why3Text": "Garantie limitée 5 ans et instructions 3D interactives avec l’app BILT® – un accompagnement dès le début et pour longtemps.",
+    "customerReviews": "AVIS CLIENTS",
+    "basedOn": "Basé sur {{count}} avis",
+    "writeReview": "Rédiger un avis"
+  },
+  "userPanel": {
+    "account": "Compte",
+    "orders": "Commandes",
+    "logout": "Se déconnecter",
+    "email": "E‑mail",
+    "name": "Nom",
+    "lastName": "Nom",
+    "edit": "Modifier",
+    "delivery": "Adresses de livraison",
+    "addNewAddress": "Ajouter une nouvelle adresse",
+    "status": "Statut",
+    "date": "Date"
+  },
+  "admin": {
+    "products": "Produits",
+    "orders": "Commandes",
+    "blogs": "Blogs",
+    "addProduct": "Ajouter un produit",
+    "order": "Commande #{{id}}",
+    "status": "Statut",
+    "date": "Date",
+    "deliveryDetails": "Détails de livraison",
+    "email": "E‑mail",
+    "phone": "Téléphone",
+    "postalCode": "Code postal",
+    "quantity": "Quantité",
+    "price": "Prix",
+    "installationYes": "Oui",
+    "installationNo": "Non"
+  },
+  "uploadForm": {
+    "title": "Ajouter un nouveau produit",
+    "name": "Nom",
+    "price": "Prix",
+    "lastPrice": "Ancien prix",
+    "installationPrice": "Prix de l’installation",
+    "description": "Description",
+    "demensions": "Dimensions",
+    "composition": "Composition",
+    "compositionImage": "Image de composition",
+    "image": "Image",
+    "gallery": "Galerie",
+    "movie": "Vidéo",
+    "submit": "Envoyer"
+  },
+  "updateForm": {
+    "image": "Image",
+    "name": "Nom",
+    "price": "Prix",
+    "lastPrice": "Ancien prix",
+    "installationPrice": "Prix de l’installation",
+    "features": "Caractéristiques",
+    "description": "Description",
+    "construction": "Structure",
+    "demensions": "Dimensions",
+    "galleryAdd": "Ajouter une image à la galerie",
+    "apply": "Appliquer les modifications"
+  },
+  "userDetailsForm": {
+    "editAccount": "Modifier le compte",
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "submit": "Enregistrer"
+  }
+}

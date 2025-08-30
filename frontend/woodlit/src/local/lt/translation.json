@@ -1,0 +1,234 @@
+{
+  "header": {
+    "swingSets": "Sūpynių rinkiniai",
+    "shipping": "Pristatymas",
+    "blog": "Tinklaraštis",
+    "assembly": "Surinkimas",
+    "about": "Apie mus",
+    "contacts": "Kontaktai"
+  },
+  "footer": {
+    "navigation": "Navigacija",
+    "followUs": "Sekite mus",
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "rights": "Visos teisės saugomos.",
+    "createdBy": "Sukurta"
+  },
+  "about": {
+    "title": "CedarKids",
+    "p1": "Nuo 2007 m. „CedarKids“ teikia aukštos kokybės sūpynių rinkinius Europos šeimoms. Būdami oficialūs „Backyard Discovery“ platintojai, siūlome platų kedro medienos rinkinių asortimentą įvairiems biudžetams ir kiemams. Skirtingai nei eglė ar pušis, mūsų aukščiausios kokybės kedras užtikrina ilgaamžiškumą ir, svarbiausia, saugumą.",
+    "p2": "Esame šeimos įmonė, įkvėpta mūsų vaikų džiaugsmo kiemo žaidimų aikštele. Žinome, kaip jie nekantrauja – todėl pristatome greitai. „CedarKids“ ne tik parduodame rinkinius; padedame kurti saugias, džiaugsmingas šeimos erdves." 
+  },
+  "notFound": {
+    "title": "Puslapis nerastas",
+    "desc": "Nuoroda gali būti neteisinga arba neturite prieigos prie šio puslapio.",
+    "backHome": "Atgal į pradžią"
+  },
+  "assembly": {
+    "guide": "Surinkimo vadovas",
+    "welcome": "Sveiki atvykę į paprastą „Woodlit“ rinkinių surinkimą! Sukurta savarankiškam surinkimui – saugi ir smagi erdvė jūsų vaikams.",
+    "before": "Prieš surinkimą",
+    "during": "Surinkimo metu",
+    "after": "Po surinkimo",
+    "contactTitle": "Kontaktai",
+    "contactDesc": "Turite klausimų? Mielai padėsime! Rašykite info@cedarkids.eu – atsakysime per 24 val.",
+    "toolsTitle": "REIKALINGI ĮRANKIAI",
+    "toolsText": "Grąžtas, atsuktuvas, plaktukas ir matavimo juosta. Raktai ir antgaliai įtraukti.",
+    "prepareTitle": "PARUOŠKITE ERDVĘ",
+    "prepareText": "Pasirinkite lygią vietą ir ją išvalykite. Palikite 1,8 m aplink rinkinį; sūpynėms papildomai – dvi sūpynės aukščio atstumą priekyje ir gale.",
+    "safetyTitle": "SAUGA",
+    "safetyText": "Mūvėkite pirštines ir dėvėkite apsauginius akinius. Įdėmiai perskaitykite instrukciją. Prieš pradėdami apžiūrėkite dalis. Vaikus ir augintinius laikykite atokiau. Įrankius naudokite pagal nurodymus. Abejojate? Kreipkitės pagalbos arba į palaikymą.",
+    "timeTitle": "SURINKIMO LAIKAS",
+    "timeText": "4–20 val., priklausomai nuo rinkinio dydžio ir patirties.",
+    "stepsTitle": "ŽINGSNIS PO ŽINGSNIO",
+    "stepsText": "Sutvarkykite dalis ir įrankius. Pradėkite nuo pagrindo ir jį išlyginkite. Pridėkite elementus ir tikrinkite tvirtinimus. Vadove – aiškios iliustracijos. Interaktyvi pagalba: BILT programėlė. Palaikymas pasiekiamas.",
+    "troubleTitle": "TRIKČIŲ ŠALINIMAS",
+    "troubleText": "Užstrigote? Nieko baisaus. Mūsų komanda padės, kad viskas vyktų sklandžiai.",
+    "maintenanceTitle": "PRIEŽIŪROS PATARIMAI",
+    "maintenanceText": "Kas dvejus metus medį apsaugokite aliejumi ir beicu. Kartą per metus patikrinkite ir priveržkite tvirtinimus. Reguliariai apžiūrėkite, ypač prieš sezoną. Nusidėvėjusias ar pažeistas dalis keiskite nedelsiant.",
+    "checksTitle": "SAUGOS PATIKROS",
+    "checksText": "Kas mėnesį tikrinkite, ar nėra laisvų varžtų ir nusidėvėjimo. Užtikrinkite stabilumą ir lygumą. Patikrinkite pagrindą ir medieną. Išbandykite sūpynių tvirtinimą ir nusidėvėjimą.",
+    "enjoyTitle": "MĖGAUKITĖS RINKINIU",
+    "enjoyText": "Kurkite įsimintinus prisiminimus. Skatinkite vaizduotę, žaidimus lauke ir bendrystę. Džiaukitės savo kieme!"
+  },
+  "shipping": {
+    "partnerLabel": "PRISTATYMO PARTNERIS:",
+    "partnerName": "Raben Logistics",
+    "partnerDesc": "Jūsų džiaugsmas – gerose rankose! Daugiau nei 10 metų pasitikime \"Raben\". Jūsų rinkinį saugiai pristatys mūsų patyrusi komanda.",
+    "orderProcessingTitle": "UŽSAKYMO APDOROJIMAS",
+    "orderProcessingDesc": "Greitas išsiuntimas garantuotas! Per 2–3 darbo dienas po apmokėjimo.",
+    "estimatedDeliveryTitle": "NUMANOMAS PRISTATYMO LAIKAS",
+    "estimatedDeliveryDesc": "Džiaugsmas atkeliauja maždaug per savaitę – priklausomai nuo vietos.",
+    "warehouseTitle": "SANDĖLIS",
+    "warehouseName": "Lenkija, Łabiszyn",
+    "warehouseDesc": "Siunčiame iš mūsų centro Torunėje (Lenkija). Dėl atsiėmimo ar savo kurjerio – susisiekite.",
+    "pickupTitle": "ATSIĖMIMO GALIMYBĖS",
+    "pickupDesc": "Pageidaujate atsiėmimo ar savo kurjerio? Parašykite dėl instrukcijų.",
+    "satisfaction": "Jūsų pasitenkinimas – prioritetas. Užtikriname sklandų ir saugų pristatymą.",
+    "contact": "Klausimai ar papildoma pagalba? Susisiekite su mumis.",
+    "thankYou": "AČIŪ, KAD RINKOTĖS MUS JŪSŲ ŽAIDIMŲ AKIMIRKOMS!"
+  },
+  "contacts": {
+    "title": "Susisiekite su mumis",
+    "subtitle": "Mielai išgirstume nuo jūsų! Parašykite mums ir atsakysime kuo greičiau.",
+    "form": {
+      "title": "Parašykite mums",
+      "name": "Pilnas vardas",
+      "email": "El. pašto adresas",
+      "phone": "Telefono numeris",
+      "subject": "Tema",
+      "message": "Jūsų žinutė",
+      "submit": "Siųsti žinutę",
+      "sending": "Siunčiama...",
+      "success": "Žinutė sėkmingai išsiųsta!",
+      "error": "Klaida siunčiant žinutę. Bandykite dar kartą."
+    },
+    "info": {
+      "title": "Kontaktinė informacija",
+      "email": "El. paštas",
+      "phone": "Telefonas",
+      "address": "Adresas",
+      "addressValue": "Lenkija, Łabiszyn",
+      "hours": "Darbo laikas",
+      "hoursValue": "Pirmadienis - Penktadienis: 9:00 - 18:00"
+    }
+  },
+  "cart": {
+    "empty": "Krepšelis tuščias",
+    "delivery": "Pristatymas",
+    "installation": "įrengimas",
+    "summary": "Santrauka",
+    "deliveryFree": "Pristatymas: nemokamas",
+    "total": "Bendra kaina",
+    "buy": "Pirkti",
+    "continue": "Tęsti apsipirkimą",
+    "addNewAddress": "Pridėti naują adresą",
+    "phone": "Telefonas",
+    "country": "Šalis",
+    "city": "Miestas",
+    "address": "Adresas",
+    "postalCode": "Pašto kodas",
+    "firstName": "Vardas",
+    "lastName": "Pavardė",
+    "email": "El. paštas"
+  },
+  "deliveryForm": {
+    "newAddress": "Naujas adresas",
+    "submit": "Siųsti",
+    "postal": "Pašto kodas"
+  },
+  "login": {
+    "signIn": "Prisijungti",
+    "email": "email",
+    "password": "slaptažodis",
+    "submit": "Siųsti",
+    "noAccount": "Neturite paskyros?",
+    "signUp": "Registruotis"
+  },
+  "order": {
+    "successTitle": "Užsakymas sėkmingai sukurtas",
+    "successDesc": "Ačiū už pirkimą! Jūsų užsakymas priimtas. Netrukus gausite patvirtinimo laišką.",
+    "backHome": "Atgal į pradžią"
+  },
+  "registration": {
+    "signUp": "Registruotis",
+    "email": "El. paštas",
+    "password": "Slaptažodis",
+    "firstName": "Vardas",
+    "lastName": "Pavardė",
+    "submit": "Siųsti",
+    "haveAccount": "Jau turite paskyrą?",
+    "signIn": "Prisijungti"
+  },
+  "review": {
+    "add": "Pridėti atsiliepimą",
+    "fullName": "Pilnas vardas",
+    "comment": "Jūsų komentaras",
+    "gallery": "Galerija",
+    "submit": "Siųsti"
+  },
+  "product": {
+    "installation": "įrengimas",
+    "addToCart": "DĖTI Į KREPŠELĮ",
+    "setComposition": "Rinkinio sudėtis:",
+    "assembledDimensions": "Matmenys surinkus",
+    "residentialOnly": "Produktas skirtas TIK NAMŲ ŪKIO NAUDOJIMUI. Naudojimas kitur panaikina garantiją.",
+    "whyTitle": "KODĖL CEDARKIDS?",
+    "why1Title": "Aukštos kokybės dizainas",
+    "why1Text": "Sujungiame stilių ir tvirtumą: medžiagos, spalvos ir estetika – rinkinys, kuriuo didžiuositės savo kieme.",
+    "why2Title": "Išbandyta ir sertifikuota",
+    "why2Text": "Mūsų rinkiniai atitinka ir viršija ASTM standartus. Išbandyti vaikams iki 12 metų.",
+    "why3Title": "Garantija ir surinkimas",
+    "why3Text": "5 metų ribota garantija ir 3D surinkimo instrukcijos BILT® programėlėje – pagalba nuo pirmos dienos.",
+    "customerReviews": "KLIENTŲ ATSILIEPIMAI",
+    "basedOn": "Remiantis {{count}} atsiliepimais",
+    "writeReview": "Rašyti atsiliepimą"
+  },
+  "userPanel": {
+    "account": "Paskyra",
+    "orders": "Užsakymai",
+    "logout": "Atsijungti",
+    "email": "El. paštas",
+    "name": "Vardas",
+    "lastName": "Pavardė",
+    "edit": "Redaguoti",
+    "delivery": "Pristatymo adresai",
+    "addNewAddress": "Pridėti naują adresą",
+    "status": "Būsena",
+    "date": "Data"
+  },
+  "admin": {
+    "products": "Produktai",
+    "orders": "Užsakymai",
+    "blogs": "Tinklaraščiai",
+    "addProduct": "Pridėti produktą",
+    "order": "Užsakymas #{{id}}",
+    "status": "Būsena",
+    "date": "Data",
+    "deliveryDetails": "Pristatymo detalės",
+    "email": "El. paštas",
+    "phone": "Telefonas",
+    "postalCode": "Pašto kodas",
+    "quantity": "Kiekis",
+    "price": "Kaina",
+    "installationYes": "Taip",
+    "installationNo": "Ne"
+  },
+  "uploadForm": {
+    "title": "Pridėti naują produktą",
+    "name": "Pavadinimas",
+    "price": "Kaina",
+    "lastPrice": "Ankstesnė kaina",
+    "installationPrice": "Įrengimo kaina",
+    "description": "Aprašymas",
+    "demensions": "Matmenys",
+    "composition": "Sudėtis",
+    "compositionImage": "Sudėties vaizdas",
+    "image": "Vaizdas",
+    "gallery": "Galerija",
+    "movie": "Vaizdo įrašas",
+    "submit": "Siųsti"
+  },
+  "updateForm": {
+    "image": "Vaizdas",
+    "name": "Pavadinimas",
+    "price": "Kaina",
+    "lastPrice": "Ankstesnė kaina",
+    "installationPrice": "Įrengimo kaina",
+    "features": "Savybės",
+    "description": "Aprašymas",
+    "construction": "Konstrukcija",
+    "demensions": "Matmenys",
+    "galleryAdd": "Pridėti vaizdą į galeriją",
+    "apply": "Taikyti pakeitimus"
+  },
+  "userDetailsForm": {
+    "editAccount": "Redaguoti paskyrą",
+    "firstName": "Vardas",
+    "lastName": "Pavardė",
+    "submit": "Išsaugoti"
+  }
+}
+
+

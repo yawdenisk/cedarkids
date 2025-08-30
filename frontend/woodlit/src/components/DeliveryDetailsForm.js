@@ -1,7 +1,9 @@
 import axios from 'axios';
 import React, {useEffect, useState} from 'react'
 import config from '../config'
+import { useTranslation } from 'react-i18next'
 export default function DeliveryDetailsForm({setShowDeliveryDetailsForm}) {
+    const { t } = useTranslation();
     const [address, setAdress] = useState(null);
     const [city, setCity] = useState(null);
     const [country, setCountry] = useState(null);
@@ -56,15 +58,15 @@ export default function DeliveryDetailsForm({setShowDeliveryDetailsForm}) {
 )}
             <div className='popUpForm'>
             <form onSubmit={sendForm}>
-                <p>New address</p>
+                <p>{t('deliveryForm.newAddress')}</p>
                 <span className="close" onClick={() => setShowDeliveryDetailsForm(false)}>&#10006;</span>
-                <input name='country' onChange={(e) => setCountry(e.target.value)} placeholder='Country'></input>
-                <input name='city' onChange={(e) => setCity(e.target.value)} placeholder='City'></input>
-                <input name='address' onChange={(e) => setAdress(e.target.value)} placeholder='Address'></input>
-                <input name='phone' onChange={(e) => setPhone(e.target.value)} placeholder='Phone'></input>
+                <input name='country' onChange={(e) => setCountry(e.target.value)} placeholder={t('cart.country')}></input>
+                <input name='city' onChange={(e) => setCity(e.target.value)} placeholder={t('cart.city')}></input>
+                <input name='address' onChange={(e) => setAdress(e.target.value)} placeholder={t('cart.address')}></input>
+                <input name='phone' onChange={(e) => setPhone(e.target.value)} placeholder={t('cart.phone')}></input>
                 <input name='postalCode' onChange={(e) => setPostalCode(e.target.value)}
-                       placeholder='Postal code'></input>
-                <button type='submit'>Submit</button>
+                       placeholder={t('deliveryForm.postal')}></input>
+                <button type='submit'>{t('deliveryForm.submit')}</button>
             </form>
         </div>
         </>

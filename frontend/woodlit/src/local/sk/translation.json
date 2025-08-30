@@ -1,0 +1,234 @@
+{
+  "header": {
+    "swingSets": "Súpravy na hranie",
+    "shipping": "Doručenie",
+    "blog": "Blog",
+    "assembly": "Montáž",
+    "about": "O nás",
+    "contacts": "Kontakt"
+  },
+  "footer": {
+    "navigation": "Navigácia",
+    "followUs": "Sledujte nás",
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "rights": "Všetky práva vyhradené.",
+    "createdBy": "Vytvoril"
+  },
+  "about": {
+    "title": "CedarKids",
+    "p1": "Od roku 2007 prináša CedarKids kvalitné súpravy na hranie rodinám v Európe. Ako oficiálny distribútor Backyard Discovery ponúkame široký výber cédrových súprav pre rôzne rozpočty a záhrady. Na rozdiel od smreku či borovice náš prémiový céder zaručuje trvácnosť a predovšetkým bezpečnosť.",
+    "p2": "Sme rodinná firma inšpirovaná radosťou našich detí z hry na záhrade. Vieme, aké dôležité je doručenie načas – preto doručujeme rýchlo. V CedarKids nielen predávame; pomáhame vytvárať bezpečné miesta plné radosti a rodinných spomienok."
+  },
+  "notFound": {
+    "title": "Stránka sa nenašla",
+    "desc": "Možno ste zadali nesprávny odkaz alebo nemáte prístup na túto stránku.",
+    "backHome": "Späť na úvod"
+  },
+  "assembly": {
+    "guide": "Montážny sprievodca",
+    "welcome": "Vitajte pri jednoduchej montáži so súpravami Woodlit! Navrhnuté na svojpomocnú montáž – bezpečný a zábavný priestor pre deti.",
+    "before": "Pred montážou",
+    "during": "Počas montáže",
+    "after": "Po montáži",
+    "contactTitle": "Kontakt",
+    "contactDesc": "Otázky? Radi pomôžeme! Napíšte na info@cedarkids.eu – odpovieme do 24 hodín.",
+    "toolsTitle": "POTREBNÉ NÁRADIE",
+    "toolsText": "Vŕtačka, skrutkovač, kladivo a meter. Kľúče a bity sú súčasťou.",
+    "prepareTitle": "PRÍPRAVA PRIESTORU",
+    "prepareText": "Zvoľte rovnú plochu a vyčistite ju. Nechajte 1,8 m priestoru okolo súpravy; pri hojdačkách navyše dvojnásobok výšky hojdačky spredu aj zozadu.",
+    "safetyTitle": "BEZPEČNOSŤ",
+    "safetyText": "Používajte rukavice a ochranné okuliare. Pozorne si prečítajte návod. Pred začiatkom skontrolujte všetky diely. Deti a zvieratá držte ďalej. Náradie používajte podľa pokynov. V prípade neistoty požiadajte o pomoc alebo kontaktujte podporu.",
+    "timeTitle": "ČAS MONTÁŽE",
+    "timeText": "4–20 hodín podľa veľkosti súpravy a skúseností.",
+    "stepsTitle": "KROK ZA KROKOM",
+    "stepsText": "Usporiadajte diely a náradie. Začnite základom a vyrovnajte ho. Pridávajte prvky a kontrolujte spoje. Manuál obsahuje jasné ilustrácie. Interaktívna pomoc: aplikácia BILT. Podpora je k dispozícii.",
+    "troubleTitle": "RIEŠENIE PROBLÉMOV",
+    "troubleText": "Zasekli ste sa? Nevadí. Náš tím vás usmerní, aby všetko prebehlo hladko.",
+    "maintenanceTitle": "TIPY NA ÚDRŽBU",
+    "maintenanceText": "Chráňte drevo každé dva roky olejom a lazúrou. Ročne kontrolujte a doťahujte spoje. Pravidelne kontrolujte, najmä pred sezónou. Opotrebované či poškodené diely ihneď vymeňte.",
+    "checksTitle": "BEZPEČNOSTNÉ KONTROLY",
+    "checksText": "Mesačne skontrolujte uvoľnené skrutky a opotrebovanie. Zaistite stabilitu a rovinu. Skontrolujte podklad a drevo. Otestujte uchytenie hojdačiek a opotrebovanie.",
+    "enjoyTitle": "UŽITE SI SVOJU SÚPRAVU",
+    "enjoyText": "Vytvárajte nezabudnuteľné spomienky. Podporujte fantáziu, pohyb vonku a spoločné chvíle. Užite si radosť vo vlastnej záhrade!"
+  },
+  "shipping": {
+    "partnerLabel": "DOPRAVNÝ PARTNER:",
+    "partnerName": "Raben Logistics",
+    "partnerDesc": "Vaša radosť je v dobrých rukách! Už viac ako 10 rokov dôverujeme spoločnosti Raben. Vašu súpravu doručí bezpečne náš skúsený tím.",
+    "orderProcessingTitle": "SPRACOVANIE OBJEDNÁVKY",
+    "orderProcessingDesc": "Zaručené rýchle odoslanie! Do 2–3 pracovných dní od platby.",
+    "estimatedDeliveryTitle": "ODHADOVANÝ ČAS DORUČENIA",
+    "estimatedDeliveryDesc": "Radosť prichádza približne do týždňa – podľa lokality.",
+    "warehouseTitle": "SKLAD",
+    "warehouseName": "Poľsko, Łabiszyn",
+    "warehouseDesc": "Odosielame z nášho hubu v Toruni (Poľsko). Pre osobné vyzdvihnutie alebo vlastného kuriéra nás kontaktujte.",
+    "pickupTitle": "MOŽNOSTI VYZDVIHNUTIA",
+    "pickupDesc": "Preferujete osobné vyzdvihnutie alebo vlastného kuriéra? Napíšte nám pre pokyny.",
+    "satisfaction": "Vaša spokojnosť je prioritou. Dbáme na plynulé a bezpečné doručenie.",
+    "contact": "Otázky alebo potrebujete pomoc? Neváhajte nás kontaktovať.",
+    "thankYou": "ĎAKUJEME, ŽE STE SI NÁS VYBRALI PRE VAŠE HRAVÉ OKAMIHY!"
+  },
+  "contacts": {
+    "title": "Kontaktujte nás",
+    "subtitle": "Radi by sme počuli od vás! Pošlite nám správu a odpovieme čo najskôr.",
+    "form": {
+      "title": "Pošlite nám správu",
+      "name": "Celé meno",
+      "email": "E-mailová adresa",
+      "phone": "Telefónne číslo",
+      "subject": "Predmet",
+      "message": "Vaša správa",
+      "submit": "Odoslať správu",
+      "sending": "Odosielanie...",
+      "success": "Správa úspešne odoslaná!",
+      "error": "Chyba pri odosielaní správy. Skúste to znova."
+    },
+    "info": {
+      "title": "Kontaktné informácie",
+      "email": "E-mail",
+      "phone": "Telefón",
+      "address": "Adresa",
+      "addressValue": "Poľsko, Łabiszyn",
+      "hours": "Pracovné hodiny",
+      "hoursValue": "Pondelok - Piatok: 9:00 - 18:00"
+    }
+  },
+  "cart": {
+    "empty": "Košík je prázdny",
+    "delivery": "Doručenie",
+    "installation": "inštalácia",
+    "summary": "Súhrn",
+    "deliveryFree": "Doručenie: zdarma",
+    "total": "Celková cena",
+    "buy": "Kúpiť",
+    "continue": "Pokračovať v nákupe",
+    "addNewAddress": "Pridať novú adresu",
+    "phone": "Telefón",
+    "country": "Krajina",
+    "city": "Mesto",
+    "address": "Adresa",
+    "postalCode": "PSČ",
+    "firstName": "Meno",
+    "lastName": "Priezvisko",
+    "email": "E‑mail"
+  },
+  "deliveryForm": {
+    "newAddress": "Nová adresa",
+    "submit": "Odoslať",
+    "postal": "PSČ"
+  },
+  "login": {
+    "signIn": "Prihlásiť sa",
+    "email": "email",
+    "password": "heslo",
+    "submit": "Odoslať",
+    "noAccount": "Nemáte účet?",
+    "signUp": "Registrovať sa"
+  },
+  "order": {
+    "successTitle": "Objednávka úspešne vytvorená",
+    "successDesc": "Ďakujeme za nákup! Vaša objednávka bola prijatá. Čoskoro dostanete potvrdzovací e‑mail.",
+    "backHome": "Späť na úvod"
+  },
+  "registration": {
+    "signUp": "Registrovať sa",
+    "email": "E‑mail",
+    "password": "Heslo",
+    "firstName": "Meno",
+    "lastName": "Priezvisko",
+    "submit": "Odoslať",
+    "haveAccount": "Už máte účet?",
+    "signIn": "Prihlásiť sa"
+  },
+  "review": {
+    "add": "Pridať recenziu",
+    "fullName": "Celé meno",
+    "comment": "Váš komentár",
+    "gallery": "Galéria",
+    "submit": "Odoslať"
+  },
+  "product": {
+    "installation": "inštalácia",
+    "addToCart": "PRIDAŤ DO KOŠÍKA",
+    "setComposition": "Zloženie setu:",
+    "assembledDimensions": "Rozmery po zložení",
+    "residentialOnly": "Produkt je určený LEN NA DOMÁCE POUŽITIE. Použitie mimo tohto rámca ruší záruku.",
+    "whyTitle": "PREČO CEDARKIDS?",
+    "why1Title": "Kvalitný dizajn",
+    "why1Text": "Spájame štýl a pevnosť: materiály, farby a vzhľad – set, na ktorý budete v záhrade hrdí.",
+    "why2Title": "Testované a certifikované",
+    "why2Text": "Naše sety spĺňajú a prekonávajú normy ASTM. Testované pre deti do 12 rokov.",
+    "why3Title": "Záruka a montáž",
+    "why3Text": "Obmedzená záruka 5 rokov a 3D montážny návod v aplikácii BILT® – podpora od začiatku.",
+    "customerReviews": "HODNOTENIA ZÁKAZNÍKOV",
+    "basedOn": "Na základe {{count}} hodnotení",
+    "writeReview": "Napísať recenziu"
+  },
+  "userPanel": {
+    "account": "Účet",
+    "orders": "Objednávky",
+    "logout": "Odhlásiť sa",
+    "email": "E‑mail",
+    "name": "Meno",
+    "lastName": "Priezvisko",
+    "edit": "Upraviť",
+    "delivery": "Doručovacie adresy",
+    "addNewAddress": "Pridať novú adresu",
+    "status": "Stav",
+    "date": "Dátum"
+  },
+  "admin": {
+    "products": "Produkty",
+    "orders": "Objednávky",
+    "blogs": "Blogy",
+    "addProduct": "Pridať produkt",
+    "order": "Objednávka #{{id}}",
+    "status": "Stav",
+    "date": "Dátum",
+    "deliveryDetails": "Doručovacie údaje",
+    "email": "E‑mail",
+    "phone": "Telefón",
+    "postalCode": "PSČ",
+    "quantity": "Množstvo",
+    "price": "Cena",
+    "installationYes": "Áno",
+    "installationNo": "Nie"
+  },
+  "uploadForm": {
+    "title": "Pridať nový produkt",
+    "name": "Názov",
+    "price": "Cena",
+    "lastPrice": "Predchádzajúca cena",
+    "installationPrice": "Cena inštalácie",
+    "description": "Popis",
+    "demensions": "Rozmery",
+    "composition": "Zloženie",
+    "compositionImage": "Obrázok zloženia",
+    "image": "Obrázok",
+    "gallery": "Galéria",
+    "movie": "Video",
+    "submit": "Odoslať"
+  },
+  "updateForm": {
+    "image": "Obrázok",
+    "name": "Názov",
+    "price": "Cena",
+    "lastPrice": "Predchádzajúca cena",
+    "installationPrice": "Cena inštalácie",
+    "features": "Vlastnosti",
+    "description": "Popis",
+    "construction": "Konštrukcia",
+    "demensions": "Rozmery",
+    "galleryAdd": "Pridať obrázok do galérie",
+    "apply": "Použiť zmeny"
+  },
+  "userDetailsForm": {
+    "editAccount": "Upraviť účet",
+    "firstName": "Meno",
+    "lastName": "Priezvisko",
+    "submit": "Uložiť"
+  }
+}
+
+

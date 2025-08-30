@@ -1,0 +1,234 @@
+{
+  "header": {
+    "swingSets": "Tacar swing",
+    "shipping": "Seachadadh",
+    "blog": "Blag",
+    "assembly": "Tionól",
+    "about": "Fúinn",
+    "contacts": "Teagmháil"
+  },
+  "footer": {
+    "navigation": "Nascleanúint",
+    "followUs": "Lean muid",
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "rights": "Gach ceart ar cosaint.",
+    "createdBy": "Cruthaithe ag"
+  },
+  "about": {
+    "title": "CedarKids",
+    "p1": "Ó 2007 i leith, tá CedarKids ag tabhairt tacair swing ar ardchaighdeán do theaghlaigh ar fud na hEorpa. Mar dháileoir oifigiúil ar Backyard Discovery, cuirimid rogha leathan tacair le darach de Chéadar ar fáil do gach buiséad agus clós cúil. Murab ionann agus sprús nó péine, cinntíonn ár gcéadar prémiam marthanacht agus, thar aon rud eile, sábháilteacht.",
+    "p2": "Is gnólacht teaghlaigh muid a spreag grá ár leanaí féin dá n‑áit súgartha sa ghairdín. Tuigimid an sceitimíní – mar sin seolaimid go gasta. I CedarKids, ní dhíolaimid tacair amháin; cuidímid le spásanna sábháilte lán d’áthas agus cuimhní teaghlaigh a chruthú."
+  },
+  "notFound": {
+    "title": "Leathanach gan aimsiú",
+    "desc": "B’fhéidir go raibh an nasc mícheart nó níl cead agat an leathanach seo a fheiceáil.",
+    "backHome": "Ar ais abhaile"
+  },
+  "assembly": {
+    "guide": "Treoir tionóil",
+    "welcome": "Fáilte go heispéireas tionóil éasca le tacair Woodlit! Deartha le haghaidh tionóil phearsanta – spás súgartha sábháilte agus spraíúil do do pháistí.",
+    "before": "Roimh an tionól",
+    "during": "Le linn an tionóil",
+    "after": "Tar éis an tionóil",
+    "contactTitle": "Teagmháil",
+    "contactDesc": "Ceisteanna agat? Tá áthas orainn cabhrú! Scríobh chugainn ag info@cedarkids.eu agus freagróimid laistigh de 24 uair an chloig.",
+    "toolsTitle": "UIRLISÍ RIACTANACHA",
+    "toolsText": "Druilire, scriúire, casúr agus téip tomhais. Eochracha agus giotaí san áireamh.",
+    "prepareTitle": "DO SPÁS A ULLMHÚ",
+    "prepareText": "Roghnaigh achar cothrom agus glan é. Fág 1.8 m timpeall ar an tsraith; do swings, fág spás breise comhionann le dhá oiread airde an tswing os comhair agus taobh thiar.",
+    "safetyTitle": "SÁBHÁILTEACHT",
+    "safetyText": "Caith lámhainní agus spéaclaí cosanta. Léigh agus lean na treoracha. Seiceáil na codanna roimh thús. Coinnigh páistí agus peataí amach. Úsáid uirlisí mar a mholtar. Mura bhfuil tú cinnte – iarr cabhair nó téigh i dteagmháil le tacaíocht.",
+    "timeTitle": "AM TIONÓIL",
+    "timeText": "4–20 uair an chloig ag brath ar mhéid agus ar thaithí.",
+    "stepsTitle": "CÉIM AR CHÉIM",
+    "stepsText": "Eagraigh codanna agus uirlisí. Tosaigh leis an mbonn agus leibhéal é. Cuir eilimintí leis agus seiceáil na feistis. Tá léaráidí soiléire sa lámhleabhar. Cúnamh idirghníomhach: aip BILT. Tá tacaíocht ar fáil.",
+    "troubleTitle": "FABHTCHEARTÚ",
+    "troubleText": "Deacracht beag? Ná bí buartha. Treoróidh ár bhfoireann thú chun gach rud a choinneáil réidh.",
+    "maintenanceTitle": "LEIDÍ COTHABHÁLA",
+    "maintenanceText": "Cosain an t‑adhmad le hola agus stain gach dhá bhliain. Seiceáil agus teannaigh na feistis gach bliain. Déan iniúchadh rialta, go háirithe roimh an séasúr. Cuir codanna caitheamh nó damáistithe in ionad láithreach.",
+    "checksTitle": "SEICEÁIL SÁBHÁILTEACHTA",
+    "checksText": "Seiceáil míosúil le haghaidh scriúnna scaoilte agus caitheamh. Cinntigh cobhsaíocht agus leibhéal. Seiceáil an bonn agus an t‑adhmad. Tástáil crochadh na swings agus an caitheamh.",
+    "enjoyTitle": "BAIN SULT AS DO SHOCRÚ",
+    "enjoyText": "Cruthaigh cuimhní buana. Spreag samhlaíocht, súgradh amuigh faoin aer agus am le chéile. Bain sult as an sásamh i do ghairdín!"
+  },
+  "shipping": {
+    "partnerLabel": "COMHPÁIRTÍ SEACHADTA:",
+    "partnerName": "Raben Logistics",
+    "partnerDesc": "Tá do shonas i lámha maithe! Le breis agus 10 mbliana, tá muinín againn as Raben. Seachadfaidh ár bhfoireann a bhfuil taithí acu do shocrú go sábháilte.",
+    "orderProcessingTitle": "PRÓISEÁIL ORDÚ",
+    "orderProcessingDesc": "Seachadadh gasta ráthaithe! Postáil laistigh de 2–3 lá oibre tar éis íocaíochta.",
+    "estimatedDeliveryTitle": "AM MEASTACHÁIN SEACHADTA",
+    "estimatedDeliveryDesc": "De ghnáth tagann an sásamh laistigh de thart ar sheachtain – ag brath ar an suíomh.",
+    "warehouseTitle": "STÓRAS",
+    "warehouseName": "An Pholainn, Łabiszyn",
+    "warehouseDesc": "Seolaimid ón mol i Toruń (An Pholainn). Le haghaidh bailiúcháin nó do chúiréara féin, déan teagmháil linn.",
+    "pickupTitle": "ROGHANNA BAILIÚCHÁIN",
+    "pickupDesc": "Is fearr leat bailiú nó do chúiréara féin? Scríobh chugainn le treoracha.",
+    "satisfaction": "Is tosaíocht dúinn do shástacht. Cinntímid seachadadh réidh agus sábháilte.",
+    "contact": "Ceisteanna nó tuilleadh cabhrach uait? Ná bíodh leisce ort teagmháil a dhéanamh linn.",
+    "thankYou": "GO RAIBH MAITH AGAT AS SINN A ROGHNÚ DO D'AM SÚGARTHA!"
+  },
+  "contacts": {
+    "title": "Déan teagmháil linn",
+    "subtitle": "Ba mhaith linn cloisteáil uait! Seol teachtaireacht chugainn agus freagróimid chomh luath agus is féidir.",
+    "form": {
+      "title": "Seol teachtaireacht chugainn",
+      "name": "Ainm iomlán",
+      "email": "Seoladh r-phoist",
+      "phone": "Uimhir ghutháin",
+      "subject": "Ábhar",
+      "message": "Do theachtaireacht",
+      "submit": "Seol teachtaireacht",
+      "sending": "Á sheoladh...",
+      "success": "Teachtaireacht seolta go rathúil!",
+      "error": "Earráid ag seoladh na teachtaireachta. Bain triail eile as."
+    },
+    "info": {
+      "title": "Eolas teagmhála",
+      "email": "R-phost",
+      "phone": "Fón",
+      "address": "Seoladh",
+      "addressValue": "An Pholainn, Łabiszyn",
+      "hours": "Uaireanta oibre",
+      "hoursValue": "Dé Luain - Dé hAoine: 9:00 - 18:00"
+    }
+  },
+  "cart": {
+    "empty": "Tá an ciseán folamh",
+    "delivery": "Seachadadh",
+    "installation": "suiteáil",
+    "summary": "Achoimre",
+    "deliveryFree": "Seachadadh: saor in aisce",
+    "total": "Praghas iomlán",
+    "buy": "Ceannaigh",
+    "continue": "Lean ar aghaidh ag siopadóireacht",
+    "addNewAddress": "Cuir seoladh nua leis",
+    "phone": "Fón",
+    "country": "Tír",
+    "city": "Cathair",
+    "address": "Seoladh",
+    "postalCode": "Cód poist",
+    "firstName": "Ainm",
+    "lastName": "Sloinne",
+    "email": "R‑phost"
+  },
+  "deliveryForm": {
+    "newAddress": "Seoladh nua",
+    "submit": "Seol",
+    "postal": "Cód poist"
+  },
+  "login": {
+    "signIn": "Logáil isteach",
+    "email": "email",
+    "password": "focal faire",
+    "submit": "Seol",
+    "noAccount": "Níl cuntas agat?",
+    "signUp": "Cláraigh"
+  },
+  "order": {
+    "successTitle": "Ordú cruthaithe go rathúil",
+    "successDesc": "Go raibh maith agat as do cheannach! Glacadh le d’ordú. Gheobhaidh tú ríomhphost dearbhaithe go luath.",
+    "backHome": "Ar ais abhaile"
+  },
+  "registration": {
+    "signUp": "Cláraigh",
+    "email": "R‑phost",
+    "password": "Focal faire",
+    "firstName": "Ainm",
+    "lastName": "Sloinne",
+    "submit": "Seol",
+    "haveAccount": "An bhfuil cuntas agat cheana?",
+    "signIn": "Logáil isteach"
+  },
+  "review": {
+    "add": "Cuir léirmheas leis",
+    "fullName": "Ainm iomlán",
+    "comment": "Do thrácht",
+    "gallery": "Gailearaí",
+    "submit": "Seol"
+  },
+  "product": {
+    "installation": "suiteáil",
+    "addToCart": "CUIR SA CHISEÁN",
+    "setComposition": "Comhdhéanamh an tsocrú:",
+    "assembledDimensions": "Toisí cóimeáilte",
+    "residentialOnly": "Tá an táirge seo beartaithe do ÚSÁID CÓNAITHE AMHÁIN. Úsáid lasmuigh de seo – gan bharántas.",
+    "whyTitle": "CÉN FÁTH CEDARKIDS?",
+    "why1Title": "Dearadh ar ardchaighdeán",
+    "why1Text": "Comhcheanglaímid stíl agus neart: ábhair, dathanna, cuma – socrú a mbeidh bród ort as i do ghairdín.",
+    "why2Title": "Tástáilte agus deimhnithe",
+    "why2Text": "Comhlíonann ár socruithe caighdeáin ASTM agus téann siad tharstu. Tástáilte do pháistí suas le 12 bliana.",
+    "why3Title": "Barántas agus tionól",
+    "why3Text": "Barántas teoranta 5 bliana agus treoracha 3T i bhfeidhmchlár BILT® – tacaíocht ón tús.",
+    "customerReviews": "LÉIRMHEASAÍ CUSTAIMÉARA",
+    "basedOn": "Bunaithe ar {{count}} léirmheas",
+    "writeReview": "Scríobh léirmheas"
+  },
+  "userPanel": {
+    "account": "Cuntas",
+    "orders": "Orduithe",
+    "logout": "Logáil amach",
+    "email": "R‑phost",
+    "name": "Ainm",
+    "lastName": "Sloinne",
+    "edit": "Cuir in eagar",
+    "delivery": "Seoltaí seachadta",
+    "addNewAddress": "Cuir seoladh nua leis",
+    "status": "Stádas",
+    "date": "Dáta"
+  },
+  "admin": {
+    "products": "Táirgí",
+    "orders": "Orduithe",
+    "blogs": "Blaganna",
+    "addProduct": "Cuir táirge leis",
+    "order": "Ordú #{{id}}",
+    "status": "Stádas",
+    "date": "Dáta",
+    "deliveryDetails": "Sonraí seachadta",
+    "email": "R‑phost",
+    "phone": "Fón",
+    "postalCode": "Cód poist",
+    "quantity": "Cainníocht",
+    "price": "Praghas",
+    "installationYes": "Tá",
+    "installationNo": "Níl"
+  },
+  "uploadForm": {
+    "title": "Cuir táirge nua leis",
+    "name": "Ainm",
+    "price": "Praghas",
+    "lastPrice": "Praghas roimhe",
+    "installationPrice": "Praghas suiteála",
+    "description": "Cur síos",
+    "demensions": "Toisí",
+    "composition": "Comhdhéanamh",
+    "compositionImage": "Íomhá comhdhéanta",
+    "image": "Íomhá",
+    "gallery": "Gailearaí",
+    "movie": "Físeán",
+    "submit": "Seol"
+  },
+  "updateForm": {
+    "image": "Íomhá",
+    "name": "Ainm",
+    "price": "Praghas",
+    "lastPrice": "Praghas roimhe",
+    "installationPrice": "Praghas suiteála",
+    "features": "Gnéithe",
+    "description": "Cur síos",
+    "construction": "Tógáil",
+    "demensions": "Toisí",
+    "galleryAdd": "Cuir íomhá leis an ngailearaí",
+    "apply": "Cuir athruithe i bhfeidhm"
+  },
+  "userDetailsForm": {
+    "editAccount": "Cuir an cuntas in eagar",
+    "firstName": "Ainm",
+    "lastName": "Sloinne",
+    "submit": "Sábháil"
+  }
+}
+
+

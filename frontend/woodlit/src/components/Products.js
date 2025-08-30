@@ -3,8 +3,10 @@ import axios from 'axios';
 import {Link} from 'react-router-dom';
 import loading from '../images/loading.svg'
 import config from '../config'
+import { useTranslation } from 'react-i18next'
 
 export default function Products() {
+    const { t } = useTranslation();
     const [products, setProducts] = useState([]);
     useEffect(() => {
         axios.get(`${config.API_URL}/api/product/getAll`)

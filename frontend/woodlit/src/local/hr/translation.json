@@ -1,0 +1,234 @@
+{
+  "header": {
+    "swingSets": "Igrališni setovi",
+    "shipping": "Dostava",
+    "blog": "Blog",
+    "assembly": "Montaža",
+    "about": "O nama",
+    "contacts": "Kontakt"
+  },
+  "footer": {
+    "navigation": "Navigacija",
+    "followUs": "Pratite nas",
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "rights": "Sva prava pridržana.",
+    "createdBy": "Izradio"
+  },
+  "about": {
+    "title": "CedarKids",
+    "p1": "Od 2007. CedarKids donosi kvalitetne igrališne setove europskim obiteljima. Kao službeni distributer Backyard Discoveryja nudimo širok izbor setova od cedrovine za različite budžete i vrtove. Za razliku od jele ili bora, naš premium cedar jamči trajnost i posebno sigurnost.",
+    "p2": "Obiteljska smo tvrtka nadahnuta radošću naše djece u igri u dvorištu. Znamo koliko nestrpljivo čekaju – zato isporučujemo brzo. U CedarKidsu ne prodajemo samo setove; pomažemo stvoriti sigurna mjesta puna radosti i obiteljskih uspomena."
+  },
+  "notFound": {
+    "title": "Stranica nije pronađena",
+    "desc": "Moguće je da je poveznica netočna ili nemate pristup ovoj stranici.",
+    "backHome": "Povratak na početnu"
+  },
+  "assembly": {
+    "guide": "Vodič za montažu",
+    "welcome": "Dobrodošli u jednostavnu montažu s Woodlit setovima! Dizajnirani za samostalnu montažu – siguran i zabavan prostor za vašu djecu.",
+    "before": "Prije montaže",
+    "during": "Tijekom montaže",
+    "after": "Nakon montaže",
+    "contactTitle": "Kontakt",
+    "contactDesc": "Imate pitanja? Rado ćemo pomoći! Pišite na info@cedarkids.eu i javit ćemo se u roku 24 h.",
+    "toolsTitle": "POTREBAN ALAT",
+    "toolsText": "Bušilica, odvijač, čekić i metar. Ključevi i nastavci uključeni.",
+    "prepareTitle": "PRIPREMA PROSTORA",
+    "prepareText": "Odaberite ravnu površinu i očistite je. Ostavite 1,8 m prostora oko seta; za ljuljačke dodatno prostor jednak dvostrukoj visini ljuljačke sprijeda i straga.",
+    "safetyTitle": "SIGURNOSNE MJERE",
+    "safetyText": "Nosite rukavice i zaštitne naočale. Pažljivo pročitajte upute. Pregledajte dijelove prije početka. Djecu i kućne ljubimce držite podalje. Alat koristite prema uputama. U nedoumici – zatražite pomoć ili kontaktirajte podršku.",
+    "timeTitle": "VRIJEME MONTAŽE",
+    "timeText": "Od 4 do 20 sati, ovisno o veličini seta i iskustvu.",
+    "stepsTitle": "KORAK PO KORAK",
+    "stepsText": "Organizirajte dijelove i alat. Počnite s bazom i izravnajte je. Dodajte elemente i provjerite pričvršćenja. Priručnik sadrži jasne ilustracije. Za interaktivnu pomoć: BILT aplikacija. Podrška je dostupna.",
+    "troubleTitle": "RJEŠAVANJE PROBLEMA",
+    "troubleText": "Zatekla vas je poteškoća? Nema problema. Naš tim će vas voditi kako bi sve prošlo glatko.",
+    "maintenanceTitle": "SAVJETI ZA ODRŽAVANJE",
+    "maintenanceText": "Štitite drvo svake dvije godine uljem i lazurama. Godišnje provjerite i dotegnite spojni materijal. Redovito pregledavajte, osobito prije sezone. Odmah zamijenite istrošene ili oštećene dijelove.",
+    "checksTitle": "SIGURNOSNE PROVJERE",
+    "checksText": "Mjesečno provjerite labave vijke i istrošenost. Osigurajte stabilnost i nivelu. Provjerite podlogu i drvo. Testirajte ovjese ljuljački i trošenje.",
+    "enjoyTitle": "UŽIVAJTE U SVOM SETU",
+    "enjoyText": "Stvarajte uspomene. Potaknite maštu, igru na otvorenom i zajedništvo. Uživajte u veselju u vlastitom vrtu!"
+  },
+  "shipping": {
+    "partnerLabel": "DOSTAVNI PARTNER:",
+    "partnerName": "Raben Logistics",
+    "partnerDesc": "Vaša je radost u sigurnim rukama! Više od 10 godina oslanjamo se na Raben kao logističkog partnera. Vaš će set sigurno dostaviti naš iskusni tim.",
+    "orderProcessingTitle": "OBRADA NARUDŽBE",
+    "orderProcessingDesc": "Brza otprema zajamčena! Slanje u roku 2–3 radna dana od uplate.",
+    "estimatedDeliveryTitle": "PROCJENJENO VRIJEME ISPORUKE",
+    "estimatedDeliveryDesc": "Veselje stiže za otprilike tjedan dana – ovisno o lokaciji.",
+    "warehouseTitle": "LOKACIJA SKLADIŠTA",
+    "warehouseName": "Poljska, Łabiszyn",
+    "warehouseDesc": "Šaljemo iz našeg huba u Toruńu (Poljska). Za osobno preuzimanje ili vlastitog kurira – javite nam se.",
+    "pickupTitle": "MOGUĆNOSTI PREUZIMANJA",
+    "pickupDesc": "Preferirate preuzimanje ili vlastitog dostavljača? Pišite za upute.",
+    "satisfaction": "Vaše zadovoljstvo nam je prioritet. Osiguravamo glatku i sigurnu dostavu.",
+    "contact": "Pitanja ili dodatna pomoć? Slobodno nas kontaktirajte.",
+    "thankYou": "HVALA ŠTO STE NAS ODABRALI ZA VAŠE TRENUTKE IGRE!"
+  },
+  "contacts": {
+    "title": "Kontaktirajte nas",
+    "subtitle": "Rado bismo čuli od vas! Pošaljite nam poruku i odgovorit ćemo što prije.",
+    "form": {
+      "title": "Pošaljite nam poruku",
+      "name": "Puno ime",
+      "email": "E-mail adresa",
+      "phone": "Broj telefona",
+      "subject": "Predmet",
+      "message": "Vaša poruka",
+      "submit": "Pošalji poruku",
+      "sending": "Slanje...",
+      "success": "Poruka uspješno poslana!",
+      "error": "Greška pri slanju poruke. Molimo pokušajte ponovno."
+    },
+    "info": {
+      "title": "Kontakt informacije",
+      "email": "E-mail",
+      "phone": "Telefon",
+      "address": "Adresa",
+      "addressValue": "Poljska, Łabiszyn",
+      "hours": "Radno vrijeme",
+      "hoursValue": "Ponedjeljak - Petak: 9:00 - 18:00"
+    }
+  },
+  "cart": {
+    "empty": "Košarica je prazna",
+    "delivery": "Dostava",
+    "installation": "instalacija",
+    "summary": "Sažetak",
+    "deliveryFree": "Dostava: besplatno",
+    "total": "Ukupna cijena",
+    "buy": "Kupi",
+    "continue": "Nastavi kupovati",
+    "addNewAddress": "Dodaj novu adresu",
+    "phone": "Telefon",
+    "country": "Država",
+    "city": "Grad",
+    "address": "Adresa",
+    "postalCode": "Poštanski broj",
+    "firstName": "Ime",
+    "lastName": "Prezime",
+    "email": "E‑pošta"
+  },
+  "deliveryForm": {
+    "newAddress": "Nova adresa",
+    "submit": "Pošalji",
+    "postal": "Poštanski broj"
+  },
+  "login": {
+    "signIn": "Prijava",
+    "email": "email",
+    "password": "lozinka",
+    "submit": "Pošalji",
+    "noAccount": "Nemate račun?",
+    "signUp": "Registracija"
+  },
+  "order": {
+    "successTitle": "Narudžba uspješno kreirana",
+    "successDesc": "Hvala na kupnji! Vaša je narudžba zaprimljena. Uskoro ćete primiti potvrdu e‑poštom.",
+    "backHome": "Povratak na početnu"
+  },
+  "registration": {
+    "signUp": "Registracija",
+    "email": "E‑pošta",
+    "password": "Lozinka",
+    "firstName": "Ime",
+    "lastName": "Prezime",
+    "submit": "Pošalji",
+    "haveAccount": "Već imate račun?",
+    "signIn": "Prijava"
+  },
+  "review": {
+    "add": "Dodaj recenziju",
+    "fullName": "Puno ime",
+    "comment": "Vaš komentar",
+    "gallery": "Galerija",
+    "submit": "Pošalji"
+  },
+  "product": {
+    "installation": "instalacija",
+    "addToCart": "DODAJ U KOŠARICU",
+    "setComposition": "Sastav seta:",
+    "assembledDimensions": "Dimenzije montirano",
+    "residentialOnly": "Proizvod je namijenjen ISKLJUČIVO ZA KUĆNU UPORABU. Upotreba izvan toga poništava jamstvo.",
+    "whyTitle": "ZAŠTO CEDARKIDS?",
+    "why1Title": "Vrhunski dizajn",
+    "why1Text": "Spajamo stil i čvrstoću: materijali, boje i dojam – set na koji ćete biti ponosni u svom vrtu.",
+    "why2Title": "Testirano i certificirano",
+    "why2Text": "Naši setovi zadovoljavaju i nadmašuju ASTM standarde. Testirani za djecu do 12 godina.",
+    "why3Title": "Jamstvo i montaža",
+    "why3Text": "Ograničeno jamstvo 5 godina i 3D upute za montažu u aplikaciji BILT® – podrška od prvog dana.",
+    "customerReviews": "RECENZIJE KUPACA",
+    "basedOn": "Na temelju {{count}} recenzija",
+    "writeReview": "Napiši recenziju"
+  },
+  "userPanel": {
+    "account": "Račun",
+    "orders": "Narudžbe",
+    "logout": "Odjava",
+    "email": "E‑pošta",
+    "name": "Ime",
+    "lastName": "Prezime",
+    "edit": "Uredi",
+    "delivery": "Adrese dostave",
+    "addNewAddress": "Dodaj novu adresu",
+    "status": "Status",
+    "date": "Datum"
+  },
+  "admin": {
+    "products": "Proizvodi",
+    "orders": "Narudžbe",
+    "blogs": "Blogovi",
+    "addProduct": "Dodaj proizvod",
+    "order": "Narudžba #{{id}}",
+    "status": "Status",
+    "date": "Datum",
+    "deliveryDetails": "Detalji dostave",
+    "email": "E‑pošta",
+    "phone": "Telefon",
+    "postalCode": "Poštanski broj",
+    "quantity": "Količina",
+    "price": "Cijena",
+    "installationYes": "Da",
+    "installationNo": "Ne"
+  },
+  "uploadForm": {
+    "title": "Dodaj novi proizvod",
+    "name": "Naziv",
+    "price": "Cijena",
+    "lastPrice": "Prethodna cijena",
+    "installationPrice": "Cijena instalacije",
+    "description": "Opis",
+    "demensions": "Dimenzije",
+    "composition": "Sastav",
+    "compositionImage": "Slika sastava",
+    "image": "Slika",
+    "gallery": "Galerija",
+    "movie": "Video",
+    "submit": "Pošalji"
+  },
+  "updateForm": {
+    "image": "Slika",
+    "name": "Naziv",
+    "price": "Cijena",
+    "lastPrice": "Prethodna cijena",
+    "installationPrice": "Cijena instalacije",
+    "features": "Značajke",
+    "description": "Opis",
+    "construction": "Konstrukcija",
+    "demensions": "Dimenzije",
+    "galleryAdd": "Dodaj sliku u galeriju",
+    "apply": "Primijeni promjene"
+  },
+  "userDetailsForm": {
+    "editAccount": "Uredi račun",
+    "firstName": "Ime",
+    "lastName": "Prezime",
+    "submit": "Spremi"
+  }
+}
+
+

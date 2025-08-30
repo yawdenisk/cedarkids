@@ -1,0 +1,235 @@
+{
+  "header": {
+    "swingSets": "Swing Sets",
+    "shipping": "Shipping",
+    "blog": "Blog",
+    "assembly": "Assembly",
+    "about": "About Us",
+    "contacts": "Contacts"
+  },
+  "footer": {
+    "navigation": "Navigation",
+    "followUs": "Follow Us",
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "rights": "All rights reserved.",
+    "createdBy": "Created by"
+  },
+  "about": {
+    "title": "CedarKids",
+    "p1": "Founded in 2007, Cedarkids is dedicated to bringing high-quality swing sets to European families. As the official distributor of Backyard Discovery, we pride ourselves on our extensive range of cedar lumber swing sets, catering to various budgets and backyard sizes. Unlike our competitors who use fir or pine, our premium cedar ensures durability and safety, a top priority for us.",
+    "p2": "As a family-run business inspired by our own children's love for their backyard swing set, we understand the joy and excitement it brings. We're committed to fast delivery, knowing how eager children are to enjoy their new play space. At CedarKids, we don't just sell swing sets; we're helping build spaces of joy and safe adventure for families."
+  },
+  "notFound": {
+    "title": "Page not found",
+    "desc": "You may have followed an incorrect link or you don't have access to this page.",
+    "backHome": "Back to home"
+  },
+  "assembly": {
+    "guide": "Assembly Guide",
+    "welcome": "Welcome to an easy assembly experience with Woodlit Swing Sets! Designed for self-assembly, our sets ensure a fun and safe space for your children.",
+    "before": "Before Assembly",
+    "during": "During Assembly",
+    "after": "After Assembly",
+    "contactTitle": "Contact",
+    "contactDesc": "Still have questions? We're happy to help! Please email us at info@cedarkids.eu and we will get back to you within 24 hours.",
+    "toolsTitle": "TOOLS REQUIRED",
+    "toolsText": "Drill, screwdriver, hammer, and measuring tape. Wrenches and screw setters are included.",
+    "prepareTitle": "PREPARING YOUR SPACE",
+    "prepareText": "For preparing your space for the swing set, select a flat area and clear any debris. Ensure there's a 1,8 meter clearance around the set, and if it includes swings, provide additional clearance equivalent to twice the swing's height both in front and behind.",
+    "safetyTitle": "SAFETY PRECAUTIONS",
+    "safetyText": "For safety during assembly, wear gloves and safety goggles. Thoroughly read and follow the assembly instructions. Before starting, inspect all parts for damage. Keep the assembly area clear of children and pets to avoid accidents. Use tools correctly as directed in the instructions. If unsure about any step, consider professional help or contact customer support.",
+    "timeTitle": "ASSEMBLY TIME",
+    "timeText": "Time varies from 4 to 20 hours, depending on set size and your skills.",
+    "stepsTitle": "STEP-BY-STEP GUIDE",
+    "stepsText": "Begin by organizing all parts and tools. Assemble the base first, ensuring it's level. Attach swings and other features, checking all fittings. Detailed instructions are in the instruction manual with clear illustrations for each step. For more, download the BILT app for interactive guidance. Customer support is available for assistance.",
+    "troubleTitle": "TROUBLESHOOTING",
+    "troubleText": "Encountered a hiccup during assembly? No worries! Reach out to our customer support team for guidance. We're here to help with any assembly challenges, ensuring a smooth setup process for your new swing set.",
+    "maintenanceTitle": "MAINTENANCE TIPS",
+    "maintenanceText": "For maintenance, apply oil and stain treatments every two years to protect the wood. Annually check and tighten all hardware to ensure stability and safety. Regularly inspect the swing set for signs of wear or damage, especially before the play season. If any parts are worn or damaged, replace them promptly to maintain the set's safety and integrity.",
+    "checksTitle": "SAFETY CHECKS",
+    "checksText": "For swing set safety checks, conduct monthly inspections for loose bolts and signs of wear or damage. Regularly ensure the set is stable and level. Inspect the ground cover for potential hazards. Check the wood for splinters, cracks, or signs of rot. Test the swings to ensure they are securely attached and free from wear. These routine checks are essential for maintaining the safety and longevity of your swing set.",
+    "enjoyTitle": "ENJOY YOUR SWING SET",
+    "enjoyText": "Enjoy your new swing set by creating lasting family memories. Encourage imaginative play, outdoor exercise, and social interaction among children. Use it as a focal point for family gatherings or children's playdates. Regularly join your kids in play to foster bonding and observe their development. The swing set isn't just a play area; it's a hub for creativity, learning, and family time. Enjoy the laughter and joy it brings to your backyard!"
+  },
+  "shipping": {
+    "partnerLabel": "SHIPPING PARTNER:",
+    "partnerName": "Raben Logistics",
+    "partnerDesc": "Your joy is in safe hands! For over 10 years, we've trusted Raben as our reliable shipping partner. Rest assured, your swing-set will be securely delivered by our experienced team.",
+    "orderProcessingTitle": "ORDER PROCESSING",
+    "orderProcessingDesc": "Swift dispatch guaranteed! Your purchase is shipped within 2-3 business days of payment. Expect your joyous package to be on its way promptly.",
+    "estimatedDeliveryTitle": "ESTIMATED DELIVERY TIME",
+    "estimatedDeliveryDesc": "Anticipate joy in just about a week! Delivery times vary based on your location, ensuring your play set arrives promptly.",
+    "warehouseTitle": "WAREHOUSE LOCATION",
+    "warehouseName": "Poland, Łabiszyn",
+    "warehouseDesc": "Your play sets originate from our Toruń, Poland hub. For self-pickup or choosing your courier, connect with us for details.",
+    "pickupTitle": "PICKUP OPTIONS",
+    "pickupDesc": "For those inclined towards a self-pickup or selecting a courier of personal preference, kindly reach out to us for detailed instructions and further information.",
+    "satisfaction": "Your satisfaction is our priority, and we are committed to ensuring a seamless delivery process for your much-anticipated swing-set.",
+    "contact": "If you have any inquiries or require additional assistance, don't hesitate to contact us.",
+    "thankYou": "THANK YOU FOR CHOOSING US TO BE PART OF YOUR PLAYTIME MEMORIES!"
+  },
+  "contacts": {
+    "title": "Get in Touch",
+    "subtitle": "We'd love to hear from you! Send us a message and we'll respond as soon as possible.",
+    "form": {
+      "title": "Send us a Message",
+      "name": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "subject": "Subject",
+      "message": "Your Message",
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully!",
+      "error": "Error sending message. Please try again."
+    },
+    "info": {
+      "title": "Contact Information",
+      "email": "Email",
+      "phone": "Phone",
+      "address": "Address",
+      "addressValue": "Poland, Łabiszyn",
+      "hours": "Business Hours",
+      "hoursValue": "Monday - Friday: 9:00 AM - 6:00 PM"
+    }
+  },
+  "cart": {
+    "empty": "Cart is empty",
+    "delivery": "Delivery",
+    "installation": "installation",
+    "summary": "Summary",
+    "deliveryFree": "Delivery: free",
+    "total": "Total price",
+    "buy": "Buy",
+    "continue": "Continue shopping",
+    "addNewAddress": "Add new address",
+    "phone": "Phone",
+    "country": "Country",
+    "city": "City",
+    "address": "Address",
+    "postalCode": "Postal Code",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email"
+  },
+  "deliveryForm": {
+    "newAddress": "New address",
+    "submit": "Submit",
+    "postal": "Postal code"
+  },
+  "login": {
+    "signIn": "Sign in",
+    "email": "email",
+    "password": "password",
+    "submit": "Submit",
+    "noAccount": "Don't have an account?",
+    "signUp": "Sign up"
+  },
+  "order": {
+    "successTitle": "Order Successfully Created",
+    "successDesc": "Thank you for your purchase! Your order has been successfully placed. You will receive a confirmation email shortly.",
+    "backHome": "Back to Home"
+  },
+  "registration": {
+    "signUp": "Sign up",
+    "email": "Email",
+    "password": "Password",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "submit": "Submit",
+    "haveAccount": "Already have an account?",
+    "signIn": "Sign in"
+  },
+  "review": {
+    "add": "Add new Review",
+    "fullName": "Full name",
+    "comment": "Your comment",
+    "gallery": "Gallery",
+    "submit": "Submit"
+  },
+  "product": {
+    "installation": "installation",
+    "addToCart": "ADD TO CART",
+    "setComposition": "Set composition:",
+    "assembledDimensions": "Assembled Dimensions",
+    "residentialOnly": "This product is intended for RESIDENTIAL USE ONLY. Any use of this product outside of a residential setting will make the product warranty null and void.",
+    "whyTitle": "WHY CEDARKIDS SWING SETS?",
+    "why1Title": "High Quality Design",
+    "why1Text": "We work hard to make sure your swing set features design elements as stylish as they are strong. From the materials to the colors to the overall aesthetic, these are swing sets you'll be proud to have in your backyard.",
+    "why2Title": "Tested and Certified",
+    "why2Text": "All of our swing sets are certified to meet and exceed ASTM standards. We test our performance for kids up to 12-years-old, going above and beyond industry standards.",
+    "why3Title": "Warranty and Assembly",
+    "why3Text": "With a 5 Year Limited Warranty and 3D interactive assembly instructions with the BILT® app, you'll be supported from the very beginning for years and years of backyard fun.",
+    "customerReviews": "CUSTOMER REVIEWS",
+    "basedOn": "Based on {{count}} reviews",
+    "writeReview": "Write a review"
+  },
+  "userPanel": {
+    "account": "Account",
+    "orders": "Orders",
+    "logout": "Logout",
+    "email": "Email",
+    "name": "Name",
+    "lastName": "Last name",
+    "edit": "Edit",
+    "delivery": "Delivery",
+    "addNewAddress": "Add new address",
+    "status": "Status",
+    "date": "Date"
+  }
+  ,
+  "admin": {
+    "products": "Products",
+    "orders": "Orders",
+    "blogs": "Blogs",
+    "addProduct": "Add product",
+    "order": "Order #{{id}}",
+    "status": "Status",
+    "date": "Date",
+    "deliveryDetails": "Delivery Details",
+    "email": "Email",
+    "phone": "Phone",
+    "postalCode": "Postal Code",
+    "quantity": "Quantity",
+    "price": "Price",
+    "installationYes": "Yes",
+    "installationNo": "No"
+  },
+  "uploadForm": {
+    "title": "Add new Product",
+    "name": "Name",
+    "price": "Price",
+    "lastPrice": "Last Price",
+    "installationPrice": "Installation Price",
+    "description": "Description",
+    "demensions": "Dimensions",
+    "composition": "Composition",
+    "compositionImage": "Composition image",
+    "image": "Image",
+    "gallery": "Gallery",
+    "movie": "Movie",
+    "submit": "Submit"
+  },
+  "updateForm": {
+    "image": "Image",
+    "name": "Name",
+    "price": "Price",
+    "lastPrice": "Last Price",
+    "installationPrice": "Installation Price",
+    "features": "Features",
+    "description": "Description",
+    "construction": "Construction",
+    "demensions": "Dimensions",
+    "galleryAdd": "Add image to gallery",
+    "apply": "Apply changes"
+  },
+  "userDetailsForm": {
+    "editAccount": "Edit account",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "submit": "Submit"
+  }
+}
+
+

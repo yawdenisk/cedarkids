@@ -2,9 +2,11 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Link, Navigate, useNavigate } from 'react-router-dom';
 import config from '../config';
+import { useTranslation } from 'react-i18next';
 import loading from '../images/loading.svg';
 import addProductIcon from '../images/add-product-glyph-icon-vector.jpg';
 export default function AdminPanel() {
+  const { t } = useTranslation();
   const [item, setItem] = useState('products');
   const [products, setProducts] = useState([]);
   const [orders, setOrders] = useState([]);
@@ -54,9 +56,9 @@ export default function AdminPanel() {
     <div className='container'>
       <div className='admin'>
         <ul className='menu'>
-          <li onClick={() => setItem('products')}>Products</li>
-          <li onClick={() => setItem('orders')}>Orders</li>
-          <li onClick={() => setItem('blogs')}>Blogs</li>
+          <li onClick={() => setItem('products')}>{t('admin.products')}</li>
+          <li onClick={() => setItem('orders')}>{t('admin.orders')}</li>
+          {/* <li onClick={() => setItem('blogs')}>{t('admin.blogs')}</li> */}
         </ul>
 
         <div className='view'>
@@ -66,7 +68,7 @@ export default function AdminPanel() {
                 <Link to="uploadProduct">
                   <img src={addProductIcon} alt='Add product' />
                 </Link>
-                <p>Add product</p>
+                <p>{t('admin.addProduct')}</p>
               </li>
               {products.map(product => (
                 <li key={product.id}>
@@ -89,17 +91,17 @@ export default function AdminPanel() {
               {orders.map(order => (
                 <div key={order.id} className="order-card">
                   <div className="order-header">
-                    <h2>Order #{order.id}</h2>
+                    <h2>{t('admin.order', { id: order.id })}</h2>
                     <span className={`status ${order.status.toLowerCase()}`}>{order.status}</span>
                     <span className="date">{order.date}</span>
                   </div>
 
                   <div className="delivery-details">
-                    <h3>Delivery Details</h3>
+                    <h3>{t('admin.deliveryDetails')}</h3>
                     <p>{order.deliveryDetails.address}, {order.deliveryDetails.city}, {order.deliveryDetails.country}</p>
-                    <p>Email: {order.user.email}</p>
-                    <p>Phone: {order.deliveryDetails.phone}</p>
-                    <p>Postal Code: {order.deliveryDetails.postalCode}</p>
+                    <p>{t('admin.email')}: {order.user.email}</p>
+                    <p>{t('admin.phone')}: {order.deliveryDetails.phone}</p>
+                    <p>{t('admin.postalCode')}: {order.deliveryDetails.postalCode}</p>
                   </div>
 
                   <div className="cart-items">
@@ -109,9 +111,9 @@ export default function AdminPanel() {
                         <div className="item-info">
                           <h4>{item.product.name}</h4>
                           <p>{item.product.description}</p>
-                          <p>Quantity: {item.quantity}</p>
-                          <p>Price: €{item.product.price.toFixed(2)}</p>
-                          <p>Installation: {item.installation ? "Yes" : "No"}</p>
+                          <p>{t('admin.quantity')}: {item.quantity}</p>
+                          <p>{t('admin.price')}: €{item.product.price.toFixed(2)}</p>
+                          <p>Installation: {item.installation ? t('admin.installationYes') : t('admin.installationNo')}</p>
                           {item.product.gallery && item.product.gallery.length > 0 && (
                             <div className="gallery">
                               {item.product.gallery.map(img => (

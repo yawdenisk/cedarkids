@@ -1,15 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export default function NotFound() {
+  const { t } = useTranslation();
   return (
     <div style={styles.container}>
       <h1 style={styles.code}>404</h1>
-      <h2 style={styles.text}>Страница не найдена</h2>
+      <h2 style={styles.text}>{t('notFound.title')}</h2>
       <p style={styles.desc}>
-        Возможно, вы перешли по неверной ссылке или у вас нет доступа к этой странице.
+        {t('notFound.desc')}
       </p>
-      <Link to="/" style={styles.link}>Вернуться на главную</Link>
+      <Link to="/" style={styles.link}>{t('notFound.backHome')}</Link>
     </div>
   );
 }

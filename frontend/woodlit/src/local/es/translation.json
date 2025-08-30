@@ -1,0 +1,234 @@
+{
+  "header": {
+    "swingSets": "Columpios",
+    "shipping": "Envío",
+    "blog": "Blog",
+    "assembly": "Montaje",
+    "about": "Sobre nosotros",
+    "contacts": "Contacto"
+  },
+  "footer": {
+    "navigation": "Navegación",
+    "followUs": "Síguenos",
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "rights": "Todos los derechos reservados.",
+    "createdBy": "Creado por"
+  },
+  "about": {
+    "title": "CedarKids",
+    "p1": "Fundada en 2007, CedarKids se dedica a llevar juegos de columpios de alta calidad a las familias europeas. Como distribuidor oficial de Backyard Discovery, nos enorgullece ofrecer una amplia gama de estructuras de cedro, para distintos presupuestos y tamaños de jardín. A diferencia de otros que usan abeto o pino, nuestro cedro premium garantiza durabilidad y, sobre todo, seguridad.",
+    "p2": "Como empresa familiar inspirada por la ilusión de nuestros propios hijos por su columpio del jardín, entendemos la alegría que aporta. Apostamos por una entrega rápida, porque sabemos que los peques no pueden esperar. En CedarKids no solo vendemos columpios; ayudamos a crear espacios seguros de diversión para toda la familia."
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "desc": "Puede que el enlace sea incorrecto o no tengas acceso a esta página.",
+    "backHome": "Volver al inicio"
+  },
+  "assembly": {
+    "guide": "Guía de montaje",
+    "welcome": "Bienvenido a una experiencia de montaje sencilla con los columpios Woodlit. Diseñados para montarse por uno mismo, crean un espacio divertido y seguro para tus hijos.",
+    "before": "Antes del montaje",
+    "during": "Durante el montaje",
+    "after": "Después del montaje",
+    "contactTitle": "Contacto",
+    "contactDesc": "¿Tienes dudas? Estaremos encantados de ayudarte. Escríbenos a info@cedarkids.eu y te responderemos en 24 horas.",
+    "toolsTitle": "HERRAMIENTAS NECESARIAS",
+    "toolsText": "Taladro, destornillador, martillo y cinta métrica. Se incluyen llaves y puntas.",
+    "prepareTitle": "PREPARA TU ESPACIO",
+    "prepareText": "Elige una zona plana y despeja residuos. Deja 1,8 m libres alrededor del conjunto; si incluye columpios, añade un espacio adicional equivalente al doble de la altura del columpio delante y detrás.",
+    "safetyTitle": "MEDIDAS DE SEGURIDAD",
+    "safetyText": "Usa guantes y gafas de protección. Lee y sigue las instrucciones. Revisa todas las piezas antes de empezar. Mantén a niños y mascotas alejados del área de trabajo. Usa las herramientas como se indica. Si dudas, busca ayuda profesional o contacta con atención al cliente.",
+    "timeTitle": "TIEMPO DE MONTAJE",
+    "timeText": "Entre 4 y 20 horas, según el tamaño del conjunto y tu experiencia.",
+    "stepsTitle": "PASO A PASO",
+    "stepsText": "Organiza piezas y herramientas. Empieza por la base, asegurando nivelación. Añade columpios y accesorios comprobando las fijaciones. El manual incluye ilustraciones claras. Descarga BILT para instrucciones interactivas. Nuestro soporte está disponible para ayudarte.",
+    "troubleTitle": "RESOLUCIÓN DE PROBLEMAS",
+    "troubleText": "¿Un contratiempo? No pasa nada. Nuestro equipo de soporte está listo para ayudarte y que todo vaya sobre ruedas.",
+    "maintenanceTitle": "MANTENIMIENTO",
+    "maintenanceText": "Aplica aceite y tinte cada dos años para proteger la madera. Revisa y aprieta tornillería anualmente. Inspecciona el conjunto regularmente, sobre todo antes de la temporada de juego. Sustituye de inmediato cualquier pieza desgastada o dañada.",
+    "checksTitle": "REVISIONES DE SEGURIDAD",
+    "checksText": "Cada mes, revisa si hay tornillos flojos o desgaste. Asegura nivelación y estabilidad. Comprueba el terreno y la madera. Verifica que los columpios estén bien sujetos y sin desgaste.",
+    "enjoyTitle": "DISFRUTA TU CONJUNTO",
+    "enjoyText": "Crea recuerdos inolvidables. Fomenta el juego imaginativo, la actividad al aire libre y la interacción. ¡Disfruta de la diversión en tu jardín!"
+  },
+  "shipping": {
+    "partnerLabel": "PARTNER DE ENVÍO:",
+    "partnerName": "Raben Logistics",
+    "partnerDesc": "¡Tu alegría, en buenas manos! Llevamos más de 10 años confiando en Raben como nuestro socio logístico. Tu columpio llegará seguro con nuestro equipo experimentado.",
+    "orderProcessingTitle": "PROCESAMIENTO DEL PEDIDO",
+    "orderProcessingDesc": "¡Envío ágil garantizado! Enviamos dentro de 2–3 días laborables tras el pago.",
+    "estimatedDeliveryTitle": "TIEMPO ESTIMADO DE ENTREGA",
+    "estimatedDeliveryDesc": "¡La diversión llega en aproximadamente una semana! El plazo varía según tu ubicación.",
+    "warehouseTitle": "ALMACÉN",
+    "warehouseName": "Polonia, Łabiszyn",
+    "warehouseDesc": "Nuestros conjuntos salen desde nuestro centro en Toruń (Polonia). Para recogida o elegir tu mensajería, contáctanos.",
+    "pickupTitle": "OPCIONES DE RECOGIDA",
+    "pickupDesc": "Si prefieres recogida o tu propia mensajería, escríbenos y te daremos instrucciones.",
+    "satisfaction": "Tu satisfacción es nuestra prioridad. Nos comprometemos a una entrega fluida y segura.",
+    "contact": "Si tienes preguntas o necesitas ayuda adicional, no dudes en contactarnos.",
+    "thankYou": "¡GRACIAS POR ELEGIRNOS PARA FORMAR PARTE DE TUS MOMENTOS DE JUEGO!"
+  },
+  "contacts": {
+    "title": "Ponte en contacto",
+    "subtitle": "¡Nos encantaría saber de ti! Envíanos un mensaje y te responderemos lo antes posible.",
+    "form": {
+      "title": "Envíanos un mensaje",
+      "name": "Nombre completo",
+      "email": "Dirección de email",
+      "phone": "Número de teléfono",
+      "subject": "Asunto",
+      "message": "Tu mensaje",
+      "submit": "Enviar mensaje",
+      "sending": "Enviando...",
+      "success": "¡Mensaje enviado con éxito!",
+      "error": "Error al enviar el mensaje. Por favor, inténtalo de nuevo."
+    },
+    "info": {
+      "title": "Información de contacto",
+      "email": "Email",
+      "phone": "Teléfono",
+      "address": "Dirección",
+      "addressValue": "Polonia, Łabiszyn",
+      "hours": "Horario de atención",
+      "hoursValue": "Lunes - Viernes: 9:00 AM - 6:00 PM"
+    }
+  },
+  "cart": {
+    "empty": "El carrito está vacío",
+    "delivery": "Envío",
+    "installation": "instalación",
+    "summary": "Resumen",
+    "deliveryFree": "Envío: gratis",
+    "total": "Precio total",
+    "buy": "Comprar",
+    "continue": "Seguir comprando",
+    "addNewAddress": "Añadir nueva dirección",
+    "phone": "Teléfono",
+    "country": "País",
+    "city": "Ciudad",
+    "address": "Dirección",
+    "postalCode": "Código postal",
+    "firstName": "Nombre",
+    "lastName": "Apellidos",
+    "email": "Email"
+  },
+  "deliveryForm": {
+    "newAddress": "Nueva dirección",
+    "submit": "Enviar",
+    "postal": "Código postal"
+  },
+  "login": {
+    "signIn": "Iniciar sesión",
+    "email": "email",
+    "password": "contraseña",
+    "submit": "Enviar",
+    "noAccount": "¿No tienes cuenta?",
+    "signUp": "Regístrate"
+  },
+  "order": {
+    "successTitle": "Pedido creado con éxito",
+    "successDesc": "¡Gracias por tu compra! Hemos recibido tu pedido. Pronto recibirás un email de confirmación.",
+    "backHome": "Volver al inicio"
+  },
+  "registration": {
+    "signUp": "Regístrate",
+    "email": "Email",
+    "password": "Contraseña",
+    "firstName": "Nombre",
+    "lastName": "Apellidos",
+    "submit": "Enviar",
+    "haveAccount": "¿Ya tienes cuenta?",
+    "signIn": "Inicia sesión"
+  },
+  "review": {
+    "add": "Añadir reseña",
+    "fullName": "Nombre completo",
+    "comment": "Tu comentario",
+    "gallery": "Galería",
+    "submit": "Enviar"
+  },
+  "product": {
+    "installation": "instalación",
+    "addToCart": "AÑADIR AL CARRITO",
+    "setComposition": "Contenido del set:",
+    "assembledDimensions": "Dimensiones montado",
+    "residentialOnly": "Producto para USO RESIDENCIAL ÚNICAMENTE. El uso fuera de este ámbito anula la garantía.",
+    "whyTitle": "¿POR QUÉ CEDARKIDS?",
+    "why1Title": "Diseño de alta calidad",
+    "why1Text": "Cuidamos cada detalle: materiales, colores y estética. Un conjunto del que estarás orgulloso en tu jardín.",
+    "why2Title": "Probado y certificado",
+    "why2Text": "Nuestros conjuntos cumplen y superan la norma ASTM. Probados para niños de hasta 12 años.",
+    "why3Title": "Garantía y montaje",
+    "why3Text": "Garantía limitada de 5 años e instrucciones 3D con la app BILT® para acompañarte desde el primer día.",
+    "customerReviews": "OPINIONES DE CLIENTES",
+    "basedOn": "Basado en {{count}} reseñas",
+    "writeReview": "Escribir una reseña"
+  },
+  "userPanel": {
+    "account": "Cuenta",
+    "orders": "Pedidos",
+    "logout": "Cerrar sesión",
+    "email": "Email",
+    "name": "Nombre",
+    "lastName": "Apellidos",
+    "edit": "Editar",
+    "delivery": "Direcciones de envío",
+    "addNewAddress": "Añadir nueva dirección",
+    "status": "Estado",
+    "date": "Fecha"
+  },
+  "admin": {
+    "products": "Productos",
+    "orders": "Pedidos",
+    "blogs": "Blogs",
+    "addProduct": "Añadir producto",
+    "order": "Pedido #{{id}}",
+    "status": "Estado",
+    "date": "Fecha",
+    "deliveryDetails": "Detalles de entrega",
+    "email": "Email",
+    "phone": "Teléfono",
+    "postalCode": "Código postal",
+    "quantity": "Cantidad",
+    "price": "Precio",
+    "installationYes": "Sí",
+    "installationNo": "No"
+  },
+  "uploadForm": {
+    "title": "Añadir nuevo producto",
+    "name": "Nombre",
+    "price": "Precio",
+    "lastPrice": "Precio anterior",
+    "installationPrice": "Precio de instalación",
+    "description": "Descripción",
+    "demensions": "Dimensiones",
+    "composition": "Composición",
+    "compositionImage": "Imagen de composición",
+    "image": "Imagen",
+    "gallery": "Galería",
+    "movie": "Vídeo",
+    "submit": "Enviar"
+  },
+  "updateForm": {
+    "image": "Imagen",
+    "name": "Nombre",
+    "price": "Precio",
+    "lastPrice": "Precio anterior",
+    "installationPrice": "Precio de instalación",
+    "features": "Características",
+    "description": "Descripción",
+    "construction": "Estructura",
+    "demensions": "Dimensiones",
+    "galleryAdd": "Añadir imagen a la galería",
+    "apply": "Aplicar cambios"
+  },
+  "userDetailsForm": {
+    "editAccount": "Editar cuenta",
+    "firstName": "Nombre",
+    "lastName": "Apellidos",
+    "submit": "Guardar"
+  }
+}
+
+

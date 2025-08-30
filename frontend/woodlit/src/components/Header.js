@@ -27,7 +27,8 @@ useEffect(() => {
                <div className={`bMenu ${isOpen ? 'active' : ''}`}>
   <Link onClick={() => setIsOpen(!isOpen)} to="/">{t("header.swingSets")}</Link>
   <Link onClick={() => setIsOpen(!isOpen)} to="/shipping">{t("header.shipping")}</Link>
-  <Link onClick={() => setIsOpen(!isOpen)} to="/blogs">{t("header.blog")}</Link>
+  <Link onClick={() => setIsOpen(!isOpen)} to="/contacts">{t("header.contacts")}</Link>
+  {/* <Link onClick={() => setIsOpen(!isOpen)} to="/blogs">{t("header.blog")}</Link> */}
   <Link onClick={() => setIsOpen(!isOpen)} to="/assembly">{t("header.assembly")}</Link>
   <Link onClick={() => setIsOpen(!isOpen)} to="/about">{t("header.about")}</Link>
 </div>
@@ -59,7 +60,8 @@ useEffect(() => {
                <div className='navigation'>
   <Link to="/">{t("header.swingSets")}</Link>
   <Link to="/shipping">{t("header.shipping")}</Link>
-  <Link to="/blogs">{t("header.blog")}</Link>
+  <Link to="/contacts">{t("header.contacts")}</Link>
+  {/* <Link to="/blogs">{t("header.blog")}</Link> */}
   <Link to="/assembly">{t("header.assembly")}</Link>
   <Link to="/about">{t("header.about")}</Link>
 </div>

@@ -1,0 +1,234 @@
+{
+  "header": {
+    "swingSets": "Lekställningar",
+    "shipping": "Frakt",
+    "blog": "Blogg",
+    "assembly": "Montering",
+    "about": "Om oss",
+    "contacts": "Kontakt"
+  },
+  "footer": {
+    "navigation": "Navigering",
+    "followUs": "Följ oss",
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "rights": "Alla rättigheter förbehållna.",
+    "createdBy": "Skapad av"
+  },
+  "about": {
+    "title": "CedarKids",
+    "p1": "Sedan 2007 levererar CedarKids lekställningar av hög kvalitet till familjer i Europa. Som officiell distributör av Backyard Discovery erbjuder vi ett brett sortiment av cederträ-set för olika budgetar och trädgårdar. Till skillnad från gran eller tall ger vårt premium-ceder hållbarhet och, viktigast av allt, säkerhet.",
+    "p2": "Vi är ett familjeföretag inspirerat av våra egna barns glädje över sin lekplats i trädgården. Vi vet hur förväntan känns – därför levererar vi snabbt. På CedarKids säljer vi inte bara lekställningar; vi hjälper till att skapa trygga platser för glädje och familjeminnen."
+  },
+  "notFound": {
+    "title": "Sidan hittades inte",
+    "desc": "Länken kan vara felaktig eller så saknar du behörighet till denna sida.",
+    "backHome": "Till startsidan"
+  },
+  "assembly": {
+    "guide": "Monteringsguide",
+    "welcome": "Välkommen till en smidig montering med Woodlit-lekställningar! Designade för egen montering – en rolig och säker lekmiljö för dina barn.",
+    "before": "Före montering",
+    "during": "Under montering",
+    "after": "Efter montering",
+    "contactTitle": "Kontakt",
+    "contactDesc": "Har du frågor? Vi hjälper gärna! Mejla oss på info@cedarkids.eu så återkommer vi inom 24 timmar.",
+    "toolsTitle": "NÖDVÄNDIGA VERKTYG",
+    "toolsText": "Borrmaskin, skruvmejsel, hammare och måttband. Nycklar och bits ingår.",
+    "prepareTitle": "FÖRBERED DIN YTA",
+    "prepareText": "Välj en plan yta och rensa den. Lämna 1,8 m fritt runt setet; för gungor behövs extra utrymme motsvarande dubbla gungans höjd fram och bak.",
+    "safetyTitle": "SÄKERHETSÅTGÄRDER",
+    "safetyText": "Använd handskar och skyddsglasögon. Läs och följ instruktionerna noggrant. Kontrollera alla delar innan start. Håll barn och husdjur borta från arbetsområdet. Använd verktygen enligt anvisning. Vid osäkerhet – be om hjälp eller kontakta support.",
+    "timeTitle": "MONTERINGSTID",
+    "timeText": "4–20 timmar beroende på setets storlek och erfarenhet.",
+    "stepsTitle": "STEG FÖR STEG",
+    "stepsText": "Organisera delar och verktyg. Börja med basen och se till att den är i nivå. Lägg till gungor och delar och kontrollera fästen. Manualen har tydliga illustrationer. För interaktiv hjälp – BILT-appen. Support finns tillgänglig.",
+    "troubleTitle": "FELSÖKNING",
+    "troubleText": "Kört fast? Ingen fara. Vårt team hjälper dig så att allt flyter på.",
+    "maintenanceTitle": "UNDERHÅLLSTIPS",
+    "maintenanceText": "Skydda träet vartannat år med olja och lasyr. Kontrollera och efterdra beslag årligen. Inspektera regelbundet, särskilt före leksäsongen. Byt slitna eller skadade delar direkt.",
+    "checksTitle": "SÄKERHETSKONTROLLER",
+    "checksText": "Månatlig kontroll av lösa skruvar och slitage. Säkerställ stabilitet och nivå. Kontrollera underlag och trä. Testa gungfästen och slitage.",
+    "enjoyTitle": "NJUT AV DIN LEKSTÄLLNING",
+    "enjoyText": "Skapa minnen som består. Uppmuntra fantasi, utomhuslek och gemenskap. Njut av glädjen i din egen trädgård!"
+  },
+  "shipping": {
+    "partnerLabel": "FRAKTPARTNER:",
+    "partnerName": "Raben Logistics",
+    "partnerDesc": "Din glädje är i trygga händer! I över 10 år har vi litat på Raben som vår logistikpartner. Din lekställning levereras säkert av vårt erfarna team.",
+    "orderProcessingTitle": "ORDERHANTERING",
+    "orderProcessingDesc": "Snabb leverans garanteras! Vi skickar inom 2–3 arbetsdagar efter betalning.",
+    "estimatedDeliveryTitle": "BERÄKNAD LEVERANSTID",
+    "estimatedDeliveryDesc": "Glädjen anländer på ungefär en vecka – beroende på din plats.",
+    "warehouseTitle": "LAGERPLATS",
+    "warehouseName": "Polen, Łabiszyn",
+    "warehouseDesc": "Vi skickar från vårt nav i Toruń (Polen). För avhämtning eller egen transportör – kontakta oss.",
+    "pickupTitle": "HÄMTNINGSALTERNATIV",
+    "pickupDesc": "Vill du hämta själv eller använda egen transportör? Skriv till oss för instruktioner.",
+    "satisfaction": "Din nöjdhet är vår prioritet. Vi säkerställer en smidig och trygg leverans.",
+    "contact": "Frågor eller behov av extra hjälp? Kontakta oss gärna.",
+    "thankYou": "TACK FÖR ATT DU VALDE OSS FÖR ERA LEKSTUNDER!"
+  },
+  "contacts": {
+    "title": "Kontakta oss",
+    "subtitle": "Vi skulle gärna höra från dig! Skicka oss ett meddelande så svarar vi så snart som möjligt.",
+    "form": {
+      "title": "Skicka oss ett meddelande",
+      "name": "Fullständigt namn",
+      "email": "E-postadress",
+      "phone": "Telefonnummer",
+      "subject": "Ämne",
+      "message": "Ditt meddelande",
+      "submit": "Skicka meddelande",
+      "sending": "Skickar...",
+      "success": "Meddelande skickat framgångsrikt!",
+      "error": "Fel vid sändning av meddelande. Försök igen."
+    },
+    "info": {
+      "title": "Kontaktinformation",
+      "email": "E-post",
+      "phone": "Telefon",
+      "address": "Adress",
+      "addressValue": "Polen, Łabiszyn",
+      "hours": "Öppettider",
+      "hoursValue": "Måndag - Fredag: 9:00 - 18:00"
+    }
+  },
+  "cart": {
+    "empty": "Varukorgen är tom",
+    "delivery": "Frakt",
+    "installation": "installation",
+    "summary": "Sammanfattning",
+    "deliveryFree": "Frakt: gratis",
+    "total": "Totalpris",
+    "buy": "Köp",
+    "continue": "Fortsätt handla",
+    "addNewAddress": "Lägg till ny adress",
+    "phone": "Telefon",
+    "country": "Land",
+    "city": "Stad",
+    "address": "Adress",
+    "postalCode": "Postnummer",
+    "firstName": "Förnamn",
+    "lastName": "Efternamn",
+    "email": "E‑post"
+  },
+  "deliveryForm": {
+    "newAddress": "Ny adress",
+    "submit": "Skicka",
+    "postal": "Postnummer"
+  },
+  "login": {
+    "signIn": "Logga in",
+    "email": "email",
+    "password": "lösenord",
+    "submit": "Skicka",
+    "noAccount": "Har du inget konto?",
+    "signUp": "Registrera dig"
+  },
+  "order": {
+    "successTitle": "Beställning skapad",
+    "successDesc": "Tack för ditt köp! Din beställning har registrerats. En bekräftelse skickas inom kort via e‑post.",
+    "backHome": "Till startsidan"
+  },
+  "registration": {
+    "signUp": "Registrera dig",
+    "email": "E‑post",
+    "password": "Lösenord",
+    "firstName": "Förnamn",
+    "lastName": "Efternamn",
+    "submit": "Skicka",
+    "haveAccount": "Har du redan ett konto?",
+    "signIn": "Logga in"
+  },
+  "review": {
+    "add": "Lägg till omdöme",
+    "fullName": "Fullständigt namn",
+    "comment": "Din kommentar",
+    "gallery": "Galleri",
+    "submit": "Skicka"
+  },
+  "product": {
+    "installation": "installation",
+    "addToCart": "LÄGG I VARUKORG",
+    "setComposition": "Setets innehåll:",
+    "assembledDimensions": "Mått monterat",
+    "residentialOnly": "Produkten är avsedd ENDAST för HEMMABRUK. Användning i annan miljö gör garantin ogiltig.",
+    "whyTitle": "VARFÖR CEDARKIDS?",
+    "why1Title": "Design i hög kvalitet",
+    "why1Text": "Vi kombinerar stil och styrka: material, färger och helhetsintryck – en lekställning att vara stolt över i trädgården.",
+    "why2Title": "Testad och certifierad",
+    "why2Text": "Våra set uppfyller och överträffar ASTM‑standarder. Testade för barn upp till 12 år.",
+    "why3Title": "Garanti och montering",
+    "why3Text": "5 års begränsad garanti och 3D‑instruktioner i BILT®‑appen – stöd från första dagen.",
+    "customerReviews": "KUNDOMDÖMEN",
+    "basedOn": "Baserat på {{count}} omdömen",
+    "writeReview": "Skriv ett omdöme"
+  },
+  "userPanel": {
+    "account": "Konto",
+    "orders": "Beställningar",
+    "logout": "Logga ut",
+    "email": "E‑post",
+    "name": "Namn",
+    "lastName": "Efternamn",
+    "edit": "Redigera",
+    "delivery": "Leveransadresser",
+    "addNewAddress": "Lägg till ny adress",
+    "status": "Status",
+    "date": "Datum"
+  },
+  "admin": {
+    "products": "Produkter",
+    "orders": "Beställningar",
+    "blogs": "Bloggar",
+    "addProduct": "Lägg till produkt",
+    "order": "Beställning #{{id}}",
+    "status": "Status",
+    "date": "Datum",
+    "deliveryDetails": "Leveransuppgifter",
+    "email": "E‑post",
+    "phone": "Telefon",
+    "postalCode": "Postnummer",
+    "quantity": "Antal",
+    "price": "Pris",
+    "installationYes": "Ja",
+    "installationNo": "Nej"
+  },
+  "uploadForm": {
+    "title": "Lägg till ny produkt",
+    "name": "Namn",
+    "price": "Pris",
+    "lastPrice": "Tidigare pris",
+    "installationPrice": "Installationspris",
+    "description": "Beskrivning",
+    "demensions": "Mått",
+    "composition": "Sammansättning",
+    "compositionImage": "Sammansättningsbild",
+    "image": "Bild",
+    "gallery": "Galleri",
+    "movie": "Video",
+    "submit": "Skicka"
+  },
+  "updateForm": {
+    "image": "Bild",
+    "name": "Namn",
+    "price": "Pris",
+    "lastPrice": "Tidigare pris",
+    "installationPrice": "Installationspris",
+    "features": "Egenskaper",
+    "description": "Beskrivning",
+    "construction": "Konstruktion",
+    "demensions": "Mått",
+    "galleryAdd": "Lägg till bild i galleri",
+    "apply": "Tillämpa ändringar"
+  },
+  "userDetailsForm": {
+    "editAccount": "Redigera konto",
+    "firstName": "Förnamn",
+    "lastName": "Efternamn",
+    "submit": "Spara"
+  }
+}
+
+

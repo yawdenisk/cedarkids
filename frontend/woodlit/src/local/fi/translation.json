@@ -1,0 +1,234 @@
+{
+  "header": {
+    "swingSets": "Leikkisetit",
+    "shipping": "Toimitus",
+    "blog": "Blogi",
+    "assembly": "Asennus",
+    "about": "Tietoa meistä",
+    "contacts": "Yhteys"
+  },
+  "footer": {
+    "navigation": "Navigointi",
+    "followUs": "Seuraa meitä",
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "rights": "Kaikki oikeudet pidätetään.",
+    "createdBy": "Tekijä"
+  },
+  "about": {
+    "title": "CedarKids",
+    "p1": "Vuodesta 2007 alkaen CedarKids on tuonut laadukkaita leikkisettejä eurooppalaisille perheille. Backyard Discoveryn virallisena jakelijana tarjoamme laajan valikoiman setejä setripuusta – eri budjeteille ja pihakoille. Toisin kuin kuusi tai mänty, premium-setrimme takaa kestävyyden ja ennen kaikkea turvallisuuden.",
+    "p2": "Olemme perheyritys, jota inspiroi omien lastemme ilo pihan leikkipaikasta. Tiedämme, kuinka innokkaasti lapset odottavat – siksi toimitamme nopeasti. CedarKidsillä emme vain myy leikkisettejä; autamme luomaan turvallisia paikkoja ilolle ja perheen yhteisille muistoille."
+  },
+  "notFound": {
+    "title": "Sivua ei löytynyt",
+    "desc": "Linkki voi olla virheellinen tai sinulla ei ole oikeutta sivulle.",
+    "backHome": "Takaisin etusivulle"
+  },
+  "assembly": {
+    "guide": "Asennusopas",
+    "welcome": "Tervetuloa helppoon asennuskokemukseen Woodlit‑leikkisettien kanssa! Itseasennettavaksi suunniteltu – turvallinen ja hauska leikkialue lapsille.",
+    "before": "Ennen asennusta",
+    "during": "Asennuksen aikana",
+    "after": "Asennuksen jälkeen",
+    "contactTitle": "Yhteys",
+    "contactDesc": "Kysyttävää? Autamme mielellämme! Lähetä viesti osoitteeseen info@cedarkids.eu – vastaamme 24 h kuluessa.",
+    "toolsTitle": "TARVITTAVAT TYÖKALUT",
+    "toolsText": "Porakone, ruuvimeisseli, vasara ja mittanauha. Avaimet ja kärjet mukana.",
+    "prepareTitle": "VALMISTELE ALUE",
+    "prepareText": "Valitse tasainen alue ja siivoa se. Jätä 1,8 m tilaa setin ympärille; keinuille lisäksi tilaa eteen ja taakse kaksi kertaa keinun korkeuden verran.",
+    "safetyTitle": "TURVALLISUUS",
+    "safetyText": "Käytä hanskoja ja suojalaseja. Lue ja noudata ohjeita. Tarkista osat ennen aloitusta. Pidä lapset ja lemmikit poissa työalueelta. Käytä työkaluja ohjeiden mukaisesti. Epävarma? Pyydä apua tai ota yhteyttä tukeen.",
+    "timeTitle": "ASENNUKSEEN KULUVA AIKA",
+    "timeText": "4–20 tuntia setin koosta ja kokemuksesta riippuen.",
+    "stepsTitle": "VAIHEITTAIN",
+    "stepsText": "Järjestä osat ja työkalut. Aloita pohjasta ja suorista se. Lisää osat ja tarkista kiinnitykset. Ohjekirjassa on selkeät kuvat. Interaktiivista apua: BILT‑sovellus. Tukemme on käytettävissä.",
+    "troubleTitle": "VIANETSINTÄ",
+    "troubleText": "Tuli mutka matkaan? Ei hätää. Tiimimme auttaa, jotta asennus sujuu.",
+    "maintenanceTitle": "HUOLTOVINKIT",
+    "maintenanceText": "Suojaa puu joka toinen vuosi öljyllä ja kuultokäsittelyllä. Tarkista ja kiristä kiinnikkeet vuosittain. Tarkista setti säännöllisesti, erityisesti ennen leikkikautta. Vaihda kuluneet tai vaurioituneet osat heti.",
+    "checksTitle": "TURVALLISUUSTARKISTUKSET",
+    "checksText": "Kuukausittain: tarkista löysät ruuvit ja kuluminen. Varmista vakaus ja suoruus. Tarkista alusta ja puu. Testaa keinujen kiinnitys ja kuluma.",
+    "enjoyTitle": "NAUTI LEIKKISESTÄ",
+    "enjoyText": "Luo unohtumattomia hetkiä. Kannusta mielikuvitusta, ulkoleikkejä ja yhdessäoloa. Nauti ilosta omalla pihalla!"
+  },
+  "shipping": {
+    "partnerLabel": "TOIMITUSKUMPPANI:",
+    "partnerName": "Raben Logistics",
+    "partnerDesc": "Ilo on hyvissä käsissä! Olemme luottaneet Rabeniin yli 10 vuotta. Setti toimitetaan turvallisesti kokeneen tiimimme toimesta.",
+    "orderProcessingTitle": "TILAUKSEN KÄSITTELY",
+    "orderProcessingDesc": "Nopea lähetys taattu! Lähetys 2–3 arkipäivän kuluessa maksusta.",
+    "estimatedDeliveryTitle": "ARVIOITU TOIMITUSAIKA",
+    "estimatedDeliveryDesc": "Ilo saapuu yleensä noin viikossa – sijainnista riippuen.",
+    "warehouseTitle": "VARASTO",
+    "warehouseName": "Puola, Łabiszyn",
+    "warehouseDesc": "Lähetämme Toruńin (Puola) keskusvarastosta. Nouto tai oma kuljetus – ota yhteyttä.",
+    "pickupTitle": "NOUTOVAIHTOEHDOT",
+    "pickupDesc": "Haluatko noutaa itse tai käyttää omaa kuljettajaa? Pyydä ohjeet sähköpostilla.",
+    "satisfaction": "Tyytyväisyytesi on etusijalla. Varmistamme sujuvan ja turvallisen toimituksen.",
+    "contact": "Kysyttävää tai lisäapua? Ota meihin yhteyttä.",
+    "thankYou": "KIITOS, ETTÄ VALITSITTE MEIDÄT LEIKKIHETKIINNE!"
+  },
+  "contacts": {
+    "title": "Ota yhteyttä",
+    "subtitle": "Haluaisimme kuulla sinusta! Lähetä meille viesti ja vastaamme mahdollisimman pian.",
+    "form": {
+      "title": "Lähetä meille viesti",
+      "name": "Koko nimi",
+      "email": "Sähköpostiosoite",
+      "phone": "Puhelinnumero",
+      "subject": "Aihe",
+      "message": "Viestisi",
+      "submit": "Lähetä viesti",
+      "sending": "Lähetetään...",
+      "success": "Viesti lähetetty onnistuneesti!",
+      "error": "Virhe viestin lähettämisessä. Yritä uudelleen."
+    },
+    "info": {
+      "title": "Yhteystiedot",
+      "email": "Sähköposti",
+      "phone": "Puhelin",
+      "address": "Osoite",
+      "addressValue": "Puola, Łabiszyn",
+      "hours": "Aukioloajat",
+      "hoursValue": "Maanantai - Perjantai: 9:00 - 18:00"
+    }
+  },
+  "cart": {
+    "empty": "Ostoskori on tyhjä",
+    "delivery": "Toimitus",
+    "installation": "asennus",
+    "summary": "Yhteenveto",
+    "deliveryFree": "Toimitus: ilmainen",
+    "total": "Kokonaishinta",
+    "buy": "Osta",
+    "continue": "Jatka ostoksia",
+    "addNewAddress": "Lisää uusi osoite",
+    "phone": "Puhelin",
+    "country": "Maa",
+    "city": "Kaupunki",
+    "address": "Osoite",
+    "postalCode": "Postinumero",
+    "firstName": "Etunimi",
+    "lastName": "Sukunimi",
+    "email": "Sähköposti"
+  },
+  "deliveryForm": {
+    "newAddress": "Uusi osoite",
+    "submit": "Lähetä",
+    "postal": "Postinumero"
+  },
+  "login": {
+    "signIn": "Kirjaudu",
+    "email": "email",
+    "password": "salasana",
+    "submit": "Lähetä",
+    "noAccount": "Eikö sinulla ole tiliä?",
+    "signUp": "Rekisteröidy"
+  },
+  "order": {
+    "successTitle": "Tilaus luotu",
+    "successDesc": "Kiitos ostoksestasi! Tilauksesi on vastaanotettu. Saat pian vahvistusviestin sähköpostiin.",
+    "backHome": "Takaisin etusivulle"
+  },
+  "registration": {
+    "signUp": "Rekisteröidy",
+    "email": "Sähköposti",
+    "password": "Salasana",
+    "firstName": "Etunimi",
+    "lastName": "Sukunimi",
+    "submit": "Lähetä",
+    "haveAccount": "Onko sinulla jo tili?",
+    "signIn": "Kirjaudu"
+  },
+  "review": {
+    "add": "Lisää arvostelu",
+    "fullName": "Koko nimi",
+    "comment": "Kommenttisi",
+    "gallery": "Galleria",
+    "submit": "Lähetä"
+  },
+  "product": {
+    "installation": "asennus",
+    "addToCart": "LISÄÄ KORIIN",
+    "setComposition": "Setin sisältö:",
+    "assembledDimensions": "Mitat koottuna",
+    "residentialOnly": "Tuote on tarkoitettu VAIN KOTIKÄYTTÖÖN. Muu käyttö mitätöi takuun.",
+    "whyTitle": "MIKSI CEDARKIDS?",
+    "why1Title": "Laadukas muotoilu",
+    "why1Text": "Yhdistämme tyylin ja kestävyyden: materiaalit, värit ja kokonaisilme – setti, josta voit olla ylpeä pihalla.",
+    "why2Title": "Testattu ja sertifioitu",
+    "why2Text": "Settimme täyttävät ja ylittävät ASTM‑standardit. Testattu jopa 12‑vuotiaille.",
+    "why3Title": "Takuu ja asennus",
+    "why3Text": "5 vuoden rajoitettu takuu ja 3D‑asennusohjeet BILT®‑sovelluksessa – tuki alusta alkaen.",
+    "customerReviews": "ASIAKASARVOSTELUT",
+    "basedOn": "Perustuu {{count}} arvosteluun",
+    "writeReview": "Kirjoita arvostelu"
+  },
+  "userPanel": {
+    "account": "Tili",
+    "orders": "Tilaukset",
+    "logout": "Kirjaudu ulos",
+    "email": "Sähköposti",
+    "name": "Nimi",
+    "lastName": "Sukunimi",
+    "edit": "Muokkaa",
+    "delivery": "Toimitusosoitteet",
+    "addNewAddress": "Lisää uusi osoite",
+    "status": "Tila",
+    "date": "Päivä"
+  },
+  "admin": {
+    "products": "Tuotteet",
+    "orders": "Tilaukset",
+    "blogs": "Blogit",
+    "addProduct": "Lisää tuote",
+    "order": "Tilaus #{{id}}",
+    "status": "Tila",
+    "date": "Päivä",
+    "deliveryDetails": "Toimitustiedot",
+    "email": "Sähköposti",
+    "phone": "Puhelin",
+    "postalCode": "Postinumero",
+    "quantity": "Määrä",
+    "price": "Hinta",
+    "installationYes": "Kyllä",
+    "installationNo": "Ei"
+  },
+  "uploadForm": {
+    "title": "Lisää uusi tuote",
+    "name": "Nimi",
+    "price": "Hinta",
+    "lastPrice": "Edellinen hinta",
+    "installationPrice": "Asennushinta",
+    "description": "Kuvaus",
+    "demensions": "Mitat",
+    "composition": "Koostumus",
+    "compositionImage": "Koostumuskuva",
+    "image": "Kuva",
+    "gallery": "Galleria",
+    "movie": "Video",
+    "submit": "Lähetä"
+  },
+  "updateForm": {
+    "image": "Kuva",
+    "name": "Nimi",
+    "price": "Hinta",
+    "lastPrice": "Edellinen hinta",
+    "installationPrice": "Asennushinta",
+    "features": "Ominaisuudet",
+    "description": "Kuvaus",
+    "construction": "Rakenne",
+    "demensions": "Mitat",
+    "galleryAdd": "Lisää kuva galleriaan",
+    "apply": "Toteuta muutokset"
+  },
+  "userDetailsForm": {
+    "editAccount": "Muokkaa tiliä",
+    "firstName": "Etunimi",
+    "lastName": "Sukunimi",
+    "submit": "Tallenna"
+  }
+}
+
+

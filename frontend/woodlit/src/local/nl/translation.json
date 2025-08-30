@@ -1,0 +1,234 @@
+{
+  "header": {
+    "swingSets": "Schommelsets",
+    "shipping": "Verzending",
+    "blog": "Blog",
+    "assembly": "Montage",
+    "about": "Over ons",
+    "contacts": "Contact"
+  },
+  "footer": {
+    "navigation": "Navigatie",
+    "followUs": "Volg ons",
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "rights": "Alle rechten voorbehouden.",
+    "createdBy": "Gemaakt door"
+  },
+  "about": {
+    "title": "CedarKids",
+    "p1": "Sinds 2007 brengt CedarKids schommelsets van hoge kwaliteit naar gezinnen in Europa. Als officiële distributeur van Backyard Discovery bieden we een breed assortiment cederhouten sets voor elk budget en elke tuin. In tegenstelling tot spar of pijnboom garandeert ons premium cederhout duurzaamheid en bovenal veiligheid.",
+    "p2": "We zijn een familiebedrijf, geïnspireerd door de lol die onze eigen kinderen beleven aan hun speeltoestel in de tuin. We weten hoe groot de voorpret is, daarom leveren we snel. Bij CedarKids verkopen we niet alleen speelsets; we helpen mee aan veilige plekken vol plezier en mooie herinneringen."
+  },
+  "notFound": {
+    "title": "Pagina niet gevonden",
+    "desc": "De link is mogelijk onjuist of je hebt geen toegang tot deze pagina.",
+    "backHome": "Terug naar home"
+  },
+  "assembly": {
+    "guide": "Montagegids",
+    "welcome": "Welkom bij een vlotte montage met Woodlit‑schommelsets! Ontworpen voor zelfmontage – een veilige, leuke speelplek voor je kinderen.",
+    "before": "Voor de montage",
+    "during": "Tijdens de montage",
+    "after": "Na de montage",
+    "contactTitle": "Contact",
+    "contactDesc": "Nog vragen? We helpen je graag! Mail ons via info@cedarkids.eu – we reageren binnen 24 uur.",
+    "toolsTitle": "BENODIGDE TOOLS",
+    "toolsText": "Boormachine, schroevendraaier, hamer en rolmaat. Sleutels en bits inbegrepen.",
+    "prepareTitle": "JE RUIMTE VOORBEREIDEN",
+    "prepareText": "Kies een vlakke, opgeruimde plek. Houd 1,8 m vrije ruimte rondom; bij schommels extra ruimte gelijk aan tweemaal de schommelhoogte aan voor- en achterkant.",
+    "safetyTitle": "VEILIGHEIDSTIPS",
+    "safetyText": "Draag handschoenen en veiligheidsbril. Lees de handleiding goed. Controleer alle onderdelen vooraf. Houd kinderen en huisdieren weg van de montageplek. Gebruik gereedschap volgens de instructies. Twijfel? Vraag professionele hulp of neem contact op met support.",
+    "timeTitle": "MONTAGETIJD",
+    "timeText": "Tussen 4 en 20 uur, afhankelijk van setgrootte en ervaring.",
+    "stepsTitle": "STAP‑VOOR‑STAP",
+    "stepsText": "Orden onderdelen en gereedschap. Begin met de basis en zorg dat deze waterpas staat. Voeg schommels en onderdelen toe en controleer de bevestigingen. De handleiding bevat duidelijke illustraties. Voor interactieve hulp: BILT‑app. Support is beschikbaar.",
+    "troubleTitle": "PROBLEMEN OPLOSSEN",
+    "troubleText": "Een hapering? Geen zorgen. Ons team helpt je graag zodat alles soepel verloopt.",
+    "maintenanceTitle": "ONDERHOUDSTIPS",
+    "maintenanceText": "Bescherm het hout om de twee jaar met olie en beits. Controleer en draai jaarlijks het beslag aan. Inspecteer regelmatig, zeker vóór het speelseizoen. Vervang versleten of beschadigde onderdelen meteen.",
+    "checksTitle": "VEILIGHEIDSCONTROLES",
+    "checksText": "Controleer maandelijks op losse schroeven en slijtage. Waarborg stabiliteit en niveau. Controleer ondergrond en hout. Test de ophanging van schommels en slijtage.",
+    "enjoyTitle": "GENIET VAN JE SPEELSET",
+    "enjoyText": "Maak blijvende herinneringen. Stimuleer fantasie, buiten spelen en samen plezier. Geniet van de lol in je eigen tuin!"
+  },
+  "shipping": {
+    "partnerLabel": "VERZENDPARTNER:",
+    "partnerName": "Raben Logistics",
+    "partnerDesc": "Jullie plezier is in goede handen! Al meer dan 10 jaar vertrouwen we op Raben als onze logistieke partner. Jullie set wordt veilig bezorgd door ons ervaren team.",
+    "orderProcessingTitle": "BESTELVERWERKING",
+    "orderProcessingDesc": "Snelle verzending gegarandeerd! Verzending binnen 2–3 werkdagen na betaling.",
+    "estimatedDeliveryTitle": "GESCHATTE LEVERTIJD",
+    "estimatedDeliveryDesc": "Het plezier komt doorgaans binnen ongeveer een week, afhankelijk van je locatie.",
+    "warehouseTitle": "MAGAZIJNLOCATIE",
+    "warehouseName": "Polen, Łabiszyn",
+    "warehouseDesc": "We verzenden vanuit ons hub in Toruń (Polen). Voor afhalen of eigen koerier: neem contact met ons op.",
+    "pickupTitle": "AFHAALOPTIES",
+    "pickupDesc": "Liever afhalen of je eigen koerier? Mail ons voor instructies.",
+    "satisfaction": "Jullie tevredenheid staat voorop. We zorgen voor een soepel en veilig bezorgproces.",
+    "contact": "Vragen of extra hulp nodig? Neem gerust contact op.",
+    "thankYou": "BEDANKT DAT JULLIE ONS KIEZEN VOOR JULLIE SPEELMOMENTEN!"
+  },
+  "contacts": {
+    "title": "Neem contact op",
+    "subtitle": "We horen graag van je! Stuur ons een bericht en we reageren zo snel mogelijk.",
+    "form": {
+      "title": "Stuur ons een bericht",
+      "name": "Volledige naam",
+      "email": "E-mailadres",
+      "phone": "Telefoonnummer",
+      "subject": "Onderwerp",
+      "message": "Jouw bericht",
+      "submit": "Bericht versturen",
+      "sending": "Versturen...",
+      "success": "Bericht succesvol verzonden!",
+      "error": "Fout bij het versturen van het bericht. Probeer het opnieuw."
+    },
+    "info": {
+      "title": "Contactgegevens",
+      "email": "E-mail",
+      "phone": "Telefoon",
+      "address": "Adres",
+      "addressValue": "Polen, Łabiszyn",
+      "hours": "Openingstijden",
+      "hoursValue": "Maandag - Vrijdag: 9:00 - 18:00"
+    }
+  },
+  "cart": {
+    "empty": "De winkelwagen is leeg",
+    "delivery": "Verzending",
+    "installation": "installatie",
+    "summary": "Overzicht",
+    "deliveryFree": "Verzending: gratis",
+    "total": "Totaalprijs",
+    "buy": "Kopen",
+    "continue": "Verder winkelen",
+    "addNewAddress": "Nieuw adres toevoegen",
+    "phone": "Telefoon",
+    "country": "Land",
+    "city": "Stad",
+    "address": "Adres",
+    "postalCode": "Postcode",
+    "firstName": "Voornaam",
+    "lastName": "Achternaam",
+    "email": "E‑mail"
+  },
+  "deliveryForm": {
+    "newAddress": "Nieuw adres",
+    "submit": "Versturen",
+    "postal": "Postcode"
+  },
+  "login": {
+    "signIn": "Inloggen",
+    "email": "email",
+    "password": "wachtwoord",
+    "submit": "Versturen",
+    "noAccount": "Nog geen account?",
+    "signUp": "Registreren"
+  },
+  "order": {
+    "successTitle": "Bestelling succesvol aangemaakt",
+    "successDesc": "Bedankt voor je aankoop! Je bestelling is ontvangen. Je krijgt binnenkort een bevestigingsmail.",
+    "backHome": "Terug naar home"
+  },
+  "registration": {
+    "signUp": "Registreren",
+    "email": "E‑mail",
+    "password": "Wachtwoord",
+    "firstName": "Voornaam",
+    "lastName": "Achternaam",
+    "submit": "Versturen",
+    "haveAccount": "Heb je al een account?",
+    "signIn": "Inloggen"
+  },
+  "review": {
+    "add": "Beoordeling toevoegen",
+    "fullName": "Volledige naam",
+    "comment": "Je opmerking",
+    "gallery": "Galerij",
+    "submit": "Versturen"
+  },
+  "product": {
+    "installation": "installatie",
+    "addToCart": "IN WINKELWAGEN",
+    "setComposition": "Set‑samenstelling:",
+    "assembledDimensions": "Afmetingen gemonteerd",
+    "residentialOnly": "Alleen bestemd voor HUISHOUDELIJK GEBRUIK. Gebruik buiten deze setting maakt de garantie ongeldig.",
+    "whyTitle": "WAAROM CEDARKIDS?",
+    "why1Title": "Hoogwaardig design",
+    "why1Text": "We combineren stijl en stevigheid: materialen, kleuren en uitstraling – een set om trots op te zijn in je tuin.",
+    "why2Title": "Getest en gecertificeerd",
+    "why2Text": "Onze sets voldoen aan en overtreffen ASTM‑normen. Getest voor kinderen tot 12 jaar.",
+    "why3Title": "Garantie en montage",
+    "why3Text": "5 jaar beperkte garantie en 3D‑montage-instructies met de BILT®‑app – ondersteuning vanaf dag één.",
+    "customerReviews": "KLANTBEOORDELINGEN",
+    "basedOn": "Gebaseerd op {{count}} beoordelingen",
+    "writeReview": "Schrijf een beoordeling"
+  },
+  "userPanel": {
+    "account": "Account",
+    "orders": "Bestellingen",
+    "logout": "Uitloggen",
+    "email": "E‑mail",
+    "name": "Naam",
+    "lastName": "Achternaam",
+    "edit": "Bewerken",
+    "delivery": "Bezorgadressen",
+    "addNewAddress": "Nieuw adres toevoegen",
+    "status": "Status",
+    "date": "Datum"
+  },
+  "admin": {
+    "products": "Producten",
+    "orders": "Bestellingen",
+    "blogs": "Blogs",
+    "addProduct": "Product toevoegen",
+    "order": "Bestelling #{{id}}",
+    "status": "Status",
+    "date": "Datum",
+    "deliveryDetails": "Bezorggegevens",
+    "email": "E‑mail",
+    "phone": "Telefoon",
+    "postalCode": "Postcode",
+    "quantity": "Aantal",
+    "price": "Prijs",
+    "installationYes": "Ja",
+    "installationNo": "Nee"
+  },
+  "uploadForm": {
+    "title": "Nieuw product toevoegen",
+    "name": "Naam",
+    "price": "Prijs",
+    "lastPrice": "Vorige prijs",
+    "installationPrice": "Installatieprijs",
+    "description": "Beschrijving",
+    "demensions": "Afmetingen",
+    "composition": "Samenstelling",
+    "compositionImage": "Samenstellingsafbeelding",
+    "image": "Afbeelding",
+    "gallery": "Galerij",
+    "movie": "Video",
+    "submit": "Versturen"
+  },
+  "updateForm": {
+    "image": "Afbeelding",
+    "name": "Naam",
+    "price": "Prijs",
+    "lastPrice": "Vorige prijs",
+    "installationPrice": "Installatieprijs",
+    "features": "Eigenschappen",
+    "description": "Beschrijving",
+    "construction": "Constructie",
+    "demensions": "Afmetingen",
+    "galleryAdd": "Afbeelding aan galerij toevoegen",
+    "apply": "Wijzigingen toepassen"
+  },
+  "userDetailsForm": {
+    "editAccount": "Account bewerken",
+    "firstName": "Voornaam",
+    "lastName": "Achternaam",
+    "submit": "Opslaan"
+  }
+}
+
+

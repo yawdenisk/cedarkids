@@ -3,7 +3,9 @@ import axios from 'axios';
 import React, {useState} from 'react'
 import config from '../config'
 import loadingIcon from '../images/loading.svg'
+import { useTranslation } from 'react-i18next'
 export default function UploadProductForm({setShowUploadProductForm}) {
+    const { t } = useTranslation();
     const [name, setName] = useState(null);
     const [price, setPrice] = useState(null);
     const [lastPrice, setLastPrice] = useState(null);
@@ -59,24 +61,24 @@ if (loading == true) {
     return (
         <div className='uploadProductForm'>
             <form onSubmit={sendForm}>
-                <p>Add new Product</p>
-                <input name='name' onChange={(e) => setName(e.target.value)} placeholder='Name'></input> 
-                <input name='price' onChange={(e) => setPrice(e.target.value)} placeholder='Price'></input>
-                <input name='lastPrice' onChange={(e) => setLastPrice(e.target.value)} placeholder='Last Price'></input>
-                <input name='installationPrice' onChange={(e) => setInstallationPrice(e.target.value)} placeholder='Installation Price'></input>
-                <input name='description' onChange={(e) => setDescription(e.target.value)} placeholder='Description'></input>
-                <textarea name='demensions' onChange={(e) => setDemensions(e.target.value)} placeholder='Demensions'></textarea>
-                <textarea name='composition' onChange={(e) => setComposition(e.target.value)} placeholder='Composition'></textarea>
-                <p>Composition image</p>
+                <p>{t('uploadForm.title')}</p>
+                <input name='name' onChange={(e) => setName(e.target.value)} placeholder={t('uploadForm.name')}></input> 
+                <input name='price' onChange={(e) => setPrice(e.target.value)} placeholder={t('uploadForm.price')}></input>
+                <input name='lastPrice' onChange={(e) => setLastPrice(e.target.value)} placeholder={t('uploadForm.lastPrice')}></input>
+                <input name='installationPrice' onChange={(e) => setInstallationPrice(e.target.value)} placeholder={t('uploadForm.installationPrice')}></input>
+                <input name='description' onChange={(e) => setDescription(e.target.value)} placeholder={t('uploadForm.description')}></input>
+                <textarea name='demensions' onChange={(e) => setDemensions(e.target.value)} placeholder={t('uploadForm.demensions')}></textarea>
+                <textarea name='composition' onChange={(e) => setComposition(e.target.value)} placeholder={t('uploadForm.composition')}></textarea>
+                <p>{t('uploadForm.compositionImage')}</p>
                     <input type='file' onChange={(e) => setCompositionImage(e.target.files[0])} placeholder='Composition Image' />
-                <p>Image</p>
+                <p>{t('uploadForm.image')}</p>
                     <input type='file' onChange={(e) => setImage(e.target.files[0])} placeholder='Image' />
-                     <p>Gallery</p>
-                <input type='file' multiple onChange={(e) => setGalleryImages(Array.from(e.target.files))} placeholder='Gallery'></input>
-                    <p>Movie</p>
+                     <p>{t('uploadForm.gallery')}</p>
+                <input type='file' multiple onChange={(e) => setGalleryImages(Array.from(e.target.files))} placeholder={t('uploadForm.gallery')}></input>
+                    <p>{t('uploadForm.movie')}</p>
                     <input type='file' onChange={(e) => setMovie(e.target.files[0])} placeholder='Movie' />
             
-                <button type='submit'>Submit</button>
+                <button type='submit'>{t('uploadForm.submit')}</button>
             </form>
         </div>
     )

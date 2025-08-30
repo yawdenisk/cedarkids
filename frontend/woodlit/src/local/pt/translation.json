@@ -1,0 +1,234 @@
+{
+  "header": {
+    "swingSets": "Conjuntos de baloiços",
+    "shipping": "Envio",
+    "blog": "Blog",
+    "assembly": "Montagem",
+    "about": "Sobre nós",
+    "contacts": "Contacto"
+  },
+  "footer": {
+    "navigation": "Navegação",
+    "followUs": "Siga-nos",
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "rights": "Todos os direitos reservados.",
+    "createdBy": "Criado por"
+  },
+  "about": {
+    "title": "CedarKids",
+    "p1": "Desde 2007, a CedarKids leva conjuntos de baloiços de alta qualidade às famílias europeias. Como distribuidor oficial da Backyard Discovery, oferecemos uma ampla gama de estruturas em cedro para diferentes orçamentos e tamanhos de jardim. Ao contrário do abeto ou pinho, o nosso cedro premium garante durabilidade e, acima de tudo, segurança.",
+    "p2": "Somos uma empresa familiar inspirada pela alegria dos nossos próprios filhos com a sua área de brincadeiras no jardim. Sabemos como a espera é difícil, por isso apostamos numa entrega rápida. Na CedarKids não vendemos apenas baloiços — ajudamos a criar espaços seguros, cheios de diversão e boas memórias em família."
+  },
+  "notFound": {
+    "title": "Página não encontrada",
+    "desc": "O link pode estar incorreto ou não tem acesso a esta página.",
+    "backHome": "Voltar ao início"
+  },
+  "assembly": {
+    "guide": "Guia de montagem",
+    "welcome": "Bem-vindo a uma montagem simples com os conjuntos Woodlit! Pensados para auto‑montagem, criam um espaço divertido e seguro para as crianças.",
+    "before": "Antes da montagem",
+    "during": "Durante a montagem",
+    "after": "Depois da montagem",
+    "contactTitle": "Contacto",
+    "contactDesc": "Tem dúvidas? Teremos todo o gosto em ajudar. Escreva para info@cedarkids.eu e respondemos em 24 horas.",
+    "toolsTitle": "FERRAMENTAS NECESSÁRIAS",
+    "toolsText": "Berbequim, chave de fendas, martelo e fita métrica. Chaves e pontas incluídas.",
+    "prepareTitle": "PREPARAR O ESPAÇO",
+    "prepareText": "Escolha uma área plana e desimpedida. Deixe 1,8 m de folga à volta do conjunto; se incluir baloiços, preveja ainda o dobro da altura do baloiço à frente e atrás.",
+    "safetyTitle": "MEDIDAS DE SEGURANÇA",
+    "safetyText": "Use luvas e óculos de proteção. Leia e siga o manual. Verifique todas as peças antes de começar. Mantenha crianças e animais afastados. Utilize as ferramentas conforme indicado. Em caso de dúvida, procure ajuda profissional ou contacte o nosso suporte.",
+    "timeTitle": "TEMPO DE MONTAGEM",
+    "timeText": "Entre 4 e 20 horas, conforme o tamanho do conjunto e a experiência.",
+    "stepsTitle": "GUIA PASSO A PASSO",
+    "stepsText": "Organize peças e ferramentas. Comece pela base, garantindo que fica nivelada. Adicione baloiços e acessórios, verificando as fixações. O manual inclui ilustrações claras. Para ajuda interativa, descarregue a app BILT. O nosso suporte está disponível.",
+    "troubleTitle": "RESOLUÇÃO DE PROBLEMAS",
+    "troubleText": "Surgiu um contratempo? Sem problema. A nossa equipa está pronta para ajudar e manter tudo a correr bem.",
+    "maintenanceTitle": "DICAS DE MANUTENÇÃO",
+    "maintenanceText": "Aplique óleo e tinta/protetor a cada dois anos para proteger a madeira. Verifique e aperte a ferragem anualmente. Inspecione regularmente, especialmente antes da época de brincadeiras. Substitua imediatamente qualquer peça gasta ou danificada.",
+    "checksTitle": "VERIFICAÇÕES DE SEGURANÇA",
+    "checksText": "Todos os meses, verifique parafusos, desgaste e estabilidade. Confirme o nivelamento, o estado do piso e da madeira. Teste o encaixe dos baloiços e a ausência de desgaste.",
+    "enjoyTitle": "APROVEITE A SUA ÁREA DE BRINCADEIRA",
+    "enjoyText": "Crie memórias inesquecíveis. Estimule a imaginação, a atividade ao ar livre e a partilha. Desfrute da diversão no seu jardim!"
+  },
+  "shipping": {
+    "partnerLabel": "PARCEIRO DE ENVIO:",
+    "partnerName": "Raben Logistics",
+    "partnerDesc": "A sua alegria está em boas mãos! Há mais de 10 anos confiamos na Raben como nosso parceiro logístico. O seu conjunto será entregue com segurança pela nossa equipa experiente.",
+    "orderProcessingTitle": "PROCESSAMENTO DA ENCOMENDA",
+    "orderProcessingDesc": "Expedição rápida garantida! Envio em 2–3 dias úteis após o pagamento.",
+    "estimatedDeliveryTitle": "PRAZO ESTIMADO DE ENTREGA",
+    "estimatedDeliveryDesc": "A diversão chega em cerca de uma semana, dependendo da sua localização.",
+    "warehouseTitle": "ARMAZÉM",
+    "warehouseName": "Polónia, Łabiszyn",
+    "warehouseDesc": "Expedimos a partir do nosso hub em Toruń (Polónia). Para levantamento ou escolha de transportadora, fale connosco.",
+    "pickupTitle": "OPÇÕES DE LEVANTAMENTO",
+    "pickupDesc": "Prefere levantar ou usar a sua transportadora? Escreva-nos para obter instruções.",
+    "satisfaction": "A sua satisfação é a nossa prioridade. Garantimos uma entrega suave e segura.",
+    "contact": "Tem perguntas ou precisa de ajuda adicional? Não hesite em contactar-nos.",
+    "thankYou": "OBRIGADO POR NOS ESCOLHER PARA OS SEUS MOMENTOS DE BRINCADEIRA!"
+  },
+  "contacts": {
+    "title": "Entre em contacto",
+    "subtitle": "Gostaríamos de saber de si! Envie-nos uma mensagem e responderemos o mais rapidamente possível.",
+    "form": {
+      "title": "Envie-nos uma mensagem",
+      "name": "Nome completo",
+      "email": "Endereço de e-mail",
+      "phone": "Número de telefone",
+      "subject": "Assunto",
+      "message": "A sua mensagem",
+      "submit": "Enviar mensagem",
+      "sending": "A enviar...",
+      "success": "Mensagem enviada com sucesso!",
+      "error": "Erro ao enviar a mensagem. Por favor, tente novamente."
+    },
+    "info": {
+      "title": "Informações de contacto",
+      "email": "E-mail",
+      "phone": "Telefone",
+      "address": "Morada",
+      "addressValue": "Polónia, Łabiszyn",
+      "hours": "Horário de funcionamento",
+      "hoursValue": "Segunda - Sexta: 9:00 - 18:00"
+    }
+  },
+  "cart": {
+    "empty": "O carrinho está vazio",
+    "delivery": "Envio",
+    "installation": "instalação",
+    "summary": "Resumo",
+    "deliveryFree": "Envio: grátis",
+    "total": "Preço total",
+    "buy": "Comprar",
+    "continue": "Continuar a comprar",
+    "addNewAddress": "Adicionar novo endereço",
+    "phone": "Telefone",
+    "country": "País",
+    "city": "Cidade",
+    "address": "Morada",
+    "postalCode": "Código postal",
+    "firstName": "Nome",
+    "lastName": "Apelido",
+    "email": "E-mail"
+  },
+  "deliveryForm": {
+    "newAddress": "Novo endereço",
+    "submit": "Enviar",
+    "postal": "Código postal"
+  },
+  "login": {
+    "signIn": "Iniciar sessão",
+    "email": "email",
+    "password": "palavra‑passe",
+    "submit": "Enviar",
+    "noAccount": "Não tem conta?",
+    "signUp": "Registar"
+  },
+  "order": {
+    "successTitle": "Encomenda criada com sucesso",
+    "successDesc": "Obrigado pela sua compra! A sua encomenda foi registada. Em breve receberá um e‑mail de confirmação.",
+    "backHome": "Voltar ao início"
+  },
+  "registration": {
+    "signUp": "Registar",
+    "email": "E‑mail",
+    "password": "Palavra‑passe",
+    "firstName": "Nome",
+    "lastName": "Apelido",
+    "submit": "Enviar",
+    "haveAccount": "Já tem conta?",
+    "signIn": "Iniciar sessão"
+  },
+  "review": {
+    "add": "Adicionar avaliação",
+    "fullName": "Nome completo",
+    "comment": "O seu comentário",
+    "gallery": "Galeria",
+    "submit": "Enviar"
+  },
+  "product": {
+    "installation": "instalação",
+    "addToCart": "ADICIONAR AO CARRINHO",
+    "setComposition": "Composição do conjunto:",
+    "assembledDimensions": "Dimensões montado",
+    "residentialOnly": "Produto destinado EXCLUSIVAMENTE A USO RESIDENCIAL. O uso fora deste âmbito anula a garantia.",
+    "whyTitle": "PORQUÊ CEDARKIDS?",
+    "why1Title": "Design de alta qualidade",
+    "why1Text": "Cuidamos do estilo e da robustez: materiais, cores e estética – um conjunto de que se vai orgulhar no seu jardim.",
+    "why2Title": "Testado e certificado",
+    "why2Text": "Cumprimos e superamos as normas ASTM. Testado para crianças até 12 anos.",
+    "why3Title": "Garantia e montagem",
+    "why3Text": "Garantia limitada de 5 anos e instruções 3D interativas com a app BILT® – apoio desde o primeiro dia.",
+    "customerReviews": "AVALIAÇÕES DE CLIENTES",
+    "basedOn": "Com base em {{count}} avaliações",
+    "writeReview": "Escrever avaliação"
+  },
+  "userPanel": {
+    "account": "Conta",
+    "orders": "Encomendas",
+    "logout": "Terminar sessão",
+    "email": "E‑mail",
+    "name": "Nome",
+    "lastName": "Apelido",
+    "edit": "Editar",
+    "delivery": "Endereços de envio",
+    "addNewAddress": "Adicionar novo endereço",
+    "status": "Estado",
+    "date": "Data"
+  },
+  "admin": {
+    "products": "Produtos",
+    "orders": "Encomendas",
+    "blogs": "Blogs",
+    "addProduct": "Adicionar produto",
+    "order": "Encomenda #{{id}}",
+    "status": "Estado",
+    "date": "Data",
+    "deliveryDetails": "Detalhes de envio",
+    "email": "E‑mail",
+    "phone": "Telefone",
+    "postalCode": "Código postal",
+    "quantity": "Quantidade",
+    "price": "Preço",
+    "installationYes": "Sim",
+    "installationNo": "Não"
+  },
+  "uploadForm": {
+    "title": "Adicionar novo produto",
+    "name": "Nome",
+    "price": "Preço",
+    "lastPrice": "Preço anterior",
+    "installationPrice": "Preço de instalação",
+    "description": "Descrição",
+    "demensions": "Dimensões",
+    "composition": "Composição",
+    "compositionImage": "Imagem da composição",
+    "image": "Imagem",
+    "gallery": "Galeria",
+    "movie": "Vídeo",
+    "submit": "Enviar"
+  },
+  "updateForm": {
+    "image": "Imagem",
+    "name": "Nome",
+    "price": "Preço",
+    "lastPrice": "Preço anterior",
+    "installationPrice": "Preço de instalação",
+    "features": "Características",
+    "description": "Descrição",
+    "construction": "Estrutura",
+    "demensions": "Dimensões",
+    "galleryAdd": "Adicionar imagem à galeria",
+    "apply": "Aplicar alterações"
+  },
+  "userDetailsForm": {
+    "editAccount": "Editar conta",
+    "firstName": "Nome",
+    "lastName": "Apelido",
+    "submit": "Guardar"
+  }
+}
+
+

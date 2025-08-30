@@ -1,0 +1,234 @@
+{
+  "header": {
+    "swingSets": "Settijiet tal-logħob",
+    "shipping": "Tbaħħir",
+    "blog": "Blog",
+    "assembly": "Assemplar",
+    "about": "Dwarna",
+    "contacts": "Kuntatti"
+  },
+  "footer": {
+    "navigation": "Navigazzjoni",
+    "followUs": "Segwina",
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "rights": "Id-drittijiet kollha riżervati.",
+    "createdBy": "Maħluq minn"
+  },
+  "about": {
+    "title": "CedarKids",
+    "p1": "Mill-2007, CedarKids iġġib settijiet tal-logħob ta’ kwalità għolja lill-familji madwar l-Ewropa. Bħala distributur uffiċjali ta’ Backyard Discovery, noffru firxa wiesgħa ta’ settijiet tal-injam taċ-ċedru għal kull baġit u daqs ta’ ġnien. B’differenza mill-prinjol jew l-arżnu, iċ-ċedru premium tagħna jiggarantixxi durabilità u, fuq kollox, sigurtà.",
+    "p2": "Aħna negozju tal-familja, ispirat mill-ferħ ta’ wliedna fil-bitħa. Nafu kemm huma għaġġlin – għalhekk inwasslu malajr. F’CedarKids ma nbiegħux biss settijiet; ngħinu noħolqu spazji siguri, mimlija pjaċir u tifkiriet tal-familja."
+  },
+  "notFound": {
+    "title": "Paġna ma nstabitx",
+    "desc": "Jista’ jkun li l-link mhuwiex korrett jew m’għandekx aċċess għal din il-paġna.",
+    "backHome": "Lura għad-dar"
+  },
+  "assembly": {
+    "guide": "Gwida għall-assemblaġġ",
+    "welcome": "Merħba f’esperjenza faċli ta’ assemblaġġ bis-settijiet Woodlit! Maħsuba għall-assemblaġġ tiegħek – spazju sigur u divertenti għat-tfal.",
+    "before": "Qabel l-assemblaġġ",
+    "during": "Matul l-assemblaġġ",
+    "after": "Wara l-assemblaġġ",
+    "contactTitle": "Kuntatt",
+    "contactDesc": "Għandek mistoqsijiet? Ninsabu lesti ngħinuk! Ibgħatilna email fuq info@cedarkids.eu u nwieġbu fi 24 siegħa.",
+    "toolsTitle": "GĦODDA MEĦTIEĠA",
+    "toolsText": "Drill, skrewwdriver, martell u tejp tal-kejl. Ewlenin u bits inklużi.",
+    "prepareTitle": "IPPREPARA L-ISPAS TIEGĦEK",
+    "prepareText": "Agħżel żona ċatta u naddafha. Ħalli 1.8 m madwar is-sett; għal swings, żid spazju daqs darbtejn l-għoli tal‑swing quddiem u wara.",
+    "safetyTitle": "SIGURTÀ",
+    "safetyText": "Ilbes ingwanti u nuċċalijiet protettivi. Aqra u segwi l-istruzzjonijiet. Iċċekkja l-partijiet qabel tibda. Żomm it-tfal u l-annimali ’l bogħod. Uża l-għodda kif indikat. M’intix ċert? Fittex għajnuna jew ikkuntattja l-appoġġ.",
+    "timeTitle": "ĦIN TA’ ASSEMBLAĠĠ",
+    "timeText": "4–20 siegħa skont id-daqs u l-esperjenza.",
+    "stepsTitle": "PASS WARA PASS",
+    "stepsText": "Organizza partijiet u għodda. Ibda bil-bażi u iġġibha fil‑livell. Żid l-elementi u iċċekkja l-iffissar. Il-manwal għandu illustrazzjonijiet ċari. Għajnuna interattiva: app BILT. Appoġġ disponibbli.",
+    "troubleTitle": "FEJN HEMM PROBLEMA",
+    "troubleText": "Problema żgħira? Tħassibx. It-tim tagħna jiggwidak biex kollox jimxi bla xkiel.",
+    "maintenanceTitle": "PARIRI TA’ MANUTENZJONI",
+    "maintenanceText": "Ipproteġi l-injam kull sentejn b’żejt u bejċ. Iċċekkja u issikkah is‑sewwa kull sena. Iċċekkja regolarment, speċjalment qabel l‑istaġun. Ibdel il‑partijiet imġarrfa jew bil‑ħsara minnufih.",
+    "checksTitle": "VERIFIKI TA’ SIGURTÀ",
+    "checksText": "Verifika kull xahar għal viti maħlula u xedd. Iżgura l-istabbiltà u l-livell. Iċċekkja l-bażi u l-injam. Ittestja l-imtappend jew swings u x-xedd.",
+    "enjoyTitle": "GĦODDIQ BIL‑SETT TIEGĦEK",
+    "enjoyText": "Oħloq tifkiriet li jdumu. Iħeġġeġ l-immaġinazzjoni, il‑logħob barra u l‑ħin flimkien. Igawdi l‑ferħ fil‑ġnien tiegħek!"
+  },
+  "shipping": {
+    "partnerLabel": "SIEĦEB TAL‑KUNSINJA:",
+    "partnerName": "Raben Logistics",
+    "partnerDesc": "Il‑ferħ tiegħek f’idejn tajbin! Għal aktar minn 10 snin nersqu fuq Raben. Is‑sett tiegħek jiġi kkunsinnat b’mod sigur mit‑tim esperjenzat tagħna.",
+    "orderProcessingTitle": "IPPROĊESSAR TAL‑ORDNI",
+    "orderProcessingDesc": "Kunsinna malajr garantita! Fi żmien 2–3 ijiem tax‑xogħol wara l‑ħlas.",
+    "estimatedDeliveryTitle": "ĦIN STMAT TA' KUNSINJA",
+    "estimatedDeliveryDesc": "Il‑ferħ jasal madwar ġimgħa – skont il‑lok.",
+    "warehouseTitle": "MAĦŻEN",
+    "warehouseName": "Polonja, Łabiszyn",
+    "warehouseDesc": "Nibagħtu mill‑hub tagħna f'Torun (Polonja). Għall‑ġbir jew kurrier tiegħek – ikkuntattjana.",
+    "pickupTitle": "GĦAŻLIET TA' ĠBIR",
+    "pickupDesc": "Trid tiġbor int jew tuża kurrier tiegħek? Ibgħatilna għall‑istruzzjonijiet.",
+    "satisfaction": "Is‑sodisfazzjon tiegħek hu prijorità. Niżguraw kunsinja bla xkiel u sigura.",
+    "contact": "Mistoqsijiet jew bżonn għajnuna? Ikkuntattjana bla tlaqliq.",
+    "thankYou": "GRAZZI TALLI GĦAŻILTNA GĦALL‑MUMENTI TA' LOGĦOB TIEGĦEK!"
+  },
+  "contacts": {
+    "title": "Ikkuntattjana",
+    "subtitle": "Nixtiequ nisimgħu minnek! Ibgħatilna messaġġ u nwieġbu kemm nistgħu malajr.",
+    "form": {
+      "title": "Ibgħatilna messaġġ",
+      "name": "Isem sħiħ",
+      "email": "Indirizz tal-email",
+      "phone": "Numru tat-telefon",
+      "subject": "Suġġett",
+      "message": "Il-messaġġ tiegħek",
+      "submit": "Ibgħat messaġġ",
+      "sending": "Qed jintbagħat...",
+      "success": "Il-messaġġ intbagħat b'suċċess!",
+      "error": "Żball fl-ibgħat tal-messaġġ. Jekk jogħġbok ipprova mill-ġdid."
+    },
+    "info": {
+      "title": "Informazzjoni tal-kuntatt",
+      "email": "Email",
+      "phone": "Telefon",
+      "address": "Indirizz",
+      "addressValue": "Polonja, Łabiszyn",
+      "hours": "Ħinijiet tax-xogħol",
+      "hoursValue": "It-Tnejn - Il-Ġimgħa: 9:00 - 18:00"
+    }
+  },
+  "cart": {
+    "empty": "Il‑karrettun huwa vojt",
+    "delivery": "Kunsinna",
+    "installation": "installazzjoni",
+    "summary": "Sommarju",
+    "deliveryFree": "Kunsinna: b’xejn",
+    "total": "Prezz totali",
+    "buy": "Ixtri",
+    "continue": "Kompli tixtri",
+    "addNewAddress": "Żid indirizz ġdid",
+    "phone": "Telefon",
+    "country": "Pajjiż",
+    "city": "Belt",
+    "address": "Indirizz",
+    "postalCode": "Kodiċi postali",
+    "firstName": "Isem",
+    "lastName": "Kunjem",
+    "email": "Email"
+  },
+  "deliveryForm": {
+    "newAddress": "Indirizz ġdid",
+    "submit": "Ibgħat",
+    "postal": "Kodiċi postali"
+  },
+  "login": {
+    "signIn": "Idħol",
+    "email": "email",
+    "password": "password",
+    "submit": "Ibgħat",
+    "noAccount": "M’għandekx kont?",
+    "signUp": "Irreġistra"
+  },
+  "order": {
+    "successTitle": "Ordni maħluqa b’suċċess",
+    "successDesc": "Grazzi tal‑xiri! L‑ordni tiegħek ġiet riċevuta. Dalwaqt tirċievi email ta’ konferma.",
+    "backHome": "Lura għad‑dar"
+  },
+  "registration": {
+    "signUp": "Irreġistra",
+    "email": "Email",
+    "password": "Password",
+    "firstName": "Isem",
+    "lastName": "Kunjem",
+    "submit": "Ibgħat",
+    "haveAccount": "Diġà għandek kont?",
+    "signIn": "Idħol"
+  },
+  "review": {
+    "add": "Żid reviżjoni",
+    "fullName": "Isem sħiħ",
+    "comment": "Il‑kumment tiegħek",
+    "gallery": "Gallerija",
+    "submit": "Ibgħat"
+  },
+  "product": {
+    "installation": "installazzjoni",
+    "addToCart": "ŻID FIL‑KARRETTUN",
+    "setComposition": "Kompożizzjoni tas‑sett:",
+    "assembledDimensions": "Dimensjonijiet miġbura",
+    "residentialOnly": "Prodott maħsub GĦALL‑UŻU RESIDENZJALI BISS. Użu barra minn hekk jannulla l‑garanzija.",
+    "whyTitle": "GĦALIEX CEDARKIDS?",
+    "why1Title": "Disinn ta’ kwalità għolja",
+    "why1Text": "Ngħaqdu l‑istil u s‑saħħa: materjali, kuluri u dehra – sett li tista’ tiftaħar bih fil‑ġnien.",
+    "why2Title": "Ittestjat u ċċertifikat",
+    "why2Text": "Is‑setts tagħna jilħqu u jaqilgħu l‑istandards ASTM. Ittestjati sa 12‑il sena.",
+    "why3Title": "Garanzija u assemblaġġ",
+    "why3Text": "Garanzija limitata ta’ 5 snin u struzzjonijiet 3D fl‑app BILT® – appoġġ mill‑ewwel ġurnata.",
+    "customerReviews": "REVIŻJONIJIET TAL‑KLJENTI",
+    "basedOn": "Ibbażat fuq {{count}} reviżjonijiet",
+    "writeReview": "Ikteb reviżjoni"
+  },
+  "userPanel": {
+    "account": "Kont",
+    "orders": "Ordni",
+    "logout": "Oħroġ",
+    "email": "Email",
+    "name": "Isem",
+    "lastName": "Kunjem",
+    "edit": "Editja",
+    "delivery": "Indirizzi ta’ kunsinna",
+    "addNewAddress": "Żid indirizz ġdid",
+    "status": "Status",
+    "date": "Data"
+  },
+  "admin": {
+    "products": "Prodotti",
+    "orders": "Ordni",
+    "blogs": "Blogs",
+    "addProduct": "Żid prodott",
+    "order": "Ordni #{{id}}",
+    "status": "Status",
+    "date": "Data",
+    "deliveryDetails": "Dettalji tal‑kunsinna",
+    "email": "Email",
+    "phone": "Telefon",
+    "postalCode": "Kodiċi postali",
+    "quantity": "Kwantità",
+    "price": "Prezz",
+    "installationYes": "Iva",
+    "installationNo": "Le"
+  },
+  "uploadForm": {
+    "title": "Żid prodott ġdid",
+    "name": "Isem",
+    "price": "Prezz",
+    "lastPrice": "Prezz preċedenti",
+    "installationPrice": "Prezz tal‑installazzjoni",
+    "description": "Deskrizzjoni",
+    "demensions": "Dimensjonijiet",
+    "composition": "Kompożizzjoni",
+    "compositionImage": "Immaġni tal‑kompożizzjoni",
+    "image": "Immaġni",
+    "gallery": "Gallerija",
+    "movie": "Vidjo",
+    "submit": "Ibgħat"
+  },
+  "updateForm": {
+    "image": "Immaġni",
+    "name": "Isem",
+    "price": "Prezz",
+    "lastPrice": "Prezz preċedenti",
+    "installationPrice": "Prezz tal‑installazzjoni",
+    "features": "Karatteristiċi",
+    "description": "Deskrizzjoni",
+    "construction": "Kostruzzjoni",
+    "demensions": "Dimensjonijiet",
+    "galleryAdd": "Żid immaġni mal‑gallerija",
+    "apply": "Applika bidliet"
+  },
+  "userDetailsForm": {
+    "editAccount": "Editja kont",
+    "firstName": "Isem",
+    "lastName": "Kunjem",
+    "submit": "Issejvja"
+  }
+}
+
+

@@ -1,8 +1,10 @@
 import axios from 'axios';
 import React, {useState} from 'react'
 import config from '../config'
+import { useTranslation } from 'react-i18next'
 
 export default function DeliveryDetailsForm({setShowUserDetailsForm}) {
+    const { t } = useTranslation();
     const [firstName, setFirstName] = useState(null);
     const [lastName, setLastName] = useState(null);
 
@@ -43,11 +45,11 @@ export default function DeliveryDetailsForm({setShowUserDetailsForm}) {
 )}
         <div className='popUpForm'>
             <form onSubmit={sendForm}>
-                <p>Edit account</p>
+                <p>{t('userDetailsForm.editAccount')}</p>
                 <span className="close" onClick={() => setShowUserDetailsForm(false)}>&#10006;</span>
-                <input name='firstName' onChange={(e) => setFirstName(e.target.value)} placeholder='First name'></input>
-                <input name='lastName' onChange={(e) => setLastName(e.target.value)} placeholder='Last name'></input>
-                <button type='submit'>Submit</button>
+                <input name='firstName' onChange={(e) => setFirstName(e.target.value)} placeholder={t('userDetailsForm.firstName')}></input>
+                <input name='lastName' onChange={(e) => setLastName(e.target.value)} placeholder={t('userDetailsForm.lastName')}></input>
+                <button type='submit'>{t('userDetailsForm.submit')}</button>
             </form>
         </div>
         </>

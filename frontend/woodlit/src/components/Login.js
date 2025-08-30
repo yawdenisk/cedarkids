@@ -3,8 +3,10 @@ import React, {useEffect, useState} from 'react'
 import google from '../images/google.png'
 import {Link, useNavigate} from 'react-router-dom';
 import config from '../config'
+import { useTranslation } from 'react-i18next'
 
 export default function Login() {
+    const { t } = useTranslation();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState(null);
@@ -40,12 +42,12 @@ export default function Login() {
     </div>
 )}
             <form className='formLogin' onSubmit={handleSubmit}>
-                <p>Sing in</p>
-                <input type='text' name='email' placeholder='email' onChange={(e) => setEmail(e.target.value)}></input>
-                <input type='text' name='password' placeholder='password'
+                <p>{t('login.signIn')}</p>
+                <input type='text' name='email' placeholder={t('login.email')} onChange={(e) => setEmail(e.target.value)}></input>
+                <input type='text' name='password' placeholder={t('login.password')}
                        onChange={(e) => setPassword(e.target.value)}></input>
-                <button type='submit'>Submit</button>
-                <p>Don't have an account? <Link to="/register">Sign up</Link></p>
+                <button type='submit'>{t('login.submit')}</button>
+                <p>{t('login.noAccount')} <Link to="/register">{t('login.signUp')}</Link></p>
             </form>
         </>
     )

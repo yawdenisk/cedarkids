@@ -1,0 +1,235 @@
+{
+  "header": {
+    "swingSets": "Huśtawki",
+    "shipping": "Wysyłka",
+    "blog": "Blog",
+    "assembly": "Montaż",
+    "about": "O nas",
+    "contacts": "Kontakt"
+  },
+  "footer": {
+    "navigation": "Nawigacja",
+    "followUs": "Obserwuj nas",
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "rights": "Wszelkie prawa zastrzeżone.",
+    "createdBy": "Stworzone przez"
+  },
+  "about": {
+    "title": "CedarKids",
+    "p1": "Założona w 2007 roku firma Cedarkids dostarcza rodzinom w Europie wysokiej jakości zestawy huśtawek. Jako oficjalny dystrybutor Backyard Discovery oferujemy szeroką gamę zestawów z cedru, dopasowanych do różnych budżetów i rozmiarów ogrodów. W przeciwieństwie do konkurencji używającej świerku lub sosny, nasz cedr zapewnia trwałość i bezpieczeństwo.",
+    "p2": "Jesteśmy firmą rodzinną inspirowaną miłością naszych dzieci do ogrodowej huśtawki. Rozumiemy radość, jaką przynosi, i dbamy o szybką dostawę. W CedarKids nie tylko sprzedajemy zestawy – tworzymy bezpieczne przestrzenie radości i przygód."
+  },
+  "notFound": {
+    "title": "Strona nie znaleziona",
+    "desc": "Być może kliknąłeś nieprawidłowy link lub nie masz dostępu do tej strony.",
+    "backHome": "Powrót na stronę główną"
+  },
+  "assembly": {
+    "guide": "Instrukcja montażu",
+    "welcome": "Witamy w łatwym montażu zestawów Woodlit! Nasze zestawy są przeznaczone do samodzielnego montażu i zapewniają dzieciom bezpieczną przestrzeń do zabawy.",
+    "before": "Przed montażem",
+    "during": "W trakcie montażu",
+    "after": "Po montażu",
+    "contactTitle": "Kontakt",
+    "contactDesc": "Masz pytania? Chętnie pomożemy! Napisz do nas na info@cedarkids.eu, a odpowiemy w ciągu 24 godzin.",
+    "toolsTitle": "NARZĘDZIA WYMAGANE",
+    "toolsText": "Wiertarka, śrubokręt, młotek, miarka. Klucze i końcówki w zestawie.",
+    "prepareTitle": "PRZYGOTOWANIE MIEJSCA",
+    "prepareText": "Wybierz płaskie miejsce i usuń zanieczyszczenia. Zapewnij 1,8 m luzu wokół zestawu. Dla huśtawek dodaj zapas równy podwójnej wysokości huśtawki z przodu i z tyłu.",
+    "safetyTitle": "ŚRODKI BEZPIECZEŃSTWA",
+    "safetyText": "Noś rękawice i okulary. Dokładnie zapoznaj się z instrukcją. Sprawdź części pod kątem uszkodzeń. Trzymaj dzieci i zwierzęta z dala od miejsca montażu. Używaj narzędzi prawidłowo. W razie wątpliwości skontaktuj się z pomocą.",
+    "timeTitle": "CZAS MONTAŻU",
+    "timeText": "Od 4 do 20 godzin, zależnie od rozmiaru zestawu i umiejętności.",
+    "stepsTitle": "PRZEWODNIK KROK PO KROKU",
+    "stepsText": "Uporządkuj części i narzędzia. Złóż podstawę i wypoziomuj. Dołącz huśtawki i elementy, sprawdzając mocowania. Szczegóły w instrukcji i aplikacji BILT. Wsparcie dostępne.",
+    "troubleTitle": "ROZWIĄZYWANIE PROBLEMÓW",
+    "troubleText": "Masz trudności? Skontaktuj się z naszym wsparciem. Pomożemy w bezproblemowym montażu.",
+    "maintenanceTitle": "WSKAZÓWKI KONSERWACYJNE",
+    "maintenanceText": "Co dwa lata nakładaj olej i bejcę. Raz w roku dokręcaj elementy. Regularnie sprawdzaj zużycie i uszkodzenia.",
+    "checksTitle": "KONTROLE BEZPIECZEŃSTWA",
+    "checksText": "Miesięcznie sprawdzaj luźne śruby i zużycie. Upewnij się, że zestaw jest stabilny. Oceń podłoże. Sprawdź drewno. Testuj mocowanie huśtawek.",
+    "enjoyTitle": "CIESZ SIĘ ZESTAWEM",
+    "enjoyText": "Ciesz się nowym zestawem, budując rodzinne wspomnienia i zachęcając dzieci do zabawy."
+  },
+  "shipping": {
+    "partnerLabel": "PARTNER WYSYŁKOWY:",
+    "partnerName": "Raben Logistics",
+    "partnerDesc": "Twoja radość jest w dobrych rękach! Od ponad 10 lat ufamy Raben jako naszemu partnerowi logistycznemu. Twój zestaw zostanie bezpiecznie dostarczony przez nasz doświadczony zespół.",
+    "orderProcessingTitle": "PRZETWARZANIE ZAMÓWIENIA",
+    "orderProcessingDesc": "Gwarantujemy szybką wysyłkę! Wysyłka w ciągu 2–3 dni roboczych od płatności.",
+    "estimatedDeliveryTitle": "SZACOWANY CZAS DOSTAWY",
+    "estimatedDeliveryDesc": "Dostawa zwykle w około tydzień, zależnie od lokalizacji.",
+    "warehouseTitle": "LOKALIZACJA MAGAZYNU",
+    "warehouseName": "Polska, Łabiszyn",
+    "warehouseDesc": "Wysyłka z naszego centrum w Toruniu. W sprawie odbioru lub własnego kuriera – skontaktuj się z nami.",
+    "pickupTitle": "OPCJE ODBIORU",
+    "pickupDesc": "Wolisz odbiór osobisty lub własnego kuriera? Skontaktuj się z nami po szczegóły.",
+    "satisfaction": "Twoje zadowolenie jest naszym priorytetem. Dbamy o sprawną dostawę.",
+    "contact": "Masz pytania lub potrzebujesz pomocy? Skontaktuj się z nami.",
+    "thankYou": "DZIĘKUJEMY, ŻE WYBRAŁEŚ NAS!"
+  },
+  "contacts": {
+    "title": "Skontaktuj się z nami",
+    "subtitle": "Chętnie usłyszymy od Ciebie! Wyślij nam wiadomość, a odpowiemy jak najszybciej.",
+    "form": {
+      "title": "Wyślij nam wiadomość",
+      "name": "Pełne imię",
+      "email": "Adres e-mail",
+      "phone": "Numer telefonu",
+      "subject": "Temat",
+      "message": "Twoja wiadomość",
+      "submit": "Wyślij wiadomość",
+      "sending": "Wysyłanie...",
+      "success": "Wiadomość wysłana pomyślnie!",
+      "error": "Błąd podczas wysyłania wiadomości. Spróbuj ponownie."
+    },
+    "info": {
+      "title": "Informacje kontaktowe",
+      "email": "E-mail",
+      "phone": "Telefon",
+      "address": "Adres",
+      "addressValue": "Polska, Łabiszyn",
+      "hours": "Godziny pracy",
+      "hoursValue": "Poniedziałek - Piątek: 9:00 - 18:00"
+    }
+  },
+  "cart": {
+    "empty": "Koszyk jest pusty",
+    "delivery": "Dostawa",
+    "installation": "montaż",
+    "summary": "Podsumowanie",
+    "deliveryFree": "Dostawa: gratis",
+    "total": "Cena całkowita",
+    "buy": "Kup",
+    "continue": "Kontynuuj zakupy",
+    "addNewAddress": "Dodaj nowy adres",
+    "phone": "Telefon",
+    "country": "Kraj",
+    "city": "Miasto",
+    "address": "Adres",
+    "postalCode": "Kod pocztowy",
+    "firstName": "Imię",
+    "lastName": "Nazwisko",
+    "email": "Email"
+  },
+  "deliveryForm": {
+    "newAddress": "Nowy adres",
+    "submit": "Wyślij",
+    "postal": "Kod pocztowy"
+  },
+  "login": {
+    "signIn": "Zaloguj się",
+    "email": "email",
+    "password": "hasło",
+    "submit": "Wyślij",
+    "noAccount": "Nie masz konta?",
+    "signUp": "Zarejestruj się"
+  },
+  "order": {
+    "successTitle": "Zamówienie utworzone pomyślnie",
+    "successDesc": "Dziękujemy za zakup! Twoje zamówienie zostało przyjęte. Wkrótce otrzymasz e-mail z potwierdzeniem.",
+    "backHome": "Powrót na stronę główną"
+  },
+  "registration": {
+    "signUp": "Zarejestruj się",
+    "email": "Email",
+    "password": "Hasło",
+    "firstName": "Imię",
+    "lastName": "Nazwisko",
+    "submit": "Wyślij",
+    "haveAccount": "Masz już konto?",
+    "signIn": "Zaloguj się"
+  },
+  "review": {
+    "add": "Dodaj nową opinię",
+    "fullName": "Imię i nazwisko",
+    "comment": "Twój komentarz",
+    "gallery": "Galeria",
+    "submit": "Wyślij"
+  },
+  "product": {
+    "installation": "montaż",
+    "addToCart": "DODAJ DO KOSZYKA",
+    "setComposition": "Zawartość zestawu:",
+    "assembledDimensions": "Wymiary po złożeniu",
+    "residentialOnly": "Produkt przeznaczony WYŁĄCZNIE DO UŻYTKU DOMOWEGO. Użycie poza środowiskiem domowym unieważnia gwarancję.",
+    "whyTitle": "DLACZEGO HUŚTAWKI CEDARKIDS?",
+    "why1Title": "Wysoka jakość wykonania",
+    "why1Text": "Dbamy, aby zestawy były stylowe i wytrzymałe. Materiały, kolory i estetyka – to zestawy, z których będziesz dumny w swoim ogrodzie.",
+    "why2Title": "Testowane i certyfikowane",
+    "why2Text": "Nasze zestawy spełniają i przewyższają normy ASTM. Testujemy je dla dzieci do 12 lat.",
+    "why3Title": "Gwarancja i montaż",
+    "why3Text": "5-letnia ograniczona gwarancja oraz 3D instrukcje montażu w aplikacji BILT® zapewnią wsparcie na lata zabawy.",
+    "customerReviews": "OPINIE KLIENTÓW",
+    "basedOn": "Na podstawie {{count}} opinii",
+    "writeReview": "Napisz opinię"
+  },
+  "userPanel": {
+    "account": "Konto",
+    "orders": "Zamówienia",
+    "logout": "Wyloguj",
+    "email": "Email",
+    "name": "Imię",
+    "lastName": "Nazwisko",
+    "edit": "Edytuj",
+    "delivery": "Dostawa",
+    "addNewAddress": "Dodaj nowy adres",
+    "status": "Status",
+    "date": "Data"
+  }
+  ,
+  "admin": {
+    "products": "Produkty",
+    "orders": "Zamówienia",
+    "blogs": "Blogi",
+    "addProduct": "Dodaj produkt",
+    "order": "Zamówienie #{{id}}",
+    "status": "Status",
+    "date": "Data",
+    "deliveryDetails": "Dane dostawy",
+    "email": "Email",
+    "phone": "Telefon",
+    "postalCode": "Kod pocztowy",
+    "quantity": "Ilość",
+    "price": "Cena",
+    "installationYes": "Tak",
+    "installationNo": "Nie"
+  },
+  "uploadForm": {
+    "title": "Dodaj nowy produkt",
+    "name": "Nazwa",
+    "price": "Cena",
+    "lastPrice": "Cena poprzednia",
+    "installationPrice": "Cena montażu",
+    "description": "Opis",
+    "demensions": "Wymiary",
+    "composition": "Zawartość",
+    "compositionImage": "Obraz składu",
+    "image": "Obraz",
+    "gallery": "Galeria",
+    "movie": "Film",
+    "submit": "Wyślij"
+  },
+  "updateForm": {
+    "image": "Obraz",
+    "name": "Nazwa",
+    "price": "Cena",
+    "lastPrice": "Cena poprzednia",
+    "installationPrice": "Cena montażu",
+    "features": "Cechy",
+    "description": "Opis",
+    "construction": "Konstrukcja",
+    "demensions": "Wymiary",
+    "galleryAdd": "Dodaj obraz do galerii",
+    "apply": "Zatwierdź zmiany"
+  },
+  "userDetailsForm": {
+    "editAccount": "Edytuj konto",
+    "firstName": "Imię",
+    "lastName": "Nazwisko",
+    "submit": "Wyślij"
+  }
+}
+
+

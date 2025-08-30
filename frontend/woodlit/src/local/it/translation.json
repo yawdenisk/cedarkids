@@ -1,0 +1,234 @@
+{
+  "header": {
+    "swingSets": "Set da gioco",
+    "shipping": "Spedizione",
+    "blog": "Blog",
+    "assembly": "Montaggio",
+    "about": "Chi siamo",
+    "contacts": "Contatti"
+  },
+  "footer": {
+    "navigation": "Navigazione",
+    "followUs": "Seguici",
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "rights": "Tutti i diritti riservati.",
+    "createdBy": "Creato da"
+  },
+  "about": {
+    "title": "CedarKids",
+    "p1": "Dal 2007, CedarKids porta set da gioco di alta qualità alle famiglie europee. Come distributore ufficiale Backyard Discovery, offriamo un’ampia gamma di strutture in cedro per ogni budget e dimensione di giardino. Diversamente da abete o pino, il nostro cedro premium garantisce durata e soprattutto sicurezza.",
+    "p2": "Siamo un’azienda a conduzione familiare, ispirata dall’entusiasmo dei nostri figli per l’altalena in giardino. Conosciamo la gioia che porta e puntiamo su consegne rapide. Da CedarKids non vendiamo solo giochi: aiutiamo a creare spazi sicuri, pieni di divertimento e ricordi in famiglia."
+  },
+  "notFound": {
+    "title": "Pagina non trovata",
+    "desc": "Il link potrebbe essere errato o non hai accesso a questa pagina.",
+    "backHome": "Torna alla home"
+  },
+  "assembly": {
+    "guide": "Guida al montaggio",
+    "welcome": "Benvenuto in un montaggio semplice con i set Woodlit! Progettati per l’auto‑montaggio, offrono un’area sicura e divertente per i bambini.",
+    "before": "Prima del montaggio",
+    "during": "Durante il montaggio",
+    "after": "Dopo il montaggio",
+    "contactTitle": "Contatti",
+    "contactDesc": "Hai domande? Siamo felici di aiutarti! Scrivici a info@cedarkids.eu, risponderemo entro 24 ore.",
+    "toolsTitle": "ATTREZZI NECESSARI",
+    "toolsText": "Trapano, cacciavite, martello e metro. Chiavi e inserti inclusi.",
+    "prepareTitle": "PREPARA IL TUO SPAZIO",
+    "prepareText": "Scegli un’area piana e libera. Lascia 1,8 m di spazio attorno al set; se include altalene, prevedi ulteriore spazio pari al doppio dell’altezza dell’altalena davanti e dietro.",
+    "safetyTitle": "PRECAUZIONI DI SICUREZZA",
+    "safetyText": "Indossa guanti e occhiali protettivi. Leggi e segui le istruzioni. Controlla i componenti prima di iniziare. Tieni bambini e animali lontani. Usa gli attrezzi come indicato. In caso di dubbi, richiedi aiuto professionale o contatta l’assistenza.",
+    "timeTitle": "TEMPO DI MONTAGGIO",
+    "timeText": "Da 4 a 20 ore a seconda della dimensione del set e dell’esperienza.",
+    "stepsTitle": "GUIDA PASSO PASSO",
+    "stepsText": "Organizza componenti e attrezzi. Inizia dalla base e livellala. Aggiungi altalene e accessori verificando i fissaggi. Il manuale include illustrazioni chiare. Per un aiuto interattivo, scarica l’app BILT. L’assistenza è disponibile.",
+    "troubleTitle": "RISOLUZIONE PROBLEMI",
+    "troubleText": "Un intoppo? Nessun problema. Il nostro team è pronto a guidarti per un montaggio senza pensieri.",
+    "maintenanceTitle": "CONSIGLI DI MANUTENZIONE",
+    "maintenanceText": "Applica olio e finiture protettive ogni due anni. Controlla e stringi la ferramenta ogni anno. Ispeziona regolarmente, soprattutto prima della stagione di gioco. Sostituisci subito i pezzi usurati o danneggiati.",
+    "checksTitle": "VERIFICHE DI SICUREZZA",
+    "checksText": "Ogni mese verifica viti, usura e stabilità. Assicura livello e solidità. Controlla terreno e legno. Testa l’aggancio delle altalene e l’assenza di usura.",
+    "enjoyTitle": "GODITI IL TUO SET DA GIOCO",
+    "enjoyText": "Crea ricordi indimenticabili. Incoraggia il gioco creativo, l’attività all’aperto e la condivisione. Divertiti in giardino!"
+  },
+  "shipping": {
+    "partnerLabel": "PARTNER DI SPEDIZIONE:",
+    "partnerName": "Raben Logistics",
+    "partnerDesc": "La tua gioia è in buone mani! Da oltre 10 anni ci affidiamo a Raben come partner logistico. Il tuo set arriverà in sicurezza grazie al nostro team esperto.",
+    "orderProcessingTitle": "ELABORAZIONE ORDINE",
+    "orderProcessingDesc": "Spedizione rapida garantita! Invio entro 2–3 giorni lavorativi dal pagamento.",
+    "estimatedDeliveryTitle": "TEMPI DI CONSEGNA STIMATI",
+    "estimatedDeliveryDesc": "Il divertimento arriva in circa una settimana, in base alla tua zona.",
+    "warehouseTitle": "MAGAZZINO",
+    "warehouseName": "Polonia, Łabiszyn",
+    "warehouseDesc": "Spediamo dal nostro hub di Toruń (Polonia). Per ritiro o corriere di fiducia, contattaci.",
+    "pickupTitle": "OPZIONI DI RITIRO",
+    "pickupDesc": "Preferisci il ritiro o un tuo corriere? Scrivici per le istruzioni.",
+    "satisfaction": "La tua soddisfazione è la nostra priorità. Assicuriamo una consegna fluida e sicura.",
+    "contact": "Domande o bisogno di aiuto? Non esitare a contattarci.",
+    "thankYou": "GRAZIE PER AVERCI SCELTO PER I MOMENTI DI GIOCO!"
+  },
+  "contacts": {
+    "title": "Contattaci",
+    "subtitle": "Ci piacerebbe sentire da te! Inviaci un messaggio e ti risponderemo il prima possibile.",
+    "form": {
+      "title": "Inviaci un messaggio",
+      "name": "Nome completo",
+      "email": "Indirizzo email",
+      "phone": "Numero di telefono",
+      "subject": "Oggetto",
+      "message": "Il tuo messaggio",
+      "submit": "Invia messaggio",
+      "sending": "Invio in corso...",
+      "success": "Messaggio inviato con successo!",
+      "error": "Errore nell'invio del messaggio. Riprova."
+    },
+    "info": {
+      "title": "Informazioni di contatto",
+      "email": "Email",
+      "phone": "Telefono",
+      "address": "Indirizzo",
+      "addressValue": "Polonia, Łabiszyn",
+      "hours": "Orari di apertura",
+      "hoursValue": "Lunedì - Venerdì: 9:00 - 18:00"
+    }
+  },
+  "cart": {
+    "empty": "Il carrello è vuoto",
+    "delivery": "Spedizione",
+    "installation": "installazione",
+    "summary": "Riepilogo",
+    "deliveryFree": "Spedizione: gratuita",
+    "total": "Prezzo totale",
+    "buy": "Acquista",
+    "continue": "Continua lo shopping",
+    "addNewAddress": "Aggiungi nuovo indirizzo",
+    "phone": "Telefono",
+    "country": "Paese",
+    "city": "Città",
+    "address": "Indirizzo",
+    "postalCode": "CAP",
+    "firstName": "Nome",
+    "lastName": "Cognome",
+    "email": "E-mail"
+  },
+  "deliveryForm": {
+    "newAddress": "Nuovo indirizzo",
+    "submit": "Invia",
+    "postal": "CAP"
+  },
+  "login": {
+    "signIn": "Accedi",
+    "email": "email",
+    "password": "password",
+    "submit": "Invia",
+    "noAccount": "Non hai un account?",
+    "signUp": "Registrati"
+  },
+  "order": {
+    "successTitle": "Ordine creato con successo",
+    "successDesc": "Grazie per l’acquisto! Il tuo ordine è stato registrato. Riceverai a breve una e‑mail di conferma.",
+    "backHome": "Torna alla home"
+  },
+  "registration": {
+    "signUp": "Registrati",
+    "email": "E‑mail",
+    "password": "Password",
+    "firstName": "Nome",
+    "lastName": "Cognome",
+    "submit": "Invia",
+    "haveAccount": "Hai già un account?",
+    "signIn": "Accedi"
+  },
+  "review": {
+    "add": "Aggiungi recensione",
+    "fullName": "Nome e cognome",
+    "comment": "Il tuo commento",
+    "gallery": "Galleria",
+    "submit": "Invia"
+  },
+  "product": {
+    "installation": "installazione",
+    "addToCart": "AGGIUNGI AL CARRELLO",
+    "setComposition": "Composizione del set:",
+    "assembledDimensions": "Dimensioni assemblato",
+    "residentialOnly": "Prodotto destinato ESCLUSIVAMENTE ALL’USO RESIDENZIALE. L’uso al di fuori di questo ambito invalida la garanzia.",
+    "whyTitle": "PERCHÉ CEDARKIDS?",
+    "why1Title": "Design di alta qualità",
+    "why1Text": "Curiamo stile e robustezza: materiali, colori ed estetica – un set di cui essere orgogliosi in giardino.",
+    "why2Title": "Testato e certificato",
+    "why2Text": "I nostri set rispettano e superano gli standard ASTM. Testati fino a 12 anni.",
+    "why3Title": "Garanzia e montaggio",
+    "why3Text": "Garanzia limitata 5 anni e istruzioni 3D interattive con l’app BILT® – supporto fin dall’inizio.",
+    "customerReviews": "RECENSIONI CLIENTI",
+    "basedOn": "Basato su {{count}} recensioni",
+    "writeReview": "Scrivi una recensione"
+  },
+  "userPanel": {
+    "account": "Account",
+    "orders": "Ordini",
+    "logout": "Esci",
+    "email": "E‑mail",
+    "name": "Nome",
+    "lastName": "Cognome",
+    "edit": "Modifica",
+    "delivery": "Indirizzi di consegna",
+    "addNewAddress": "Aggiungi nuovo indirizzo",
+    "status": "Stato",
+    "date": "Data"
+  },
+  "admin": {
+    "products": "Prodotti",
+    "orders": "Ordini",
+    "blogs": "Blog",
+    "addProduct": "Aggiungi prodotto",
+    "order": "Ordine #{{id}}",
+    "status": "Stato",
+    "date": "Data",
+    "deliveryDetails": "Dettagli di consegna",
+    "email": "E‑mail",
+    "phone": "Telefono",
+    "postalCode": "CAP",
+    "quantity": "Quantità",
+    "price": "Prezzo",
+    "installationYes": "Sì",
+    "installationNo": "No"
+  },
+  "uploadForm": {
+    "title": "Aggiungi nuovo prodotto",
+    "name": "Nome",
+    "price": "Prezzo",
+    "lastPrice": "Prezzo precedente",
+    "installationPrice": "Prezzo installazione",
+    "description": "Descrizione",
+    "demensions": "Dimensioni",
+    "composition": "Composizione",
+    "compositionImage": "Immagine composizione",
+    "image": "Immagine",
+    "gallery": "Galleria",
+    "movie": "Video",
+    "submit": "Invia"
+  },
+  "updateForm": {
+    "image": "Immagine",
+    "name": "Nome",
+    "price": "Prezzo",
+    "lastPrice": "Prezzo precedente",
+    "installationPrice": "Prezzo installazione",
+    "features": "Caratteristiche",
+    "description": "Descrizione",
+    "construction": "Struttura",
+    "demensions": "Dimensioni",
+    "galleryAdd": "Aggiungi immagine alla galleria",
+    "apply": "Applica modifiche"
+  },
+  "userDetailsForm": {
+    "editAccount": "Modifica account",
+    "firstName": "Nome",
+    "lastName": "Cognome",
+    "submit": "Salva"
+  }
+}
+
+

@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, {useEffect, useMemo, useState} from 'react';
-import {useParams} from 'react-router-dom';
+import {useNavigate, useParams} from 'react-router-dom';
 import loading from '../images/loading.svg';
 import quality from '../images/quality.webp';
 import warranty from '../images/warranty.webp';
@@ -8,8 +8,10 @@ import cert from '../images/cert.webp';
 import ReviewForm from './ReviewForm';
 import userIcon from '../images/user.png'
 import config from '../config'
+import { useTranslation } from 'react-i18next'
 
 export default function ProductDetails({cart, setCart}) {
+    const { t } = useTranslation();
     const {id} = useParams();
     const [product, setProduct] = useState(null);
     const [gallery, setGallery] = useState([]);
@@ -20,7 +22,7 @@ export default function ProductDetails({cart, setCart}) {
     const [showImage, setShowImage] = useState(false);
     const [currentImage
         , setCurrentImage] = useState();
-
+   const navigate = useNavigate();
     useEffect(() => {
         axios.get(`${config.API_URL}/api/product/get/${id}`)
             .then(response => {
@@ -55,6 +57,7 @@ export default function ProductDetails({cart, setCart}) {
         } else {
             setCart([...cart, {product: product, quantity: 1, installation: installation}]);
         }
+        navigate("/cart")
     }
 
     const formattedDemensions = product.demensions ? product.demensions.split("\n").map((line, index) => (
@@ -149,9 +152,9 @@ export default function ProductDetails({cart, setCart}) {
                         </div>
                         <div className='installation'>
                             <input type='checkbox' checked={installation} onChange={handleChangeCheckbox}></input>
-                            <p>installation + € {(product.installationPrice).toFixed(2)}</p>
+                            <p>{t('product.installation')} + € {(product.installationPrice).toFixed(2)}</p>
                         </div>
-                        <button onClick={() => addToCart(product.id, installation)}>ADD TO CART</button>
+                        <button onClick={() => addToCart(product.id, installation)}>{t('product.addToCart')}</button>
                         <div className="description">
                             <p>{product.description}</p>
                         </div>
@@ -161,7 +164,7 @@ export default function ProductDetails({cart, setCart}) {
 <div className='composition'>
                     <img src={product.compositionImage} alt="Composition"/>
                     <ul>
-                        <p>Set composition:</p>
+                        <p>{t('product.setComposition')}</p>
                         {product.composition && product.composition.split("\n").map((item, index) => (
                             <li key={index}>{item}</li>
                         ))}
@@ -175,38 +178,32 @@ export default function ProductDetails({cart, setCart}) {
 }
 
                 <div className='demensions'>
-                    <p>Assembled Dimensions</p>
+                    <p>{t('product.assembledDimensions')}</p>
                     <p>{formattedDemensions}</p>
-                    <p>This product is intended for RESIDENTIAL USE ONLY. Any use of this product outside of a
-                        residential
-                        setting will make the product warranty null and void.</p>
+                    <p>{t('product.residentialOnly')}</p>
                 </div>
 
-                 <p style={{textAlign: 'center', fontSize: '25px', marginTop: '50px'}}>WHY CEDARKIDS SWING SETS?</p>
+                 <p style={{textAlign: 'center', fontSize: '25px', marginTop: '50px'}}>{t('product.whyTitle')}</p>
                 <ul className='whyBlock'>
                     <li>
                         <img src={quality}/>
-                        <h1>High Quality Design</h1>
-                        <p>We work hard to make sure your swing set features design elements as stylish as they are
-                            strong. From the materials to the colors to the overall aesthetic, these are swing sets
-                            you'll be proud to have in your backyard. </p>
+                        <h1>{t('product.why1Title')}</h1>
+                        <p>{t('product.why1Text')}</p>
                     </li>
                     <li>
                         <img src={cert}/>
-                        <h1>Tested and Certified</h1>
-                        <p>All of our swing sets are certified to meet and exceed ASTM standards. We test our
-                            performance for kids up to 12-years-old, going above and beyond industry standards.</p>
+                        <h1>{t('product.why2Title')}</h1>
+                        <p>{t('product.why2Text')}</p>
                     </li>
                     <li>
                         <img src={warranty}/>
-                        <h1>Warranty and Assembly</h1>
-                        <p>With a 5 Year Limited Warranty and 3D interactive assembly instructions with the BILT® app,
-                            you'll be supported from the very beginning for years and years of backyard fun.</p>
+                        <h1>{t('product.why3Title')}</h1>
+                        <p>{t('product.why3Text')}</p>
                     </li>
                 </ul>
 
                 <div className='reviewDetails'>
-                    <p>CUSTOMER REVIEWS</p>
+                    <p>{t('product.customerReviews')}</p>
 
                     {[1, 2, 3, 4, 5].map((star) => (
                         <span
@@ -222,8 +219,8 @@ export default function ProductDetails({cart, setCart}) {
                     <span> /</span>
                     <span style={{color: 'gold', fontSize: '24px'}}> ★★★★★</span>
                     <p>{averageRate.toFixed(2)} / 5.00</p>
-                    <p>Based on {product.reviews.length} reviews</p>
-                    <button onClick={() => setShowReviewForm(!showReviewForm)}>Write a review</button>
+                    <p>{t('product.basedOn', { count: product.reviews.length })}</p>
+                    <button onClick={() => setShowReviewForm(!showReviewForm)}>{t('product.writeReview')}</button>
                 </div>
                 {showReviewForm &&
                     <ReviewForm setShowReviewForm={setShowReviewForm} product={product}/>}
