@@ -38,7 +38,7 @@ export default function AdminPanel() {
   }, []);
 
   function deleteProduct(id) {
-    axios.delete(`${config.API_URL}/api/product/delete/${id}`)
+    axios.delete(`${config.API_URL}/api/product/delete/${id}`, {headers:{'Authorization': `Bearer ${localStorage.getItem("access_tocken")}`}})
       .then(() => {
         setProducts(prev => prev.filter(product => product.id !== id));
       })

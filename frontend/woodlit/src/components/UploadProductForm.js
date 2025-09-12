@@ -45,7 +45,8 @@ export default function UploadProductForm({setShowUploadProductForm}) {
     
         try {
             await axios.post(`${config.API_URL}/api/product/upload`, formData, {
-                headers: { 'Content-Type': 'multipart/form-data' }
+                headers: { 'Content-Type': 'multipart/form-data',   
+                'Authorization': `Bearer ${localStorage.getItem("access_tocken")}` }
             });
             window.location.reload();
         } catch (error) {

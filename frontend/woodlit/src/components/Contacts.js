@@ -28,7 +28,7 @@ export default function Contacts() {
 
     try {
       // Create mailto link with form data
-      const mailtoLink = `mailto:yawdenisk@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(
+      const mailtoLink = `mailto:info@cedarkids.eu?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(
         `Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\n\nMessage:\n${formData.message}`
       )}`;
       
@@ -147,7 +147,7 @@ export default function Contacts() {
               </div>
               <div className='info-content'>
                 <h3>{t('contacts.info.email')}</h3>
-                <p>mail@cedarkids.eu</p>
+                <p>info@cedarkids.eu</p>
               </div>
             </div>
             
@@ -157,7 +157,7 @@ export default function Contacts() {
               </div>
               <div className='info-content'>
                 <h3>{t('contacts.info.phone')}</h3>
-                <p>+48 XXX XXX XXX</p>
+                <p><a href='tel:+48452816914'>+48 452 816 914</a></p>
               </div>
             </div>
             
@@ -167,19 +167,11 @@ export default function Contacts() {
               </div>
               <div className='info-content'>
                 <h3>{t('contacts.info.address')}</h3>
-                <p>{t('contacts.info.addressValue')}</p>
+                <p>Ul. Brzozowa 36/3, 85-154 Bydgoszcz, Polska</p>
               </div>
             </div>
             
-            <div className='info-item'>
-              <div className='info-icon'>
-                <span>🕒</span>
-              </div>
-              <div className='info-content'>
-                <h3>{t('contacts.info.hours')}</h3>
-                <p>{t('contacts.info.hoursValue')}</p>
-              </div>
-            </div>
+    
           </div>
         </div>
       </div>
